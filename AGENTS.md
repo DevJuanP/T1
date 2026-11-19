@@ -29,7 +29,8 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 │   ├── integrantes.json  # equipo, roles Scrum, participación
 │   ├── historias.json    # historias de usuario (5) con prioridad, estimación, criterios
 │   ├── backlog.json      # Product Backlog del Sprint
-│   ├── incremento.json   # funcionalidades, evidencias y capturas
+│   ├── incremento.json   # figuras del incremento, pies, checklist de tomas y dataset demo
+│   ├── tablero-trello.json # especificación del tablero: listas, etiquetas y tarjetas
 │   ├── retrospectiva.json
 │   ├── teoria/           # base teórica (no es contenido del proyecto)
 │   │   ├── _indice.json  # datos de la portada y fuentes del índice
@@ -40,7 +41,7 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 │   └── individual/       # una evidencia individual por integrante
 │       └── <integrante>.json
 ├── site/                 # HTML: vistas de la información
-│   ├── index.html        # portal con las dos colecciones
+│   ├── index.html        # portal con las colecciones y documentos de trabajo
 │   ├── assets/
 │   │   ├── estilos.css   # hoja compartida por todas las vistas
 │   │   └── evidencias/   # capturas, mockups, tablero, BD
@@ -55,11 +56,14 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 │   ├── proyecto.html
 │   ├── sprint-planning.html
 │   ├── backlog.html
-│   ├── incremento.html
+│   ├── incremento.html   # generado de data/incremento.json
+│   ├── trello.html       # generado de data/tablero-trello.json
 │   ├── retrospectiva.html
 │   └── equipo.html
 ├── build/                # generación
 │   ├── generar-teoria.js # recorre las colecciones de data/ y genera sus HTML
+│   ├── generar-trello.js # genera site/trello.html
+│   ├── generar-incremento.js # genera site/incremento.html
 │   └── exportar-word.js  # lee data/*.json y produce el .docx
 └── entrega/              # solo versiones afinadas y aprobadas
     └── PROYECTO INTEGRADOR-T1.docx
@@ -87,6 +91,17 @@ Colecciones actuales: `teoria` y `plan-mejora`.
 - El bloque `correccion` es propio de esta colección: exige `codigo`, `gravedad`, `seccion`, `problema`, `antes`, `despues`, `porque` y admite `nota`. Se renderiza como comparación lado a lado con botón de copiar.
 - Gravedades válidas: `Bloqueante`, `Inconsistencia`, `Riesgo de entrega`, `Detalle`. Cada una tiene su color en la cabecera del bloque.
 - El bloque `texto-libre` recibe `parrafos[]` y se usa para redactados largos que no deben partirse en unidades semánticas.
+
+## Incremento del producto
+
+- Vive en `data/incremento.json` y se publica en `site/incremento.html` mediante `node build/generar-incremento.js`.
+- Especifica las **seis figuras** de la sección 4 del informe: pie literal para el Word, qué debe mostrar la captura, qué debe evitar, qué historias demuestra y en qué archivo se guarda.
+- El estado de cada figura **no se escribe a mano**: el generador comprueba si el archivo existe en `site/assets/evidencias/`. Si existe, pinta la imagen con su pie; si no, el marco pendiente con el checklist de tomas.
+- Las figuras 5 y 6 comparten el `datasetDemo` del JSON, para que el catálogo y los movimientos muestren los mismos productos y el relato no se contradiga.
+- Cada figura puede traer un bloque `mockup` con la muestra visual de cómo debe verse la captura. Las de Trello se dibujan con las tarjetas reales de `data/tablero-trello.json`; las de pantalla usan los datos del propio `incremento.json`. La muestra se ve abierta mientras la figura está pendiente y queda plegada cuando ya existe el PNG.
+- Tipos de `mockup` válidos: `tablero-trello`, `tarjeta-trello`, `modelo-datos`, `pantalla-login`, `pantalla-catalogo`, `pantalla-movimientos`. La muestra es una referencia de pantalla, no reemplaza la captura real.
+- Los pies de figura deben coincidir palabra por palabra con el bloque R6 de `data/plan-mejora/riesgos-entrega.json`.
+- La figura del historial de commits quedó fuera: el enunciado la marca como opcional.
 
 ## Formato de los JSON
 

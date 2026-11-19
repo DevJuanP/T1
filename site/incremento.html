@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Incremento del producto · Proyecto Integrador T1</title>
+<meta name="description" content="Especificación de las seis figuras de la sección 4 del informe del Sprint 1 de StockFlow, con su pie, su checklist de tomas y el estado de captura.">
+<link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Proyecto Integrador T1 <span>· Incremento</span></a>
+    <span class="meta">StockFlow - Gestión y control de inventarios y Kardex</span>
+  </div>
+</header>
+
+<main id="contenido">
+<div class="portada-indice">
+  <div class="contenedor">
+    <p class="etiqueta">4. Incremento del producto (2 puntos)</p>
+    <h1>Incremento del producto</h1>
+    <p class="bajada">Las seis figuras que debe incluir la sección 4 del informe del Sprint 1</p>
+    <dl class="datos">
+      <div><dt>Figuras</dt><dd>6</dd></div>
+      <div><dt>Capturadas</dt><dd>0</dd></div>
+      <div><dt>Pendientes</dt><dd>6</dd></div>
+      <div><dt>Actualizado</dt><dd>19 de noviembre de 2026</dd></div>
+    </dl>
+  </div>
+</div>
+
+<div class="contenedor fig-contenido">
+  <nav class="fig-indice" aria-label="Figuras de esta página">
+<a href="#fig-01" class="pendiente"><span>1</span>Tablero del Sprint 1 al cierre</a>
+<a href="#fig-02" class="pendiente"><span>2</span>Detalle de la tarjeta de HU-03</a>
+<a href="#fig-03" class="pendiente"><span>3</span>Modelo de datos</a>
+<a href="#fig-04" class="pendiente"><span>4</span>Pantalla de inicio de sesión</a>
+<a href="#fig-05" class="pendiente"><span>5</span>Catálogo de productos con stock crítico</a>
+<a href="#fig-06" class="pendiente"><span>6</span>Registro de entrada y salida</a>
+  </nav>
+
+  <section class="fig-seccion" id="reglas">
+    <h2>Cómo se toman las seis figuras</h2>
+    <p class="fig-nota">Cada ficha incluye una muestra de cómo debe verse la captura, dibujada con los datos de este proyecto: el tablero de Trello, la tarjeta abierta, el modelo de datos y las pantallas del sistema. La muestra no es una imagen del sistema real, es la referencia para replicarla antes de capturar.</p>
+    <ul class="checklist">
+<li>Tomar todas las capturas con el sistema en marcha y con los datos de demostración cargados; una pantalla vacía no demuestra que la funcionalidad opere.</li>
+<li>Guardar en PNG, con un ancho mínimo de 1600 píxeles y un peso menor a 1,5 MB por archivo.</li>
+<li>Usar siempre el mismo tema visual y el mismo tamaño de ventana en las figuras del sistema, para que las seis se lean como una sola entrega.</li>
+<li>Ocultar correos de las cuentas, contraseñas, pestañas ajenas y barras de marcadores antes de capturar.</li>
+<li>Respetar el texto del pie palabra por palabra: es el mismo que se inserta en el Word y el que figura en el plan de mejora.</li>
+<li>Las figuras 5 y 6 deben mostrar el mismo conjunto de productos, para que el relato del incremento no se contradiga.</li>
+    </ul>
+    <p class="fig-nota">El enunciado de la T1 no fija un número de capturas: pide evidencias del sistema, formularios, base de datos, interfaces y tablero Scrum. El equipo fijó seis figuras para cubrir los cinco tipos de evidencia y sostener las cinco historias del Sprint 1. La figura del historial de commits quedó fuera por ser opcional en el enunciado.</p>
+  </section>
+
+  <section class="fig-seccion" id="figuras">
+    <h2>Las figuras</h2>
+    <p class="fig-nota">Cada ficha trae el pie con el que la imagen entra al Word, lo que la captura debe mostrar y lo que debe evitar. El estado se calcula solo: en cuanto el archivo aparece en <code>site/assets/evidencias/</code>, la figura pasa a capturada.</p>
+<article class="fig-ficha" id="fig-01">
+<header class="fig-cabecera">
+  <p class="fig-num">Figura 1</p>
+  <h3>Tablero del Sprint 1 al cierre</h3>
+  <p class="fig-meta">
+    <span class="fig-fuente">Trello</span>
+    <span class="fig-responsable">José Alonso Gamarra Apaza</span>
+    <span class="fig-hu">HU-01</span> <span class="fig-hu">HU-02</span> <span class="fig-hu">HU-03</span> <span class="fig-hu">HU-04</span> <span class="fig-hu">HU-05</span>
+  </p>
+</header>
+
+<figure class="fig-marco fig-pendiente">
+  <div class="fig-hueco">
+    <span class="fig-badge">Por capturar</span>
+    <p class="fig-archivo"><code>fig-01-tablero-done.png</code></p>
+    <p class="fig-formato">Panorámica, ancho completo del tablero</p>
+  </div>
+  <figcaption>Figura 1. Tablero del Sprint 1 al cierre, con las cinco historias en la columna Done.</figcaption>
+</figure>
+
+<section class="mk-bloque" aria-labelledby="fig-01-muestra">
+<p class="mk-titulo-bloque" id="fig-01-muestra">Así debería verse la captura</p>
+<div class="mk-navegador mk-navegador-trello">
+<div class="mk-barra"><span class="mk-punto"></span><span class="mk-punto"></span><span class="mk-punto"></span>
+<span class="mk-url">trello.com/b/stockflow-sprint-1</span></div>
+<div class="mk-tablero-cab">
+<p class="mk-tablero-titulo">StockFlow · Sprint 1</p>
+<p class="mk-tablero-sub">Sprint 1 · cierre 13/11/2026</p>
+</div>
+<div class="mk-tablero">
+<div class="mk-lista">
+<p class="mk-lista-nombre">Product Backlog <span>4</span></p>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"></div>
+<p class="mk-titulo">Exportación avanzada a PDF y Excel</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title=""></span>
+
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"></div>
+<p class="mk-titulo">Gestión multi-almacén compleja</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title=""></span>
+
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"></div>
+<p class="mk-titulo">Módulos de facturación</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title=""></span>
+
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"></div>
+<p class="mk-titulo">Reporte de movimientos por período</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title=""></span>
+
+</div>
+</div>
+</div>
+<div class="mk-lista">
+<p class="mk-lista-nombre">Sprint 1 - To Do <span>0</span></p>
+<p class="mk-vacia">Sin tarjetas</p>
+</div>
+<div class="mk-lista">
+<p class="mk-lista-nombre">In Progress <span>0</span></p>
+<p class="mk-vacia">Sin tarjetas</p>
+</div>
+<div class="mk-lista">
+<p class="mk-lista-nombre">Testing / Review <span>0</span></p>
+<p class="mk-vacia">Sin tarjetas</p>
+</div>
+<div class="mk-lista">
+<p class="mk-lista-nombre">Done <span>5</span></p>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"><span class="mk-et mk-et-alta">Alta</span><span class="mk-et mk-et-backend">Backend</span><span class="mk-et mk-et-qa">QA</span></div>
+<p class="mk-titulo">HU-01: Inicio de sesión seguro</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title="José Alonso Gamarra Apaza">JA</span>
+<span class="mk-progreso">☑ 7/7</span>
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"><span class="mk-et mk-et-alta">Alta</span><span class="mk-et mk-et-frontend">Frontend</span></div>
+<p class="mk-titulo">HU-02: Registro y gestión del catálogo de productos</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title="Juan Alonso Esteban Pajuelo Chipana">JA</span>
+<span class="mk-progreso">☑ 9/9</span>
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"><span class="mk-et mk-et-alta">Alta</span><span class="mk-et mk-et-backend">Backend</span><span class="mk-et mk-et-qa">QA</span></div>
+<p class="mk-titulo">HU-03: Registro de entradas y salidas de mercadería (Kardex)</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title="José Alonso Gamarra Apaza">JA</span>
+<span class="mk-progreso">☑ 8/8</span>
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"><span class="mk-et mk-et-media">Media</span><span class="mk-et mk-et-frontend">Frontend</span><span class="mk-et mk-et-qa">QA</span></div>
+<p class="mk-titulo">HU-04: Consulta y filtrado rápido de inventario</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title="Juan Alonso Esteban Pajuelo Chipana">JA</span>
+<span class="mk-progreso">☑ 7/7</span>
+</div>
+</div>
+<div class="mk-tarjeta">
+<div class="mk-etiquetas"><span class="mk-et mk-et-media">Media</span><span class="mk-et mk-et-frontend">Frontend</span><span class="mk-et mk-et-qa">QA</span></div>
+<p class="mk-titulo">HU-05: Alertas visuales de stock mínimo</p>
+<div class="mk-tarjeta-pie">
+<span class="mk-avatar" title="Juan Alonso Esteban Pajuelo Chipana">JA</span>
+<span class="mk-progreso">☑ 7/7</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p class="mk-pista">En Trello cada columna es una lista y cada recuadro blanco es una tarjeta. El tablero debe verse así: las cinco listas en ese orden y las cinco historias del Sprint 1 en la última. Las tarjetas del Sprint 2 se quedan en la primera lista.</p>
+</section>
+
+<p class="fig-demuestra"><span class="rotulo">Qué demuestra</span> El Sprint cerró con las cinco historias terminadas y el flujo recorrido de punta a punta, sin trabajo a medio hacer en las columnas intermedias.</p>
+
+
+
+<div class="fig-doble">
+  <div>
+    <p class="rotulo">La captura debe mostrar</p>
+    <ul class="checklist">
+<li>Las cinco listas en orden: Product Backlog, Sprint 1 - To Do, In Progress, Testing / Review y Done.</li>
+<li>La columna Done con exactamente HU-01, HU-02, HU-03, HU-04 y HU-05.</li>
+<li>Las columnas Sprint 1 - To Do, In Progress y Testing / Review sin tarjetas del Sprint 1.</li>
+<li>Las tarjetas del Sprint 2 únicamente en Product Backlog.</li>
+<li>Etiquetas de prioridad y avatares de los responsables legibles a tamaño de captura.</li>
+    </ul>
+  </div>
+  <div>
+    <p class="rotulo">Evitar</p>
+    <ul class="fig-evitar">
+<li>Barras del navegador, marcadores o el escritorio alrededor del tablero.</li>
+<li>Capturas con zoom reducido: si las tarjetas no se leen, la figura no sirve.</li>
+<li>Mover alguna historia del Sprint 1 fuera de Done. Si el tablero conserva la cuarta historia del Sprint 2, el alcance de la sección 1 del informe debe mencionarla.</li>
+    </ul>
+  </div>
+</div>
+</article>
+<article class="fig-ficha" id="fig-02">
+<header class="fig-cabecera">
+  <p class="fig-num">Figura 2</p>
+  <h3>Detalle de la tarjeta de HU-03</h3>
+  <p class="fig-meta">
+    <span class="fig-fuente">Trello</span>
+    <span class="fig-responsable">José Alonso Gamarra Apaza</span>
+    <span class="fig-hu">HU-03</span>
+  </p>
+</header>
+
+<figure class="fig-marco fig-pendiente">
+  <div class="fig-hueco">
+    <span class="fig-badge">Por capturar</span>
+    <p class="fig-archivo"><code>fig-02-tarjeta-hu-03.png</code></p>
+    <p class="fig-formato">Vertical, modal de la tarjeta abierta</p>
+  </div>
+  <figcaption>Figura 2. Detalle de la tarjeta de HU-03 con los criterios de aceptación marcados.</figcaption>
+</figure>
+
+<section class="mk-bloque" aria-labelledby="fig-02-muestra">
+<p class="mk-titulo-bloque" id="fig-02-muestra">Así debería verse la captura</p>
+<div class="mk-navegador mk-navegador-trello">
+<div class="mk-barra"><span class="mk-punto"></span><span class="mk-punto"></span><span class="mk-punto"></span>
+<span class="mk-url">trello.com/c/hu-03</span></div>
+<div class="mk-modal">
+<div class="mk-modal-etiquetas"><span class="mk-et mk-et-alta">Alta</span> <span class="mk-et mk-et-backend">Backend</span> <span class="mk-et mk-et-qa">QA</span></div>
+<h4 class="mk-modal-titulo">HU-03: Registro de entradas y salidas de mercadería (Kardex)</h4>
+<div class="mk-modal-cols">
+<div class="mk-modal-principal">
+<p class="mk-rotulo">Descripción</p>
+<p class="mk-descripcion">Como encargado de almacén, quiero registrar movimientos de entrada (compras/devoluciones) y salida (despachos/consumo) asociados a un producto, para actualizar el stock disponible automáticamente y conservar un historial trazable.</p>
+<div class="mk-checklist">
+<p class="mk-checklist-titulo">Criterios de aceptación <span>3/3</span></p>
+<ul><li>
+<span class="mk-check hecho">✓</span>
+<span>Dado que se registra una entrada de X unidades, cuando se confirma la operación, entonces el stock actual del producto se incrementa exactamente en X unidades y se guarda la fecha, hora y usuario responsable.</span>
+</li>
+<li>
+<span class="mk-check hecho">✓</span>
+<span>Dado que se registra una Salida mayor al stock disponible actual, cuando se intenta confirmar, entonces el sistema bloquea la operación con el mensaje &quot;Stock insuficiente&quot;.</span>
+</li>
+<li>
+<span class="mk-check hecho">✓</span>
+<span>Dado que se registra una Salida válida, cuando se confirma, entonces se descuenta del stock actual y queda registrado en el historial de movimientos.</span>
+</li></ul>
+</div>
+<div class="mk-checklist">
+<p class="mk-checklist-titulo">Tareas técnicas <span>5/5</span></p>
+<ul><li>
+<span class="mk-check hecho">✓</span>
+<span>Crear la tabla movimientos_inventario con tipo, cantidad, fecha, hora y usuario.</span>
+</li>
+<li>
+<span class="mk-check hecho">✓</span>
+<span>Alinear los nombres de los campos del formulario con las columnas de movimientos_inventario.</span>
+</li>
+<li>
+<span class="mk-check hecho">✓</span>
+<span>Actualizar el saldo de la tabla productos en cada entrada o salida.</span>
+</li>
+<li>
+<span class="mk-check hecho">✓</span>
+<span>Implementar la validación de stock insuficiente en salidas.</span>
+</li>
+<li>
+<span class="mk-check hecho">✓</span>
+<span>Verificar la validación de stock insuficiente en salidas.</span>
+</li></ul>
+</div>
+<div class="mk-checklists"><p class="mk-checklist-titulo">Comentarios</p>
+<div class="mk-comentario">
+<p class="mk-comentario-autor">José Alonso Gamarra Apaza</p>
+<p>Impedimento: desajuste entre producto_id y id_producto, detectado en el Daily Scrum y corregido el mismo día. Retraso aproximado de 2 horas.</p>
+</div>
+<div class="mk-comentario">
+<p class="mk-comentario-autor">Seyner Joaquin Escudero Campos</p>
+<p>Devuelta a In Progress: el aviso de stock insuficiente aparecía lejos del campo de cantidad. Mover el mensaje junto al campo y repetir la prueba.</p>
+</div>
+</div>
+</div>
+<aside class="mk-modal-lateral">
+<p class="mk-rotulo">En la lista</p>
+<p class="mk-valor">Done</p>
+<p class="mk-rotulo">Miembros</p>
+<p class="mk-valor"><span class="mk-avatar">JA</span> José Alonso Gamarra Apaza</p>
+<p class="mk-rotulo">Fecha de vencimiento</p>
+<p class="mk-valor">10/11/2026<span class="mk-vencido">completa</span></p>
+<p class="mk-rotulo">Etiquetas</p>
+<p class="mk-valor"><span class="mk-et mk-et-alta">Alta</span> <span class="mk-et mk-et-backend">Backend</span> <span class="mk-et mk-et-qa">QA</span></p>
+</aside>
+</div>
+</div>
+</div>
+<p class="mk-pista">La tarjeta se abre con un clic sobre ella en la columna Done. Todo el contenido de esta muestra ya existe en data/tablero-trello.json: no hay que inventar texto, solo replicarlo en Trello.</p>
+</section>
+
+<p class="fig-demuestra"><span class="rotulo">Qué demuestra</span> Los criterios de aceptación se verificaron uno por uno y la validación del Product Owner quedó registrada en la propia tarjeta, que es la condición 5 de la Definition of Done.</p>
+
+
+
+<div class="fig-doble">
+  <div>
+    <p class="rotulo">La captura debe mostrar</p>
+    <ul class="checklist">
+<li>Título «HU-03: Registro de entradas y salidas de mercadería (Kardex)».</li>
+<li>Etiquetas Alta, Backend y QA, miembro asignado y fecha de vencimiento 10/11/2026.</li>
+<li>La historia de usuario completa en la descripción de la tarjeta.</li>
+<li>El checklist «Criterios de aceptación» con sus 3 ítems marcados.</li>
+<li>El checklist «Tareas técnicas» con sus 5 ítems marcados.</li>
+<li>Los dos comentarios: el impedimento por el desajuste entre producto_id e id_producto y la devolución del Product Owner por la ubicación del aviso.</li>
+    </ul>
+  </div>
+  <div>
+    <p class="rotulo">Evitar</p>
+    <ul class="fig-evitar">
+<li>Dejar visible el correo de la cuenta de Trello o el historial de actividad de otros miembros.</li>
+<li>Capturar la tarjeta con ítems sin marcar: contradiría el estado Hecho de la sección 3.</li>
+<li>Otras tarjetas abiertas al fondo que distraigan del modal.</li>
+    </ul>
+  </div>
+</div>
+</article>
+<article class="fig-ficha" id="fig-03">
+<header class="fig-cabecera">
+  <p class="fig-num">Figura 3</p>
+  <h3>Modelo de datos</h3>
+  <p class="fig-meta">
+    <span class="fig-fuente">Diagrama de base de datos</span>
+    <span class="fig-responsable">José Alonso Gamarra Apaza</span>
+    <span class="fig-hu">HU-01</span> <span class="fig-hu">HU-02</span> <span class="fig-hu">HU-03</span>
+  </p>
+</header>
+
+<figure class="fig-marco fig-pendiente">
+  <div class="fig-hueco">
+    <span class="fig-badge">Por capturar</span>
+    <p class="fig-archivo"><code>fig-03-modelo-datos.png</code></p>
+    <p class="fig-formato">16:9, fondo claro</p>
+  </div>
+  <figcaption>Figura 3. Modelo de datos con las tablas usuarios, productos y movimientos_inventario.</figcaption>
+</figure>
+
+<section class="mk-bloque" aria-labelledby="fig-03-muestra">
+<p class="mk-titulo-bloque" id="fig-03-muestra">Así debería verse la captura</p>
+<div class="mk-navegador mk-navegador-diagrama">
+<div class="mk-barra"><span class="mk-punto"></span><span class="mk-punto"></span><span class="mk-punto"></span>
+<span class="mk-url">StockFlow · modelo de datos</span></div>
+<div class="mk-diagrama">
+<div class="mk-tabla-bd">
+<p class="mk-tabla-bd-nombre">usuarios</p>
+<table class="mk-tabla-bd-campos">
+<tbody>
+<tr>
+<td class="mk-campo">id</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca">PK</td>
+</tr>
+<tr>
+<td class="mk-campo">usuario</td>
+<td class="mk-tipo">VARCHAR(40)</td>
+<td class="mk-marca">UNIQUE</td>
+</tr>
+<tr>
+<td class="mk-campo">clave_hash</td>
+<td class="mk-tipo">VARCHAR(255)</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">rol</td>
+<td class="mk-tipo">VARCHAR(20)</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">activo</td>
+<td class="mk-tipo">BOOLEAN</td>
+<td class="mk-marca"></td>
+</tr>
+</tbody>
+</table>
+</div><div class="mk-flecha" aria-hidden="true">→</div><div class="mk-tabla-bd">
+<p class="mk-tabla-bd-nombre">productos</p>
+<table class="mk-tabla-bd-campos">
+<tbody>
+<tr>
+<td class="mk-campo">id</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca">PK</td>
+</tr>
+<tr>
+<td class="mk-campo">sku</td>
+<td class="mk-tipo">VARCHAR(20)</td>
+<td class="mk-marca">UNIQUE</td>
+</tr>
+<tr>
+<td class="mk-campo">nombre</td>
+<td class="mk-tipo">VARCHAR(120)</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">categoria</td>
+<td class="mk-tipo">VARCHAR(60)</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">unidad_medida</td>
+<td class="mk-tipo">VARCHAR(20)</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">stock_actual</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">stock_minimo</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca"></td>
+</tr>
+</tbody>
+</table>
+</div><div class="mk-flecha" aria-hidden="true">→</div><div class="mk-tabla-bd">
+<p class="mk-tabla-bd-nombre">movimientos_inventario</p>
+<table class="mk-tabla-bd-campos">
+<tbody>
+<tr>
+<td class="mk-campo">id</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca">PK</td>
+</tr>
+<tr>
+<td class="mk-campo">id_producto</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca">FK productos.id</td>
+</tr>
+<tr>
+<td class="mk-campo">tipo</td>
+<td class="mk-tipo">VARCHAR(10)</td>
+<td class="mk-marca">entrada / salida</td>
+</tr>
+<tr>
+<td class="mk-campo">cantidad</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">fecha_hora</td>
+<td class="mk-tipo">DATETIME</td>
+<td class="mk-marca"></td>
+</tr>
+<tr>
+<td class="mk-campo">id_usuario</td>
+<td class="mk-tipo">INT</td>
+<td class="mk-marca">FK usuarios.id</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="mk-leyenda">PK = clave primaria · FK = clave foránea · UNIQUE = valor único</p>
+</div>
+<p class="mk-pista">Tres tablas alineadas de izquierda a derecha en el orden en que se usan: primero usuarios, luego productos y al final movimientos_inventario, que apunta a las otras dos. Así se lee de un vistazo que el movimiento es el que une al usuario con el producto.</p>
+</section>
+
+<p class="fig-demuestra"><span class="rotulo">Qué demuestra</span> El incremento tiene persistencia relacional real: la trazabilidad de quién hizo cada movimiento se sostiene en el modelo y no en el relato.</p>
+
+
+
+<div class="fig-doble">
+  <div>
+    <p class="rotulo">La captura debe mostrar</p>
+    <ul class="checklist">
+<li>Tabla usuarios: id, usuario, clave_hash, rol, activo.</li>
+<li>Tabla productos: id, sku, nombre, categoria, unidad_medida, stock_actual, stock_minimo.</li>
+<li>Tabla movimientos_inventario: id, id_producto, tipo, cantidad, fecha_hora, id_usuario.</li>
+<li>Claves primarias y foráneas marcadas, con la relación usuarios 1 a N movimientos y productos 1 a N movimientos.</li>
+    </ul>
+  </div>
+  <div>
+    <p class="rotulo">Evitar</p>
+    <ul class="fig-evitar">
+<li>Mostrar la contraseña en texto plano: el campo se llama clave_hash y así debe verse.</li>
+<li>Nombrar la clave foránea producto_id en un sitio e id_producto en otro: ese desajuste fue el impedimento registrado en la figura 2.</li>
+<li>Capturas de un cliente de base de datos con tema oscuro: no se imprimen bien en el Word.</li>
+    </ul>
+  </div>
+</div>
+</article>
+<article class="fig-ficha" id="fig-04">
+<header class="fig-cabecera">
+  <p class="fig-num">Figura 4</p>
+  <h3>Pantalla de inicio de sesión</h3>
+  <p class="fig-meta">
+    <span class="fig-fuente">Sistema en ejecución</span>
+    <span class="fig-responsable">Juan Alonso Esteban Pajuelo Chipana</span>
+    <span class="fig-hu">HU-01</span>
+  </p>
+</header>
+
+<figure class="fig-marco fig-pendiente">
+  <div class="fig-hueco">
+    <span class="fig-badge">Por capturar</span>
+    <p class="fig-archivo"><code>fig-04-login-validacion.png</code></p>
+    <p class="fig-formato">16:10, con la barra del navegador</p>
+  </div>
+  <figcaption>Figura 4. Pantalla de inicio de sesión con validación de credenciales.</figcaption>
+</figure>
+
+<section class="mk-bloque" aria-labelledby="fig-04-muestra">
+<p class="mk-titulo-bloque" id="fig-04-muestra">Así debería verse la captura</p>
+<div class="mk-navegador">
+<div class="mk-barra"><span class="mk-punto"></span><span class="mk-punto"></span><span class="mk-punto"></span>
+<span class="mk-url">localhost:3000/login</span></div>
+<div class="mk-pantalla mk-pantalla-login">
+<div class="mk-app">
+<div class="mk-app-marca">
+<p class="mk-app-nombre">StockFlow</p>
+<p class="mk-app-lema">Gestión y control de inventarios</p>
+</div>
+<form class="mk-form mk-form-angosto">
+<label class="mk-campo-grupo">
+<span>Usuario</span>
+<input type="text" value="almacen01" readonly tabindex="-1">
+</label>
+<label class="mk-campo-grupo">
+<span>Contraseña</span>
+<input type="password" value="••••••••" readonly tabindex="-1">
+</label>
+<p class="mk-aviso error" role="status">Usuario o contraseña incorrectos.</p>
+<button type="button" class="mk-boton">Ingresar</button>
+</form>
+</div>
+</div>
+</div>
+<p class="mk-pista">Lo que se captura es el error en pantalla, no el formulario limpio. El mensaje debe ser idéntico para usuario inexistente y para contraseña incorrecta: por eso dice «Usuario o contraseña incorrectos».</p>
+</section>
+
+<p class="fig-demuestra"><span class="rotulo">Qué demuestra</span> La validación de credenciales funciona y el mensaje de error no revela cuál de los dos datos falló, que es el segundo criterio de aceptación de HU-01.</p>
+
+
+
+<div class="fig-doble">
+  <div>
+    <p class="rotulo">La captura debe mostrar</p>
+    <ul class="checklist">
+<li>El formulario con los campos de usuario y contraseña.</li>
+<li>El estado de error visible, por ejemplo «Usuario o contraseña incorrectos», sin indicar cuál dato falló.</li>
+<li>El botón de ingreso en su estado normal, habilitado.</li>
+    </ul>
+  </div>
+  <div>
+    <p class="rotulo">Evitar</p>
+    <ul class="fig-evitar">
+<li>Una pantalla de login vacía y sin error: no demuestra ninguna validación.</li>
+<li>Contraseñas reales o nombres de usuario reales del equipo a la vista.</li>
+<li>Pestañas ajenas al proyecto en el navegador.</li>
+    </ul>
+  </div>
+</div>
+</article>
+<article class="fig-ficha" id="fig-05">
+<header class="fig-cabecera">
+  <p class="fig-num">Figura 5</p>
+  <h3>Catálogo de productos con stock crítico</h3>
+  <p class="fig-meta">
+    <span class="fig-fuente">Sistema en ejecución</span>
+    <span class="fig-responsable">Juan Alonso Esteban Pajuelo Chipana</span>
+    <span class="fig-hu">HU-02</span> <span class="fig-hu">HU-04</span> <span class="fig-hu">HU-05</span>
+  </p>
+</header>
+
+<figure class="fig-marco fig-pendiente">
+  <div class="fig-hueco">
+    <span class="fig-badge">Por capturar</span>
+    <p class="fig-archivo"><code>fig-05-catalogo-stock-critico.png</code></p>
+    <p class="fig-formato">16:10, con la barra del navegador</p>
+  </div>
+  <figcaption>Figura 5. Formulario de registro de producto y listado con la etiqueta de stock crítico.</figcaption>
+</figure>
+
+<section class="mk-bloque" aria-labelledby="fig-05-muestra">
+<p class="mk-titulo-bloque" id="fig-05-muestra">Así debería verse la captura</p>
+<div class="mk-navegador">
+<div class="mk-barra"><span class="mk-punto"></span><span class="mk-punto"></span><span class="mk-punto"></span>
+<span class="mk-url">localhost:3000/productos</span></div>
+<div class="mk-pantalla">
+<div class="mk-app">
+<div class="mk-app-cab">
+<p class="mk-app-nombre">StockFlow</p>
+<p class="mk-app-vista">Catálogo de productos</p>
+</div>
+<div class="mk-panel">
+<p class="mk-panel-titulo">Registrar producto</p>
+<div class="mk-form mk-form-ancho">
+<label class="mk-campo-grupo">
+<span>Código SKU</span>
+<input type="text" value="PROD-004" readonly tabindex="-1">
+</label>
+<label class="mk-campo-grupo">
+<span>Nombre</span>
+<input type="text" value="Bolsa de polietileno 30x40" readonly tabindex="-1">
+</label>
+<label class="mk-campo-grupo">
+<span>Categoría</span>
+<input type="text" value="Empaque" readonly tabindex="-1">
+</label>
+<label class="mk-campo-grupo">
+<span>Unidad de medida</span>
+<input type="text" value="unidad" readonly tabindex="-1">
+</label>
+<label class="mk-campo-grupo">
+<span>Stock mínimo</span>
+<input type="text" value="25" readonly tabindex="-1">
+</label>
+</div>
+<button type="button" class="mk-boton">Guardar producto</button>
+</div>
+<div class="mk-panel">
+<div class="mk-panel-cab">
+<p class="mk-panel-titulo">Inventario</p>
+<input class="mk-buscador" type="search" value="" placeholder="Buscar por nombre o código SKU…" readonly tabindex="-1">
+</div>
+<table class="mk-tabla">
+<thead><tr><th scope="col">SKU</th><th scope="col">Producto</th><th scope="col">Categoría</th><th scope="col">Stock</th><th scope="col">Mínimo</th><th scope="col">Estado</th></tr></thead>
+<tbody>
+<tr>
+<td>PROD-001</td>
+<td>Caja de cartón 40x30</td>
+<td>Empaque</td>
+<td>15</td>
+<td>20</td>
+<td><span class="mk-critico">Stock Crítico</span></td>
+</tr>
+<tr>
+<td>PROD-002</td>
+<td>Cinta adhesiva 48 mm</td>
+<td>Empaque</td>
+<td>40</td>
+<td>12</td>
+<td><span class="mk-disponible">Disponible</span></td>
+</tr>
+<tr>
+<td>PROD-003</td>
+<td>Guantes de nitrilo talla M</td>
+<td>Seguridad</td>
+<td>8</td>
+<td>30</td>
+<td><span class="mk-critico">Stock Crítico</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<p class="mk-pista">Arriba el formulario de alta ya lleno, abajo el catálogo. Los tres productos de la tabla de demostración son los mismos que verás en esta muestra: cópialos tal cual en la base de datos antes de capturar.</p>
+</section>
+
+<p class="fig-demuestra"><span class="rotulo">Qué demuestra</span> El catálogo maestro valida códigos y stock mínimo al dar de alta, y la misma vista resalta los productos en nivel crítico mientras ofrece la búsqueda que resuelve HU-04.</p>
+
+
+
+<div class="fig-doble">
+  <div>
+    <p class="rotulo">La captura debe mostrar</p>
+    <ul class="checklist">
+<li>El formulario de alta con datos válidos: código SKU, nombre, categoría, unidad de medida y stock mínimo.</li>
+<li>El listado del catálogo debajo del formulario, con los tres productos de demostración.</li>
+<li>Dos filas con la etiqueta roja «Stock Crítico» y una con «Disponible».</li>
+<li>La barra de búsqueda visible, que es la evidencia de HU-04 dentro de esta figura.</li>
+    </ul>
+  </div>
+  <div>
+    <p class="rotulo">Evitar</p>
+    <ul class="fig-evitar">
+<li>Un catálogo vacío o con el aviso «No se encontraron productos».</li>
+<li>Valores negativos en stock inicial o stock mínimo: contradirían el tercer criterio de HU-02.</li>
+<li>Códigos SKU repetidos entre las filas de la tabla.</li>
+    </ul>
+  </div>
+</div>
+</article>
+<article class="fig-ficha" id="fig-06">
+<header class="fig-cabecera">
+  <p class="fig-num">Figura 6</p>
+  <h3>Registro de entrada y salida</h3>
+  <p class="fig-meta">
+    <span class="fig-fuente">Sistema en ejecución</span>
+    <span class="fig-responsable">Juan Alonso Esteban Pajuelo Chipana</span>
+    <span class="fig-hu">HU-03</span> <span class="fig-hu">HU-05</span>
+  </p>
+</header>
+
+<figure class="fig-marco fig-pendiente">
+  <div class="fig-hueco">
+    <span class="fig-badge">Por capturar</span>
+    <p class="fig-archivo"><code>fig-06-movimientos-saldo.png</code></p>
+    <p class="fig-formato">16:9, dos paneles rotulados (a) y (b) dentro de la misma imagen</p>
+  </div>
+  <figcaption>Figura 6. Registro de entrada y salida con el saldo actualizado.</figcaption>
+</figure>
+
+<section class="mk-bloque" aria-labelledby="fig-06-muestra">
+<p class="mk-titulo-bloque" id="fig-06-muestra">Así debería verse la captura</p>
+<div class="mk-movimientos">
+<div class="mk-panel-mov">
+<p class="mk-rotulo-panel">(a) Salida de 60 unidades</p>
+<div class="mk-app mk-app-compacta">
+<div class="mk-app-cab">
+<p class="mk-app-nombre">StockFlow</p>
+<p class="mk-app-vista">Movimientos de inventario</p>
+</div>
+<div class="mk-form mk-form-ancho mk-form-mov">
+<label class="mk-campo-grupo"><span>Tipo</span><input type="text" value="Salida" readonly tabindex="-1"></label>
+<label class="mk-campo-grupo"><span>Producto</span><input type="text" value="PROD-003 · Guantes de nitrilo talla M" readonly tabindex="-1"></label>
+<label class="mk-campo-grupo"><span>Cantidad</span><input type="text" value="60" readonly tabindex="-1"></label>
+</div>
+<p class="mk-aviso error">Stock insuficiente. El producto tiene 8 unidades disponibles.</p>
+<button type="button" class="mk-boton">Registrar movimiento</button>
+<p class="mk-panel-titulo mk-panel-titulo-tabla">Historial de movimientos</p>
+<table class="mk-tabla mk-tabla-compacta">
+<thead><tr><th scope="col">Fecha</th><th scope="col">Producto</th><th scope="col">Tipo</th><th scope="col">Cantidad</th><th scope="col">Saldo</th><th scope="col">Usuario</th></tr></thead>
+<tbody>
+
+<tr><td>10/11 09:42</td><td>PROD-002 · Cinta adhesiva</td><td>Entrada</td><td>10</td><td>40</td><td>almacen01</td></tr>
+<tr><td>10/11 09:15</td><td>PROD-001 · Caja de cartón</td><td>Salida</td><td>5</td><td>15</td><td>almacen01</td></tr>
+</tbody>
+</table>
+<span class="mk-marca-tipo salida">Salida</span>
+</div>
+</div>
+<div class="mk-panel-mov">
+<p class="mk-rotulo-panel">(b) Entrada de 24 unidades</p>
+<div class="mk-app mk-app-compacta">
+<div class="mk-app-cab">
+<p class="mk-app-nombre">StockFlow</p>
+<p class="mk-app-vista">Movimientos de inventario</p>
+</div>
+<div class="mk-form mk-form-ancho mk-form-mov">
+<label class="mk-campo-grupo"><span>Tipo</span><input type="text" value="Entrada" readonly tabindex="-1"></label>
+<label class="mk-campo-grupo"><span>Producto</span><input type="text" value="PROD-001 · Caja de cartón 40x30" readonly tabindex="-1"></label>
+<label class="mk-campo-grupo"><span>Cantidad</span><input type="text" value="24" readonly tabindex="-1"></label>
+</div>
+<p class="mk-aviso exito">Movimiento registrado. Stock actual: 39 unidades.</p>
+<button type="button" class="mk-boton">Registrar movimiento</button>
+<p class="mk-panel-titulo mk-panel-titulo-tabla">Historial de movimientos</p>
+<table class="mk-tabla mk-tabla-compacta">
+<thead><tr><th scope="col">Fecha</th><th scope="col">Producto</th><th scope="col">Tipo</th><th scope="col">Cantidad</th><th scope="col">Saldo</th><th scope="col">Usuario</th></tr></thead>
+<tbody>
+<tr class="mk-fila-nueva"><td>10/11 10:18</td><td>PROD-001 · Caja de cartón</td><td>Entrada</td><td>24</td><td>39</td><td>almacen01</td></tr>
+<tr><td>10/11 10:05</td><td>PROD-002 · Cinta adhesiva</td><td>Entrada</td><td>10</td><td>40</td><td>almacen01</td></tr>
+<tr><td>10/11 09:15</td><td>PROD-001 · Caja de cartón</td><td>Salida</td><td>5</td><td>15</td><td>almacen01</td></tr>
+</tbody>
+</table>
+<span class="mk-marca-tipo entrada">Entrada</span>
+</div>
+</div>
+</div>
+<p class="mk-pista">Las dos tomas se hacen con la misma ventana y el mismo zoom, una justo después de la otra. Si el tema o el tamaño cambian, se nota que son dos capturas distintas y la figura pierde fuerza.</p>
+</section>
+
+<p class="fig-demuestra"><span class="rotulo">Qué demuestra</span> Los tres criterios de aceptación de HU-03 en una sola figura: la salida imposible se bloquea, la entrada válida se registra y el saldo se recalcula; además la alerta de stock crítico desaparece al superar el mínimo.</p>
+
+<dl class="fig-paneles-lista">
+<div>
+<dt>(a)</dt>
+<dd>Salida de 60 unidades de PROD-003 bloqueada con el mensaje «Stock insuficiente», con el saldo en 8.</dd>
+</div>
+<div>
+<dt>(b)</dt>
+<dd>Entrada de 24 unidades de PROD-001 confirmada, con el saldo en 39 y la fila correspondiente en el historial de movimientos.</dd>
+</div>
+</dl>
+
+<div class="fig-doble">
+  <div>
+    <p class="rotulo">La captura debe mostrar</p>
+    <ul class="checklist">
+<li>El formulario de movimiento con el tipo, el producto, la cantidad y el usuario responsable.</li>
+<li>En el panel (a), el bloqueo por stock insuficiente junto al campo de cantidad, no al pie de la pantalla.</li>
+<li>En el panel (b), el saldo actualizado del producto y la fila del Kardex con tipo, cantidad, saldo, usuario y fecha.</li>
+<li>En ambos paneles, los mismos tres productos de demostración de la figura 5.</li>
+    </ul>
+  </div>
+  <div>
+    <p class="rotulo">Evitar</p>
+    <ul class="fig-evitar">
+<li>Capturar solo el historial sin el formulario: el lector no vería la operación que lo originó.</li>
+<li>Repetir el error de la devolución del Product Owner: el aviso de stock insuficiente debe quedar junto al campo que lo provoca.</li>
+<li>Fechas fuera del Sprint 1, que corrió del 2 al 13 de noviembre de 2026.</li>
+    </ul>
+  </div>
+</div>
+</article>
+  </section>
+
+<section class="fig-seccion" id="dataset-demo">
+<h2>Datos de demostración</h2>
+<p class="fig-nota">Los mismos tres productos deben aparecer en las figuras 5 y 6. Así la alerta de stock crítico, el bloqueo por stock insuficiente y el saldo recalculado cuentan una sola historia verificable.</p>
+<div class="tabla-envoltura"><table>
+<caption>Productos que deben aparecer en las figuras 5 y 6</caption>
+<thead><tr>
+<th scope="col">SKU</th>
+<th scope="col">Producto</th>
+<th scope="col">Categoría</th>
+<th scope="col">Unidad</th>
+<th scope="col">Stock mínimo</th>
+<th scope="col">Stock actual</th>
+<th scope="col">Estado</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><code>PROD-001</code></td>
+<td>Caja de cartón 40x30</td>
+<td>Empaque</td>
+<td>unidad</td>
+<td>20</td>
+<td>15</td>
+<td><span class="fig-critico">Stock Crítico</span></td>
+</tr>
+<tr>
+<td><code>PROD-002</code></td>
+<td>Cinta adhesiva 48 mm</td>
+<td>Empaque</td>
+<td>rollo</td>
+<td>12</td>
+<td>40</td>
+<td><span class="fig-disponible">Disponible</span></td>
+</tr>
+<tr>
+<td><code>PROD-003</code></td>
+<td>Guantes de nitrilo talla M</td>
+<td>Seguridad</td>
+<td>par</td>
+<td>30</td>
+<td>8</td>
+<td><span class="fig-critico">Stock Crítico</span></td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="tabla-envoltura"><table>
+<caption>Movimientos que deben verse en la figura 6</caption>
+<thead><tr>
+<th scope="col">Tipo</th>
+<th scope="col">SKU</th>
+<th scope="col">Cantidad</th>
+<th scope="col">Resultado</th>
+<th scope="col">Saldo</th>
+<th scope="col">Dónde se ve</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Salida</td>
+<td><code>PROD-003</code></td>
+<td>60</td>
+<td>Bloqueada con el mensaje «Stock insuficiente»</td>
+<td>8, sin cambio</td>
+<td>Figura 6 a</td>
+</tr>
+<tr>
+<td>Entrada</td>
+<td><code>PROD-001</code></td>
+<td>24</td>
+<td>Confirmada y registrada en el Kardex</td>
+<td>39, pasa a Disponible</td>
+<td>Figura 6 b</td>
+</tr>
+</tbody>
+</table></div>
+</section>
+</div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+</body>
+</html>

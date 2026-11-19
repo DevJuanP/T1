@@ -1,0 +1,362 @@
+{
+  "id": "incremento",
+  "titulo": "Incremento del producto",
+  "subtitulo": "Las seis figuras que debe incluir la sección 4 del informe del Sprint 1",
+  "actualizado": "2026-11-19",
+  "proyecto": "StockFlow - Gestión y control de inventarios y Kardex",
+  "documentoFuente": "T1 - PROYECTO INTEGRADOR - propuesta corregida.docx",
+  "seccionInforme": "4. Incremento del producto (2 puntos)",
+  "carpeta": "assets/evidencias",
+  "nota": "El enunciado de la T1 no fija un número de capturas: pide evidencias del sistema, formularios, base de datos, interfaces y tablero Scrum. El equipo fijó seis figuras para cubrir los cinco tipos de evidencia y sostener las cinco historias del Sprint 1. La figura del historial de commits quedó fuera por ser opcional en el enunciado.",
+  "reglas": [
+    "Tomar todas las capturas con el sistema en marcha y con los datos de demostración cargados; una pantalla vacía no demuestra que la funcionalidad opere.",
+    "Guardar en PNG, con un ancho mínimo de 1600 píxeles y un peso menor a 1,5 MB por archivo.",
+    "Usar siempre el mismo tema visual y el mismo tamaño de ventana en las figuras del sistema, para que las seis se lean como una sola entrega.",
+    "Ocultar correos de las cuentas, contraseñas, pestañas ajenas y barras de marcadores antes de capturar.",
+    "Respetar el texto del pie palabra por palabra: es el mismo que se inserta en el Word y el que figura en el plan de mejora.",
+    "Las figuras 5 y 6 deben mostrar el mismo conjunto de productos, para que el relato del incremento no se contradiga."
+  ],
+  "datasetDemo": {
+    "descripcion": "Los mismos tres productos deben aparecer en las figuras 5 y 6. Así la alerta de stock crítico, el bloqueo por stock insuficiente y el saldo recalculado cuentan una sola historia verificable.",
+    "productos": [
+      {
+        "sku": "PROD-001",
+        "nombre": "Caja de cartón 40x30",
+        "categoria": "Empaque",
+        "unidad": "unidad",
+        "stockMinimo": 20,
+        "stockActual": 15,
+        "estado": "Stock Crítico"
+      },
+      {
+        "sku": "PROD-002",
+        "nombre": "Cinta adhesiva 48 mm",
+        "categoria": "Empaque",
+        "unidad": "rollo",
+        "stockMinimo": 12,
+        "stockActual": 40,
+        "estado": "Disponible"
+      },
+      {
+        "sku": "PROD-003",
+        "nombre": "Guantes de nitrilo talla M",
+        "categoria": "Seguridad",
+        "unidad": "par",
+        "stockMinimo": 30,
+        "stockActual": 8,
+        "estado": "Stock Crítico"
+      }
+    ],
+    "movimientos": [
+      {
+        "orden": 1,
+        "tipo": "Salida",
+        "sku": "PROD-003",
+        "cantidad": 60,
+        "resultado": "Bloqueada con el mensaje «Stock insuficiente»",
+        "saldo": "8, sin cambio",
+        "figura": "fig-06",
+        "panel": "a"
+      },
+      {
+        "orden": 2,
+        "tipo": "Entrada",
+        "sku": "PROD-001",
+        "cantidad": 24,
+        "resultado": "Confirmada y registrada en el Kardex",
+        "saldo": "39, pasa a Disponible",
+        "figura": "fig-06",
+        "panel": "b"
+      }
+    ]
+  },
+  "figuras": [
+    {
+      "id": "fig-01",
+      "numero": 1,
+      "titulo": "Tablero del Sprint 1 al cierre",
+      "pie": "Figura 1. Tablero del Sprint 1 al cierre, con las cinco historias en la columna Done.",
+      "fuente": "Trello",
+      "responsable": "José Alonso Gamarra Apaza",
+      "historias": ["HU-01", "HU-02", "HU-03", "HU-04", "HU-05"],
+      "mockup": {
+        "tipo": "tablero-trello",
+        "pista": "En Trello cada columna es una lista y cada recuadro blanco es una tarjeta. El tablero debe verse así: las cinco listas en ese orden y las cinco historias del Sprint 1 en la última. Las tarjetas del Sprint 2 se quedan en la primera lista."
+      },
+      "archivo": "fig-01-tablero-done.png",
+      "formato": "Panorámica, ancho completo del tablero",
+      "alt": "Tablero de Trello con las cinco listas del Sprint y las cinco historias de usuario en la columna Done",
+      "demuestra": "El Sprint cerró con las cinco historias terminadas y el flujo recorrido de punta a punta, sin trabajo a medio hacer en las columnas intermedias.",
+      "debeMostrar": [
+        "Las cinco listas en orden: Product Backlog, Sprint 1 - To Do, In Progress, Testing / Review y Done.",
+        "La columna Done con exactamente HU-01, HU-02, HU-03, HU-04 y HU-05.",
+        "Las columnas Sprint 1 - To Do, In Progress y Testing / Review sin tarjetas del Sprint 1.",
+        "Las tarjetas del Sprint 2 únicamente en Product Backlog.",
+        "Etiquetas de prioridad y avatares de los responsables legibles a tamaño de captura."
+      ],
+      "evitar": [
+        "Barras del navegador, marcadores o el escritorio alrededor del tablero.",
+        "Capturas con zoom reducido: si las tarjetas no se leen, la figura no sirve.",
+        "Mover alguna historia del Sprint 1 fuera de Done. Si el tablero conserva la cuarta historia del Sprint 2, el alcance de la sección 1 del informe debe mencionarla."
+      ]
+    },
+    {
+      "id": "fig-02",
+      "numero": 2,
+      "titulo": "Detalle de la tarjeta de HU-03",
+      "pie": "Figura 2. Detalle de la tarjeta de HU-03 con los criterios de aceptación marcados.",
+      "fuente": "Trello",
+      "responsable": "José Alonso Gamarra Apaza",
+      "historias": ["HU-03"],
+      "archivo": "fig-02-tarjeta-hu-03.png",
+      "formato": "Vertical, modal de la tarjeta abierta",
+      "mockup": {
+        "tipo": "tarjeta-trello",
+        "tarjetaId": "hu-03",
+        "pista": "La tarjeta se abre con un clic sobre ella en la columna Done. Todo el contenido de esta muestra ya existe en data/tablero-trello.json: no hay que inventar texto, solo replicarlo en Trello."
+      },
+      "alt": "Tarjeta de HU-03 en Trello con los criterios de aceptación marcados y los comentarios de la devolución",
+      "demuestra": "Los criterios de aceptación se verificaron uno por uno y la validación del Product Owner quedó registrada en la propia tarjeta, que es la condición 5 de la Definition of Done.",
+      "debeMostrar": [
+        "Título «HU-03: Registro de entradas y salidas de mercadería (Kardex)».",
+        "Etiquetas Alta, Backend y QA, miembro asignado y fecha de vencimiento 10/11/2026.",
+        "La historia de usuario completa en la descripción de la tarjeta.",
+        "El checklist «Criterios de aceptación» con sus 3 ítems marcados.",
+        "El checklist «Tareas técnicas» con sus 5 ítems marcados.",
+        "Los dos comentarios: el impedimento por el desajuste entre producto_id e id_producto y la devolución del Product Owner por la ubicación del aviso."
+      ],
+      "evitar": [
+        "Dejar visible el correo de la cuenta de Trello o el historial de actividad de otros miembros.",
+        "Capturar la tarjeta con ítems sin marcar: contradiría el estado Hecho de la sección 3.",
+        "Otras tarjetas abiertas al fondo que distraigan del modal."
+      ]
+    },
+    {
+      "id": "fig-03",
+      "numero": 3,
+      "titulo": "Modelo de datos",
+      "pie": "Figura 3. Modelo de datos con las tablas usuarios, productos y movimientos_inventario.",
+      "fuente": "Diagrama de base de datos",
+      "responsable": "José Alonso Gamarra Apaza",
+      "historias": ["HU-01", "HU-02", "HU-03"],
+      "archivo": "fig-03-modelo-datos.png",
+      "formato": "16:9, fondo claro",
+      "mockup": {
+        "tipo": "modelo-datos",
+        "pista": "Tres tablas alineadas de izquierda a derecha en el orden en que se usan: primero usuarios, luego productos y al final movimientos_inventario, que apunta a las otras dos. Así se lee de un vistazo que el movimiento es el que une al usuario con el producto.",
+        "tablas": [
+          {
+            "nombre": "usuarios",
+            "columnas": [
+              { "campo": "id", "tipo": "INT", "marca": "PK" },
+              { "campo": "usuario", "tipo": "VARCHAR(40)", "marca": "UNIQUE" },
+              { "campo": "clave_hash", "tipo": "VARCHAR(255)", "marca": "" },
+              { "campo": "rol", "tipo": "VARCHAR(20)", "marca": "" },
+              { "campo": "activo", "tipo": "BOOLEAN", "marca": "" }
+            ]
+          },
+          {
+            "nombre": "productos",
+            "columnas": [
+              { "campo": "id", "tipo": "INT", "marca": "PK" },
+              { "campo": "sku", "tipo": "VARCHAR(20)", "marca": "UNIQUE" },
+              { "campo": "nombre", "tipo": "VARCHAR(120)", "marca": "" },
+              { "campo": "categoria", "tipo": "VARCHAR(60)", "marca": "" },
+              { "campo": "unidad_medida", "tipo": "VARCHAR(20)", "marca": "" },
+              { "campo": "stock_actual", "tipo": "INT", "marca": "" },
+              { "campo": "stock_minimo", "tipo": "INT", "marca": "" }
+            ]
+          },
+          {
+            "nombre": "movimientos_inventario",
+            "columnas": [
+              { "campo": "id", "tipo": "INT", "marca": "PK" },
+              { "campo": "id_producto", "tipo": "INT", "marca": "FK productos.id" },
+              { "campo": "tipo", "tipo": "VARCHAR(10)", "marca": "entrada / salida" },
+              { "campo": "cantidad", "tipo": "INT", "marca": "" },
+              { "campo": "fecha_hora", "tipo": "DATETIME", "marca": "" },
+              { "campo": "id_usuario", "tipo": "INT", "marca": "FK usuarios.id" }
+            ]
+          }
+        ]
+      },
+      "alt": "Diagrama de base de datos con las tablas usuarios, productos y movimientos de inventario y sus relaciones",
+      "demuestra": "El incremento tiene persistencia relacional real: la trazabilidad de quién hizo cada movimiento se sostiene en el modelo y no en el relato.",
+      "debeMostrar": [
+        "Tabla usuarios: id, usuario, clave_hash, rol, activo.",
+        "Tabla productos: id, sku, nombre, categoria, unidad_medida, stock_actual, stock_minimo.",
+        "Tabla movimientos_inventario: id, id_producto, tipo, cantidad, fecha_hora, id_usuario.",
+        "Claves primarias y foráneas marcadas, con la relación usuarios 1 a N movimientos y productos 1 a N movimientos."
+      ],
+      "evitar": [
+        "Mostrar la contraseña en texto plano: el campo se llama clave_hash y así debe verse.",
+        "Nombrar la clave foránea producto_id en un sitio e id_producto en otro: ese desajuste fue el impedimento registrado en la figura 2.",
+        "Capturas de un cliente de base de datos con tema oscuro: no se imprimen bien en el Word."
+      ]
+    },
+    {
+      "id": "fig-04",
+      "numero": 4,
+      "titulo": "Pantalla de inicio de sesión",
+      "pie": "Figura 4. Pantalla de inicio de sesión con validación de credenciales.",
+      "fuente": "Sistema en ejecución",
+      "responsable": "Juan Alonso Esteban Pajuelo Chipana",
+      "historias": ["HU-01"],
+      "archivo": "fig-04-login-validacion.png",
+      "formato": "16:10, con la barra del navegador",
+      "mockup": {
+        "tipo": "pantalla-login",
+        "pista": "Lo que se captura es el error en pantalla, no el formulario limpio. El mensaje debe ser idéntico para usuario inexistente y para contraseña incorrecta: por eso dice «Usuario o contraseña incorrectos».",
+        "producto": "StockFlow",
+        "lema": "Gestión y control de inventarios",
+        "campos": [
+          { "etiqueta": "Usuario", "valor": "almacen01", "tipo": "text" },
+          { "etiqueta": "Contraseña", "valor": "••••••••", "tipo": "password" }
+        ],
+        "boton": "Ingresar",
+        "error": "Usuario o contraseña incorrectos."
+      },
+      "alt": "Pantalla de inicio de sesión del sistema mostrando el mensaje de error por credenciales incorrectas",
+      "demuestra": "La validación de credenciales funciona y el mensaje de error no revela cuál de los dos datos falló, que es el segundo criterio de aceptación de HU-01.",
+      "debeMostrar": [
+        "El formulario con los campos de usuario y contraseña.",
+        "El estado de error visible, por ejemplo «Usuario o contraseña incorrectos», sin indicar cuál dato falló.",
+        "El botón de ingreso en su estado normal, habilitado."
+      ],
+      "evitar": [
+        "Una pantalla de login vacía y sin error: no demuestra ninguna validación.",
+        "Contraseñas reales o nombres de usuario reales del equipo a la vista.",
+        "Pestañas ajenas al proyecto en el navegador."
+      ]
+    },
+    {
+      "id": "fig-05",
+      "numero": 5,
+      "titulo": "Catálogo de productos con stock crítico",
+      "pie": "Figura 5. Formulario de registro de producto y listado con la etiqueta de stock crítico.",
+      "fuente": "Sistema en ejecución",
+      "responsable": "Juan Alonso Esteban Pajuelo Chipana",
+      "historias": ["HU-02", "HU-04", "HU-05"],
+      "archivo": "fig-05-catalogo-stock-critico.png",
+      "formato": "16:10, con la barra del navegador",
+      "mockup": {
+        "tipo": "pantalla-catalogo",
+        "pista": "Arriba el formulario de alta ya lleno, abajo el catálogo. Los tres productos de la tabla de demostración son los mismos que verás en esta muestra: cópialos tal cual en la base de datos antes de capturar.",
+        "producto": "StockFlow",
+        "tituloVista": "Catálogo de productos",
+        "formulario": {
+          "titulo": "Registrar producto",
+          "campos": [
+            { "etiqueta": "Código SKU", "valor": "PROD-004" },
+            { "etiqueta": "Nombre", "valor": "Bolsa de polietileno 30x40" },
+            { "etiqueta": "Categoría", "valor": "Empaque" },
+            { "etiqueta": "Unidad de medida", "valor": "unidad" },
+            { "etiqueta": "Stock mínimo", "valor": "25" }
+          ],
+          "boton": "Guardar producto"
+        },
+        "tabla": {
+          "titulo": "Inventario",
+          "busqueda": "Buscar por nombre o código SKU…",
+          "columnas": ["SKU", "Producto", "Categoría", "Stock", "Mínimo", "Estado"]
+        }
+      },
+      "alt": "Formulario de registro de producto sobre el listado del catálogo, con dos productos marcados como stock crítico",
+      "demuestra": "El catálogo maestro valida códigos y stock mínimo al dar de alta, y la misma vista resalta los productos en nivel crítico mientras ofrece la búsqueda que resuelve HU-04.",
+      "debeMostrar": [
+        "El formulario de alta con datos válidos: código SKU, nombre, categoría, unidad de medida y stock mínimo.",
+        "El listado del catálogo debajo del formulario, con los tres productos de demostración.",
+        "Dos filas con la etiqueta roja «Stock Crítico» y una con «Disponible».",
+        "La barra de búsqueda visible, que es la evidencia de HU-04 dentro de esta figura."
+      ],
+      "evitar": [
+        "Un catálogo vacío o con el aviso «No se encontraron productos».",
+        "Valores negativos en stock inicial o stock mínimo: contradirían el tercer criterio de HU-02.",
+        "Códigos SKU repetidos entre las filas de la tabla."
+      ]
+    },
+    {
+      "id": "fig-06",
+      "numero": 6,
+      "titulo": "Registro de entrada y salida",
+      "pie": "Figura 6. Registro de entrada y salida con el saldo actualizado.",
+      "fuente": "Sistema en ejecución",
+      "responsable": "Juan Alonso Esteban Pajuelo Chipana",
+      "historias": ["HU-03", "HU-05"],
+      "archivo": "fig-06-movimientos-saldo.png",
+      "formato": "16:9, dos paneles rotulados (a) y (b) dentro de la misma imagen",
+      "mockup": {
+        "tipo": "pantalla-movimientos",
+        "pista": "Las dos tomas se hacen con la misma ventana y el mismo zoom, una justo después de la otra. Si el tema o el tamaño cambian, se nota que son dos capturas distintas y la figura pierde fuerza.",
+        "producto": "StockFlow",
+        "tituloVista": "Movimientos de inventario",
+        "campos": [
+          { "etiqueta": "Tipo de movimiento", "valor": "Salida" },
+          { "etiqueta": "Producto", "valor": "PROD-003 · Guantes de nitrilo talla M" },
+          { "etiqueta": "Cantidad", "valor": "60" },
+          { "etiqueta": "Usuario responsable", "valor": "almacen01" }
+        ],
+        "boton": "Registrar movimiento",
+        "kardex": {
+          "titulo": "Historial de movimientos",
+          "columnas": ["Fecha", "Producto", "Tipo", "Cantidad", "Saldo", "Usuario"]
+        },
+        "paneles": [
+          {
+            "rotulo": "(a)",
+            "tipo": "Salida",
+            "producto": "PROD-003 · Guantes de nitrilo talla M",
+            "cantidad": "60",
+            "usuario": "almacen01",
+            "aviso": "Stock insuficiente. El producto tiene 8 unidades disponibles.",
+            "avisoTono": "error",
+            "confirmado": false,
+            "filas": [
+              ["10/11 09:42", "PROD-002 · Cinta adhesiva", "Entrada", "10", "40", "almacen01"],
+              ["10/11 09:15", "PROD-001 · Caja de cartón", "Salida", "5", "15", "almacen01"]
+            ],
+            "filaNueva": null
+          },
+          {
+            "rotulo": "(b)",
+            "tipo": "Entrada",
+            "producto": "PROD-001 · Caja de cartón 40x30",
+            "cantidad": "24",
+            "usuario": "almacen01",
+            "aviso": "Movimiento registrado. Stock actual: 39 unidades.",
+            "avisoTono": "exito",
+            "confirmado": true,
+            "filas": [
+              ["10/11 10:05", "PROD-002 · Cinta adhesiva", "Entrada", "10", "40", "almacen01"],
+              ["10/11 09:15", "PROD-001 · Caja de cartón", "Salida", "5", "15", "almacen01"]
+            ],
+            "filaNueva": ["10/11 10:18", "PROD-001 · Caja de cartón", "Entrada", "24", "39", "almacen01"]
+          }
+        ]
+      },
+      "alt": "Dos capturas del registro de movimientos: una salida bloqueada por stock insuficiente y una entrada confirmada con el saldo actualizado",
+      "demuestra": "Los tres criterios de aceptación de HU-03 en una sola figura: la salida imposible se bloquea, la entrada válida se registra y el saldo se recalcula; además la alerta de stock crítico desaparece al superar el mínimo.",
+      "paneles": [
+        {
+          "rotulo": "(a)",
+          "texto": "Salida de 60 unidades de PROD-003 bloqueada con el mensaje «Stock insuficiente», con el saldo en 8."
+        },
+        {
+          "rotulo": "(b)",
+          "texto": "Entrada de 24 unidades de PROD-001 confirmada, con el saldo en 39 y la fila correspondiente en el historial de movimientos."
+        }
+      ],
+      "debeMostrar": [
+        "El formulario de movimiento con el tipo, el producto, la cantidad y el usuario responsable.",
+        "En el panel (a), el bloqueo por stock insuficiente junto al campo de cantidad, no al pie de la pantalla.",
+        "En el panel (b), el saldo actualizado del producto y la fila del Kardex con tipo, cantidad, saldo, usuario y fecha.",
+        "En ambos paneles, los mismos tres productos de demostración de la figura 5."
+      ],
+      "evitar": [
+        "Capturar solo el historial sin el formulario: el lector no vería la operación que lo originó.",
+        "Repetir el error de la devolución del Product Owner: el aviso de stock insuficiente debe quedar junto al campo que lo provoca.",
+        "Fechas fuera del Sprint 1, que corrió del 2 al 13 de noviembre de 2026."
+      ]
+    }
+  ]
+}

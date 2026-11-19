@@ -252,7 +252,7 @@ ${leyenda}
 
   <section aria-labelledby="tablero">
     <h2 id="tablero">Tablero</h2>
-    <p class="tb-nota">Cada tarjeta muestra su lista, miembro, fecha, etiquetas, checklists y comentarios. Las marcas «Hecho» y «Pendiente» van en texto, no solo en color.</p>
+    <p class="tb-nota">Cada tarjeta muestra su lista, miembro, fecha, etiquetas, checklists y comentarios. Las marcas «Hecho» y «Pendiente» van en texto, no solo en color. Las figuras 1 y 2 del informe se toman de este tablero: la especificación de ambas está en <a href="incremento.html">Incremento del producto</a>.</p>
     <div class="tb-tablero">
 ${listas.map(columnaHtml).join("\n")}
     </div>
