@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Retrospectiva · Base teórica T1</title>
+<title>Retrospectiva · Base teórica</title>
 <meta name="description" content="La retrospectiva es la inspección que el equipo hace de su propio trabajo. La sección 5 del informe la evalúa con cuatro preguntas concretas. Esta sección cubre el propósito del evento, los formatos de facilitación y, sobre todo, cómo responder cada pregunta sin caer en generalidades.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 09 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 09</p>
     <h1>Retrospectiva</h1>
     <p class="bajada">Cómo responder las cuatro preguntas con hechos reales</p>
     <p class="resumen">La retrospectiva es la inspección que el equipo hace de su propio trabajo. La sección 5 del informe la evalúa con cuatro preguntas concretas. Esta sección cubre el propósito del evento, los formatos de facilitación y, sobre todo, cómo responder cada pregunta sin caer en generalidades.</p>
@@ -207,5 +207,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

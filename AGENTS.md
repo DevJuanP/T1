@@ -34,17 +34,24 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 │   ├── teoria/           # base teórica (no es contenido del proyecto)
 │   │   ├── _indice.json  # datos de la portada y fuentes del índice
 │   │   └── *.json        # un archivo por tema, ordenado por el campo `orden`
+│   ├── plan-mejora/      # plan de corrección de la propuesta (documento de trabajo)
+│   │   ├── _indice.json
+│   │   └── *.json
 │   └── individual/       # una evidencia individual por integrante
 │       └── <integrante>.json
 ├── site/                 # HTML: vistas de la información
-│   ├── index.html        # redirección a la base teórica
+│   ├── index.html        # portal con las dos colecciones
 │   ├── assets/
-│   │   ├── estilos.css   # hoja compartida por el informe y la base teórica
+│   │   ├── estilos.css   # hoja compartida por todas las vistas
 │   │   └── evidencias/   # capturas, mockups, tablero, BD
 │   ├── teoria/           # HTML generado de data/teoria
 │   │   ├── index.html    # índice general de la base teórica
 │   │   ├── completo.html # versión lineal de todo el contenido
 │   │   └── *.html        # una vista por archivo JSON
+│   ├── plan-mejora/      # HTML generado de data/plan-mejora
+│   │   ├── index.html
+│   │   ├── completo.html
+│   │   └── *.html
 │   ├── proyecto.html
 │   ├── sprint-planning.html
 │   ├── backlog.html
@@ -52,20 +59,34 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 │   ├── retrospectiva.html
 │   └── equipo.html
 ├── build/                # generación
-│   ├── generar-teoria.js # lee data/teoria/*.json y produce site/teoria/*.html
+│   ├── generar-teoria.js # recorre las colecciones de data/ y genera sus HTML
 │   └── exportar-word.js  # lee data/*.json y produce el .docx
 └── entrega/              # solo versiones afinadas y aprobadas
     └── PROYECTO INTEGRADOR-T1.docx
 ```
+
+## Generador de colecciones
+
+`node build/generar-teoria.js` recorre las colecciones declaradas en el arreglo `COLECCIONES` del script. Cada entrada define la carpeta de datos, la carpeta de salida y los textos de cabecera. Para añadir una colección nueva basta con agregar una entrada y su `data/<clave>/_indice.json`.
+
+Colecciones actuales: `teoria` y `plan-mejora`.
 
 ## Base teórica
 
 - Vive en `data/teoria/*.json` y se publica en `site/teoria/*.html` mediante `node build/generar-teoria.js`.
 - Es material de estudio para la evaluación: **no contiene el contenido del proyecto del equipo**. No mezclar aquí datos de negocio (problema, historias reales, integrantes).
 - Cada archivo declara `orden` (posición en el índice) y `secciones[]` con bloques tipados.
-- Bloques soportados: `subtitulo`, `parrafo`, `cita`, `destacado` (`tono: info | alerta | exito`), `tabla`, `lista`, `definiciones`, `comparacion`, `pasos`, `checklist`, `formula`, `ejemplos`. `tabla` y `checklist` aceptan un `titulo` opcional.
-- Si un valor de celda coincide con el `id` de otro archivo de teoría, el generador lo convierte en enlace automáticamente.
+- Bloques soportados: `subtitulo`, `parrafo`, `cita`, `destacado` (`tono: info | alerta | exito`), `tabla`, `lista`, `definiciones`, `comparacion`, `pasos`, `checklist`, `formula`, `ejemplos`, `correccion`, `texto-libre`. `tabla` y `checklist` aceptan un `titulo` opcional.
+- Si un valor de celda coincide con el `id` de otro archivo de la misma colección, el generador lo convierte en enlace automáticamente.
 - Al crear un tema nuevo basta con añadir su JSON con `orden` y volver a ejecutar el generador: el índice, la navegación y `completo.html` se reconstruyen solos.
+
+## Plan de mejora
+
+- Vive en `data/plan-mejora/*.json` y se publica en `site/plan-mejora/*.html`.
+- Documenta el diagnóstico de una propuesta externa y las correcciones a aplicar. Es un documento de trabajo para terceros, **no forma parte del entregable**.
+- El bloque `correccion` es propio de esta colección: exige `codigo`, `gravedad`, `seccion`, `problema`, `antes`, `despues`, `porque` y admite `nota`. Se renderiza como comparación lado a lado con botón de copiar.
+- Gravedades válidas: `Bloqueante`, `Inconsistencia`, `Riesgo de entrega`, `Detalle`. Cada una tiene su color en la cabecera del bloque.
+- El bloque `texto-libre` recibe `parrafos[]` y se usa para redactados largos que no deben partirse en unidades semánticas.
 
 ## Formato de los JSON
 

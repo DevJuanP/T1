@@ -1,0 +1,34 @@
+{
+  "id": "plan-mejora",
+  "titulo": "Plan de mejora de la propuesta",
+  "subtitulo": "Diagnóstico y correcciones de T1 - PROYECTO INTEGRADOR - propuesta.docx",
+  "actualizado": "2026-11-18",
+  "documentoFuente": "T1 - PROYECTO INTEGRADOR - propuesta.docx",
+  "destinatario": "Responsable de pasar la propuesta corregida al Word final",
+  "curso": "SPTI02423 - Proyecto Integrador",
+  "evaluacion": "T1 - Sprint 1 bajo marco Scrum",
+  "proyecto": "StockFlow - Gestión y control de inventarios y Kardex",
+  "resumen": "La propuesta tiene una base sólida: el problema, el SEPTE, las cinco historias y la retrospectiva están bien planteados. Falla en cuatro puntos de marco (estimación, Daily Scrum, Sprint Goal y Definition of Done) y arrastra inconsistencias internas entre secciones. Este documento reúne las 24 correcciones con el texto exacto de reemplazo, listo para copiar.",
+  "veredicto": "Aprobada con correcciones obligatorias",
+  "instrucciones": [
+    "Trabaja en el orden de la hoja de ruta: primero los bloqueantes, después las inconsistencias, al final los detalles.",
+    "Cada corrección trae dos bloques: cómo está ahora el documento y cómo debe quedar. Copia el segundo bloque en el Word.",
+    "No cambies nada que no esté listado aquí: lo que no aparece en este documento está bien.",
+    "Antes de cerrar, recorre la lista de verificación final completa."
+  ],
+  "estadisticas": [
+    { "valor": "24", "etiqueta": "Correcciones" },
+    { "valor": "4", "etiqueta": "Bloqueantes" },
+    { "valor": "6", "etiqueta": "Inconsistencias" },
+    { "valor": "6", "etiqueta": "Riesgos de entrega" },
+    { "valor": "8", "etiqueta": "Detalles menores" }
+  ],
+  "nota": "Las cifras de puntaje citadas provienen de las rúbricas del enunciado PROYECTO INTEGRADOR-T1.docx. Las referencias conceptuales remiten a la base teórica del proyecto.",
+  "enlaces": [
+    {
+      "titulo": "Base teórica del examen",
+      "detalle": "Guía Scrum 2020, Manifiesto Ágil, historias de usuario y estimación",
+      "url": "../teoria/index.html"
+    }
+  ]
+}

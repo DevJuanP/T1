@@ -1,0 +1,101 @@
+{
+  "id": "diagnostico",
+  "orden": 1,
+  "titulo": "Diagnóstico",
+  "subtitulo": "Qué está bien, qué está mal y cuánto vale cada error",
+  "actualizado": "2026-11-18",
+  "resumen": "Antes de corregir conviene saber qué no se debe tocar. La propuesta tiene varias partes que están mejor resueltas que el promedio; el riesgo está concentrado en cuatro puntos de marco y en la sección individual incompleta.",
+  "claves": [
+    "El problema y el SEPTE no se toquen",
+    "El riesgo mayor son los bloques faltantes de dos integrantes",
+    "Los puntos y las horas no pueden convivir",
+    "Falta el Sprint Goal y la Definition of Done"
+  ],
+  "secciones": [
+    {
+      "id": "estado-por-seccion",
+      "titulo": "Estado por sección",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "De las siete secciones del informe, tres están alineadas con la teoría y cuatro requieren intervención. La columna de riesgo indica cuántos puntos están expuestos si no se corrige."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["N.", "Sección", "Puntos", "Estado", "Riesgo", "Acción"],
+          "filas": [
+            ["1", "Documentación del proyecto", "3", "Alineado", "Bajo", "Solo ajustar el alcance y el objetivo general"],
+            ["2", "Planificación del Sprint", "4", "Parcial", "Alto", "Agregar Sprint Goal y separar puntos de horas"],
+            ["3", "Product Backlog", "2", "Parcial", "Medio", "Reescribir valor de negocio y unificar prioridad"],
+            ["4", "Incremento del producto", "2", "Alineado", "Bajo", "Agregar Definition of Done"],
+            ["5", "Retrospectiva", "2", "Alineado", "Bajo", "Corregir la frecuencia del Daily Scrum"],
+            ["6", "Evidencia individual", "5", "Incompleto", "Muy alto", "Escribir los bloques de los integrantes 2 y 3"],
+            ["7", "Participación del equipo", "2", "Parcial", "Medio", "Justificar los niveles de cumplimiento"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "El riesgo mayor no es conceptual",
+          "texto": "La sección 6 vale cinco puntos y solo tiene el bloque de un integrante de tres. Eso expone alrededor de 3,3 puntos, más que cualquier error de redacción. Antes de pulir el vocabulario de Scrum, hay que escribir esos dos bloques."
+        }
+      ]
+    },
+    {
+      "id": "fortalezas",
+      "titulo": "Lo que está bien y no debe modificarse",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Estas partes cumplen los criterios de la teoría y de la rúbrica. Al reescribir el documento conviene preservarlas tal como están, porque son las que sostienen el puntaje."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Elemento", "Por qué está bien"],
+          "filas": [
+            ["Descripción del problema", "Tiene los tres componentes exigidos: situación actual, afectados e impacto medible. No describe la falta de sistema, describe el daño que la situación produce."],
+            ["Alcance del Sprint 1", "Explicita lo que queda fuera y lo asigna al Sprint 2. Es el criterio que distingue una decisión de alcance de una lista de deseos."],
+            ["Análisis SEPTE", "Cubre las seis dimensiones con normativa peruana concreta (Ley 29733 y Kardex valorizado de SUNAT) y cada dimensión termina en una consecuencia para el proyecto."],
+            ["Formato de las cinco historias", "Usa correctamente Como / Quiero / Para, con rol, acción y beneficio distintos entre sí."],
+            ["Criterios de aceptación", "Son verificables, están en Dado / Cuando / Entonces e incluyen caminos de error. Es el punto que más pesa en la sección de cuatro puntos."],
+            ["Retrospectiva", "Responde las cuatro preguntas con hechos concretos y fechables, no con generalidades. Cumple el requisito de justificar con situaciones reales."],
+            ["Evidencia individual 6.5", "Describe el recorrido completo de una tarea por el tablero: planificación, ejecución, validación y cierre."],
+            ["Trazabilidad objetivos-historias", "Los cuatro objetivos específicos se corresponden con las cinco historias. Demuestra que el proyecto está pensado."]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "exito",
+          "titulo": "El rol doble no es un error",
+          "texto": "El Scrum Master también desarrolla backend. La Guía Scrum 2020 establece que si el Product Owner o el Scrum Master trabajan en elementos del Sprint Backlog, participan como Developers. La propuesta incluso lo aclara. No hay nada que corregir aquí."
+        }
+      ]
+    },
+    {
+      "id": "resumen-errores",
+      "titulo": "Los errores agrupados por gravedad",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los veinticuatro hallazgos se agrupan en cuatro niveles. El nivel no mide cuánto cuesta corregirlo, sino cuánto daño hace si queda en el documento final."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Nivel", "Qué incluye", "Cuántos", "Efecto si no se corrige"],
+          "filas": [
+            ["Bloqueante", "Errores de marco que un evaluador de Scrum detecta en la primera lectura", "4", "Compromete secciones completas"],
+            ["Inconsistencia", "Datos que se contradicen entre dos secciones del mismo documento", "6", "Delata falta de revisión"],
+            ["Riesgo de entrega", "Elementos faltantes o de andamiaje que delatan un borrador", "6", "Pérdida directa de puntaje"],
+            ["Detalle menor", "Imprecisiones de redacción o de vocabulario", "8", "Descuento en orden y claridad"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Sobre el orden de trabajo",
+          "texto": "No conviene corregir de arriba abajo según el número de sección. Primero se cierran los bloqueantes porque cambian el sentido de lo que está alrededor, después las inconsistencias, y los detalles al final."
+        }
+      ]
+    }
+  ]
+}

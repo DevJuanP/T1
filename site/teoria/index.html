@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Base teórica · Base teórica T1</title>
+<title>Base teórica · Base teórica</title>
 <meta name="description" content="Fundamentos para desarrollar la evaluación T1 de Proyecto Integrador">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -20,20 +20,24 @@
 <main id="contenido">
 <div class="portada-indice">
   <div class="contenedor">
-    <p class="etiqueta">Base teórica · Evaluación T1</p>
+    <p class="etiqueta">Base teórica </p>
     <h1>Base teórica</h1>
     <p class="bajada">Fundamentos para desarrollar la evaluación T1 de Proyecto Integrador</p>
     <dl class="datos">
-      <div><dt>Curso</dt><dd>Proyecto Integrador</dd></div>
-      <div><dt>Evaluación</dt><dd>T1 · Sprint 1</dd></div>
-      <div><dt>Sección</dt><dd>T6HO</dd></div>
-      <div><dt>Contenidos</dt><dd>10</dd></div>
-      <div><dt>Apartados</dt><dd>68</dd></div>
+<div><dt>Curso</dt><dd>Proyecto Integrador</dd></div>
+<div><dt>Evaluación</dt><dd>T1 · Sprint 1</dd></div>
+<div><dt>Sección</dt><dd>T6HO</dd></div>
+<div><dt>Contenidos</dt><dd>10</dd></div>
+<div><dt>Apartados</dt><dd>68</dd></div>
     </dl>
   </div>
 </div>
 
 <div class="contenedor indice-principal">
+  
+
+  
+
   <h2>Contenidos</h2>
   <p class="intro">Cada parte cubre un bloque conceptual del examen y se apoya en la Guía Scrum 2020 y el Manifiesto Ágil. El orden reproduce el de las decisiones reales de un Sprint: marco, proyecto, historias, estimación, artefactos y cierre.</p>
   <ul class="rejilla">
@@ -114,16 +118,19 @@
   </div>
 
   <div class="bloque-fuentes">
-    <h2>Fuentes</h2>
-    <ol>
-<li><a href="https://scrumguides.org/scrum-guide.html">Guía Scrum 2020</a> <span class="detalle">— Ken Schwaber y Jeff Sutherland, noviembre de 2020</span></li>
-<li><a href="https://agilemanifesto.org/iso/es/manifesto.html">Manifiesto por el Desarrollo Ágil de Software</a> <span class="detalle">— Diecisiete firmantes, febrero de 2001</span></li>
-<li><a href="https://agilemanifesto.org/iso/es/principles.html">Principios del Manifiesto Ágil</a> <span class="detalle">— Traducción oficial al español</span></li>
-<li><strong>Enunciado de la evaluación T1</strong> <span class="detalle">— PROYECTO INTEGRADOR-T1.docx, siete secciones y veinte puntos</span></li>
-    </ol>
+    <h2>Documentos relacionados</h2>
+    <ol><li><a href="../plan-mejora/index.html">Plan de mejora de la propuesta StockFlow</a> <span class="detalle">— 24 correcciones con texto de reemplazo</span></li></ol>
   </div>
 
-  <p style="margin-top:2rem;font-size:.85rem;color:var(--tinta-tenue)">
+  <div class="bloque-fuentes">
+    <h2>Fuentes</h2>
+    <ol><li><a href="https://scrumguides.org/scrum-guide.html">Guía Scrum 2020</a> <span class="detalle">— Ken Schwaber y Jeff Sutherland, noviembre de 2020</span></li>
+<li><a href="https://agilemanifesto.org/iso/es/manifesto.html">Manifiesto por el Desarrollo Ágil de Software</a> <span class="detalle">— Diecisiete firmantes, febrero de 2001</span></li>
+<li><a href="https://agilemanifesto.org/iso/es/principles.html">Principios del Manifiesto Ágil</a> <span class="detalle">— Traducción oficial al español</span></li>
+<li><strong>Enunciado de la evaluación T1</strong> <span class="detalle">— PROYECTO INTEGRADOR-T1.docx, siete secciones y veinte puntos</span></li></ol>
+  </div>
+
+  <p class="pie-indice">
     Última actualización de los datos: 18 de noviembre de 2026.
     <a href="completo.html">Ver todo el contenido en una sola página</a>.
   </p>
@@ -136,5 +143,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

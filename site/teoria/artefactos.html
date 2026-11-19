@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Artefactos Scrum · Base teórica T1</title>
+<title>Artefactos Scrum · Base teórica</title>
 <meta name="description" content="Los artefactos representan trabajo o valor y están diseñados para maximizar la transparencia. Cada uno tiene un compromiso asociado que le da sentido: Product Goal, Sprint Goal y Definition of Done. Esta sección cubre los tres artefactos y sirve de base para las secciones 3 y 4 del informe.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 05 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 05</p>
     <h1>Artefactos Scrum</h1>
     <p class="bajada">Product Backlog, Sprint Backlog e Incremento con sus compromisos</p>
     <p class="resumen">Los artefactos representan trabajo o valor y están diseñados para maximizar la transparencia. Cada uno tiene un compromiso asociado que le da sentido: Product Goal, Sprint Goal y Definition of Done. Esta sección cubre los tres artefactos y sirve de base para las secciones 3 y 4 del informe.</p>
@@ -289,24 +289,24 @@
 <h3 class="subtitulo-bloque">Cómo encajan todos los elementos del ejemplo</h3>
 <ol class="pasos">
 <li>
-<h4>El Product Goal fija el destino</h4>
-<p>Que el paciente reserve, reprograme y cancele sin llamar. Es la meta de todo el producto.</p>
+<p class="paso-titulo">El Product Goal fija el destino</p>
+<p class="paso-detalle">Que el paciente reserve, reprograme y cancele sin llamar. Es la meta de todo el producto.</p>
 </li>
 <li>
-<h4>El Product Backlog ordena el camino</h4>
-<p>Siete historias priorizadas. Las tres primeras construyen el flujo mínimo que hace posible la meta.</p>
+<p class="paso-titulo">El Product Backlog ordena el camino</p>
+<p class="paso-detalle">Siete historias priorizadas. Las tres primeras construyen el flujo mínimo que hace posible la meta.</p>
 </li>
 <li>
-<h4>El Sprint Goal acota el paso</h4>
-<p>De esas siete, este Sprint solo busca que un paciente nuevo llegue a confirmar una cita.</p>
+<p class="paso-titulo">El Sprint Goal acota el paso</p>
+<p class="paso-detalle">De esas siete, este Sprint solo busca que un paciente nuevo llegue a confirmar una cita.</p>
 </li>
 <li>
-<h4>El Sprint Backlog detalla el trabajo</h4>
-<p>Las tres historias se convierten en siete tareas de un día o menos, con responsable y estado.</p>
+<p class="paso-titulo">El Sprint Backlog detalla el trabajo</p>
+<p class="paso-detalle">Las tres historias se convierten en siete tareas de un día o menos, con responsable y estado.</p>
 </li>
 <li>
-<h4>El incremento demuestra el avance</h4>
-<p>Al cerrar el Sprint existe un flujo usable y evidenciado, no un conjunto de archivos a medio hacer.</p>
+<p class="paso-titulo">El incremento demuestra el avance</p>
+<p class="paso-detalle">Al cerrar el Sprint existe un flujo usable y evidenciado, no un conjunto de archivos a medio hacer.</p>
 </li>
 </ol>
 </section>
@@ -337,5 +337,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

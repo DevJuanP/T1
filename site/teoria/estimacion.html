@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Estimación · Base teórica T1</title>
+<title>Estimación · Base teórica</title>
 <meta name="description" content="Estimar es dimensionar el esfuerzo con la información disponible, no adivinar con precisión. Esta sección cubre la estimación relativa, las técnicas más usadas, la velocidad del equipo y las tareas como unidad de planificación diaria. Sustenta el apartado 6.4 de la evidencia individual.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 07 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 07</p>
     <h1>Estimación</h1>
     <p class="bajada">Puntos de historia, planning poker, velocidad y descomposición</p>
     <p class="resumen">Estimar es dimensionar el esfuerzo con la información disponible, no adivinar con precisión. Esta sección cubre la estimación relativa, las técnicas más usadas, la velocidad del equipo y las tareas como unidad de planificación diaria. Sustenta el apartado 6.4 de la evidencia individual.</p>
@@ -214,5 +214,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

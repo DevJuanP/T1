@@ -1,0 +1,144 @@
+{
+  "id": "hoja-ruta",
+  "orden": 7,
+  "titulo": "Hoja de ruta",
+  "subtitulo": "En qué orden aplicar las correcciones y cómo verificar el cierre",
+  "actualizado": "2026-11-18",
+  "resumen": "El orden importa: los bloqueantes cambian el sentido de lo que está alrededor, así que corregirlos al final obliga a rehacer trabajo. Esta hoja ordena las 24 correcciones en cuatro etapas y cierra con una lista de verificación para usar antes de exportar el Word.",
+  "claves": [
+    "Cuatro etapas en orden estricto",
+    "Ninguna corrección requiere rehacer otra sección entera",
+    "La verificación final toma quince minutos",
+    "El documento no se exporta hasta que todo esté tildado"
+  ],
+  "secciones": [
+    {
+      "id": "etapas",
+      "titulo": "Las cuatro etapas",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cada etapa se apoya en la anterior. No conviene adelantar correcciones de vocabulario mientras falta contenido, porque ese contenido nuevo puede cambiar el vocabulario que se estaba ajustando."
+        },
+        {
+          "tipo": "pasos",
+          "items": [
+            {
+              "titulo": "Etapa 1 · Cerrar el contenido faltante",
+              "detalle": "Escribir los bloques de los integrantes 2 y 3 en la sección 6 y borrar todas las instrucciones de andamiaje. Es lo que recupera más puntos y no depende de nada más. Correcciones: R1, R2 y la sección de evidencia faltante completa."
+            },
+            {
+              "titulo": "Etapa 2 · Corregir los cuatro bloqueantes",
+              "detalle": "Agregar el Sprint Goal y la Definition of Done, arreglar la frecuencia del Daily Scrum y eliminar la conversión de puntos a horas. Estas cuatro correcciones cambian afirmaciones que aparecen en varias secciones, por eso van antes que las inconsistencias. Correcciones: B1, B2, B3 y B4."
+            },
+            {
+              "titulo": "Etapa 3 · Resolver las inconsistencias",
+              "detalle": "Alinear la estimación de HU-03, reescribir la columna de valor de negocio, unificar la escala de prioridad y estado, completar el alcance, asignar un responsable por historia y ajustar los niveles de cumplimiento. Correcciones: I1 a I6."
+            },
+            {
+              "titulo": "Etapa 4 · Pulir los detalles",
+              "detalle": "Objetivo general, objetivos específicos, cifras, redacción de dos historias, vocabulario y síntesis del SEPTE. Se hacen al final porque son ajustes de texto que no cambian la estructura. Correcciones: D1 a D8, más R3, R4, R5 y R6."
+            }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Tiempo estimado por etapa",
+          "texto": "La etapa 1 es la más larga porque implica redactar, y la etapa 2 la más delicada porque exige coherencia. Las etapas 3 y 4 son de revisión y ajuste rápido. Si hay poco tiempo, la regla es clara: nunca sacrificar la etapa 1 ni la 2 para llegar a la 4."
+        }
+      ]
+    },
+    {
+      "id": "prioridad",
+      "titulo": "Si no alcanza el tiempo",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las correcciones no valen lo mismo. Esta tabla ordena por impacto en el puntaje, suponiendo que hay que elegir."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Prioridad", "Correcciones", "Por qué primero"],
+          "filas": [
+            ["Imprescindible", "Evidencia individual de los integrantes 2 y 3, R1 y R2", "Recupera alrededor de 3,3 puntos y elimina los rastros de borrador"],
+            ["Muy alta", "B2 Sprint Goal y B3 Definition of Done", "Sostienen las secciones de 4 y 2 puntos; sin ellas varias afirmaciones quedan sin respaldo"],
+            ["Alta", "B4 puntos y horas, B1 Daily Scrum", "Son los errores de marco más visibles en una lectura rápida"],
+            ["Media", "I1 a I6", "Eliminan contradicciones que hacen dudar del resto del documento"],
+            ["Baja", "D1 a D8 y R3 a R6", "Mejoran el orden y la claridad, que la rúbrica evalúa pero con menos peso"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Lo que nunca conviene dejar",
+          "texto": "Las instrucciones de andamiaje y los corchetes. Un informe con «pega aquí las capturas» o con «[Nombre Integrante 2]» se percibe como no entregado, sin importar la calidad del resto."
+        }
+      ]
+    },
+    {
+      "id": "verificacion",
+      "titulo": "Lista de verificación antes de exportar",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Recorrer esta lista completa toma unos quince minutos y evita los descuentos más evitables."
+        },
+        {
+          "tipo": "checklist",
+          "titulo": "Verificación final del documento",
+          "items": [
+            "No queda ninguna frase de instrucción ni guía de andamiaje en el documento.",
+            "No queda ningún corchete ni placeholder de nombre.",
+            "No queda ningún símbolo de dólar ni barra invertida de LaTeX.",
+            "Los tres nombres completos aparecen idénticos en la organización del equipo, el backlog, la evidencia individual y la tabla de participación.",
+            "La duración del Sprint está declarada con fechas y coincide con la asistencia reportada.",
+            "El Sprint Goal aparece declarado antes de las historias de la sección 2.",
+            "La Definition of Done aparece declarada en la sección 4 y se aplica al explicar el cierre de las historias.",
+            "Ninguna historia mezcla puntos de historia con horas en la sección 2.",
+            "La estimación de HU-03 dice lo mismo en la sección 2 y en la sección 6.4.",
+            "La columna de valor de negocio describe beneficios, no repite la prioridad.",
+            "La prioridad y el estado usan una sola escala en todo el documento.",
+            "El alcance del Sprint 1 nombra las cinco historias con su identificador.",
+            "Cada historia tiene un único responsable en la tabla del backlog.",
+            "Los tres bloques individuales usan principios ágiles distintos.",
+            "Los tres bloques individuales eligen historias distintas.",
+            "La sección 7 justifica los niveles de cumplimiento y no asigna 100% a todos sin explicación.",
+            "El análisis SEPTE cierra con una síntesis de oportunidades y riesgos.",
+            "Cada captura tiene pie de figura numerado y una frase que explica qué demuestra.",
+            "Las capturas son legibles y muestran el sistema con datos de prueba cargados.",
+            "El documento completo se lee sin encontrar dos cifras que se contradigan."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nota-final",
+      "titulo": "Sobre cómo se generó este plan",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Este plan se elaboró contrastando la propuesta contra el enunciado de la evaluación y contra la base teórica del proyecto. Las citas del documento original están reproducidas literalmente para que se puedan localizar con una búsqueda de texto dentro del Word."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Referencia", "Dónde encontrarla"],
+          "filas": [
+            ["Enunciado y rúbrica", "PROYECTO INTEGRADOR-T1.docx, secciones 1 a 7 y tabla de rúbrica"],
+            ["Guía Scrum 2020", "Base teórica, contenidos 03 Marco Scrum y 04 Eventos Scrum"],
+            ["Historias de usuario", "Base teórica, contenido 06 Historias de usuario"],
+            ["Estimación", "Base teórica, contenido 07 Estimación"],
+            ["Artefactos y Definition of Done", "Base teórica, contenido 05 Artefactos Scrum"],
+            ["Retrospectiva y evidencia individual", "Base teórica, contenidos 09 y 10"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Uso previsto",
+          "texto": "Este documento es una guía de corrección, no el informe final. Los textos de la columna «Cómo debe quedar» están redactados para copiar, pero conviene leerlos antes de pegarlos: cada integrante debe reconocer lo que hizo como propio."
+        }
+      ]
+    }
+  ]
+}

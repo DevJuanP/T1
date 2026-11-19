@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Documentación del proyecto · Base teórica T1</title>
+<title>Documentación del proyecto · Base teórica</title>
 <meta name="description" content="Todo proyecto se sostiene sobre una definición clara; esta sección traduce en teoría cada pieza que pide la sección 1 del informe. Nombre, problema, justificación, objetivos, alcance del Sprint 1 y análisis SEPTE, cada elemento con criterios de calidad y errores frecuentes.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 08 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 08</p>
     <h1>Documentación del proyecto</h1>
     <p class="bajada">Nombre, problema, justificación, objetivos, alcance y SEPTE</p>
     <p class="resumen">Todo proyecto se sostiene sobre una definición clara; esta sección traduce en teoría cada pieza que pide la sección 1 del informe. Nombre, problema, justificación, objetivos, alcance del Sprint 1 y análisis SEPTE, cada elemento con criterios de calidad y errores frecuentes.</p>
@@ -245,5 +245,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

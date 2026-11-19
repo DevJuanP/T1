@@ -1,0 +1,152 @@
+{
+  "id": "detalles",
+  "orden": 6,
+  "titulo": "Detalles menores",
+  "subtitulo": "Imprecisiones de redacción y vocabulario",
+  "actualizado": "2026-11-18",
+  "resumen": "Ninguno de estos ocho puntos hunde el informe por sí solo, pero juntos afectan la claridad y el orden, que la rúbrica evalúa de forma explícita. Se corrigen al final, cuando el contenido ya está cerrado.",
+  "claves": [
+    "Objetivo general sin medios ni funcionalidades",
+    "Cifras con origen declarado",
+    "Vocabulario Scrum correcto",
+    "Nombres unificados"
+  ],
+  "secciones": [
+    {
+      "id": "d1-objetivo",
+      "titulo": "D1 · El objetivo general mezcla el medio y las funcionalidades",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D1",
+          "gravedad": "Detalle",
+          "seccion": "1. Documentación del proyecto, Objetivo general",
+          "problema": "El objetivo general incluye el marco de trabajo como medio («bajo el marco de trabajo Scrum») y enumera funcionalidades. El objetivo debe describir el cambio que produce el proyecto, no la lista de lo que se va a construir ni la herramienta con la que se hará.",
+          "antes": "Desarrollar e implementar la primera versión funcional de una plataforma de gestión de inventarios bajo el marco de trabajo Scrum, que permita automatizar el registro de productos, el control de movimientos (entradas/salidas) y la consulta de existencias en tiempo real.",
+          "despues": "Digitalizar el control de inventarios de la empresa para que el personal de almacén registre y consulte las existencias en tiempo real, eliminando el desfase entre el stock físico y el registrado.",
+          "porque": "Un objetivo con medios y con funcionalidades deja de ser un objetivo y se convierte en un plan. Al centrarlo en el cambio de la realidad, se puede verificar su cumplimiento y se distingue del alcance, que es otra sección.",
+          "nota": "Scrum y las funcionalidades ya aparecen en el alcance y en las historias. No hay que repetirlos en el objetivo."
+        }
+      ]
+    },
+    {
+      "id": "d2-especificos",
+      "titulo": "D2 · Los objetivos específicos son entregables",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D2",
+          "gravedad": "Detalle",
+          "seccion": "1. Documentación del proyecto, Objetivos específicos",
+          "problema": "Los cuatro objetivos específicos empiezan con verbos de construcción («implementar», «desarrollar», «incorporar»), por lo que describen entregables y no resultados. Un objetivo específico debe expresar qué cambia en la operación del almacén.",
+          "antes": "Implementar un módulo de autenticación y control de acceso por roles...\nDesarrollar el catálogo maestro de productos...\nAutomatizar el registro de movimientos de entrada y salida (Kardex)...\nIncorporar un panel de búsqueda rápida y alertas visuales...",
+          "despues": "Garantizar que solo el personal autorizado acceda a la información del almacén según su perfil, dejando registro de quién consultó o modificó cada dato.\nEliminar la duplicidad de códigos de producto mediante un catálogo único con validación de códigos y umbrales de stock mínimo por artículo.\nMantener el saldo de existencias actualizado de forma automática con cada entrada o salida, conservando el historial trazable de movimientos.\nReducir el tiempo de localización de un producto en el almacén y anticipar los quiebres de stock mediante alertas de nivel crítico.",
+          "porque": "Los objetivos específicos son los que permiten medir el logro del proyecto. Si se redactan como entregables, al cierre solo se puede decir si algo se construyó, no si sirvió para algo.",
+          "nota": "Cada objetivo específico debe poder conectarse con al menos una historia del Sprint. Con esta redacción siguen siendo cuatro y siguen mapeando con las cinco historias."
+        }
+      ]
+    },
+    {
+      "id": "d3-cifra",
+      "titulo": "D3 · La cifra del 70% no tiene origen",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D3",
+          "gravedad": "Detalle",
+          "seccion": "1. Documentación del proyecto, Justificación",
+          "problema": "Se afirma que se reduce en más del 70% el tiempo de búsqueda y cuadre de mercadería, sin indicar de dónde sale la cifra ni cuál es el punto de partida. Una cifra sin línea base no se puede verificar y resta credibilidad a toda la justificación.",
+          "antes": "reduciendo en más del 70% el tiempo de búsqueda y cuadre de mercadería",
+          "despues": "reduciendo el tiempo de búsqueda y cuadre de mercadería, que hoy requiere recorrer los registros manuales uno por uno, a una consulta directa en el sistema",
+          "porque": "Es preferible una afirmación cualitativa verificable a una cifra inventada. Si se conserva el porcentaje, hay que explicar la medición: por ejemplo, que el cuadre semanal tomaba dos horas y con el sistema toma menos de veinte minutos.",
+          "nota": "Si pueden medirlo con el cliente, háganlo y escriban las dos cifras. Si no, quiten el porcentaje."
+        }
+      ]
+    },
+    {
+      "id": "d4-hu05",
+      "titulo": "D4 · HU-05 prescribe la solución",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D4",
+          "gravedad": "Detalle",
+          "seccion": "2. Planificación del Sprint, HU-05",
+          "problema": "La historia pide un «indicador de color» y una «etiqueta roja», que son decisiones de diseño y no la necesidad del usuario. Una historia debe expresar el problema a resolver y dejar el cómo a criterio del equipo.",
+          "antes": "Quiero visualizar una alerta o indicador de color en los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar desabastecimiento.",
+          "despues": "Quiero identificar de inmediato los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar el desabastecimiento.",
+          "porque": "Al quitar la prescripción visual, la historia sigue siendo verificable mediante sus criterios de aceptación, pero deja de atar al equipo a una solución concreta.",
+          "nota": "Los criterios de aceptación pueden seguir mencionando el resaltado visual, porque ahí sí se describe cómo se verifica el resultado."
+        }
+      ]
+    },
+    {
+      "id": "d5-hu01",
+      "titulo": "D5 · HU-01 mezcla dos roles",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D5",
+          "gravedad": "Detalle",
+          "seccion": "2. Planificación del Sprint, HU-01",
+          "problema": "La historia dice «como usuario del sistema (administrador o almacenero)», lo que deja dos roles en una sola historia sin diferenciar su comportamiento. La teoría pide un rol concreto y reconocible.",
+          "antes": "Como usuario del sistema (administrador o almacenero), quiero iniciar sesión mediante un usuario y contraseña validados, para acceder de forma segura a las funciones de inventario según mi perfil y proteger la información de la empresa.",
+          "despues": "Como integrante del personal de almacén, quiero iniciar sesión con mis credenciales y acceder únicamente a las funciones que corresponden a mi perfil, para proteger la información de la empresa y saber que mis operaciones quedan registradas a mi nombre.",
+          "porque": "Un rol genérico convierte la historia en un requisito funcional. Al nombrar al personal de almacén, el beneficio se vuelve concreto y el criterio de acceso por perfil queda justificado por la propia historia.",
+          "nota": "Si el administrador tiene comportamientos distintos, eso sería otra historia en un Sprint posterior, no un paréntesis dentro de esta."
+        }
+      ]
+    },
+    {
+      "id": "d6-criterios-scrum",
+      "titulo": "D6 · Se llama «criterios de Scrum» a cosas que no lo son",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D6",
+          "gravedad": "Detalle",
+          "seccion": "2. Justificación de la priorización",
+          "problema": "La propuesta afirma que las historias se priorizaron aplicando «dos criterios fundamentales de Scrum: Dependencia Técnica y Entrega de Valor Temprano (MVP)». Ninguno de los dos es un criterio de Scrum: la dependencia técnica es un criterio de ordenamiento y el MVP es terminología de Lean Startup, no de Scrum.",
+          "antes": "Estas cinco historias fueron priorizadas aplicando dos criterios fundamentales de Scrum: Dependencia Técnica y Entrega de Valor Temprano (MVP).",
+          "despues": "Estas cinco historias fueron priorizadas aplicando dos criterios: el valor de negocio para el almacén y la dependencia técnica entre historias. El primero determinó qué aporta más al proceso; el segundo obligó a resolver antes lo que habilita al resto.",
+          "porque": "Atribuir a Scrum conceptos que no le pertenecen es un error de vocabulario que un evaluador detecta con facilidad. Los criterios de priorización son decisiones del equipo, no preceptos del marco.",
+          "nota": "Si quieren mencionar el producto mínimo viable, escríbanlo como «producto mínimo viable» y preséntenlo como una decisión de alcance del equipo, no como un criterio de Scrum."
+        }
+      ]
+    },
+    {
+      "id": "d7-nombres",
+      "titulo": "D7 · El mismo integrante aparece con dos nombres",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D7",
+          "gravedad": "Detalle",
+          "seccion": "Organización del equipo, sección 3 y sección 7",
+          "problema": "El integrante 1 aparece como «Alonso» en la organización del equipo, «Alonso Gamarra (Backend/BD)» en el backlog y «José Alonso Gamarra Apaza» en la evidencia individual y en la tabla final. Tres formas distintas para la misma persona.",
+          "antes": "Integrante 1 (Tú - Alonso)\nAlonso Gamarra (Backend/BD)\nJosé Alonso Gamarra Apaza",
+          "despues": "José Alonso Gamarra Apaza, en las cuatro apariciones.",
+          "porque": "La rúbrica pide que los nombres coincidan entre carátula, backlog, evidencia individual y tabla de participación. La forma más segura es usar siempre el nombre completo, sin abreviar.",
+          "nota": "Aplica el mismo criterio a los otros dos integrantes cuando reemplaces los corchetes."
+        }
+      ]
+    },
+    {
+      "id": "d8-septe",
+      "titulo": "D8 · El SEPTE no cierra con una síntesis",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "D8",
+          "gravedad": "Detalle",
+          "seccion": "1. Documentación del proyecto, tras el análisis SEPTE",
+          "problema": "El análisis SEPTE enumera las seis dimensiones correctamente, pero termina sin indicar qué factores son los más determinantes ni qué decisión tomó el equipo a partir de ellos. Sin esa síntesis, el análisis parece un requisito cumplido y no una herramienta usada.",
+          "antes": "Ecológico: Reducción significativa del consumo de papel, talonarios físicos e impresiones innecesarias al migrar los partes de ingreso y salida a un entorno 100% digital.\n\n(Fin del análisis SEPTE)",
+          "despues": "Ecológico: Reducción significativa del consumo de papel, talonarios físicos e impresiones innecesarias al migrar los partes de ingreso y salida a un entorno 100% digital.\n\nSíntesis del análisis: los dos factores más determinantes para el proyecto son la resistencia inicial del personal operativo acostumbrado al papel y la exigencia de trazabilidad de existencias. El primero se atiende con interfaces simples que no requieran capacitación extensa; el segundo justifica que el registro de movimientos con usuario y fecha sea parte del Sprint 1 y no quede para después.",
+          "porque": "La síntesis es lo que demuestra que el análisis se usó para decidir. Convierte una lista de contexto en un insumo real de la planificación.",
+          "nota": "Basta con dos o tres líneas. No hace falta repetir nada del análisis anterior."
+        }
+      ]
+    }
+  ]
+}

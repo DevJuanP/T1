@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inconsistencias internas · Plan de mejora</title>
+<meta name="description" content="Estos seis hallazgos no son errores de concepto sino de coherencia. Su efecto es peor que un error técnico: hacen dudar de todo lo demás, porque sugieren que el documento no fue revisado de principio a fin.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Plan de mejora <span>· Propuesta StockFlow</span></a>
+    <span class="meta">24 correcciones</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Plan de mejora · Parte 03</p>
+    <h1>Inconsistencias internas</h1>
+    <p class="bajada">Datos que se contradicen entre dos secciones del mismo documento</p>
+    <p class="resumen">Estos seis hallazgos no son errores de concepto sino de coherencia. Su efecto es peor que un error técnico: hacen dudar de todo lo demás, porque sugieren que el documento no fue revisado de principio a fin.</p>
+    <ul class="claves"><li>HU-03 tiene dos estimaciones distintas</li>
+<li>El valor de negocio repite la prioridad</li>
+<li>La prioridad usa dos escalas</li>
+<li>El alcance omite la búsqueda y el filtrado</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#i1-hu03">I1 · La estimación de HU-03 se contradice</a></li>
+<li><a href="#i2-valor-negocio">I2 · El valor de negocio repite la prioridad</a></li>
+<li><a href="#i3-prioridad">I3 · La prioridad usa dos escalas distintas</a></li>
+<li><a href="#i4-alcance">I4 · El alcance omite una de las cinco historias</a></li>
+<li><a href="#i5-responsables">I5 · Dos responsables en una misma historia</a></li>
+<li><a href="#i6-cumplimiento">I6 · Los tres integrantes tienen 100%</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="i1-hu03">
+<h2><span class="num">01</span>I1 · La estimación de HU-03 se contradice</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I1</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">2. Planificación frente a 6.4 Estimación del Sprint</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>En la sección 2, HU-03 figura estimada en 10 horas. En la sección 6.4 se afirma que se estimó en 8 horas y que terminó tomando 10. Es la misma cifra contada de dos maneras incompatibles: en un lugar son la estimación y en el otro son el resultado real.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Sección 2: Prioridad: Alta | Estimación: 8 Story Points (10 horas)
+
+Sección 6.4: En la HU-03 estimamos inicialmente 8 horas, pero terminó tomando 10 horas.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Sección 2: Prioridad: Alta | Estimación: 8 puntos de historia | 8 horas estimadas
+
+Sección 6.4: En la HU-03 estimamos inicialmente 8 horas, pero terminó tomando 10 horas.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La reflexión de la sección 6.4 solo tiene valor si la estimación original queda registrada como tal. Al dejar 8 horas en la sección 2, la tabla del backlog y la autocrítica cuentan la misma historia en lugar de contradecirse.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si prefieres no incluir horas en la sección 2, entonces la frase de la sección 6.4 debe hablar de puntos: «estimamos 8 puntos y el trabajo real equivalió a 13». Lo que no puede pasar es que las dos secciones atribuyan un significado distinto a la misma cifra.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="i2-valor-negocio">
+<h2><span class="num">02</span>I2 · El valor de negocio repite la prioridad</h2>
+<p>La tabla del Product Backlog tiene una columna de valor de negocio que dice Alto o Medio. Eso no es valor: es la prioridad escrita dos veces. Si ambas columnas dicen lo mismo, una de las dos sobra y el enunciado pide las dos.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I2</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">3. Product Backlog, columna Valor de negocio</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El valor de negocio debe expresar el beneficio concreto que la historia aporta a la empresa o al usuario, no su nivel de prioridad. Además existe un caso que queda sin explicar: HU-05 tiene valor Alto pero prioridad Media, lo que a primera vista parece un error y solo se justifica si el beneficio está escrito.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Columna Valor de negocio:
+HU-01 Alto
+HU-02 Alto
+HU-03 Alto
+HU-04 Medio
+HU-05 Alto</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Columna Valor de negocio:
+HU-01: Protege la integridad de los registros del almacén y permite auditar quién hizo cada operación.
+HU-02: Elimina la duplicidad de códigos de producto, que es la causa principal del desfase entre stock físico y registrado.
+HU-03: Automatiza el Kardex y evita el despacho de mercadería inexistente.
+HU-04: Reduce de varios minutos a segundos la búsqueda de cualquier artículo del almacén.
+HU-05: Anticipa los quiebres de stock que detienen el despacho y obligan a compras de emergencia.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica pide una columna de valor de negocio diferenciada de la prioridad. Al expresarla como beneficio concreto, la tabla deja de tener información duplicada y queda justificado por qué una historia puede tener mucho valor y aun así no ser la más urgente.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Mantén las respuestas breves: una línea por historia. La tabla debe seguir siendo legible de un vistazo.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="i3-prioridad">
+<h2><span class="num">03</span>I3 · La prioridad usa dos escalas distintas</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I3</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">2. Planificación y 3. Product Backlog, columna Prioridad</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>En la sección 2 la prioridad se expresa como Alta o Media. En la tabla del backlog se escribe 1 (Alta), 2 (Alta), hasta 5 (Media), mezclando la posición en la lista con el nivel de prioridad. Son dos sistemas distintos para el mismo dato, y además el estado usa Completado, que no pertenece al vocabulario controlado que el propio proyecto definió.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Sección 2: Prioridad: Alta / Prioridad: Media
+
+Sección 3:  1 (Alta), 2 (Alta), 3 (Alta), 4 (Media), 5 (Media)
+Estado: Completado</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Sección 2: Prioridad: Alta / Prioridad: Media
+
+Sección 3: columna Prioridad con Alta, Alta, Alta, Media, Media
+Estado: Hecho</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un dato debe tener una sola representación en todo el documento. El orden de las filas ya comunica la posición, así que no hace falta numerarla dentro de la columna de prioridad. Y el estado debe usar el vocabulario controlado pendiente, en progreso o hecho.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si quieres conservar la numeración para mostrar el orden de atención, agrégala como una columna aparte llamada Orden, no dentro de la columna Prioridad.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="i4-alcance">
+<h2><span class="num">04</span>I4 · El alcance omite una de las cinco historias</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I4</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">1. Documentación del proyecto, Alcance del Sprint 1</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El alcance enumera el inicio de sesión, el catálogo de productos, el registro de movimientos, la actualización de stock y las alertas visuales. No menciona la búsqueda y el filtrado rápido, que sí figura como HU-04 en las secciones 2 y 3. El lector ve que el alcance declara cuatro historias y el Sprint tiene cinco.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>El Sprint 1 abarca el desarrollo del Producto Mínimo Viable (MVP) operativo, compuesto por: inicio de sesión de usuarios, mantenimiento básico (registro y listado) de productos, registro de entradas y salidas de inventario, actualización automática de stock y alertas visuales de stock bajo. (Quedan fuera de este Sprint la exportación avanzada a PDF/Excel, gestión multi-almacén compleja y módulos de facturación, los cuales pasarán al Sprint 2).</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>El Sprint 1 abarca el desarrollo del Producto Mínimo Viable operativo, compuesto por las cinco historias siguientes: inicio de sesión de usuarios con control de acceso por roles (HU-01), registro y listado del catálogo de productos con validación de códigos únicos (HU-02), registro de entradas y salidas de inventario con actualización automática del stock (HU-03), consulta y filtrado rápido del inventario (HU-04) y alertas visuales de stock bajo (HU-05). Quedan fuera de este Sprint la exportación avanzada a PDF y Excel, la gestión multi-almacén compleja y los módulos de facturación, que pasan al Sprint 2.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>El alcance y las historias deben decir exactamente lo mismo. Al nombrar las cinco con su identificador, se cierra la única grieta de trazabilidad que tenía la sección 1.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Aprovecha para escribir «Producto Mínimo Viable» en lugar de MVP si el resto del documento está en español, y para reemplazar las siglas sin desarrollar.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="i5-responsables">
+<h2><span class="num">05</span>I5 · Dos responsables en una misma historia</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I5</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">3. Product Backlog, columna Responsable</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Dos historias figuran con dos responsables cada una: HU-02 con el integrante de frontend y Alonso, y HU-05 con el integrante 2 y el 3. Un responsable compartido equivale a ningún responsable, y contradice la sección 7, donde se afirma que las responsabilidades se dividieron según las fortalezas técnicas de cada integrante.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>HU-02: [Integrante 3] (Frontend) / Alonso
+HU-05: [Integrante 2] (PO/QA) / [Integrante 3]</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>HU-02: [Nombre del Integrante 3] (Developer Frontend)
+HU-05: [Nombre del Integrante 3] (Developer Frontend)</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La columna Responsable indica quién lidera la historia y responde por ella. La colaboración existe igual y puede mencionarse en la evidencia individual, pero el tablero necesita una sola tarjeta con un solo dueño.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si HU-05 la trabajó principalmente el frontend con validación del Product Owner, deja al frontend como responsable y menciona la validación en la sección 7. Si la lideró el Product Owner, asígnala a él y deja al frontend como apoyo.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="i6-cumplimiento">
+<h2><span class="num">06</span>I6 · Los tres integrantes tienen 100%</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I6</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">7. Informe de participación del equipo</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Los tres integrantes registran 100% (5/5) de participación en el Daily Scrum y 100% (Alto) de nivel de cumplimiento. Un equipo en el que nadie faltó, nadie se retrasó y todos rinden exactamente igual no resulta creíble, y además la columna deja de aportar información porque no diferencia a nadie. Al mismo tiempo, el 5/5 confirma que solo hubo cinco sesiones, lo que contradice un Daily diario.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>José Alonso Gamarra Apaza | 100% (5/5) | 100% (Alto)
+[Nombre Integrante 2] | 100% (5/5) | 100% (Alto)
+[Nombre Integrante 3] | 100% (5/5) | 100% (Alto)</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>José Alonso Gamarra Apaza | 10 de 10 sesiones (100%) | Alto
+[Nombre Integrante 2] | 9 de 10 sesiones (90%) | Alto
+[Nombre Integrante 3] | 9 de 10 sesiones (90%) | Medio-alto</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La columna pide un nivel de cumplimiento, y un nivel solo tiene sentido si distingue. Un 90% con una justificación breve es más creíble y demuestra mejor el funcionamiento del equipo que un 100% uniforme.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Ajusta los números a la cantidad real de días laborables del Sprint y añade una frase por integrante explicando la ausencia. Si todos asistieron realmente a todas las sesiones, entonces cambia el denominador para que coincida con la duración real del Sprint.</p>
+</div>
+</div>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="bloqueantes.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Correcciones bloqueantes</span></a>
+<a href="evidencia-faltante.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Evidencia individual faltante</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Plan de mejora · T1 Proyecto Integrador · Noviembre 2026</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
+</body>
+</html>

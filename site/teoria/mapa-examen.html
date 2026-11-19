@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mapa de la evaluación · Base teórica T1</title>
+<title>Mapa de la evaluación · Base teórica</title>
 <meta name="description" content="Punto de partida: el logro de la evaluación, las siete secciones del informe con su puntaje y el enlace directo a la teoría que sustenta cada una.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 01 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 01</p>
     <h1>Mapa de la evaluación</h1>
     <p class="bajada">Qué se pide, cuánto vale y dónde está la teoría</p>
     <p class="resumen">Punto de partida: el logro de la evaluación, las siete secciones del informe con su puntaje y el enlace directo a la teoría que sustenta cada una.</p>
@@ -91,28 +91,28 @@
 <p>El orden siguiente reproduce el orden en que se toman las decisiones reales de un Sprint. Estudiar en ese orden evita tener que rehacer redacciones: primero el marco, después el problema, luego las historias, y solo entonces la estimación, el tablero y la retrospectiva.</p>
 <ol class="pasos">
 <li>
-<h4>Entender el marco</h4>
-<p>Fundamentos ágiles, Marco Scrum, Eventos y Artefactos. Sin esto, el vocabulario del informe queda suelto.</p>
+<p class="paso-titulo">Entender el marco</p>
+<p class="paso-detalle">Fundamentos ágiles, Marco Scrum, Eventos y Artefactos. Sin esto, el vocabulario del informe queda suelto.</p>
 </li>
 <li>
-<h4>Definir el proyecto</h4>
-<p>Documentación del proyecto: problema, justificación, objetivos, alcance y SEPTE. De aquí salen los insumos de las historias.</p>
+<p class="paso-titulo">Definir el proyecto</p>
+<p class="paso-detalle">Documentación del proyecto: problema, justificación, objetivos, alcance y SEPTE. De aquí salen los insumos de las historias.</p>
 </li>
 <li>
-<h4>Escribir las historias</h4>
-<p>Historias de usuario, criterios de aceptación y priorización. Es la sección de mayor puntaje del trabajo grupal.</p>
+<p class="paso-titulo">Escribir las historias</p>
+<p class="paso-detalle">Historias de usuario, criterios de aceptación y priorización. Es la sección de mayor puntaje del trabajo grupal.</p>
 </li>
 <li>
-<h4>Estimar</h4>
-<p>Estimación relativa, planning poker, velocidad y descomposición en tareas.</p>
+<p class="paso-titulo">Estimar</p>
+<p class="paso-detalle">Estimación relativa, planning poker, velocidad y descomposición en tareas.</p>
 </li>
 <li>
-<h4>Construir y evidenciar</h4>
-<p>Artefactos (backlog e incremento) y herramientas colaborativas (tablero, seguimiento).</p>
+<p class="paso-titulo">Construir y evidenciar</p>
+<p class="paso-detalle">Artefactos (backlog e incremento) y herramientas colaborativas (tablero, seguimiento).</p>
 </li>
 <li>
-<h4>Cerrar el ciclo</h4>
-<p>Retrospectiva con acciones concretas y evidencia individual de cada integrante.</p>
+<p class="paso-titulo">Cerrar el ciclo</p>
+<p class="paso-detalle">Retrospectiva con acciones concretas y evidencia individual de cada integrante.</p>
 </li>
 </ol>
 </section>
@@ -152,5 +152,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

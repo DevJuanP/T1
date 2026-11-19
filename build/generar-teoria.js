@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 /**
- * Generador de la base teórica.
+ * Generador del sitio.
  *
- * Lee data/teoria/*.json y produce site/teoria/*.html.
- * El JSON es la fuente de verdad: aquí no se escribe contenido de negocio,
+ * Lee cada colección de data/ y produce su carpeta en site/.
+ * El JSON es la fuente de verdad: aquí no se escribe contenido,
  * solo la estructura de presentación.
+ *
+ * Colecciones actuales:
+ *   data/teoria      -> site/teoria       (base teórica)
+ *   data/plan-mejora -> site/plan-mejora  (plan de corrección de la propuesta)
  *
  * Uso:  node build/generar-teoria.js
  */
@@ -13,8 +17,33 @@ const fs = require("fs");
 const path = require("path");
 
 const RAIZ = path.resolve(__dirname, "..");
-const DIR_DATOS = path.join(RAIZ, "data", "teoria");
-const DIR_SALIDA = path.join(RAIZ, "site", "teoria");
+
+const COLECCIONES = [
+  {
+    clave: "teoria",
+    datos: path.join(RAIZ, "data", "teoria"),
+    salida: path.join(RAIZ, "site", "teoria"),
+    marca: "Base teórica",
+    marcaExtra: "Proyecto Integrador T1",
+    meta: "Scrum · Guía 2020",
+    etiquetaParte: "Base teórica",
+    pie: "Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO",
+    introIndice:
+      "Cada parte cubre un bloque conceptual del examen y se apoya en la Guía Scrum 2020 y el Manifiesto Ágil. El orden reproduce el de las decisiones reales de un Sprint: marco, proyecto, historias, estimación, artefactos y cierre.",
+  },
+  {
+    clave: "plan-mejora",
+    datos: path.join(RAIZ, "data", "plan-mejora"),
+    salida: path.join(RAIZ, "site", "plan-mejora"),
+    marca: "Plan de mejora",
+    marcaExtra: "Propuesta StockFlow",
+    meta: "24 correcciones",
+    etiquetaParte: "Plan de mejora",
+    pie: "Plan de mejora · T1 Proyecto Integrador · Noviembre 2026",
+    introIndice:
+      "Las 24 correcciones están agrupadas por gravedad y ordenadas para aplicarse en secuencia. Cada una trae el texto original y el texto de reemplazo, listo para copiar en el Word.",
+  },
+];
 
 /* ------------------------------------------------------------------ */
 /* Utilidades                                                          */
@@ -38,22 +67,22 @@ function fechaLarga(iso) {
   return `${Number(m[3])} de ${MESES[Number(m[2]) - 1]} de ${m[1]}`;
 }
 
-function leerDocumentos() {
+function leerDocumentos(dirDatos) {
   const nombres = fs
-    .readdirSync(DIR_DATOS)
+    .readdirSync(dirDatos)
     .filter((n) => n.endsWith(".json") && !n.startsWith("_"));
 
   const docs = nombres.map((n) =>
-    JSON.parse(fs.readFileSync(path.join(DIR_DATOS, n), "utf8"))
+    JSON.parse(fs.readFileSync(path.join(dirDatos, n), "utf8"))
   );
 
   docs.sort((a, b) => (a.orden || 99) - (b.orden || 99));
   return docs;
 }
 
-function leerIndice() {
+function leerIndice(dirDatos) {
   return JSON.parse(
-    fs.readFileSync(path.join(DIR_DATOS, "_indice.json"), "utf8")
+    fs.readFileSync(path.join(dirDatos, "_indice.json"), "utf8")
   );
 }
 
@@ -145,8 +174,8 @@ function bloquePasos(b) {
   const items = b.items
     .map(
       (p) => `<li>
-<h4>${esc(p.titulo)}</h4>
-<p>${esc(p.detalle)}</p>
+<p class="paso-titulo">${esc(p.titulo)}</p>
+<p class="paso-detalle">${esc(p.detalle)}</p>
 </li>`
     )
     .join("\n");
@@ -166,6 +195,10 @@ function bloqueFormula(b) {
   return `<div class="formula">
 ${b.lineas.map((l) => `<p>${esc(l)}</p>`).join("\n")}
 </div>`;
+}
+
+function bloqueTextoLibre(b) {
+  return b.parrafos.map((p) => `<p>${esc(p)}</p>`).join("\n");
 }
 
 const CLAVES_ERROR = [
@@ -198,6 +231,46 @@ ${e.nota ? `<p class="nota">${esc(e.nota)}</p>` : ""}
 </div>`;
 }
 
+/** Bloque de corrección: comparación entre el texto actual y el reemplazo. */
+function bloqueCorreccion(b) {
+  const gravedadClase = {
+    Bloqueante: "grave",
+    Inconsistencia: "media",
+    "Riesgo de entrega": "media",
+    Detalle: "leve",
+  }[b.gravedad] || "leve";
+
+  return `<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">${esc(b.codigo || "")}</span>
+<span class="gravedad ${gravedadClase}">${esc(b.gravedad || "")}</span>
+<span class="ubicacion">${esc(b.seccion || "")}</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>${esc(b.problema)}</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>${esc(b.antes)}</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>${esc(b.despues)}</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>${esc(b.porque)}</p>
+
+${b.nota ? `<p class="correccion-nota"><strong>Nota:</strong> ${esc(b.nota)}</p>` : ""}
+</div>
+</div>`;
+}
+
 const RENDER = {
   parrafo: (b) => `<p>${esc(b.texto)}</p>`,
   subtitulo: (b) => `<h3 class="subtitulo-bloque">${esc(b.texto)}</h3>`,
@@ -211,6 +284,8 @@ const RENDER = {
   checklist: bloqueChecklist,
   formula: bloqueFormula,
   ejemplos: bloqueEjemplos,
+  correccion: bloqueCorreccion,
+  "texto-libre": bloqueTextoLibre,
 };
 
 function renderBloque(b, docs) {
@@ -226,39 +301,51 @@ function renderBloque(b, docs) {
 /* Plantilla                                                           */
 /* ------------------------------------------------------------------ */
 
-function plantilla({ titulo, descripcion, cuerpo, docs, docActual, raiz }) {
-  const pos = docs.findIndex((d) => d.id === docActual);
-  const previo = pos > 0 ? docs[pos - 1] : null;
-  const siguiente = pos >= 0 && pos < docs.length - 1 ? docs[pos + 1] : null;
-
-  const nav = [];
-  if (previo) {
-    nav.push(
-      `<a href="${previo.id}.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">${esc(previo.titulo)}</span></a>`
-    );
+const SCRIPT_COPIAR = `<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
   }
-  if (siguiente) {
-    nav.push(
-      `<a href="${siguiente.id}.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">${esc(siguiente.titulo)}</span></a>`
-    );
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
   }
+});
+</script>`;
 
+function plantilla({ titulo, descripcion, cuerpo, col }) {
   return `<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(titulo)} · Base teórica T1</title>
+<title>${esc(titulo)} · ${esc(col.marca)}</title>
 <meta name="description" content="${esc(descripcion)}">
-<link rel="stylesheet" href="${raiz}assets/estilos.css">
+<link rel="stylesheet" href="../assets/estilos.css">
 </head>
 <body>
 <a class="salto" href="#contenido">Saltar al contenido</a>
 
 <header class="cabecera">
   <div class="contenedor">
-    <a class="marca" href="index.html">Base teórica <span>· Proyecto Integrador T1</span></a>
-    <span class="meta">Scrum · Guía 2020</span>
+    <a class="marca" href="index.html">${esc(col.marca)} <span>· ${esc(col.marcaExtra)}</span></a>
+    <span class="meta">${esc(col.meta)}</span>
   </div>
 </header>
 
@@ -268,10 +355,11 @@ ${cuerpo}
 
 <footer class="pie">
   <div class="contenedor">
-    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <span>${esc(col.pie)}</span>
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+${SCRIPT_COPIAR}
 </body>
 </html>
 `;
@@ -281,12 +369,9 @@ ${cuerpo}
 /* Página de documento                                                 */
 /* ------------------------------------------------------------------ */
 
-function renderDocumento(doc, docs, indice) {
+function renderDocumento(doc, docs, col) {
   const enlaces = doc.secciones
-    .map(
-      (s) =>
-        `<li><a href="#${s.id}">${esc(s.titulo)}</a></li>`
-    )
+    .map((s) => `<li><a href="#${s.id}">${esc(s.titulo)}</a></li>`)
     .join("\n");
 
   const cuerpoSecciones = doc.secciones
@@ -298,9 +383,7 @@ ${s.cuerpo.map((b) => renderBloque(b, docs)).join("\n")}
     )
     .join("\n");
 
-  const claves = (doc.claves || [])
-    .map((c) => `<li>${esc(c)}</li>`)
-    .join("\n");
+  const claves = (doc.claves || []).map((c) => `<li>${esc(c)}</li>`).join("\n");
 
   const pos = docs.findIndex((d) => d.id === doc.id);
   const previo = pos > 0 ? docs[pos - 1] : null;
@@ -314,7 +397,7 @@ ${siguiente ? `<a href="${siguiente.id}.html" class="siguiente"><span class="dir
   const cuerpo = `<article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">${esc(doc.orden ? `Parte ${String(doc.orden).padStart(2, "0")}` : "")} · Base teórica</p>
+    <p class="etiqueta">${esc(col.etiquetaParte)} · Parte ${String(doc.orden || 1).padStart(2, "0")}</p>
     <h1>${esc(doc.titulo)}</h1>
     <p class="bajada">${esc(doc.subtitulo || "")}</p>
     <p class="resumen">${esc(doc.resumen || "")}</p>
@@ -343,9 +426,7 @@ ${paginacion}
     titulo: doc.titulo,
     descripcion: doc.resumen || doc.subtitulo || doc.titulo,
     cuerpo,
-    docs,
-    docActual: doc.id,
-    raiz: "../",
+    col,
   });
 }
 
@@ -353,7 +434,7 @@ ${paginacion}
 /* Índice general                                                      */
 /* ------------------------------------------------------------------ */
 
-function renderIndex(docs, indice) {
+function renderIndex(docs, indice, col) {
   const totalApartados = docs.reduce((n, d) => n + d.secciones.length, 0);
   const actualizado = docs
     .map((d) => d.actualizado)
@@ -373,6 +454,28 @@ function renderIndex(docs, indice) {
     )
     .join("\n");
 
+  const definiciones = (indice.estadisticas || [])
+    .map((e) => `<div><dt>${esc(e.etiqueta)}</dt><dd>${esc(e.valor)}</dd></div>`)
+    .join("\n");
+
+  const datosBasicos = [
+    { etiqueta: "Curso", valor: indice.curso ? "Proyecto Integrador" : null },
+    { etiqueta: "Evaluación", valor: indice.evaluacion ? "T1 · Sprint 1" : null },
+    { etiqueta: "Sección", valor: indice.seccion ? "T6HO" : null },
+  ].filter((d) => d.valor);
+
+  const datos = definiciones || datosBasicos
+    .concat([
+      { etiqueta: "Contenidos", valor: String(docs.length) },
+      { etiqueta: "Apartados", valor: String(totalApartados) },
+    ])
+    .map((e) => `<div><dt>${esc(e.etiqueta)}</dt><dd>${esc(e.valor)}</dd></div>`)
+    .join("\n");
+
+  const instrucciones = (indice.instrucciones || [])
+    .map((i) => `<li>${esc(i)}</li>`)
+    .join("\n");
+
   const fuentes = (indice.fuentes || [])
     .map((f) => {
       const detalle = f.detalle ? ` <span class="detalle">— ${esc(f.detalle)}</span>` : "";
@@ -383,24 +486,33 @@ function renderIndex(docs, indice) {
     })
     .join("\n");
 
+  const relacionados = (indice.enlaces || [])
+    .map(
+      (e) => `<li><a href="${esc(e.url)}">${esc(e.titulo)}</a>${e.detalle ? ` <span class="detalle">— ${esc(e.detalle)}</span>` : ""}</li>`
+    )
+    .join("\n");
+
   const cuerpo = `<div class="portada-indice">
   <div class="contenedor">
-    <p class="etiqueta">Base teórica · Evaluación T1</p>
+    <p class="etiqueta">${esc(col.etiquetaParte)} ${indice.veredicto ? "· " + esc(indice.veredicto) : ""}</p>
     <h1>${esc(indice.titulo)}</h1>
     <p class="bajada">${esc(indice.subtitulo)}</p>
     <dl class="datos">
-      <div><dt>Curso</dt><dd>Proyecto Integrador</dd></div>
-      <div><dt>Evaluación</dt><dd>T1 · Sprint 1</dd></div>
-      <div><dt>Sección</dt><dd>T6HO</dd></div>
-      <div><dt>Contenidos</dt><dd>${docs.length}</dd></div>
-      <div><dt>Apartados</dt><dd>${totalApartados}</dd></div>
+${datos}
     </dl>
   </div>
 </div>
 
 <div class="contenedor indice-principal">
+  ${indice.resumen ? `<p class="intro">${esc(indice.resumen)}</p>` : ""}
+
+  ${instrucciones ? `<div class="bloque-instrucciones">
+    <h2>Cómo usar este documento</h2>
+    <ol>${instrucciones}</ol>
+  </div>` : ""}
+
   <h2>Contenidos</h2>
-  <p class="intro">Cada parte cubre un bloque conceptual del examen y se apoya en la Guía Scrum 2020 y el Manifiesto Ágil. El orden reproduce el de las decisiones reales de un Sprint: marco, proyecto, historias, estimación, artefactos y cierre.</p>
+  <p class="intro">${esc(col.introIndice)}</p>
   <ul class="rejilla">
 ${tarjetas}
   </ul>
@@ -409,14 +521,17 @@ ${tarjetas}
     <p>${esc(indice.nota || "")}</p>
   </div>
 
-  <div class="bloque-fuentes">
-    <h2>Fuentes</h2>
-    <ol>
-${fuentes}
-    </ol>
-  </div>
+  ${relacionados ? `<div class="bloque-fuentes">
+    <h2>Documentos relacionados</h2>
+    <ol>${relacionados}</ol>
+  </div>` : ""}
 
-  <p style="margin-top:2rem;font-size:.85rem;color:var(--tinta-tenue)">
+  ${fuentes ? `<div class="bloque-fuentes">
+    <h2>Fuentes</h2>
+    <ol>${fuentes}</ol>
+  </div>` : ""}
+
+  <p class="pie-indice">
     Última actualización de los datos: ${esc(fechaLarga(actualizado))}.
     <a href="completo.html">Ver todo el contenido en una sola página</a>.
   </p>
@@ -426,9 +541,7 @@ ${fuentes}
     titulo: indice.titulo,
     descripcion: indice.subtitulo,
     cuerpo,
-    docs,
-    docActual: null,
-    raiz: "../",
+    col,
   });
 }
 
@@ -436,11 +549,9 @@ ${fuentes}
 /* Vista completa                                                      */
 /* ------------------------------------------------------------------ */
 
-function renderCompleto(docs, indice) {
+function renderCompleto(docs, indice, col) {
   const indiceSuperior = docs
-    .map(
-      (d) => `<li><a href="#${d.id}">${esc(d.titulo)}</a></li>`
-    )
+    .map((d) => `<li><a href="#${d.id}">${esc(d.titulo)}</a></li>`)
     .join("\n");
 
   const cuerpos = docs
@@ -464,7 +575,7 @@ ${s.cuerpo.map((b) => renderBloque(b, docs)).join("\n")}
 
   const cuerpo = `<div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Base teórica · Vista completa</p>
+    <p class="etiqueta">${esc(col.etiquetaParte)} · Vista completa</p>
     <h1>Todo el contenido en una página</h1>
     <p class="bajada">Versión lineal de los ${docs.length} contenidos, pensada para lectura continua e impresión.</p>
   </div>
@@ -489,9 +600,7 @@ ${cuerpos}
     titulo: "Todo el contenido",
     descripcion: indice.subtitulo,
     cuerpo,
-    docs,
-    docActual: null,
-    raiz: "../",
+    col,
   });
 }
 
@@ -500,35 +609,44 @@ ${cuerpos}
 /* ------------------------------------------------------------------ */
 
 function main() {
-  const docs = leerDocumentos();
-  const indice = leerIndice();
+  for (const col of COLECCIONES) {
+    if (!fs.existsSync(col.datos)) {
+      console.warn(`  se omite ${col.clave}: no existe ${col.datos}`);
+      continue;
+    }
 
-  fs.mkdirSync(DIR_SALIDA, { recursive: true });
+    const docs = leerDocumentos(col.datos);
+    const indice = leerIndice(col.datos);
 
-  for (const doc of docs) {
-    const html = renderDocumento(doc, docs, indice);
-    fs.writeFileSync(path.join(DIR_SALIDA, `${doc.id}.html`), html, "utf8");
-    console.log(`  ${doc.id}.html  (${doc.secciones.length} apartados)`);
+    fs.mkdirSync(col.salida, { recursive: true });
+
+    console.log(`\n${col.clave}/`);
+
+    for (const doc of docs) {
+      const html = renderDocumento(doc, docs, col);
+      fs.writeFileSync(path.join(col.salida, `${doc.id}.html`), html, "utf8");
+      console.log(`  ${doc.id}.html  (${doc.secciones.length} apartados)`);
+    }
+
+    fs.writeFileSync(
+      path.join(col.salida, "index.html"),
+      renderIndex(docs, indice, col),
+      "utf8"
+    );
+    console.log("  index.html");
+
+    fs.writeFileSync(
+      path.join(col.salida, "completo.html"),
+      renderCompleto(docs, indice, col),
+      "utf8"
+    );
+    console.log("  completo.html");
+
+    const total = docs.reduce((n, d) => n + d.secciones.length, 0);
+    console.log(`  ${docs.length} contenidos, ${total} apartados`);
   }
 
-  fs.writeFileSync(
-    path.join(DIR_SALIDA, "index.html"),
-    renderIndex(docs, indice),
-    "utf8"
-  );
-  console.log("  index.html");
-
-  fs.writeFileSync(
-    path.join(DIR_SALIDA, "completo.html"),
-    renderCompleto(docs, indice),
-    "utf8"
-  );
-  console.log("  completo.html");
-
-  const total = docs.reduce((n, d) => n + d.secciones.length, 0);
-  console.log(
-    `\nListo: ${docs.length} contenidos, ${total} apartados en site/teoria/`
-  );
+  console.log("\nListo.");
 }
 
 main();

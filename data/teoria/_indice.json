@@ -27,5 +27,12 @@
       "detalle": "PROYECTO INTEGRADOR-T1.docx, siete secciones y veinte puntos"
     }
   ],
+  "enlaces": [
+    {
+      "titulo": "Plan de mejora de la propuesta StockFlow",
+      "detalle": "24 correcciones con texto de reemplazo",
+      "url": "../plan-mejora/index.html"
+    }
+  ],
   "nota": "Esta base es únicamente teórica. No contiene el contenido del proyecto del equipo: sirve para fundamentar cada sección del informe con conceptos correctos y vocabulario preciso."
 }

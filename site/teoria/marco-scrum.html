@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Marco Scrum · Base teórica T1</title>
+<title>Marco Scrum · Base teórica</title>
 <meta name="description" content="Scrum es un marco liviano que ayuda a las personas, los equipos y las organizaciones a generar valor mediante soluciones adaptativas para problemas complejos. Esta sección cubre su definición formal, los tres pilares del empirismo, los cinco valores y las tres responsabilidades del equipo.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 03 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 03</p>
     <h1>Marco Scrum</h1>
     <p class="bajada">Definición, teoría, valores y el equipo Scrum</p>
     <p class="resumen">Scrum es un marco liviano que ayuda a las personas, los equipos y las organizaciones a generar valor mediante soluciones adaptativas para problemas complejos. Esta sección cubre su definición formal, los tres pilares del empirismo, los cinco valores y las tres responsabilidades del equipo.</p>
@@ -223,5 +223,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,215 @@
+{
+  "id": "evidencia-faltante",
+  "orden": 4,
+  "titulo": "Evidencia individual faltante",
+  "subtitulo": "Los bloques de los integrantes 2 y 3, redactados completos",
+  "actualizado": "2026-11-18",
+  "resumen": "La sección 6 vale cinco puntos y solo contiene el bloque del integrante 1. Esto expone alrededor de 3,3 puntos, más que cualquier error de redacción del documento. Aquí están los dos bloques restantes redactados en extenso, con los cinco apartados cada uno, listos para personalizar con los nombres reales.",
+  "claves": [
+    "Cada integrante necesita sus cinco apartados 6.1 a 6.5",
+    "Los principios deben ser distintos entre integrantes",
+    "Cada historia elegida debe ser distinta",
+    "La dificultad de estimación debe ser propia, no compartida"
+  ],
+  "secciones": [
+    {
+      "id": "como-usar",
+      "titulo": "Cómo usar estos bloques",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los dos textos siguientes están redactados para ser copiados y luego personalizados. No son plantillas vacías: ya contienen contenido coherente con lo que la propuesta dice que hizo cada integrante. Lo que falta es reemplazar los nombres y ajustar los detalles que solo ellos conocen."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Qué reemplazar", "Por qué importa"],
+          "filas": [
+            ["Los nombres entre corchetes", "La rúbrica exige que coincidan con la carátula, el backlog y la tabla final"],
+            ["Las fechas o cantidades que no recuerden", "Un dato inventado que no cuadra con el tablero es peor que un dato vago"],
+            ["El principio ágil elegido", "Debe ser coherente con lo que realmente hizo esa persona"],
+            ["La historia seleccionada", "Cada integrante debe elegir una distinta para que la evidencia no se repita"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "El error que hay que evitar",
+          "texto": "Si los tres bloques describen la misma dificultad de estimación o los mismos principios ágiles, el evaluador concluye que se copiaron. Los principios ya están repartidos entre los tres integrantes en este documento: no los cambien por los mismos."
+        }
+      ]
+    },
+    {
+      "id": "integrante-2",
+      "titulo": "Bloque del Integrante 2 · Product Owner y QA",
+      "cuerpo": [
+        {
+          "tipo": "subtitulo",
+          "texto": "6.1 Aplicación del enfoque ágil"
+        },
+        {
+          "tipo": "texto-libre",
+          "parrafos": [
+            "Scrum aportó al proyecto una estructura de decisión que evitó construir funcionalidades que nadie había pedido. Como Product Owner, el marco me obligó a mantener un Product Backlog ordenado y a justificar cada prioridad frente al equipo, en lugar de trasladar pedidos sin criterio. El resultado fue que al cierre del Sprint 1 existía un núcleo de inventario operativo y no un conjunto de módulos a medio terminar.",
+            "El primer principio del Manifiesto Ágil que aplicamos fue «nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor». Lo aplicamos al reducir el alcance del Sprint a las cinco historias que resolvían el control básico del almacén, dejando la exportación a PDF y Excel y la facturación para el Sprint 2. Esa decisión permitió que el almacenero pudiera usar el sistema al final del Sprint, en lugar de esperar a tener el producto completo.",
+            "El segundo principio fue «los responsables de negocio y los desarrolladores trabajamos juntos de forma cotidiana durante todo el proyecto». En la práctica, esto significó que revisé los criterios de aceptación con el equipo antes de que empezaran a programar, y no después de recibir el entregable. La consecuencia concreta fue que ninguna historia volvió de revisión por un criterio mal interpretado: las diferencias se resolvieron en la conversación previa y no en el retrabajo."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.2 Rol desempeñado"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Rol asumido: Product Owner, con apoyo en las pruebas funcionales del incremento."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Responsabilidades: ordenar el Product Backlog según el valor de negocio, redactar las cinco historias de usuario con sus criterios de aceptación, comunicar el Sprint Goal al equipo y validar el incremento antes de considerarlo terminado.",
+            "Actividades desarrolladas: redacté las cinco historias y sus criterios de aceptación antes de la Sprint Planning; definí el orden de prioridad a partir de la dependencia técnica y del valor para el almacén; verifiqué los criterios de aceptación de HU-01 y HU-05 contra el sistema funcionando; y mantuve el backlog actualizado durante el Sprint, registrando los pedidos nuevos que surgieron en lugar de incorporarlos al alcance en curso.",
+            "Aporte al Sprint: la priorización permitió que el flujo completo de inventario estuviera operativo al cierre, y la definición previa de los criterios de aceptación evitó el retrabajo por interpretaciones distintas entre frontend y backend."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.3 Historia de Usuario"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Historia seleccionada: HU-05, Alertas visuales de stock mínimo."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Funcionalidad y beneficio: la historia permite que el sistema marque con una etiqueta de advertencia todo producto cuyo stock actual sea igual o inferior al mínimo configurado. El beneficio para el usuario es que el supervisor deja de revisar el listado completo para descubrir qué falta reponer: la alerta aparece en la misma vista donde consulta el inventario, de modo que la decisión de compra llega antes de que el producto se agote y detenga el despacho."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Participación: redacté los dos criterios de aceptación de la historia, uno para el caso en que el stock cae por debajo del mínimo y otro para cuando una entrada lo devuelve a un nivel normal. Además definí que el umbral se compara con el stock mínimo configurado por producto y no con un valor fijo general, porque cada artículo tiene una rotación distinta. Finalmente verifiqué ambos criterios en el sistema con datos de prueba antes de aprobar el paso de la tarjeta a terminado."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.4 Estimación del Sprint"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Dificultad: la historia que más me costó estimar fue HU-05. El equipo discutió si la alerta era un cálculo que debía ejecutarse cada vez que se consultaba el listado o un valor que debía guardarse actualizado en la tabla de productos. Las dos opciones parecían razonables y no supimos cuál implicaba menos trabajo, porque una afectaba el rendimiento de la consulta y la otra obligaba a recalcular en cada movimiento. Estimamos cinco puntos con base en la opción más simple, pero la discusión consumió una parte de la Planning que no habíamos previsto."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Mejora para el Sprint 2: para las historias donde el equipo no se pone de acuerdo sobre el enfoque técnico, haremos una prueba corta de dos horas antes de estimar, de modo que la decisión se tome con evidencia y no con opinión. Además, incorporaré en la Planning una revisión explícita de los supuestos técnicos de cada historia, porque en este Sprint la discusión apareció durante la estimación y no antes."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.5 Seguimiento del trabajo"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Uso de la herramienta: gestioné el seguimiento con Trello. El tablero tenía las columnas Product Backlog, Sprint 1 To Do, In Progress, Testing y Done. Mi función principal en el tablero no era mover tarjetas de desarrollo sino mantener la columna Testing con las tarjetas que esperaban validación, revisar los checklists de criterios de aceptación y aprobar o devolver cada historia con un comentario que explicara qué faltaba."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Gestión de una tarea específica: la tarea «Verificar la validación de stock insuficiente en salidas» se creó en la Sprint Planning dentro de la tarjeta de HU-03. La tomé cuando el desarrollador movió la historia a Testing. Revisé el checklist de criterios de aceptación uno por uno y probé el caso intentando registrar una salida mayor al stock disponible. El sistema bloqueó la operación con el mensaje esperado, pero el aviso aparecía en un lugar de la pantalla donde era fácil pasarlo por alto, así que devolví la tarjeta a In Progress con un comentario que indicaba mover el mensaje junto al campo de cantidad. Una vez corregido, repetí la prueba, marqué el criterio como cumplido y aprobé el paso a Done."
+        }
+      ]
+    },
+    {
+      "id": "integrante-3",
+      "titulo": "Bloque del Integrante 3 · Developer Frontend",
+      "cuerpo": [
+        {
+          "tipo": "subtitulo",
+          "texto": "6.1 Aplicación del enfoque ágil"
+        },
+        {
+          "tipo": "texto-libre",
+          "parrafos": [
+            "Scrum nos permitió construir la interfaz contra una funcionalidad real y no contra una maqueta aprobada al inicio del proyecto. Trabajar en Sprints cortos con historias pequeñas significó que cada pantalla que terminaba se conectaba el mismo día con la lógica que el backend ya tenía lista, de modo que los errores de integración aparecían en horas y no al final del ciclo.",
+            "El primer principio del Manifiesto Ágil que aplicamos fue «entregamos software funcional frecuentemente, entre dos semanas y dos meses, con preferencia al periodo de tiempo más corto posible». Lo aplicamos al construir primero el formulario de productos y el registro de movimientos como pantallas utilizables, aunque el sistema todavía no tuviera reportes ni exportación. Eso nos permitió que el almacenero probara el flujo real a mitad del Sprint y señalara problemas de usabilidad cuando aún había tiempo de corregirlos.",
+            "El segundo principio fue «la atención continua a la excelencia técnica y al buen diseño mejora la agilidad». En nuestro caso se concretó en unificar los formularios sobre un mismo componente de validación, en lugar de escribir las reglas de campos obligatorios y números negativos una vez por pantalla. Esa decisión costó unas horas más al principio, pero hizo que corregir una validación después significara cambiarla en un solo lugar y no en cinco."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.2 Rol desempeñado"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Rol asumido: Developer, con responsabilidad principal sobre la interfaz de usuario."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Responsabilidades: construir las pantallas y formularios del sistema, aplicar las validaciones visuales correspondientes a cada criterio de aceptación, conectar las vistas con los servicios del backend y asegurar que el flujo fuera operable sin explicaciones adicionales para el usuario final.",
+            "Actividades desarrolladas: diseñé y programé la pantalla de inicio de sesión, el formulario de registro de productos con su listado, el formulario de entrada y salida de mercadería con la actualización del saldo visible, la barra de búsqueda con filtrado en tiempo real y el indicador de stock crítico. Además ajusté las validaciones de campos vacíos y de valores negativos, y coordiné con el backend el formato de los datos intercambiados.",
+            "Aporte al Sprint: la interfaz fue lo que convirtió la lógica de inventario en algo usable por el almacenero. Sin las pantallas y sus validaciones, el cálculo de stock habría funcionado solo a nivel de base de datos y el incremento no habría cumplido la condición de ser usable."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.3 Historia de Usuario"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Historia seleccionada: HU-04, Consulta y filtrado rápido de inventario."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Funcionalidad y beneficio: la historia permite que el usuario escriba al menos dos caracteres en una barra de búsqueda y que la tabla del inventario se reduzca en tiempo real a los productos que coinciden por código o por nombre. El beneficio es que el operador deja de recorrer el listado completo con la vista para encontrar un artículo y obtiene la respuesta en segundos, lo que cambia por completo la tarea de atender un pedido en mostrador."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Participación: implementé la barra de búsqueda, el filtrado sobre la tabla ya cargada y el estado vacío que se muestra cuando el término no arroja coincidencias. Definí junto al Product Owner que el filtro debía aplicarse sobre los datos ya obtenidos y no con una consulta nueva al servidor en cada tecla, para evitar que la pantalla se sintiera lenta con un catálogo de varios cientos de productos. También probé ambos criterios de aceptación con un catálogo de prueba que incluía nombres parecidos y códigos con prefijos comunes."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.4 Estimación del Sprint"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Dificultad: subestimé el tiempo necesario para ajustar las validaciones visuales de los formularios. Estimé HU-02 en cinco puntos pensando en el formulario en su estado normal, pero no contemplé los casos de error: que el código estuviera duplicado, que el stock mínimo fuera negativo o que faltara un campo obligatorio. Cada uno requería un mensaje distinto y una forma de mostrarlo que no rompiera el diseño del formulario. Al final, las validaciones ocuparon casi tanto tiempo como el formulario en sí."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Mejora para el Sprint 2: antes de estimar, voy a enumerar los estados de error de cada pantalla y contarlos como parte de la historia. Una pantalla con tres estados de error no es del mismo tamaño que una que solo tiene el camino normal, y hasta ahora los estaba estimando como si lo fueran. También propondré que los mensajes de validación se definan junto con los criterios de aceptación, para no improvisarlos al final."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "6.5 Seguimiento del trabajo"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Uso de la herramienta: seguí mi trabajo en Trello con las mismas columnas del equipo, pero además subdividí mis tareas dentro de cada tarjeta usando checklists. Como las historias de interfaz tienen varias pantallas y estados, una sola tarjeta por historia no reflejaba mi avance real; los checklists me permitían marcar qué pantalla estaba terminada y cuál seguía en curso."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Gestión de una tarea específica: la tarea «Implementar la barra de búsqueda y el filtrado en tiempo real» se creó en la Sprint Planning como parte de HU-04 y la tomé al iniciar el Sprint, moviendo la tarjeta a In Progress. Al segundo día ya filtraba por nombre, pero el criterio exigía también por código, así que dejé la tarjeta en progreso y marqué solo el primer ítem del checklist. Al tercer día terminé ambos criterios y agregué el estado vacío para el caso sin coincidencias, que no estaba en el criterio pero evitaba que la tabla quedara en blanco sin explicación. Moví la tarjeta a Testing y el Product Owner la devolvió una vez porque el aviso de «no se encontraron productos» aparecía durante la carga inicial. Corregido eso, la historia pasó a Done."
+        }
+      ]
+    },
+    {
+      "id": "revisar-integrante-1",
+      "titulo": "Ajustes al bloque del Integrante 1",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El bloque que ya existe está bien redactado, pero necesita tres ajustes para quedar coherente con las correcciones de este plan."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Apartado", "Ajuste necesario"],
+          "filas": [
+            ["6.2", "Cambiar «Scrum Master y Desarrollador Backend / Base de Datos» por «Scrum Master, con apoyo en el desarrollo de backend y base de datos». El rol Scrum es uno solo; el desarrollo es la actividad."],
+            ["6.4", "Revisar la cifra: si la sección 2 queda con 8 horas estimadas, aquí debe decir que se estimó en 8 y tomó 10. Ya está así, pero hay que corregir la sección 2 para que coincida."],
+            ["6.5", "Mencionar la Definition of Done al explicar por qué la tarjeta pasó a Done, para que el estándar aparezca aplicado y no solo declarado."]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Principios ya usados por cada integrante",
+          "texto": "Integrante 1 usa «software funcionando sobre documentación extensiva» y «simplicidad». Integrante 2 usa «entrega temprana y continua» y «negocio y desarrollo juntos». Integrante 3 usa «software funcional frecuentemente» y «excelencia técnica y buen diseño». Los seis son distintos y no se repiten."
+        }
+      ]
+    }
+  ]
+}

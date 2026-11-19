@@ -549,6 +549,152 @@ td:first-child { color: var(--tinta); }
   font-style: italic;
 }
 
+/* ---------- Bloque de corrección ---------- */
+.correccion {
+  margin: 1.8rem 0 2.6rem;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  overflow: hidden;
+}
+.correccion-cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem .9rem;
+  padding: .8rem 1.2rem;
+  background: #fbfaf8;
+  border-bottom: 1px solid var(--linea);
+}
+.correccion-cabecera .codigo {
+  font-family: var(--mono);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--tinta);
+  background: var(--fondo);
+  border: 1px solid var(--linea-fuerte);
+  border-radius: 2px;
+  padding: .15rem .5rem;
+}
+.correccion-cabecera .gravedad {
+  font-size: .7rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .2rem .6rem;
+  border-radius: 100px;
+}
+.gravedad.grave { background: var(--acento-claro); color: var(--acento); }
+.gravedad.media { background: var(--ambar-claro); color: var(--ambar); }
+.gravedad.leve { background: var(--azul-claro); color: var(--azul); }
+.correccion-cabecera .ubicacion {
+  font-size: .8rem;
+  color: var(--tinta-tenue);
+  margin-left: auto;
+}
+
+.correccion-cuerpo { padding: 1.2rem 1.3rem 1.4rem; }
+.correccion-cuerpo p { font-size: .95rem; }
+
+.rotulo {
+  font-size: .7rem;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--tinta-tenue);
+  margin: 0 0 .4rem !important;
+}
+
+.par-textos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.3rem 0;
+}
+@media (max-width: 860px) { .par-textos { grid-template-columns: 1fr; } }
+
+.texto-antes,
+.texto-despues {
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  padding: .9rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.texto-antes { background: #faf8f6; border-color: #e3d9d5; }
+.texto-despues { background: #f6faf7; border-color: #cfe0d5; }
+
+.texto-antes pre,
+.texto-despues pre {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: .84rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: var(--tinta);
+  flex: 1;
+}
+.texto-antes pre { color: var(--tinta-tenue); }
+
+.copiar {
+  align-self: flex-start;
+  margin-top: .9rem;
+  font-family: var(--sans);
+  font-size: .76rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--verde);
+  background: #fff;
+  border: 1px solid #bdd6c7;
+  border-radius: 2px;
+  padding: .4rem .9rem;
+  cursor: pointer;
+}
+.copiar:hover { background: var(--verde-claro); }
+.copiar:focus-visible { outline: 2px solid var(--verde); outline-offset: 2px; }
+
+.correccion-nota {
+  margin-top: 1rem !important;
+  padding: .8rem 1rem;
+  background: var(--ambar-claro);
+  border-left: 2px solid #e6d5aa;
+  font-size: .9rem;
+  color: var(--tinta-suave);
+}
+
+/* ---------- Bloque de instrucciones del índice ---------- */
+.bloque-instrucciones {
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  border-left: 3px solid var(--acento);
+  border-radius: var(--radio);
+  padding: 1.3rem 1.6rem;
+  margin: 0 0 2.4rem;
+}
+.bloque-instrucciones h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin: 0 0 .9rem;
+}
+.bloque-instrucciones ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--tinta-suave);
+  font-size: .94rem;
+}
+.bloque-instrucciones li { margin-bottom: .45rem; }
+.bloque-instrucciones li:last-child { margin-bottom: 0; }
+
+.pie-indice {
+  margin-top: 2rem;
+  font-size: .85rem;
+  color: var(--tinta-tenue);
+}
+
 /* ---------- Pie ---------- */
 .pie {
   background: var(--papel);
@@ -596,9 +742,7 @@ td:first-child { color: var(--tinta); }
 .paginacion .siguiente { text-align: right; grid-column: 2; }
 .paginacion .siguiente:only-child { grid-column: 2; }
 
-/* =========================================================
-   Índice general
-   ========================================================= */
+/* ---------- Pie ---------- */
 .portada-indice {
   background: var(--tinta);
   color: #fff;

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Eventos Scrum · Base teórica T1</title>
+<title>Eventos Scrum · Base teórica</title>
 <meta name="description" content="Los eventos crean regularidad y reducen la necesidad de reuniones que no están definidas en Scrum. Cada uno es una oportunidad formal de inspeccionar y adaptar. Esta sección cubre el Sprint, la Sprint Planning, el Daily Scrum, el Sprint Review y la Sprint Retrospective con sus timeboxes y participantes.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 04 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 04</p>
     <h1>Eventos Scrum</h1>
     <p class="bajada">El Sprint y sus cuatro eventos internos</p>
     <p class="resumen">Los eventos crean regularidad y reducen la necesidad de reuniones que no están definidas en Scrum. Cada uno es una oportunidad formal de inspeccionar y adaptar. Esta sección cubre el Sprint, la Sprint Planning, el Daily Scrum, el Sprint Review y la Sprint Retrospective con sus timeboxes y participantes.</p>
@@ -248,5 +248,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

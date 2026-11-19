@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Historias de usuario · Base teórica T1</title>
+<title>Historias de usuario · Base teórica</title>
 <meta name="description" content="Una historia de usuario es una descripción breve de una funcionalidad contada desde la perspectiva de quien la necesita. Es la base de la sección 2 del informe, la de mayor puntaje del trabajo grupal. Esta sección cubre el formato, los criterios de aceptación, el concepto de INVEST y los criterios de priorización.">
 <link rel="stylesheet" href="../assets/estilos.css">
 </head>
@@ -21,7 +21,7 @@
 <article>
 <div class="portada">
   <div class="contenedor">
-    <p class="etiqueta">Parte 06 · Base teórica</p>
+    <p class="etiqueta">Base teórica · Parte 06</p>
     <h1>Historias de usuario</h1>
     <p class="bajada">Redacción, criterios de aceptación y priorización</p>
     <p class="resumen">Una historia de usuario es una descripción breve de una funcionalidad contada desde la perspectiva de quien la necesita. Es la base de la sección 2 del informe, la de mayor puntaje del trabajo grupal. Esta sección cubre el formato, los criterios de aceptación, el concepto de INVEST y los criterios de priorización.</p>
@@ -280,5 +280,32 @@
     <a href="index.html">Volver al índice</a>
   </div>
 </footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
 </body>
 </html>

@@ -1,0 +1,122 @@
+{
+  "id": "inconsistencias",
+  "orden": 3,
+  "titulo": "Inconsistencias internas",
+  "subtitulo": "Datos que se contradicen entre dos secciones del mismo documento",
+  "actualizado": "2026-11-18",
+  "resumen": "Estos seis hallazgos no son errores de concepto sino de coherencia. Su efecto es peor que un error técnico: hacen dudar de todo lo demás, porque sugieren que el documento no fue revisado de principio a fin.",
+  "claves": [
+    "HU-03 tiene dos estimaciones distintas",
+    "El valor de negocio repite la prioridad",
+    "La prioridad usa dos escalas",
+    "El alcance omite la búsqueda y el filtrado"
+  ],
+  "secciones": [
+    {
+      "id": "i1-hu03",
+      "titulo": "I1 · La estimación de HU-03 se contradice",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "I1",
+          "gravedad": "Inconsistencia",
+          "seccion": "2. Planificación frente a 6.4 Estimación del Sprint",
+          "problema": "En la sección 2, HU-03 figura estimada en 10 horas. En la sección 6.4 se afirma que se estimó en 8 horas y que terminó tomando 10. Es la misma cifra contada de dos maneras incompatibles: en un lugar son la estimación y en el otro son el resultado real.",
+          "antes": "Sección 2: Prioridad: Alta | Estimación: 8 Story Points (10 horas)\n\nSección 6.4: En la HU-03 estimamos inicialmente 8 horas, pero terminó tomando 10 horas.",
+          "despues": "Sección 2: Prioridad: Alta | Estimación: 8 puntos de historia | 8 horas estimadas\n\nSección 6.4: En la HU-03 estimamos inicialmente 8 horas, pero terminó tomando 10 horas.",
+          "porque": "La reflexión de la sección 6.4 solo tiene valor si la estimación original queda registrada como tal. Al dejar 8 horas en la sección 2, la tabla del backlog y la autocrítica cuentan la misma historia en lugar de contradecirse.",
+          "nota": "Si prefieres no incluir horas en la sección 2, entonces la frase de la sección 6.4 debe hablar de puntos: «estimamos 8 puntos y el trabajo real equivalió a 13». Lo que no puede pasar es que las dos secciones atribuyan un significado distinto a la misma cifra."
+        }
+      ]
+    },
+    {
+      "id": "i2-valor-negocio",
+      "titulo": "I2 · El valor de negocio repite la prioridad",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La tabla del Product Backlog tiene una columna de valor de negocio que dice Alto o Medio. Eso no es valor: es la prioridad escrita dos veces. Si ambas columnas dicen lo mismo, una de las dos sobra y el enunciado pide las dos."
+        },
+        {
+          "tipo": "correccion",
+          "codigo": "I2",
+          "gravedad": "Inconsistencia",
+          "seccion": "3. Product Backlog, columna Valor de negocio",
+          "problema": "El valor de negocio debe expresar el beneficio concreto que la historia aporta a la empresa o al usuario, no su nivel de prioridad. Además existe un caso que queda sin explicar: HU-05 tiene valor Alto pero prioridad Media, lo que a primera vista parece un error y solo se justifica si el beneficio está escrito.",
+          "antes": "Columna Valor de negocio:\nHU-01 Alto\nHU-02 Alto\nHU-03 Alto\nHU-04 Medio\nHU-05 Alto",
+          "despues": "Columna Valor de negocio:\nHU-01: Protege la integridad de los registros del almacén y permite auditar quién hizo cada operación.\nHU-02: Elimina la duplicidad de códigos de producto, que es la causa principal del desfase entre stock físico y registrado.\nHU-03: Automatiza el Kardex y evita el despacho de mercadería inexistente.\nHU-04: Reduce de varios minutos a segundos la búsqueda de cualquier artículo del almacén.\nHU-05: Anticipa los quiebres de stock que detienen el despacho y obligan a compras de emergencia.",
+          "porque": "La rúbrica pide una columna de valor de negocio diferenciada de la prioridad. Al expresarla como beneficio concreto, la tabla deja de tener información duplicada y queda justificado por qué una historia puede tener mucho valor y aun así no ser la más urgente.",
+          "nota": "Mantén las respuestas breves: una línea por historia. La tabla debe seguir siendo legible de un vistazo."
+        }
+      ]
+    },
+    {
+      "id": "i3-prioridad",
+      "titulo": "I3 · La prioridad usa dos escalas distintas",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "I3",
+          "gravedad": "Inconsistencia",
+          "seccion": "2. Planificación y 3. Product Backlog, columna Prioridad",
+          "problema": "En la sección 2 la prioridad se expresa como Alta o Media. En la tabla del backlog se escribe 1 (Alta), 2 (Alta), hasta 5 (Media), mezclando la posición en la lista con el nivel de prioridad. Son dos sistemas distintos para el mismo dato, y además el estado usa Completado, que no pertenece al vocabulario controlado que el propio proyecto definió.",
+          "antes": "Sección 2: Prioridad: Alta / Prioridad: Media\n\nSección 3:  1 (Alta), 2 (Alta), 3 (Alta), 4 (Media), 5 (Media)\nEstado: Completado",
+          "despues": "Sección 2: Prioridad: Alta / Prioridad: Media\n\nSección 3: columna Prioridad con Alta, Alta, Alta, Media, Media\nEstado: Hecho",
+          "porque": "Un dato debe tener una sola representación en todo el documento. El orden de las filas ya comunica la posición, así que no hace falta numerarla dentro de la columna de prioridad. Y el estado debe usar el vocabulario controlado pendiente, en progreso o hecho.",
+          "nota": "Si quieres conservar la numeración para mostrar el orden de atención, agrégala como una columna aparte llamada Orden, no dentro de la columna Prioridad."
+        }
+      ]
+    },
+    {
+      "id": "i4-alcance",
+      "titulo": "I4 · El alcance omite una de las cinco historias",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "I4",
+          "gravedad": "Inconsistencia",
+          "seccion": "1. Documentación del proyecto, Alcance del Sprint 1",
+          "problema": "El alcance enumera el inicio de sesión, el catálogo de productos, el registro de movimientos, la actualización de stock y las alertas visuales. No menciona la búsqueda y el filtrado rápido, que sí figura como HU-04 en las secciones 2 y 3. El lector ve que el alcance declara cuatro historias y el Sprint tiene cinco.",
+          "antes": "El Sprint 1 abarca el desarrollo del Producto Mínimo Viable (MVP) operativo, compuesto por: inicio de sesión de usuarios, mantenimiento básico (registro y listado) de productos, registro de entradas y salidas de inventario, actualización automática de stock y alertas visuales de stock bajo. (Quedan fuera de este Sprint la exportación avanzada a PDF/Excel, gestión multi-almacén compleja y módulos de facturación, los cuales pasarán al Sprint 2).",
+          "despues": "El Sprint 1 abarca el desarrollo del Producto Mínimo Viable operativo, compuesto por las cinco historias siguientes: inicio de sesión de usuarios con control de acceso por roles (HU-01), registro y listado del catálogo de productos con validación de códigos únicos (HU-02), registro de entradas y salidas de inventario con actualización automática del stock (HU-03), consulta y filtrado rápido del inventario (HU-04) y alertas visuales de stock bajo (HU-05). Quedan fuera de este Sprint la exportación avanzada a PDF y Excel, la gestión multi-almacén compleja y los módulos de facturación, que pasan al Sprint 2.",
+          "porque": "El alcance y las historias deben decir exactamente lo mismo. Al nombrar las cinco con su identificador, se cierra la única grieta de trazabilidad que tenía la sección 1.",
+          "nota": "Aprovecha para escribir «Producto Mínimo Viable» en lugar de MVP si el resto del documento está en español, y para reemplazar las siglas sin desarrollar."
+        }
+      ]
+    },
+    {
+      "id": "i5-responsables",
+      "titulo": "I5 · Dos responsables en una misma historia",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "I5",
+          "gravedad": "Inconsistencia",
+          "seccion": "3. Product Backlog, columna Responsable",
+          "problema": "Dos historias figuran con dos responsables cada una: HU-02 con el integrante de frontend y Alonso, y HU-05 con el integrante 2 y el 3. Un responsable compartido equivale a ningún responsable, y contradice la sección 7, donde se afirma que las responsabilidades se dividieron según las fortalezas técnicas de cada integrante.",
+          "antes": "HU-02: [Integrante 3] (Frontend) / Alonso\nHU-05: [Integrante 2] (PO/QA) / [Integrante 3]",
+          "despues": "HU-02: [Nombre del Integrante 3] (Developer Frontend)\nHU-05: [Nombre del Integrante 3] (Developer Frontend)",
+          "porque": "La columna Responsable indica quién lidera la historia y responde por ella. La colaboración existe igual y puede mencionarse en la evidencia individual, pero el tablero necesita una sola tarjeta con un solo dueño.",
+          "nota": "Si HU-05 la trabajó principalmente el frontend con validación del Product Owner, deja al frontend como responsable y menciona la validación en la sección 7. Si la lideró el Product Owner, asígnala a él y deja al frontend como apoyo."
+        }
+      ]
+    },
+    {
+      "id": "i6-cumplimiento",
+      "titulo": "I6 · Los tres integrantes tienen 100%",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "I6",
+          "gravedad": "Inconsistencia",
+          "seccion": "7. Informe de participación del equipo",
+          "problema": "Los tres integrantes registran 100% (5/5) de participación en el Daily Scrum y 100% (Alto) de nivel de cumplimiento. Un equipo en el que nadie faltó, nadie se retrasó y todos rinden exactamente igual no resulta creíble, y además la columna deja de aportar información porque no diferencia a nadie. Al mismo tiempo, el 5/5 confirma que solo hubo cinco sesiones, lo que contradice un Daily diario.",
+          "antes": "José Alonso Gamarra Apaza | 100% (5/5) | 100% (Alto)\n[Nombre Integrante 2] | 100% (5/5) | 100% (Alto)\n[Nombre Integrante 3] | 100% (5/5) | 100% (Alto)",
+          "despues": "José Alonso Gamarra Apaza | 10 de 10 sesiones (100%) | Alto\n[Nombre Integrante 2] | 9 de 10 sesiones (90%) | Alto\n[Nombre Integrante 3] | 9 de 10 sesiones (90%) | Medio-alto",
+          "porque": "La columna pide un nivel de cumplimiento, y un nivel solo tiene sentido si distingue. Un 90% con una justificación breve es más creíble y demuestra mejor el funcionamiento del equipo que un 100% uniforme.",
+          "nota": "Ajusta los números a la cantidad real de días laborables del Sprint y añade una frase por integrante explicando la ausencia. Si todos asistieron realmente a todas las sesiones, entonces cambia el denominador para que coincida con la duración real del Sprint."
+        }
+      ]
+    }
+  ]
+}

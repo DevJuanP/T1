@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riesgos de entrega · Plan de mejora</title>
+<meta name="description" content="Estos seis hallazgos no son errores de contenido: son rastros del proceso de armado que quedaron dentro del documento. Su efecto es desproporcionado, porque el evaluador los lee antes que el contenido y condicionan su expectativa sobre todo lo demás.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Plan de mejora <span>· Propuesta StockFlow</span></a>
+    <span class="meta">24 correcciones</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Plan de mejora · Parte 05</p>
+    <h1>Riesgos de entrega</h1>
+    <p class="bajada">Elementos que delatan un borrador y cuestan puntaje directo</p>
+    <p class="resumen">Estos seis hallazgos no son errores de contenido: son rastros del proceso de armado que quedaron dentro del documento. Su efecto es desproporcionado, porque el evaluador los lee antes que el contenido y condicionan su expectativa sobre todo lo demás.</p>
+    <ul class="claves"><li>Borrar todas las instrucciones de andamiaje</li>
+<li>Reemplazar los placeholders entre corchetes</li>
+<li>Quitar los símbolos de LaTeX</li>
+<li>Declarar la duración del Sprint</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#andamiaje">R1 · Instrucciones de andamiaje dentro del documento</a></li>
+<li><a href="#placeholders">R2 · Placeholders sin reemplazar</a></li>
+<li><a href="#latex">R3 · Símbolos de LaTeX sin renderizar</a></li>
+<li><a href="#duracion">R4 · No se declara la duración del Sprint</a></li>
+<li><a href="#horas">R5 · El esfuerzo total es bajo para el plazo</a></li>
+<li><a href="#capturas">R6 · El incremento depende de capturas que aún no existen</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="andamiaje">
+<h2><span class="num">01</span>R1 · Instrucciones de andamiaje dentro del documento</h2>
+<p>El documento contiene frases escritas para guiar a quien lo redacta, no para ser leídas por el evaluador. Son la señal más clara de que el texto es un borrador generado y no un informe terminado.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R1</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">Varias secciones</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Seis frases de instrucción permanecen dentro del cuerpo del informe. Deben eliminarse por completo, no reformularse.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>«Guía exacta de qué capturas deben tomar y pegar aquí:»
+«(Asegúrate de que los nombres de los responsables y las horas coincidan con tus tarjetas en Trello)»
+«Nota importante: En el informe final deben aparecer tres bloques separados (uno por cada integrante, con su nombre completo).»
+«Ejemplo desarrollado para ti (Integrante 1: José Alonso Gamarra Apaza)»
+«Guía rápida para que tus otros 2 compañeros llenen su sección (6.1 a 6.5):»
+«Lista de verificación rápida antes de entregar el PDF/Word:»</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Eliminar las seis frases. En su lugar, cuando corresponda, usar encabezados neutros:
+«4. Incremento del producto» seguido directamente de la Definition of Done y las capturas.
+«6. Evidencia individual de cada integrante» seguido de los tres bloques con nombre.
+«6.1 Aplicación del enfoque ágil» como subtítulo real del bloque del integrante 3.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un informe se juzga por lo que presenta, no por las instrucciones que se dio a sí mismo para armarlo. Estas frases rompen la ilusión de documento final y sugieren que el contenido no fue revisado.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Al eliminar la «lista de verificación», asegúrate de haberla aplicado antes: nombres consistentes, códigos HU iguales en las tres secciones y capturas legibles.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="placeholders">
+<h2><span class="num">02</span>R2 · Placeholders sin reemplazar</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R2</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">Organización del equipo, sección 3, sección 6 y sección 7</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Quedaron marcadores de posición con corchetes en lugar de los nombres reales. Un documento entregado con corchetes se considera incompleto.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>[Nombre Compañero 2]
+[Nombre Compañero 3]
+[Integrante 2]
+[Integrante 3]
+[Nombre Integrante 2]
+[Nombre Integrante 3]</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Los nombres completos reales de los dos integrantes restantes, idénticos en las cuatro apariciones: organización del equipo, tabla del Product Backlog, bloque de evidencia individual y tabla de participación.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica exige coherencia entre la carátula, el backlog, la evidencia individual y la tabla final. Un nombre escrito de dos formas distintas en el mismo documento es un descuento seguro.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Revisa también que «Alonso Gamarra» y «José Alonso Gamarra Apaza» se unifiquen en una sola forma. Lo recomendable es usar el nombre completo en las cuatro apariciones.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="latex">
+<h2><span class="num">03</span>R3 · Símbolos de LaTeX sin renderizar</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R3</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">Secciones 2, 4 y 6.5</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Hay expresiones matemáticas escritas en sintaxis LaTeX que el Word no interpreta, por lo que se ven como código. Además, en un informe en español conviene usar el término «unidades» en lugar de una variable.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Dado que se registra una Entrada de $X$ unidades...
+se incrementa exactamente en $X$ unidades
+To Do $\rightarrow$ In Progress $\rightarrow$ Testing $\rightarrow$ Done</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Dado que se registra una entrada de X unidades...
+se incrementa exactamente en X unidades
+To Do → In Progress → Testing → Done</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Los símbolos de marcado no forman parte del contenido y distraen. En el caso de la flecha, basta con el carácter tipográfico real o con la palabra «a» si el formato no lo admite.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Busca en el documento los caracteres de dólar y la barra invertida para encontrar todos los casos: puede haber más de los tres listados.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="duracion">
+<h2><span class="num">04</span>R4 · No se declara la duración del Sprint</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R4</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">1. Documentación del proyecto o 2. Planificación del Sprint</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>En ningún lugar del documento se indica cuánto duró el Sprint: ni fechas, ni cantidad de semanas. Sin ese dato no se puede evaluar la coherencia de las 34 horas estimadas, ni de la asistencia al Daily Scrum, ni del alcance comprometido.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>El Sprint 1 abarca el desarrollo del Producto Mínimo Viable operativo, compuesto por...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>El Sprint 1 tuvo una duración de dos semanas, del [fecha de inicio] al [fecha de fin]. Abarcó el desarrollo del Producto Mínimo Viable operativo, compuesto por...</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La duración es el dato que permite juzgar si la estimación y el alcance son razonables. Un Sprint sin fechas es un Sprint que no se puede auditar.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Al declarar las fechas, revisa que el número de días laborables coincida con la asistencia reportada en la sección 7. Para dos semanas son diez días laborables, que es la base de la corrección I6.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="horas">
+<h2><span class="num">05</span>R5 · El esfuerzo total es bajo para el plazo</h2>
+<p>Las cinco historias suman 34 horas de trabajo estimado para tres personas. En un Sprint de dos semanas eso equivale a unas once horas por integrante, lo que resulta poco creíble y además choca con la afirmación de haber cubierto el 100% del alcance.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R5</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">3. Product Backlog, columna Tiempo estimado</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El total de 34 horas no incluye el tiempo de pruebas, integración ni documentación, por lo que subrepresenta el esfuerzo real. Al presentarlo como el total del Sprint, deja mal parada la estimación y hace que el cumplimiento del 100% parezca un alcance trivial.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Total: 5 + 8 + 10 + 5 + 6 = 34 horas</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Mantener las horas por historia como horas de desarrollo, y agregar una línea bajo la tabla:
+«Las horas indicadas corresponden al esfuerzo de desarrollo. El esfuerzo total del Sprint, incluyendo pruebas, integración y documentación, se estimó en 48 horas distribuidas entre los tres integrantes.»</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Declarar el esfuerzo completo demuestra que el equipo contempló las actividades que no son programación. Un desarrollo sin pruebas ni documentación no cumple la Definition of Done que el propio informe declara.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si prefieren no añadir la línea, al menos no escriban «100% del alcance comprometido» como logro principal: cumplir un alcance mínimo no impresiona a nadie.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="capturas">
+<h2><span class="num">06</span>R6 · El incremento depende de capturas que aún no existen</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R6</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">4. Incremento del producto</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La sección 4 está redactada como una lista de capturas por tomar, no como la presentación de un incremento. Si alguna captura falta o queda ilegible, la sección pierde sustento aunque el sistema funcione.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Guía exacta de qué capturas deben tomar y pegar aquí:
+Captura 1 (Tablero Trello): ...
+Captura 2 (Detalle de tarjeta Trello): ...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Cada captura debe insertarse con un pie de figura numerado y una frase que explique qué demuestra:
+«Figura 1. Tablero del Sprint 1 al cierre, con las cinco historias en la columna Done.»
+«Figura 2. Detalle de la tarjeta de HU-03 con los criterios de aceptación marcados.»
+«Figura 3. Modelo de datos con las tablas usuarios, productos y movimientos_inventario.»
+«Figura 4. Pantalla de inicio de sesión con validación de credenciales.»
+«Figura 5. Formulario de registro de producto y listado con la etiqueta de stock crítico.»
+«Figura 6. Registro de entrada y salida con el saldo actualizado.»
+«Figura 7. Historial de commits en el repositorio.»</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica valora que las evidencias sean claras y estén vinculadas al trabajo descrito. Un pie de figura que explica qué se ve convierte una imagen en prueba; una imagen sin explicación obliga al evaluador a adivinar.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Toma las capturas con el sistema en marcha y con datos de prueba cargados. Una pantalla vacía no demuestra que la funcionalidad opere.</p>
+</div>
+</div>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="evidencia-faltante.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Evidencia individual faltante</span></a>
+<a href="detalles.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Detalles menores</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Plan de mejora · T1 Proyecto Integrador · Noviembre 2026</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
+</body>
+</html>

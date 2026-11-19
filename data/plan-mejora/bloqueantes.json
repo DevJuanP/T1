@@ -1,0 +1,115 @@
+{
+  "id": "bloqueantes",
+  "orden": 2,
+  "titulo": "Correcciones bloqueantes",
+  "subtitulo": "Los cuatro errores de marco que hay que cerrar primero",
+  "actualizado": "2026-11-18",
+  "resumen": "Son errores de fundamento, no de redacción. Un evaluador con formación en Scrum los detecta en la primera lectura y afectan la credibilidad de todo el informe. Cada uno trae el texto exacto que debe reemplazar el original.",
+  "claves": [
+    "B1: el Daily Scrum debe ser diario y de 15 minutos",
+    "B2: falta el Sprint Goal",
+    "B3: falta la Definition of Done",
+    "B4: los puntos de historia no se convierten a horas"
+  ],
+  "secciones": [
+    {
+      "id": "b1-daily",
+      "titulo": "B1 · El Daily Scrum no es diario",
+      "cuerpo": [
+        {
+          "tipo": "correccion",
+          "codigo": "B1",
+          "gravedad": "Bloqueante",
+          "seccion": "5. Retrospectiva y 7. Participación del equipo",
+          "problema": "La propuesta afirma haber hecho Daily Scrums de 10 minutos cada dos días. La Guía Scrum 2020 fija el evento en 15 minutos, todos los días laborables del Sprint, a la misma hora y en el mismo lugar. Una reunión cada dos días y de 10 minutos es una reunión de seguimiento, no un Daily Scrum. Además, en la sección 7 se reporta una asistencia de 5 de 5 sesiones, lo que confirma que solo hubo cinco.",
+          "antes": "La realización de Daily Scrums de 10 minutos cada dos días vía Discord/WhatsApp, permitiendo detectar bloqueos a tiempo (como la definición de tipos de datos en la tabla de movimientos).\n\nY en la sección 7: reuniones breves (Daily Scrums) de 10 minutos vía Discord cada dos días.",
+          "despues": "La realización del Daily Scrum de 15 minutos, todos los días laborables del Sprint y siempre a la misma hora, por Discord. Ese espacio diario permitió detectar bloqueos a tiempo, como la definición de los tipos de datos en la tabla de movimientos, que se resolvió el mismo día en que apareció.\n\nY en la sección 7: el Daily Scrum de 15 minutos, todos los días laborables, por Discord.",
+          "porque": "El Daily Scrum es el evento que sostiene la inspección diaria del avance hacia el Sprint Goal. Si el informe declara una frecuencia distinta a la que define el marco, el resto de las afirmaciones sobre Scrum pierden respaldo.",
+          "nota": "Si de verdad se reunieron cada dos días, entonces no lo llamen Daily Scrum: digan «reunión de sincronización» y no lo presenten como evidencia de Scrum. La opción más simple es ajustar el relato a lo que pide el marco y corregir el 5/5 por el número real de días laborables del Sprint."
+        }
+      ]
+    },
+    {
+      "id": "b2-sprint-goal",
+      "titulo": "B2 · Falta el Sprint Goal",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La propuesta justifica el orden de las historias, pero nunca declara el resultado que el Sprint busca. Es la pieza que da coherencia a la Planning y la que permite negociar el alcance sin perder el rumbo."
+        },
+        {
+          "tipo": "correccion",
+          "codigo": "B2",
+          "gravedad": "Bloqueante",
+          "seccion": "2. Planificación del Sprint, antes de las historias",
+          "problema": "No existe ninguna frase que declare el objetivo del Sprint. La justificación de priorización explica por qué ese orden, pero no qué resultado se persigue. Sin Sprint Goal, las cinco historias parecen una lista de tareas y no un compromiso con un resultado de negocio.",
+          "antes": "a) Historias de Usuario del Sprint 1\n\nHU-01: Inicio de sesión seguro...",
+          "despues": "a) Sprint Goal e Historias de Usuario del Sprint 1\n\nSprint Goal del Sprint 1:\nQue el personal de almacén pueda dar de alta un producto y registrar su primer movimiento de entrada o salida, viendo el stock actualizado en tiempo real, sin recurrir al cuaderno ni a hojas de cálculo.\n\nHU-01: Inicio de sesión seguro...",
+          "porque": "El Sprint Goal es el compromiso del Sprint Backlog. Se redacta como un resultado de negocio verificable y no como una lista de historias. Además resuelve una duda que la propuesta deja abierta: explica por qué HU-04 y HU-05 entran en el Sprint, porque sin búsqueda ni alertas el flujo no resulta operable por el almacenero.",
+          "nota": "Va antes de HU-01, dentro de la sección 2, y no reemplaza a la justificación de priorización: la complementa."
+        }
+      ]
+    },
+    {
+      "id": "b3-dod",
+      "titulo": "B3 · Falta la Definition of Done",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El incremento afirma haber cubierto el 100% del alcance sin decir qué significa «terminado». Ese es justamente el vacío que la Definition of Done existe para cubrir."
+        },
+        {
+          "tipo": "correccion",
+          "codigo": "B3",
+          "gravedad": "Bloqueante",
+          "seccion": "4. Incremento del producto, antes del texto descriptivo",
+          "problema": "Se declara que las cinco historias están completadas y que el incremento representa el 100% del alcance, pero no se define el estándar de calidad que permite afirmarlo. Sin ese acuerdo, cada integrante entiende algo distinto por terminado y la transparencia del artefacto se rompe.",
+          "antes": "4. Incremento del producto\n\nGuía exacta de qué capturas deben tomar y pegar aquí...",
+          "despues": "4. Incremento del producto\n\nDefinition of Done acordada por el equipo\n\nUna historia se considera terminada cuando cumple todas las condiciones siguientes:\n1. El código está integrado en la rama principal del repositorio y compila sin errores.\n2. La funcionalidad fue probada con datos reales de prueba, no solo con registros cargados a mano.\n3. Los criterios de aceptación de la historia fueron verificados uno por uno.\n4. No quedan errores conocidos de severidad alta o media.\n5. La validación del Product Owner quedó registrada en la tarjeta del tablero.\n6. La evidencia visual correspondiente quedó guardada para el informe del Sprint.\n\nGuía de capturas que deben tomar y pegar aquí...",
+          "porque": "La Definition of Done es el compromiso del incremento. Al declararla se justifica por qué las cinco historias figuran como completadas y se demuestra que el equipo acordó un estándar común de calidad.",
+          "nota": "Cuidado con la coherencia: si la Definition of Done exige validación del Product Owner y la sección 7 dice que el Product Owner solo probó HU-01 y HU-05, hay que ajustar la sección 7 para que las cinco historias hayan pasado por validación."
+        }
+      ]
+    },
+    {
+      "id": "b4-estimacion",
+      "titulo": "B4 · Story Points mezclados con horas",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Es el error más visible de la propuesta para cualquiera que sepa estimación ágil. Se escribe «3 Story Points (5 horas)», lo que convierte el punto de historia en una hora disfrazada y anula la razón de ser de la estimación relativa."
+        },
+        {
+          "tipo": "correccion",
+          "codigo": "B4",
+          "gravedad": "Bloqueante",
+          "seccion": "2. Planificación del Sprint, líneas de estimación",
+          "problema": "El punto de historia es una unidad abstracta de tamaño relativo: no equivale a horas ni a días. Al poner la equivalencia entre paréntesis se destruye la estimación relativa. Peor aún, la conversión es internamente incoherente: HU-02 y HU-05 valen ambos 5 puntos, pero se les asignan 8 y 6 horas respectivamente. Dos historias del mismo tamaño no pueden tener duraciones distintas si el punto se está usando como unidad relativa.",
+          "antes": "Prioridad: Alta | Estimación: 3 Story Points (5 horas)\nPrioridad: Alta | Estimación: 5 Story Points (8 horas)\nPrioridad: Alta | Estimación: 8 Story Points (10 horas)\nPrioridad: Media | Estimación: 3 Story Points (5 horas)\nPrioridad: Media | Estimación: 5 Story Points (6 horas)",
+          "despues": "Prioridad: Alta | Estimación: 3 puntos de historia\nPrioridad: Alta | Estimación: 5 puntos de historia\nPrioridad: Alta | Estimación: 8 puntos de historia\nPrioridad: Media | Estimación: 3 puntos de historia\nPrioridad: Media | Estimación: 5 puntos de historia",
+          "porque": "La sección 2 pide prioridad y estimación; la sección 3 es la que pide tiempo estimado en la tabla del backlog. Separando ambas unidades, cada sección cumple su propósito sin contradecir a la otra: en la sección 2 se dimensiona el tamaño relativo y en la sección 3 se declara el tiempo.",
+          "nota": "No agregues ninguna frase que traduzca puntos a horas en ningún lugar del documento. Si alguien pregunta, la respuesta correcta es que el equipo estimó en puntos y que la velocidad del Sprint sirve para proyectar, no para convertir."
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo queda la tabla del backlog tras la corrección",
+          "texto": "La sección 3 conserva la columna de tiempo estimado en horas, tal como pide el enunciado, y deja de contradecir a la sección 2. El total del Sprint son 24 puntos de historia y 34 horas de trabajo estimado."
+        },
+        {
+          "tipo": "tabla",
+          "titulo": "Correspondencia final de estimaciones",
+          "columnas": ["Historia", "Puntos de historia", "Tiempo estimado en el backlog"],
+          "filas": [
+            ["HU-01 Inicio de sesión seguro", "3", "5 horas"],
+            ["HU-02 Registro y gestión del catálogo", "5", "8 horas"],
+            ["HU-03 Registro de entradas y salidas", "8", "10 horas"],
+            ["HU-04 Consulta y filtrado rápido", "3", "5 horas"],
+            ["HU-05 Alertas visuales de stock mínimo", "5", "6 horas"],
+            ["Total del Sprint 1", "24", "34 horas"]
+          ]
+        }
+      ]
+    }
+  ]
+}

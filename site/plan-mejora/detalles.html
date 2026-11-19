@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Detalles menores · Plan de mejora</title>
+<meta name="description" content="Ninguno de estos ocho puntos hunde el informe por sí solo, pero juntos afectan la claridad y el orden, que la rúbrica evalúa de forma explícita. Se corrigen al final, cuando el contenido ya está cerrado.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Plan de mejora <span>· Propuesta StockFlow</span></a>
+    <span class="meta">24 correcciones</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Plan de mejora · Parte 06</p>
+    <h1>Detalles menores</h1>
+    <p class="bajada">Imprecisiones de redacción y vocabulario</p>
+    <p class="resumen">Ninguno de estos ocho puntos hunde el informe por sí solo, pero juntos afectan la claridad y el orden, que la rúbrica evalúa de forma explícita. Se corrigen al final, cuando el contenido ya está cerrado.</p>
+    <ul class="claves"><li>Objetivo general sin medios ni funcionalidades</li>
+<li>Cifras con origen declarado</li>
+<li>Vocabulario Scrum correcto</li>
+<li>Nombres unificados</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#d1-objetivo">D1 · El objetivo general mezcla el medio y las funcionalidades</a></li>
+<li><a href="#d2-especificos">D2 · Los objetivos específicos son entregables</a></li>
+<li><a href="#d3-cifra">D3 · La cifra del 70% no tiene origen</a></li>
+<li><a href="#d4-hu05">D4 · HU-05 prescribe la solución</a></li>
+<li><a href="#d5-hu01">D5 · HU-01 mezcla dos roles</a></li>
+<li><a href="#d6-criterios-scrum">D6 · Se llama «criterios de Scrum» a cosas que no lo son</a></li>
+<li><a href="#d7-nombres">D7 · El mismo integrante aparece con dos nombres</a></li>
+<li><a href="#d8-septe">D8 · El SEPTE no cierra con una síntesis</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="d1-objetivo">
+<h2><span class="num">01</span>D1 · El objetivo general mezcla el medio y las funcionalidades</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D1</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, Objetivo general</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El objetivo general incluye el marco de trabajo como medio («bajo el marco de trabajo Scrum») y enumera funcionalidades. El objetivo debe describir el cambio que produce el proyecto, no la lista de lo que se va a construir ni la herramienta con la que se hará.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Desarrollar e implementar la primera versión funcional de una plataforma de gestión de inventarios bajo el marco de trabajo Scrum, que permita automatizar el registro de productos, el control de movimientos (entradas/salidas) y la consulta de existencias en tiempo real.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Digitalizar el control de inventarios de la empresa para que el personal de almacén registre y consulte las existencias en tiempo real, eliminando el desfase entre el stock físico y el registrado.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un objetivo con medios y con funcionalidades deja de ser un objetivo y se convierte en un plan. Al centrarlo en el cambio de la realidad, se puede verificar su cumplimiento y se distingue del alcance, que es otra sección.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Scrum y las funcionalidades ya aparecen en el alcance y en las historias. No hay que repetirlos en el objetivo.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d2-especificos">
+<h2><span class="num">02</span>D2 · Los objetivos específicos son entregables</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D2</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, Objetivos específicos</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Los cuatro objetivos específicos empiezan con verbos de construcción («implementar», «desarrollar», «incorporar»), por lo que describen entregables y no resultados. Un objetivo específico debe expresar qué cambia en la operación del almacén.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Implementar un módulo de autenticación y control de acceso por roles...
+Desarrollar el catálogo maestro de productos...
+Automatizar el registro de movimientos de entrada y salida (Kardex)...
+Incorporar un panel de búsqueda rápida y alertas visuales...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Garantizar que solo el personal autorizado acceda a la información del almacén según su perfil, dejando registro de quién consultó o modificó cada dato.
+Eliminar la duplicidad de códigos de producto mediante un catálogo único con validación de códigos y umbrales de stock mínimo por artículo.
+Mantener el saldo de existencias actualizado de forma automática con cada entrada o salida, conservando el historial trazable de movimientos.
+Reducir el tiempo de localización de un producto en el almacén y anticipar los quiebres de stock mediante alertas de nivel crítico.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Los objetivos específicos son los que permiten medir el logro del proyecto. Si se redactan como entregables, al cierre solo se puede decir si algo se construyó, no si sirvió para algo.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Cada objetivo específico debe poder conectarse con al menos una historia del Sprint. Con esta redacción siguen siendo cuatro y siguen mapeando con las cinco historias.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d3-cifra">
+<h2><span class="num">03</span>D3 · La cifra del 70% no tiene origen</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D3</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, Justificación</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Se afirma que se reduce en más del 70% el tiempo de búsqueda y cuadre de mercadería, sin indicar de dónde sale la cifra ni cuál es el punto de partida. Una cifra sin línea base no se puede verificar y resta credibilidad a toda la justificación.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>reduciendo en más del 70% el tiempo de búsqueda y cuadre de mercadería</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>reduciendo el tiempo de búsqueda y cuadre de mercadería, que hoy requiere recorrer los registros manuales uno por uno, a una consulta directa en el sistema</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Es preferible una afirmación cualitativa verificable a una cifra inventada. Si se conserva el porcentaje, hay que explicar la medición: por ejemplo, que el cuadre semanal tomaba dos horas y con el sistema toma menos de veinte minutos.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si pueden medirlo con el cliente, háganlo y escriban las dos cifras. Si no, quiten el porcentaje.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d4-hu05">
+<h2><span class="num">04</span>D4 · HU-05 prescribe la solución</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D4</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">2. Planificación del Sprint, HU-05</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La historia pide un «indicador de color» y una «etiqueta roja», que son decisiones de diseño y no la necesidad del usuario. Una historia debe expresar el problema a resolver y dejar el cómo a criterio del equipo.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Quiero visualizar una alerta o indicador de color en los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar desabastecimiento.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Quiero identificar de inmediato los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar el desabastecimiento.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Al quitar la prescripción visual, la historia sigue siendo verificable mediante sus criterios de aceptación, pero deja de atar al equipo a una solución concreta.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Los criterios de aceptación pueden seguir mencionando el resaltado visual, porque ahí sí se describe cómo se verifica el resultado.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d5-hu01">
+<h2><span class="num">05</span>D5 · HU-01 mezcla dos roles</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D5</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">2. Planificación del Sprint, HU-01</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La historia dice «como usuario del sistema (administrador o almacenero)», lo que deja dos roles en una sola historia sin diferenciar su comportamiento. La teoría pide un rol concreto y reconocible.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Como usuario del sistema (administrador o almacenero), quiero iniciar sesión mediante un usuario y contraseña validados, para acceder de forma segura a las funciones de inventario según mi perfil y proteger la información de la empresa.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Como integrante del personal de almacén, quiero iniciar sesión con mis credenciales y acceder únicamente a las funciones que corresponden a mi perfil, para proteger la información de la empresa y saber que mis operaciones quedan registradas a mi nombre.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un rol genérico convierte la historia en un requisito funcional. Al nombrar al personal de almacén, el beneficio se vuelve concreto y el criterio de acceso por perfil queda justificado por la propia historia.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si el administrador tiene comportamientos distintos, eso sería otra historia en un Sprint posterior, no un paréntesis dentro de esta.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d6-criterios-scrum">
+<h2><span class="num">06</span>D6 · Se llama «criterios de Scrum» a cosas que no lo son</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D6</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">2. Justificación de la priorización</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La propuesta afirma que las historias se priorizaron aplicando «dos criterios fundamentales de Scrum: Dependencia Técnica y Entrega de Valor Temprano (MVP)». Ninguno de los dos es un criterio de Scrum: la dependencia técnica es un criterio de ordenamiento y el MVP es terminología de Lean Startup, no de Scrum.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Estas cinco historias fueron priorizadas aplicando dos criterios fundamentales de Scrum: Dependencia Técnica y Entrega de Valor Temprano (MVP).</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Estas cinco historias fueron priorizadas aplicando dos criterios: el valor de negocio para el almacén y la dependencia técnica entre historias. El primero determinó qué aporta más al proceso; el segundo obligó a resolver antes lo que habilita al resto.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Atribuir a Scrum conceptos que no le pertenecen es un error de vocabulario que un evaluador detecta con facilidad. Los criterios de priorización son decisiones del equipo, no preceptos del marco.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si quieren mencionar el producto mínimo viable, escríbanlo como «producto mínimo viable» y preséntenlo como una decisión de alcance del equipo, no como un criterio de Scrum.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d7-nombres">
+<h2><span class="num">07</span>D7 · El mismo integrante aparece con dos nombres</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D7</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">Organización del equipo, sección 3 y sección 7</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El integrante 1 aparece como «Alonso» en la organización del equipo, «Alonso Gamarra (Backend/BD)» en el backlog y «José Alonso Gamarra Apaza» en la evidencia individual y en la tabla final. Tres formas distintas para la misma persona.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Integrante 1 (Tú - Alonso)
+Alonso Gamarra (Backend/BD)
+José Alonso Gamarra Apaza</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>José Alonso Gamarra Apaza, en las cuatro apariciones.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica pide que los nombres coincidan entre carátula, backlog, evidencia individual y tabla de participación. La forma más segura es usar siempre el nombre completo, sin abreviar.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Aplica el mismo criterio a los otros dos integrantes cuando reemplaces los corchetes.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="d8-septe">
+<h2><span class="num">08</span>D8 · El SEPTE no cierra con una síntesis</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D8</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, tras el análisis SEPTE</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El análisis SEPTE enumera las seis dimensiones correctamente, pero termina sin indicar qué factores son los más determinantes ni qué decisión tomó el equipo a partir de ellos. Sin esa síntesis, el análisis parece un requisito cumplido y no una herramienta usada.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Ecológico: Reducción significativa del consumo de papel, talonarios físicos e impresiones innecesarias al migrar los partes de ingreso y salida a un entorno 100% digital.
+
+(Fin del análisis SEPTE)</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Ecológico: Reducción significativa del consumo de papel, talonarios físicos e impresiones innecesarias al migrar los partes de ingreso y salida a un entorno 100% digital.
+
+Síntesis del análisis: los dos factores más determinantes para el proyecto son la resistencia inicial del personal operativo acostumbrado al papel y la exigencia de trazabilidad de existencias. El primero se atiende con interfaces simples que no requieran capacitación extensa; el segundo justifica que el registro de movimientos con usuario y fecha sea parte del Sprint 1 y no quede para después.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La síntesis es lo que demuestra que el análisis se usó para decidir. Convierte una lista de contexto en un insumo real de la planificación.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Basta con dos o tres líneas. No hace falta repetir nada del análisis anterior.</p>
+</div>
+</div>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="riesgos-entrega.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Riesgos de entrega</span></a>
+<a href="hoja-ruta.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Hoja de ruta</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Plan de mejora · T1 Proyecto Integrador · Noviembre 2026</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Todo el contenido · Plan de mejora</title>
+<meta name="description" content="Diagnóstico y correcciones de T1 - PROYECTO INTEGRADOR - propuesta.docx">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Plan de mejora <span>· Propuesta StockFlow</span></a>
+    <span class="meta">24 correcciones</span>
+  </div>
+</header>
+
+<main id="contenido">
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Plan de mejora · Vista completa</p>
+    <h1>Todo el contenido en una página</h1>
+    <p class="bajada">Versión lineal de los 7 contenidos, pensada para lectura continua e impresión.</p>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenidos">
+    <p>Contenidos</p>
+    <ol>
+<li><a href="#diagnostico">Diagnóstico</a></li>
+<li><a href="#bloqueantes">Correcciones bloqueantes</a></li>
+<li><a href="#inconsistencias">Inconsistencias internas</a></li>
+<li><a href="#evidencia-faltante">Evidencia individual faltante</a></li>
+<li><a href="#riesgos-entrega">Riesgos de entrega</a></li>
+<li><a href="#detalles">Detalles menores</a></li>
+<li><a href="#hoja-ruta">Hoja de ruta</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<article class="seccion" id="diagnostico" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">01</span>Diagnóstico
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Antes de corregir conviene saber qué no se debe tocar. La propuesta tiene varias partes que están mejor resueltas que el promedio; el riesgo está concentrado en cuatro puntos de marco y en la sección individual incompleta.</p>
+<section class="seccion" id="diagnostico-estado-por-seccion">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Estado por sección</h2>
+<p>De las siete secciones del informe, tres están alineadas con la teoría y cuatro requieren intervención. La columna de riesgo indica cuántos puntos están expuestos si no se corrige.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">N.</th><th scope="col">Sección</th><th scope="col">Puntos</th><th scope="col">Estado</th><th scope="col">Riesgo</th><th scope="col">Acción</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Documentación del proyecto</td><td>3</td><td>Alineado</td><td>Bajo</td><td>Solo ajustar el alcance y el objetivo general</td></tr>
+<tr><td>2</td><td>Planificación del Sprint</td><td>4</td><td>Parcial</td><td>Alto</td><td>Agregar Sprint Goal y separar puntos de horas</td></tr>
+<tr><td>3</td><td>Product Backlog</td><td>2</td><td>Parcial</td><td>Medio</td><td>Reescribir valor de negocio y unificar prioridad</td></tr>
+<tr><td>4</td><td>Incremento del producto</td><td>2</td><td>Alineado</td><td>Bajo</td><td>Agregar Definition of Done</td></tr>
+<tr><td>5</td><td>Retrospectiva</td><td>2</td><td>Alineado</td><td>Bajo</td><td>Corregir la frecuencia del Daily Scrum</td></tr>
+<tr><td>6</td><td>Evidencia individual</td><td>5</td><td>Incompleto</td><td>Muy alto</td><td>Escribir los bloques de los integrantes 2 y 3</td></tr>
+<tr><td>7</td><td>Participación del equipo</td><td>2</td><td>Parcial</td><td>Medio</td><td>Justificar los niveles de cumplimiento</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">El riesgo mayor no es conceptual</span>
+<p>La sección 6 vale cinco puntos y solo tiene el bloque de un integrante de tres. Eso expone alrededor de 3,3 puntos, más que cualquier error de redacción. Antes de pulir el vocabulario de Scrum, hay que escribir esos dos bloques.</p>
+</aside>
+</section>
+<section class="seccion" id="diagnostico-fortalezas">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Lo que está bien y no debe modificarse</h2>
+<p>Estas partes cumplen los criterios de la teoría y de la rúbrica. Al reescribir el documento conviene preservarlas tal como están, porque son las que sostienen el puntaje.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Elemento</th><th scope="col">Por qué está bien</th></tr></thead>
+<tbody>
+<tr><td>Descripción del problema</td><td>Tiene los tres componentes exigidos: situación actual, afectados e impacto medible. No describe la falta de sistema, describe el daño que la situación produce.</td></tr>
+<tr><td>Alcance del Sprint 1</td><td>Explicita lo que queda fuera y lo asigna al Sprint 2. Es el criterio que distingue una decisión de alcance de una lista de deseos.</td></tr>
+<tr><td>Análisis SEPTE</td><td>Cubre las seis dimensiones con normativa peruana concreta (Ley 29733 y Kardex valorizado de SUNAT) y cada dimensión termina en una consecuencia para el proyecto.</td></tr>
+<tr><td>Formato de las cinco historias</td><td>Usa correctamente Como / Quiero / Para, con rol, acción y beneficio distintos entre sí.</td></tr>
+<tr><td>Criterios de aceptación</td><td>Son verificables, están en Dado / Cuando / Entonces e incluyen caminos de error. Es el punto que más pesa en la sección de cuatro puntos.</td></tr>
+<tr><td>Retrospectiva</td><td>Responde las cuatro preguntas con hechos concretos y fechables, no con generalidades. Cumple el requisito de justificar con situaciones reales.</td></tr>
+<tr><td>Evidencia individual 6.5</td><td>Describe el recorrido completo de una tarea por el tablero: planificación, ejecución, validación y cierre.</td></tr>
+<tr><td>Trazabilidad objetivos-historias</td><td>Los cuatro objetivos específicos se corresponden con las cinco historias. Demuestra que el proyecto está pensado.</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado exito">
+<span class="titulo-destacado">El rol doble no es un error</span>
+<p>El Scrum Master también desarrolla backend. La Guía Scrum 2020 establece que si el Product Owner o el Scrum Master trabajan en elementos del Sprint Backlog, participan como Developers. La propuesta incluso lo aclara. No hay nada que corregir aquí.</p>
+</aside>
+</section>
+<section class="seccion" id="diagnostico-resumen-errores">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Los errores agrupados por gravedad</h2>
+<p>Los veinticuatro hallazgos se agrupan en cuatro niveles. El nivel no mide cuánto cuesta corregirlo, sino cuánto daño hace si queda en el documento final.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Nivel</th><th scope="col">Qué incluye</th><th scope="col">Cuántos</th><th scope="col">Efecto si no se corrige</th></tr></thead>
+<tbody>
+<tr><td>Bloqueante</td><td>Errores de marco que un evaluador de Scrum detecta en la primera lectura</td><td>4</td><td>Compromete secciones completas</td></tr>
+<tr><td>Inconsistencia</td><td>Datos que se contradicen entre dos secciones del mismo documento</td><td>6</td><td>Delata falta de revisión</td></tr>
+<tr><td>Riesgo de entrega</td><td>Elementos faltantes o de andamiaje que delatan un borrador</td><td>6</td><td>Pérdida directa de puntaje</td></tr>
+<tr><td>Detalle menor</td><td>Imprecisiones de redacción o de vocabulario</td><td>8</td><td>Descuento en orden y claridad</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Sobre el orden de trabajo</span>
+<p>No conviene corregir de arriba abajo según el número de sección. Primero se cierran los bloqueantes porque cambian el sentido de lo que está alrededor, después las inconsistencias, y los detalles al final.</p>
+</aside>
+</section>
+</article>
+<article class="seccion" id="bloqueantes" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">02</span>Correcciones bloqueantes
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Son errores de fundamento, no de redacción. Un evaluador con formación en Scrum los detecta en la primera lectura y afectan la credibilidad de todo el informe. Cada uno trae el texto exacto que debe reemplazar el original.</p>
+<section class="seccion" id="bloqueantes-b1-daily">
+<h2 style="font-size:1.4rem"><span class="num">01</span>B1 · El Daily Scrum no es diario</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">B1</span>
+<span class="gravedad grave">Bloqueante</span>
+<span class="ubicacion">5. Retrospectiva y 7. Participación del equipo</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La propuesta afirma haber hecho Daily Scrums de 10 minutos cada dos días. La Guía Scrum 2020 fija el evento en 15 minutos, todos los días laborables del Sprint, a la misma hora y en el mismo lugar. Una reunión cada dos días y de 10 minutos es una reunión de seguimiento, no un Daily Scrum. Además, en la sección 7 se reporta una asistencia de 5 de 5 sesiones, lo que confirma que solo hubo cinco.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>La realización de Daily Scrums de 10 minutos cada dos días vía Discord/WhatsApp, permitiendo detectar bloqueos a tiempo (como la definición de tipos de datos en la tabla de movimientos).
+
+Y en la sección 7: reuniones breves (Daily Scrums) de 10 minutos vía Discord cada dos días.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>La realización del Daily Scrum de 15 minutos, todos los días laborables del Sprint y siempre a la misma hora, por Discord. Ese espacio diario permitió detectar bloqueos a tiempo, como la definición de los tipos de datos en la tabla de movimientos, que se resolvió el mismo día en que apareció.
+
+Y en la sección 7: el Daily Scrum de 15 minutos, todos los días laborables, por Discord.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>El Daily Scrum es el evento que sostiene la inspección diaria del avance hacia el Sprint Goal. Si el informe declara una frecuencia distinta a la que define el marco, el resto de las afirmaciones sobre Scrum pierden respaldo.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si de verdad se reunieron cada dos días, entonces no lo llamen Daily Scrum: digan «reunión de sincronización» y no lo presenten como evidencia de Scrum. La opción más simple es ajustar el relato a lo que pide el marco y corregir el 5/5 por el número real de días laborables del Sprint.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="bloqueantes-b2-sprint-goal">
+<h2 style="font-size:1.4rem"><span class="num">02</span>B2 · Falta el Sprint Goal</h2>
+<p>La propuesta justifica el orden de las historias, pero nunca declara el resultado que el Sprint busca. Es la pieza que da coherencia a la Planning y la que permite negociar el alcance sin perder el rumbo.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">B2</span>
+<span class="gravedad grave">Bloqueante</span>
+<span class="ubicacion">2. Planificación del Sprint, antes de las historias</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>No existe ninguna frase que declare el objetivo del Sprint. La justificación de priorización explica por qué ese orden, pero no qué resultado se persigue. Sin Sprint Goal, las cinco historias parecen una lista de tareas y no un compromiso con un resultado de negocio.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>a) Historias de Usuario del Sprint 1
+
+HU-01: Inicio de sesión seguro...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>a) Sprint Goal e Historias de Usuario del Sprint 1
+
+Sprint Goal del Sprint 1:
+Que el personal de almacén pueda dar de alta un producto y registrar su primer movimiento de entrada o salida, viendo el stock actualizado en tiempo real, sin recurrir al cuaderno ni a hojas de cálculo.
+
+HU-01: Inicio de sesión seguro...</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>El Sprint Goal es el compromiso del Sprint Backlog. Se redacta como un resultado de negocio verificable y no como una lista de historias. Además resuelve una duda que la propuesta deja abierta: explica por qué HU-04 y HU-05 entran en el Sprint, porque sin búsqueda ni alertas el flujo no resulta operable por el almacenero.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Va antes de HU-01, dentro de la sección 2, y no reemplaza a la justificación de priorización: la complementa.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="bloqueantes-b3-dod">
+<h2 style="font-size:1.4rem"><span class="num">03</span>B3 · Falta la Definition of Done</h2>
+<p>El incremento afirma haber cubierto el 100% del alcance sin decir qué significa «terminado». Ese es justamente el vacío que la Definition of Done existe para cubrir.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">B3</span>
+<span class="gravedad grave">Bloqueante</span>
+<span class="ubicacion">4. Incremento del producto, antes del texto descriptivo</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Se declara que las cinco historias están completadas y que el incremento representa el 100% del alcance, pero no se define el estándar de calidad que permite afirmarlo. Sin ese acuerdo, cada integrante entiende algo distinto por terminado y la transparencia del artefacto se rompe.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>4. Incremento del producto
+
+Guía exacta de qué capturas deben tomar y pegar aquí...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>4. Incremento del producto
+
+Definition of Done acordada por el equipo
+
+Una historia se considera terminada cuando cumple todas las condiciones siguientes:
+1. El código está integrado en la rama principal del repositorio y compila sin errores.
+2. La funcionalidad fue probada con datos reales de prueba, no solo con registros cargados a mano.
+3. Los criterios de aceptación de la historia fueron verificados uno por uno.
+4. No quedan errores conocidos de severidad alta o media.
+5. La validación del Product Owner quedó registrada en la tarjeta del tablero.
+6. La evidencia visual correspondiente quedó guardada para el informe del Sprint.
+
+Guía de capturas que deben tomar y pegar aquí...</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La Definition of Done es el compromiso del incremento. Al declararla se justifica por qué las cinco historias figuran como completadas y se demuestra que el equipo acordó un estándar común de calidad.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Cuidado con la coherencia: si la Definition of Done exige validación del Product Owner y la sección 7 dice que el Product Owner solo probó HU-01 y HU-05, hay que ajustar la sección 7 para que las cinco historias hayan pasado por validación.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="bloqueantes-b4-estimacion">
+<h2 style="font-size:1.4rem"><span class="num">04</span>B4 · Story Points mezclados con horas</h2>
+<p>Es el error más visible de la propuesta para cualquiera que sepa estimación ágil. Se escribe «3 Story Points (5 horas)», lo que convierte el punto de historia en una hora disfrazada y anula la razón de ser de la estimación relativa.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">B4</span>
+<span class="gravedad grave">Bloqueante</span>
+<span class="ubicacion">2. Planificación del Sprint, líneas de estimación</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El punto de historia es una unidad abstracta de tamaño relativo: no equivale a horas ni a días. Al poner la equivalencia entre paréntesis se destruye la estimación relativa. Peor aún, la conversión es internamente incoherente: HU-02 y HU-05 valen ambos 5 puntos, pero se les asignan 8 y 6 horas respectivamente. Dos historias del mismo tamaño no pueden tener duraciones distintas si el punto se está usando como unidad relativa.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Prioridad: Alta | Estimación: 3 Story Points (5 horas)
+Prioridad: Alta | Estimación: 5 Story Points (8 horas)
+Prioridad: Alta | Estimación: 8 Story Points (10 horas)
+Prioridad: Media | Estimación: 3 Story Points (5 horas)
+Prioridad: Media | Estimación: 5 Story Points (6 horas)</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Prioridad: Alta | Estimación: 3 puntos de historia
+Prioridad: Alta | Estimación: 5 puntos de historia
+Prioridad: Alta | Estimación: 8 puntos de historia
+Prioridad: Media | Estimación: 3 puntos de historia
+Prioridad: Media | Estimación: 5 puntos de historia</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La sección 2 pide prioridad y estimación; la sección 3 es la que pide tiempo estimado en la tabla del backlog. Separando ambas unidades, cada sección cumple su propósito sin contradecir a la otra: en la sección 2 se dimensiona el tamaño relativo y en la sección 3 se declara el tiempo.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> No agregues ninguna frase que traduzca puntos a horas en ningún lugar del documento. Si alguien pregunta, la respuesta correcta es que el equipo estimó en puntos y que la velocidad del Sprint sirve para proyectar, no para convertir.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo queda la tabla del backlog tras la corrección</span>
+<p>La sección 3 conserva la columna de tiempo estimado en horas, tal como pide el enunciado, y deja de contradecir a la sección 2. El total del Sprint son 24 puntos de historia y 34 horas de trabajo estimado.</p>
+</aside>
+<div class="tabla-envoltura"><table>
+<caption>Correspondencia final de estimaciones</caption>
+<thead><tr><th scope="col">Historia</th><th scope="col">Puntos de historia</th><th scope="col">Tiempo estimado en el backlog</th></tr></thead>
+<tbody>
+<tr><td>HU-01 Inicio de sesión seguro</td><td>3</td><td>5 horas</td></tr>
+<tr><td>HU-02 Registro y gestión del catálogo</td><td>5</td><td>8 horas</td></tr>
+<tr><td>HU-03 Registro de entradas y salidas</td><td>8</td><td>10 horas</td></tr>
+<tr><td>HU-04 Consulta y filtrado rápido</td><td>3</td><td>5 horas</td></tr>
+<tr><td>HU-05 Alertas visuales de stock mínimo</td><td>5</td><td>6 horas</td></tr>
+<tr><td>Total del Sprint 1</td><td>24</td><td>34 horas</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+<article class="seccion" id="inconsistencias" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">03</span>Inconsistencias internas
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Estos seis hallazgos no son errores de concepto sino de coherencia. Su efecto es peor que un error técnico: hacen dudar de todo lo demás, porque sugieren que el documento no fue revisado de principio a fin.</p>
+<section class="seccion" id="inconsistencias-i1-hu03">
+<h2 style="font-size:1.4rem"><span class="num">01</span>I1 · La estimación de HU-03 se contradice</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I1</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">2. Planificación frente a 6.4 Estimación del Sprint</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>En la sección 2, HU-03 figura estimada en 10 horas. En la sección 6.4 se afirma que se estimó en 8 horas y que terminó tomando 10. Es la misma cifra contada de dos maneras incompatibles: en un lugar son la estimación y en el otro son el resultado real.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Sección 2: Prioridad: Alta | Estimación: 8 Story Points (10 horas)
+
+Sección 6.4: En la HU-03 estimamos inicialmente 8 horas, pero terminó tomando 10 horas.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Sección 2: Prioridad: Alta | Estimación: 8 puntos de historia | 8 horas estimadas
+
+Sección 6.4: En la HU-03 estimamos inicialmente 8 horas, pero terminó tomando 10 horas.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La reflexión de la sección 6.4 solo tiene valor si la estimación original queda registrada como tal. Al dejar 8 horas en la sección 2, la tabla del backlog y la autocrítica cuentan la misma historia en lugar de contradecirse.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si prefieres no incluir horas en la sección 2, entonces la frase de la sección 6.4 debe hablar de puntos: «estimamos 8 puntos y el trabajo real equivalió a 13». Lo que no puede pasar es que las dos secciones atribuyan un significado distinto a la misma cifra.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="inconsistencias-i2-valor-negocio">
+<h2 style="font-size:1.4rem"><span class="num">02</span>I2 · El valor de negocio repite la prioridad</h2>
+<p>La tabla del Product Backlog tiene una columna de valor de negocio que dice Alto o Medio. Eso no es valor: es la prioridad escrita dos veces. Si ambas columnas dicen lo mismo, una de las dos sobra y el enunciado pide las dos.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I2</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">3. Product Backlog, columna Valor de negocio</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El valor de negocio debe expresar el beneficio concreto que la historia aporta a la empresa o al usuario, no su nivel de prioridad. Además existe un caso que queda sin explicar: HU-05 tiene valor Alto pero prioridad Media, lo que a primera vista parece un error y solo se justifica si el beneficio está escrito.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Columna Valor de negocio:
+HU-01 Alto
+HU-02 Alto
+HU-03 Alto
+HU-04 Medio
+HU-05 Alto</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Columna Valor de negocio:
+HU-01: Protege la integridad de los registros del almacén y permite auditar quién hizo cada operación.
+HU-02: Elimina la duplicidad de códigos de producto, que es la causa principal del desfase entre stock físico y registrado.
+HU-03: Automatiza el Kardex y evita el despacho de mercadería inexistente.
+HU-04: Reduce de varios minutos a segundos la búsqueda de cualquier artículo del almacén.
+HU-05: Anticipa los quiebres de stock que detienen el despacho y obligan a compras de emergencia.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica pide una columna de valor de negocio diferenciada de la prioridad. Al expresarla como beneficio concreto, la tabla deja de tener información duplicada y queda justificado por qué una historia puede tener mucho valor y aun así no ser la más urgente.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Mantén las respuestas breves: una línea por historia. La tabla debe seguir siendo legible de un vistazo.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="inconsistencias-i3-prioridad">
+<h2 style="font-size:1.4rem"><span class="num">03</span>I3 · La prioridad usa dos escalas distintas</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I3</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">2. Planificación y 3. Product Backlog, columna Prioridad</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>En la sección 2 la prioridad se expresa como Alta o Media. En la tabla del backlog se escribe 1 (Alta), 2 (Alta), hasta 5 (Media), mezclando la posición en la lista con el nivel de prioridad. Son dos sistemas distintos para el mismo dato, y además el estado usa Completado, que no pertenece al vocabulario controlado que el propio proyecto definió.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Sección 2: Prioridad: Alta / Prioridad: Media
+
+Sección 3:  1 (Alta), 2 (Alta), 3 (Alta), 4 (Media), 5 (Media)
+Estado: Completado</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Sección 2: Prioridad: Alta / Prioridad: Media
+
+Sección 3: columna Prioridad con Alta, Alta, Alta, Media, Media
+Estado: Hecho</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un dato debe tener una sola representación en todo el documento. El orden de las filas ya comunica la posición, así que no hace falta numerarla dentro de la columna de prioridad. Y el estado debe usar el vocabulario controlado pendiente, en progreso o hecho.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si quieres conservar la numeración para mostrar el orden de atención, agrégala como una columna aparte llamada Orden, no dentro de la columna Prioridad.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="inconsistencias-i4-alcance">
+<h2 style="font-size:1.4rem"><span class="num">04</span>I4 · El alcance omite una de las cinco historias</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I4</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">1. Documentación del proyecto, Alcance del Sprint 1</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El alcance enumera el inicio de sesión, el catálogo de productos, el registro de movimientos, la actualización de stock y las alertas visuales. No menciona la búsqueda y el filtrado rápido, que sí figura como HU-04 en las secciones 2 y 3. El lector ve que el alcance declara cuatro historias y el Sprint tiene cinco.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>El Sprint 1 abarca el desarrollo del Producto Mínimo Viable (MVP) operativo, compuesto por: inicio de sesión de usuarios, mantenimiento básico (registro y listado) de productos, registro de entradas y salidas de inventario, actualización automática de stock y alertas visuales de stock bajo. (Quedan fuera de este Sprint la exportación avanzada a PDF/Excel, gestión multi-almacén compleja y módulos de facturación, los cuales pasarán al Sprint 2).</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>El Sprint 1 abarca el desarrollo del Producto Mínimo Viable operativo, compuesto por las cinco historias siguientes: inicio de sesión de usuarios con control de acceso por roles (HU-01), registro y listado del catálogo de productos con validación de códigos únicos (HU-02), registro de entradas y salidas de inventario con actualización automática del stock (HU-03), consulta y filtrado rápido del inventario (HU-04) y alertas visuales de stock bajo (HU-05). Quedan fuera de este Sprint la exportación avanzada a PDF y Excel, la gestión multi-almacén compleja y los módulos de facturación, que pasan al Sprint 2.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>El alcance y las historias deben decir exactamente lo mismo. Al nombrar las cinco con su identificador, se cierra la única grieta de trazabilidad que tenía la sección 1.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Aprovecha para escribir «Producto Mínimo Viable» en lugar de MVP si el resto del documento está en español, y para reemplazar las siglas sin desarrollar.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="inconsistencias-i5-responsables">
+<h2 style="font-size:1.4rem"><span class="num">05</span>I5 · Dos responsables en una misma historia</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I5</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">3. Product Backlog, columna Responsable</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Dos historias figuran con dos responsables cada una: HU-02 con el integrante de frontend y Alonso, y HU-05 con el integrante 2 y el 3. Un responsable compartido equivale a ningún responsable, y contradice la sección 7, donde se afirma que las responsabilidades se dividieron según las fortalezas técnicas de cada integrante.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>HU-02: [Integrante 3] (Frontend) / Alonso
+HU-05: [Integrante 2] (PO/QA) / [Integrante 3]</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>HU-02: [Nombre del Integrante 3] (Developer Frontend)
+HU-05: [Nombre del Integrante 3] (Developer Frontend)</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La columna Responsable indica quién lidera la historia y responde por ella. La colaboración existe igual y puede mencionarse en la evidencia individual, pero el tablero necesita una sola tarjeta con un solo dueño.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si HU-05 la trabajó principalmente el frontend con validación del Product Owner, deja al frontend como responsable y menciona la validación en la sección 7. Si la lideró el Product Owner, asígnala a él y deja al frontend como apoyo.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="inconsistencias-i6-cumplimiento">
+<h2 style="font-size:1.4rem"><span class="num">06</span>I6 · Los tres integrantes tienen 100%</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">I6</span>
+<span class="gravedad media">Inconsistencia</span>
+<span class="ubicacion">7. Informe de participación del equipo</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Los tres integrantes registran 100% (5/5) de participación en el Daily Scrum y 100% (Alto) de nivel de cumplimiento. Un equipo en el que nadie faltó, nadie se retrasó y todos rinden exactamente igual no resulta creíble, y además la columna deja de aportar información porque no diferencia a nadie. Al mismo tiempo, el 5/5 confirma que solo hubo cinco sesiones, lo que contradice un Daily diario.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>José Alonso Gamarra Apaza | 100% (5/5) | 100% (Alto)
+[Nombre Integrante 2] | 100% (5/5) | 100% (Alto)
+[Nombre Integrante 3] | 100% (5/5) | 100% (Alto)</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>José Alonso Gamarra Apaza | 10 de 10 sesiones (100%) | Alto
+[Nombre Integrante 2] | 9 de 10 sesiones (90%) | Alto
+[Nombre Integrante 3] | 9 de 10 sesiones (90%) | Medio-alto</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La columna pide un nivel de cumplimiento, y un nivel solo tiene sentido si distingue. Un 90% con una justificación breve es más creíble y demuestra mejor el funcionamiento del equipo que un 100% uniforme.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Ajusta los números a la cantidad real de días laborables del Sprint y añade una frase por integrante explicando la ausencia. Si todos asistieron realmente a todas las sesiones, entonces cambia el denominador para que coincida con la duración real del Sprint.</p>
+</div>
+</div>
+</section>
+</article>
+<article class="seccion" id="evidencia-faltante" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">04</span>Evidencia individual faltante
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">La sección 6 vale cinco puntos y solo contiene el bloque del integrante 1. Esto expone alrededor de 3,3 puntos, más que cualquier error de redacción del documento. Aquí están los dos bloques restantes redactados en extenso, con los cinco apartados cada uno, listos para personalizar con los nombres reales.</p>
+<section class="seccion" id="evidencia-faltante-como-usar">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Cómo usar estos bloques</h2>
+<p>Los dos textos siguientes están redactados para ser copiados y luego personalizados. No son plantillas vacías: ya contienen contenido coherente con lo que la propuesta dice que hizo cada integrante. Lo que falta es reemplazar los nombres y ajustar los detalles que solo ellos conocen.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Qué reemplazar</th><th scope="col">Por qué importa</th></tr></thead>
+<tbody>
+<tr><td>Los nombres entre corchetes</td><td>La rúbrica exige que coincidan con la carátula, el backlog y la tabla final</td></tr>
+<tr><td>Las fechas o cantidades que no recuerden</td><td>Un dato inventado que no cuadra con el tablero es peor que un dato vago</td></tr>
+<tr><td>El principio ágil elegido</td><td>Debe ser coherente con lo que realmente hizo esa persona</td></tr>
+<tr><td>La historia seleccionada</td><td>Cada integrante debe elegir una distinta para que la evidencia no se repita</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">El error que hay que evitar</span>
+<p>Si los tres bloques describen la misma dificultad de estimación o los mismos principios ágiles, el evaluador concluye que se copiaron. Los principios ya están repartidos entre los tres integrantes en este documento: no los cambien por los mismos.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-faltante-integrante-2">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Bloque del Integrante 2 · Product Owner y QA</h2>
+<h3 class="subtitulo-bloque">6.1 Aplicación del enfoque ágil</h3>
+<p>Scrum aportó al proyecto una estructura de decisión que evitó construir funcionalidades que nadie había pedido. Como Product Owner, el marco me obligó a mantener un Product Backlog ordenado y a justificar cada prioridad frente al equipo, en lugar de trasladar pedidos sin criterio. El resultado fue que al cierre del Sprint 1 existía un núcleo de inventario operativo y no un conjunto de módulos a medio terminar.</p>
+<p>El primer principio del Manifiesto Ágil que aplicamos fue «nuestra mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor». Lo aplicamos al reducir el alcance del Sprint a las cinco historias que resolvían el control básico del almacén, dejando la exportación a PDF y Excel y la facturación para el Sprint 2. Esa decisión permitió que el almacenero pudiera usar el sistema al final del Sprint, en lugar de esperar a tener el producto completo.</p>
+<p>El segundo principio fue «los responsables de negocio y los desarrolladores trabajamos juntos de forma cotidiana durante todo el proyecto». En la práctica, esto significó que revisé los criterios de aceptación con el equipo antes de que empezaran a programar, y no después de recibir el entregable. La consecuencia concreta fue que ninguna historia volvió de revisión por un criterio mal interpretado: las diferencias se resolvieron en la conversación previa y no en el retrabajo.</p>
+<h3 class="subtitulo-bloque">6.2 Rol desempeñado</h3>
+<p>Rol asumido: Product Owner, con apoyo en las pruebas funcionales del incremento.</p>
+<ul class="lista">
+<li>Responsabilidades: ordenar el Product Backlog según el valor de negocio, redactar las cinco historias de usuario con sus criterios de aceptación, comunicar el Sprint Goal al equipo y validar el incremento antes de considerarlo terminado.</li>
+<li>Actividades desarrolladas: redacté las cinco historias y sus criterios de aceptación antes de la Sprint Planning; definí el orden de prioridad a partir de la dependencia técnica y del valor para el almacén; verifiqué los criterios de aceptación de HU-01 y HU-05 contra el sistema funcionando; y mantuve el backlog actualizado durante el Sprint, registrando los pedidos nuevos que surgieron en lugar de incorporarlos al alcance en curso.</li>
+<li>Aporte al Sprint: la priorización permitió que el flujo completo de inventario estuviera operativo al cierre, y la definición previa de los criterios de aceptación evitó el retrabajo por interpretaciones distintas entre frontend y backend.</li>
+</ul>
+<h3 class="subtitulo-bloque">6.3 Historia de Usuario</h3>
+<p>Historia seleccionada: HU-05, Alertas visuales de stock mínimo.</p>
+<p>Funcionalidad y beneficio: la historia permite que el sistema marque con una etiqueta de advertencia todo producto cuyo stock actual sea igual o inferior al mínimo configurado. El beneficio para el usuario es que el supervisor deja de revisar el listado completo para descubrir qué falta reponer: la alerta aparece en la misma vista donde consulta el inventario, de modo que la decisión de compra llega antes de que el producto se agote y detenga el despacho.</p>
+<p>Participación: redacté los dos criterios de aceptación de la historia, uno para el caso en que el stock cae por debajo del mínimo y otro para cuando una entrada lo devuelve a un nivel normal. Además definí que el umbral se compara con el stock mínimo configurado por producto y no con un valor fijo general, porque cada artículo tiene una rotación distinta. Finalmente verifiqué ambos criterios en el sistema con datos de prueba antes de aprobar el paso de la tarjeta a terminado.</p>
+<h3 class="subtitulo-bloque">6.4 Estimación del Sprint</h3>
+<p>Dificultad: la historia que más me costó estimar fue HU-05. El equipo discutió si la alerta era un cálculo que debía ejecutarse cada vez que se consultaba el listado o un valor que debía guardarse actualizado en la tabla de productos. Las dos opciones parecían razonables y no supimos cuál implicaba menos trabajo, porque una afectaba el rendimiento de la consulta y la otra obligaba a recalcular en cada movimiento. Estimamos cinco puntos con base en la opción más simple, pero la discusión consumió una parte de la Planning que no habíamos previsto.</p>
+<p>Mejora para el Sprint 2: para las historias donde el equipo no se pone de acuerdo sobre el enfoque técnico, haremos una prueba corta de dos horas antes de estimar, de modo que la decisión se tome con evidencia y no con opinión. Además, incorporaré en la Planning una revisión explícita de los supuestos técnicos de cada historia, porque en este Sprint la discusión apareció durante la estimación y no antes.</p>
+<h3 class="subtitulo-bloque">6.5 Seguimiento del trabajo</h3>
+<p>Uso de la herramienta: gestioné el seguimiento con Trello. El tablero tenía las columnas Product Backlog, Sprint 1 To Do, In Progress, Testing y Done. Mi función principal en el tablero no era mover tarjetas de desarrollo sino mantener la columna Testing con las tarjetas que esperaban validación, revisar los checklists de criterios de aceptación y aprobar o devolver cada historia con un comentario que explicara qué faltaba.</p>
+<p>Gestión de una tarea específica: la tarea «Verificar la validación de stock insuficiente en salidas» se creó en la Sprint Planning dentro de la tarjeta de HU-03. La tomé cuando el desarrollador movió la historia a Testing. Revisé el checklist de criterios de aceptación uno por uno y probé el caso intentando registrar una salida mayor al stock disponible. El sistema bloqueó la operación con el mensaje esperado, pero el aviso aparecía en un lugar de la pantalla donde era fácil pasarlo por alto, así que devolví la tarjeta a In Progress con un comentario que indicaba mover el mensaje junto al campo de cantidad. Una vez corregido, repetí la prueba, marqué el criterio como cumplido y aprobé el paso a Done.</p>
+</section>
+<section class="seccion" id="evidencia-faltante-integrante-3">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Bloque del Integrante 3 · Developer Frontend</h2>
+<h3 class="subtitulo-bloque">6.1 Aplicación del enfoque ágil</h3>
+<p>Scrum nos permitió construir la interfaz contra una funcionalidad real y no contra una maqueta aprobada al inicio del proyecto. Trabajar en Sprints cortos con historias pequeñas significó que cada pantalla que terminaba se conectaba el mismo día con la lógica que el backend ya tenía lista, de modo que los errores de integración aparecían en horas y no al final del ciclo.</p>
+<p>El primer principio del Manifiesto Ágil que aplicamos fue «entregamos software funcional frecuentemente, entre dos semanas y dos meses, con preferencia al periodo de tiempo más corto posible». Lo aplicamos al construir primero el formulario de productos y el registro de movimientos como pantallas utilizables, aunque el sistema todavía no tuviera reportes ni exportación. Eso nos permitió que el almacenero probara el flujo real a mitad del Sprint y señalara problemas de usabilidad cuando aún había tiempo de corregirlos.</p>
+<p>El segundo principio fue «la atención continua a la excelencia técnica y al buen diseño mejora la agilidad». En nuestro caso se concretó en unificar los formularios sobre un mismo componente de validación, en lugar de escribir las reglas de campos obligatorios y números negativos una vez por pantalla. Esa decisión costó unas horas más al principio, pero hizo que corregir una validación después significara cambiarla en un solo lugar y no en cinco.</p>
+<h3 class="subtitulo-bloque">6.2 Rol desempeñado</h3>
+<p>Rol asumido: Developer, con responsabilidad principal sobre la interfaz de usuario.</p>
+<ul class="lista">
+<li>Responsabilidades: construir las pantallas y formularios del sistema, aplicar las validaciones visuales correspondientes a cada criterio de aceptación, conectar las vistas con los servicios del backend y asegurar que el flujo fuera operable sin explicaciones adicionales para el usuario final.</li>
+<li>Actividades desarrolladas: diseñé y programé la pantalla de inicio de sesión, el formulario de registro de productos con su listado, el formulario de entrada y salida de mercadería con la actualización del saldo visible, la barra de búsqueda con filtrado en tiempo real y el indicador de stock crítico. Además ajusté las validaciones de campos vacíos y de valores negativos, y coordiné con el backend el formato de los datos intercambiados.</li>
+<li>Aporte al Sprint: la interfaz fue lo que convirtió la lógica de inventario en algo usable por el almacenero. Sin las pantallas y sus validaciones, el cálculo de stock habría funcionado solo a nivel de base de datos y el incremento no habría cumplido la condición de ser usable.</li>
+</ul>
+<h3 class="subtitulo-bloque">6.3 Historia de Usuario</h3>
+<p>Historia seleccionada: HU-04, Consulta y filtrado rápido de inventario.</p>
+<p>Funcionalidad y beneficio: la historia permite que el usuario escriba al menos dos caracteres en una barra de búsqueda y que la tabla del inventario se reduzca en tiempo real a los productos que coinciden por código o por nombre. El beneficio es que el operador deja de recorrer el listado completo con la vista para encontrar un artículo y obtiene la respuesta en segundos, lo que cambia por completo la tarea de atender un pedido en mostrador.</p>
+<p>Participación: implementé la barra de búsqueda, el filtrado sobre la tabla ya cargada y el estado vacío que se muestra cuando el término no arroja coincidencias. Definí junto al Product Owner que el filtro debía aplicarse sobre los datos ya obtenidos y no con una consulta nueva al servidor en cada tecla, para evitar que la pantalla se sintiera lenta con un catálogo de varios cientos de productos. También probé ambos criterios de aceptación con un catálogo de prueba que incluía nombres parecidos y códigos con prefijos comunes.</p>
+<h3 class="subtitulo-bloque">6.4 Estimación del Sprint</h3>
+<p>Dificultad: subestimé el tiempo necesario para ajustar las validaciones visuales de los formularios. Estimé HU-02 en cinco puntos pensando en el formulario en su estado normal, pero no contemplé los casos de error: que el código estuviera duplicado, que el stock mínimo fuera negativo o que faltara un campo obligatorio. Cada uno requería un mensaje distinto y una forma de mostrarlo que no rompiera el diseño del formulario. Al final, las validaciones ocuparon casi tanto tiempo como el formulario en sí.</p>
+<p>Mejora para el Sprint 2: antes de estimar, voy a enumerar los estados de error de cada pantalla y contarlos como parte de la historia. Una pantalla con tres estados de error no es del mismo tamaño que una que solo tiene el camino normal, y hasta ahora los estaba estimando como si lo fueran. También propondré que los mensajes de validación se definan junto con los criterios de aceptación, para no improvisarlos al final.</p>
+<h3 class="subtitulo-bloque">6.5 Seguimiento del trabajo</h3>
+<p>Uso de la herramienta: seguí mi trabajo en Trello con las mismas columnas del equipo, pero además subdividí mis tareas dentro de cada tarjeta usando checklists. Como las historias de interfaz tienen varias pantallas y estados, una sola tarjeta por historia no reflejaba mi avance real; los checklists me permitían marcar qué pantalla estaba terminada y cuál seguía en curso.</p>
+<p>Gestión de una tarea específica: la tarea «Implementar la barra de búsqueda y el filtrado en tiempo real» se creó en la Sprint Planning como parte de HU-04 y la tomé al iniciar el Sprint, moviendo la tarjeta a In Progress. Al segundo día ya filtraba por nombre, pero el criterio exigía también por código, así que dejé la tarjeta en progreso y marqué solo el primer ítem del checklist. Al tercer día terminé ambos criterios y agregué el estado vacío para el caso sin coincidencias, que no estaba en el criterio pero evitaba que la tabla quedara en blanco sin explicación. Moví la tarjeta a Testing y el Product Owner la devolvió una vez porque el aviso de «no se encontraron productos» aparecía durante la carga inicial. Corregido eso, la historia pasó a Done.</p>
+</section>
+<section class="seccion" id="evidencia-faltante-revisar-integrante-1">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Ajustes al bloque del Integrante 1</h2>
+<p>El bloque que ya existe está bien redactado, pero necesita tres ajustes para quedar coherente con las correcciones de este plan.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Apartado</th><th scope="col">Ajuste necesario</th></tr></thead>
+<tbody>
+<tr><td>6.2</td><td>Cambiar «Scrum Master y Desarrollador Backend / Base de Datos» por «Scrum Master, con apoyo en el desarrollo de backend y base de datos». El rol Scrum es uno solo; el desarrollo es la actividad.</td></tr>
+<tr><td>6.4</td><td>Revisar la cifra: si la sección 2 queda con 8 horas estimadas, aquí debe decir que se estimó en 8 y tomó 10. Ya está así, pero hay que corregir la sección 2 para que coincida.</td></tr>
+<tr><td>6.5</td><td>Mencionar la Definition of Done al explicar por qué la tarjeta pasó a Done, para que el estándar aparezca aplicado y no solo declarado.</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Principios ya usados por cada integrante</span>
+<p>Integrante 1 usa «software funcionando sobre documentación extensiva» y «simplicidad». Integrante 2 usa «entrega temprana y continua» y «negocio y desarrollo juntos». Integrante 3 usa «software funcional frecuentemente» y «excelencia técnica y buen diseño». Los seis son distintos y no se repiten.</p>
+</aside>
+</section>
+</article>
+<article class="seccion" id="riesgos-entrega" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">05</span>Riesgos de entrega
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Estos seis hallazgos no son errores de contenido: son rastros del proceso de armado que quedaron dentro del documento. Su efecto es desproporcionado, porque el evaluador los lee antes que el contenido y condicionan su expectativa sobre todo lo demás.</p>
+<section class="seccion" id="riesgos-entrega-andamiaje">
+<h2 style="font-size:1.4rem"><span class="num">01</span>R1 · Instrucciones de andamiaje dentro del documento</h2>
+<p>El documento contiene frases escritas para guiar a quien lo redacta, no para ser leídas por el evaluador. Son la señal más clara de que el texto es un borrador generado y no un informe terminado.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R1</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">Varias secciones</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Seis frases de instrucción permanecen dentro del cuerpo del informe. Deben eliminarse por completo, no reformularse.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>«Guía exacta de qué capturas deben tomar y pegar aquí:»
+«(Asegúrate de que los nombres de los responsables y las horas coincidan con tus tarjetas en Trello)»
+«Nota importante: En el informe final deben aparecer tres bloques separados (uno por cada integrante, con su nombre completo).»
+«Ejemplo desarrollado para ti (Integrante 1: José Alonso Gamarra Apaza)»
+«Guía rápida para que tus otros 2 compañeros llenen su sección (6.1 a 6.5):»
+«Lista de verificación rápida antes de entregar el PDF/Word:»</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Eliminar las seis frases. En su lugar, cuando corresponda, usar encabezados neutros:
+«4. Incremento del producto» seguido directamente de la Definition of Done y las capturas.
+«6. Evidencia individual de cada integrante» seguido de los tres bloques con nombre.
+«6.1 Aplicación del enfoque ágil» como subtítulo real del bloque del integrante 3.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un informe se juzga por lo que presenta, no por las instrucciones que se dio a sí mismo para armarlo. Estas frases rompen la ilusión de documento final y sugieren que el contenido no fue revisado.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Al eliminar la «lista de verificación», asegúrate de haberla aplicado antes: nombres consistentes, códigos HU iguales en las tres secciones y capturas legibles.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="riesgos-entrega-placeholders">
+<h2 style="font-size:1.4rem"><span class="num">02</span>R2 · Placeholders sin reemplazar</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R2</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">Organización del equipo, sección 3, sección 6 y sección 7</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Quedaron marcadores de posición con corchetes en lugar de los nombres reales. Un documento entregado con corchetes se considera incompleto.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>[Nombre Compañero 2]
+[Nombre Compañero 3]
+[Integrante 2]
+[Integrante 3]
+[Nombre Integrante 2]
+[Nombre Integrante 3]</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Los nombres completos reales de los dos integrantes restantes, idénticos en las cuatro apariciones: organización del equipo, tabla del Product Backlog, bloque de evidencia individual y tabla de participación.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica exige coherencia entre la carátula, el backlog, la evidencia individual y la tabla final. Un nombre escrito de dos formas distintas en el mismo documento es un descuento seguro.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Revisa también que «Alonso Gamarra» y «José Alonso Gamarra Apaza» se unifiquen en una sola forma. Lo recomendable es usar el nombre completo en las cuatro apariciones.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="riesgos-entrega-latex">
+<h2 style="font-size:1.4rem"><span class="num">03</span>R3 · Símbolos de LaTeX sin renderizar</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R3</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">Secciones 2, 4 y 6.5</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Hay expresiones matemáticas escritas en sintaxis LaTeX que el Word no interpreta, por lo que se ven como código. Además, en un informe en español conviene usar el término «unidades» en lugar de una variable.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Dado que se registra una Entrada de $X$ unidades...
+se incrementa exactamente en $X$ unidades
+To Do $\rightarrow$ In Progress $\rightarrow$ Testing $\rightarrow$ Done</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Dado que se registra una entrada de X unidades...
+se incrementa exactamente en X unidades
+To Do → In Progress → Testing → Done</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Los símbolos de marcado no forman parte del contenido y distraen. En el caso de la flecha, basta con el carácter tipográfico real o con la palabra «a» si el formato no lo admite.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Busca en el documento los caracteres de dólar y la barra invertida para encontrar todos los casos: puede haber más de los tres listados.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="riesgos-entrega-duracion">
+<h2 style="font-size:1.4rem"><span class="num">04</span>R4 · No se declara la duración del Sprint</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R4</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">1. Documentación del proyecto o 2. Planificación del Sprint</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>En ningún lugar del documento se indica cuánto duró el Sprint: ni fechas, ni cantidad de semanas. Sin ese dato no se puede evaluar la coherencia de las 34 horas estimadas, ni de la asistencia al Daily Scrum, ni del alcance comprometido.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>El Sprint 1 abarca el desarrollo del Producto Mínimo Viable operativo, compuesto por...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>El Sprint 1 tuvo una duración de dos semanas, del [fecha de inicio] al [fecha de fin]. Abarcó el desarrollo del Producto Mínimo Viable operativo, compuesto por...</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La duración es el dato que permite juzgar si la estimación y el alcance son razonables. Un Sprint sin fechas es un Sprint que no se puede auditar.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Al declarar las fechas, revisa que el número de días laborables coincida con la asistencia reportada en la sección 7. Para dos semanas son diez días laborables, que es la base de la corrección I6.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="riesgos-entrega-horas">
+<h2 style="font-size:1.4rem"><span class="num">05</span>R5 · El esfuerzo total es bajo para el plazo</h2>
+<p>Las cinco historias suman 34 horas de trabajo estimado para tres personas. En un Sprint de dos semanas eso equivale a unas once horas por integrante, lo que resulta poco creíble y además choca con la afirmación de haber cubierto el 100% del alcance.</p>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R5</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">3. Product Backlog, columna Tiempo estimado</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El total de 34 horas no incluye el tiempo de pruebas, integración ni documentación, por lo que subrepresenta el esfuerzo real. Al presentarlo como el total del Sprint, deja mal parada la estimación y hace que el cumplimiento del 100% parezca un alcance trivial.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Total: 5 + 8 + 10 + 5 + 6 = 34 horas</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Mantener las horas por historia como horas de desarrollo, y agregar una línea bajo la tabla:
+«Las horas indicadas corresponden al esfuerzo de desarrollo. El esfuerzo total del Sprint, incluyendo pruebas, integración y documentación, se estimó en 48 horas distribuidas entre los tres integrantes.»</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Declarar el esfuerzo completo demuestra que el equipo contempló las actividades que no son programación. Un desarrollo sin pruebas ni documentación no cumple la Definition of Done que el propio informe declara.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si prefieren no añadir la línea, al menos no escriban «100% del alcance comprometido» como logro principal: cumplir un alcance mínimo no impresiona a nadie.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="riesgos-entrega-capturas">
+<h2 style="font-size:1.4rem"><span class="num">06</span>R6 · El incremento depende de capturas que aún no existen</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">R6</span>
+<span class="gravedad media">Riesgo de entrega</span>
+<span class="ubicacion">4. Incremento del producto</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La sección 4 está redactada como una lista de capturas por tomar, no como la presentación de un incremento. Si alguna captura falta o queda ilegible, la sección pierde sustento aunque el sistema funcione.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Guía exacta de qué capturas deben tomar y pegar aquí:
+Captura 1 (Tablero Trello): ...
+Captura 2 (Detalle de tarjeta Trello): ...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Cada captura debe insertarse con un pie de figura numerado y una frase que explique qué demuestra:
+«Figura 1. Tablero del Sprint 1 al cierre, con las cinco historias en la columna Done.»
+«Figura 2. Detalle de la tarjeta de HU-03 con los criterios de aceptación marcados.»
+«Figura 3. Modelo de datos con las tablas usuarios, productos y movimientos_inventario.»
+«Figura 4. Pantalla de inicio de sesión con validación de credenciales.»
+«Figura 5. Formulario de registro de producto y listado con la etiqueta de stock crítico.»
+«Figura 6. Registro de entrada y salida con el saldo actualizado.»
+«Figura 7. Historial de commits en el repositorio.»</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica valora que las evidencias sean claras y estén vinculadas al trabajo descrito. Un pie de figura que explica qué se ve convierte una imagen en prueba; una imagen sin explicación obliga al evaluador a adivinar.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Toma las capturas con el sistema en marcha y con datos de prueba cargados. Una pantalla vacía no demuestra que la funcionalidad opere.</p>
+</div>
+</div>
+</section>
+</article>
+<article class="seccion" id="detalles" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">06</span>Detalles menores
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Ninguno de estos ocho puntos hunde el informe por sí solo, pero juntos afectan la claridad y el orden, que la rúbrica evalúa de forma explícita. Se corrigen al final, cuando el contenido ya está cerrado.</p>
+<section class="seccion" id="detalles-d1-objetivo">
+<h2 style="font-size:1.4rem"><span class="num">01</span>D1 · El objetivo general mezcla el medio y las funcionalidades</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D1</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, Objetivo general</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El objetivo general incluye el marco de trabajo como medio («bajo el marco de trabajo Scrum») y enumera funcionalidades. El objetivo debe describir el cambio que produce el proyecto, no la lista de lo que se va a construir ni la herramienta con la que se hará.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Desarrollar e implementar la primera versión funcional de una plataforma de gestión de inventarios bajo el marco de trabajo Scrum, que permita automatizar el registro de productos, el control de movimientos (entradas/salidas) y la consulta de existencias en tiempo real.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Digitalizar el control de inventarios de la empresa para que el personal de almacén registre y consulte las existencias en tiempo real, eliminando el desfase entre el stock físico y el registrado.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un objetivo con medios y con funcionalidades deja de ser un objetivo y se convierte en un plan. Al centrarlo en el cambio de la realidad, se puede verificar su cumplimiento y se distingue del alcance, que es otra sección.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Scrum y las funcionalidades ya aparecen en el alcance y en las historias. No hay que repetirlos en el objetivo.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d2-especificos">
+<h2 style="font-size:1.4rem"><span class="num">02</span>D2 · Los objetivos específicos son entregables</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D2</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, Objetivos específicos</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Los cuatro objetivos específicos empiezan con verbos de construcción («implementar», «desarrollar», «incorporar»), por lo que describen entregables y no resultados. Un objetivo específico debe expresar qué cambia en la operación del almacén.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Implementar un módulo de autenticación y control de acceso por roles...
+Desarrollar el catálogo maestro de productos...
+Automatizar el registro de movimientos de entrada y salida (Kardex)...
+Incorporar un panel de búsqueda rápida y alertas visuales...</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Garantizar que solo el personal autorizado acceda a la información del almacén según su perfil, dejando registro de quién consultó o modificó cada dato.
+Eliminar la duplicidad de códigos de producto mediante un catálogo único con validación de códigos y umbrales de stock mínimo por artículo.
+Mantener el saldo de existencias actualizado de forma automática con cada entrada o salida, conservando el historial trazable de movimientos.
+Reducir el tiempo de localización de un producto en el almacén y anticipar los quiebres de stock mediante alertas de nivel crítico.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Los objetivos específicos son los que permiten medir el logro del proyecto. Si se redactan como entregables, al cierre solo se puede decir si algo se construyó, no si sirvió para algo.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Cada objetivo específico debe poder conectarse con al menos una historia del Sprint. Con esta redacción siguen siendo cuatro y siguen mapeando con las cinco historias.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d3-cifra">
+<h2 style="font-size:1.4rem"><span class="num">03</span>D3 · La cifra del 70% no tiene origen</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D3</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, Justificación</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>Se afirma que se reduce en más del 70% el tiempo de búsqueda y cuadre de mercadería, sin indicar de dónde sale la cifra ni cuál es el punto de partida. Una cifra sin línea base no se puede verificar y resta credibilidad a toda la justificación.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>reduciendo en más del 70% el tiempo de búsqueda y cuadre de mercadería</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>reduciendo el tiempo de búsqueda y cuadre de mercadería, que hoy requiere recorrer los registros manuales uno por uno, a una consulta directa en el sistema</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Es preferible una afirmación cualitativa verificable a una cifra inventada. Si se conserva el porcentaje, hay que explicar la medición: por ejemplo, que el cuadre semanal tomaba dos horas y con el sistema toma menos de veinte minutos.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si pueden medirlo con el cliente, háganlo y escriban las dos cifras. Si no, quiten el porcentaje.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d4-hu05">
+<h2 style="font-size:1.4rem"><span class="num">04</span>D4 · HU-05 prescribe la solución</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D4</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">2. Planificación del Sprint, HU-05</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La historia pide un «indicador de color» y una «etiqueta roja», que son decisiones de diseño y no la necesidad del usuario. Una historia debe expresar el problema a resolver y dejar el cómo a criterio del equipo.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Quiero visualizar una alerta o indicador de color en los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar desabastecimiento.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Quiero identificar de inmediato los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar el desabastecimiento.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Al quitar la prescripción visual, la historia sigue siendo verificable mediante sus criterios de aceptación, pero deja de atar al equipo a una solución concreta.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Los criterios de aceptación pueden seguir mencionando el resaltado visual, porque ahí sí se describe cómo se verifica el resultado.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d5-hu01">
+<h2 style="font-size:1.4rem"><span class="num">05</span>D5 · HU-01 mezcla dos roles</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D5</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">2. Planificación del Sprint, HU-01</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La historia dice «como usuario del sistema (administrador o almacenero)», lo que deja dos roles en una sola historia sin diferenciar su comportamiento. La teoría pide un rol concreto y reconocible.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Como usuario del sistema (administrador o almacenero), quiero iniciar sesión mediante un usuario y contraseña validados, para acceder de forma segura a las funciones de inventario según mi perfil y proteger la información de la empresa.</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Como integrante del personal de almacén, quiero iniciar sesión con mis credenciales y acceder únicamente a las funciones que corresponden a mi perfil, para proteger la información de la empresa y saber que mis operaciones quedan registradas a mi nombre.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Un rol genérico convierte la historia en un requisito funcional. Al nombrar al personal de almacén, el beneficio se vuelve concreto y el criterio de acceso por perfil queda justificado por la propia historia.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si el administrador tiene comportamientos distintos, eso sería otra historia en un Sprint posterior, no un paréntesis dentro de esta.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d6-criterios-scrum">
+<h2 style="font-size:1.4rem"><span class="num">06</span>D6 · Se llama «criterios de Scrum» a cosas que no lo son</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D6</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">2. Justificación de la priorización</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>La propuesta afirma que las historias se priorizaron aplicando «dos criterios fundamentales de Scrum: Dependencia Técnica y Entrega de Valor Temprano (MVP)». Ninguno de los dos es un criterio de Scrum: la dependencia técnica es un criterio de ordenamiento y el MVP es terminología de Lean Startup, no de Scrum.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Estas cinco historias fueron priorizadas aplicando dos criterios fundamentales de Scrum: Dependencia Técnica y Entrega de Valor Temprano (MVP).</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Estas cinco historias fueron priorizadas aplicando dos criterios: el valor de negocio para el almacén y la dependencia técnica entre historias. El primero determinó qué aporta más al proceso; el segundo obligó a resolver antes lo que habilita al resto.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>Atribuir a Scrum conceptos que no le pertenecen es un error de vocabulario que un evaluador detecta con facilidad. Los criterios de priorización son decisiones del equipo, no preceptos del marco.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Si quieren mencionar el producto mínimo viable, escríbanlo como «producto mínimo viable» y preséntenlo como una decisión de alcance del equipo, no como un criterio de Scrum.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d7-nombres">
+<h2 style="font-size:1.4rem"><span class="num">07</span>D7 · El mismo integrante aparece con dos nombres</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D7</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">Organización del equipo, sección 3 y sección 7</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El integrante 1 aparece como «Alonso» en la organización del equipo, «Alonso Gamarra (Backend/BD)» en el backlog y «José Alonso Gamarra Apaza» en la evidencia individual y en la tabla final. Tres formas distintas para la misma persona.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Integrante 1 (Tú - Alonso)
+Alonso Gamarra (Backend/BD)
+José Alonso Gamarra Apaza</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>José Alonso Gamarra Apaza, en las cuatro apariciones.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La rúbrica pide que los nombres coincidan entre carátula, backlog, evidencia individual y tabla de participación. La forma más segura es usar siempre el nombre completo, sin abreviar.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Aplica el mismo criterio a los otros dos integrantes cuando reemplaces los corchetes.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="detalles-d8-septe">
+<h2 style="font-size:1.4rem"><span class="num">08</span>D8 · El SEPTE no cierra con una síntesis</h2>
+<div class="correccion">
+<div class="correccion-cabecera">
+<span class="codigo">D8</span>
+<span class="gravedad leve">Detalle</span>
+<span class="ubicacion">1. Documentación del proyecto, tras el análisis SEPTE</span>
+</div>
+
+<div class="correccion-cuerpo">
+<p class="rotulo">El problema</p>
+<p>El análisis SEPTE enumera las seis dimensiones correctamente, pero termina sin indicar qué factores son los más determinantes ni qué decisión tomó el equipo a partir de ellos. Sin esa síntesis, el análisis parece un requisito cumplido y no una herramienta usada.</p>
+
+<div class="par-textos">
+  <div class="texto-antes">
+    <p class="rotulo">Cómo está ahora</p>
+    <pre>Ecológico: Reducción significativa del consumo de papel, talonarios físicos e impresiones innecesarias al migrar los partes de ingreso y salida a un entorno 100% digital.
+
+(Fin del análisis SEPTE)</pre>
+  </div>
+  <div class="texto-despues">
+    <p class="rotulo">Cómo debe quedar</p>
+    <pre>Ecológico: Reducción significativa del consumo de papel, talonarios físicos e impresiones innecesarias al migrar los partes de ingreso y salida a un entorno 100% digital.
+
+Síntesis del análisis: los dos factores más determinantes para el proyecto son la resistencia inicial del personal operativo acostumbrado al papel y la exigencia de trazabilidad de existencias. El primero se atiende con interfaces simples que no requieran capacitación extensa; el segundo justifica que el registro de movimientos con usuario y fecha sea parte del Sprint 1 y no quede para después.</pre>
+    <button type="button" class="copiar" data-copiar>Copiar texto</button>
+  </div>
+</div>
+
+<p class="rotulo">Por qué</p>
+<p>La síntesis es lo que demuestra que el análisis se usó para decidir. Convierte una lista de contexto en un insumo real de la planificación.</p>
+
+<p class="correccion-nota"><strong>Nota:</strong> Basta con dos o tres líneas. No hace falta repetir nada del análisis anterior.</p>
+</div>
+</div>
+</section>
+</article>
+<article class="seccion" id="hoja-ruta" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">07</span>Hoja de ruta
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">El orden importa: los bloqueantes cambian el sentido de lo que está alrededor, así que corregirlos al final obliga a rehacer trabajo. Esta hoja ordena las 24 correcciones en cuatro etapas y cierra con una lista de verificación para usar antes de exportar el Word.</p>
+<section class="seccion" id="hoja-ruta-etapas">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Las cuatro etapas</h2>
+<p>Cada etapa se apoya en la anterior. No conviene adelantar correcciones de vocabulario mientras falta contenido, porque ese contenido nuevo puede cambiar el vocabulario que se estaba ajustando.</p>
+<ol class="pasos">
+<li>
+<p class="paso-titulo">Etapa 1 · Cerrar el contenido faltante</p>
+<p class="paso-detalle">Escribir los bloques de los integrantes 2 y 3 en la sección 6 y borrar todas las instrucciones de andamiaje. Es lo que recupera más puntos y no depende de nada más. Correcciones: R1, R2 y la sección de evidencia faltante completa.</p>
+</li>
+<li>
+<p class="paso-titulo">Etapa 2 · Corregir los cuatro bloqueantes</p>
+<p class="paso-detalle">Agregar el Sprint Goal y la Definition of Done, arreglar la frecuencia del Daily Scrum y eliminar la conversión de puntos a horas. Estas cuatro correcciones cambian afirmaciones que aparecen en varias secciones, por eso van antes que las inconsistencias. Correcciones: B1, B2, B3 y B4.</p>
+</li>
+<li>
+<p class="paso-titulo">Etapa 3 · Resolver las inconsistencias</p>
+<p class="paso-detalle">Alinear la estimación de HU-03, reescribir la columna de valor de negocio, unificar la escala de prioridad y estado, completar el alcance, asignar un responsable por historia y ajustar los niveles de cumplimiento. Correcciones: I1 a I6.</p>
+</li>
+<li>
+<p class="paso-titulo">Etapa 4 · Pulir los detalles</p>
+<p class="paso-detalle">Objetivo general, objetivos específicos, cifras, redacción de dos historias, vocabulario y síntesis del SEPTE. Se hacen al final porque son ajustes de texto que no cambian la estructura. Correcciones: D1 a D8, más R3, R4, R5 y R6.</p>
+</li>
+</ol>
+<aside class="destacado info">
+<span class="titulo-destacado">Tiempo estimado por etapa</span>
+<p>La etapa 1 es la más larga porque implica redactar, y la etapa 2 la más delicada porque exige coherencia. Las etapas 3 y 4 son de revisión y ajuste rápido. Si hay poco tiempo, la regla es clara: nunca sacrificar la etapa 1 ni la 2 para llegar a la 4.</p>
+</aside>
+</section>
+<section class="seccion" id="hoja-ruta-prioridad">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Si no alcanza el tiempo</h2>
+<p>Las correcciones no valen lo mismo. Esta tabla ordena por impacto en el puntaje, suponiendo que hay que elegir.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Prioridad</th><th scope="col">Correcciones</th><th scope="col">Por qué primero</th></tr></thead>
+<tbody>
+<tr><td>Imprescindible</td><td>Evidencia individual de los integrantes 2 y 3, R1 y R2</td><td>Recupera alrededor de 3,3 puntos y elimina los rastros de borrador</td></tr>
+<tr><td>Muy alta</td><td>B2 Sprint Goal y B3 Definition of Done</td><td>Sostienen las secciones de 4 y 2 puntos; sin ellas varias afirmaciones quedan sin respaldo</td></tr>
+<tr><td>Alta</td><td>B4 puntos y horas, B1 Daily Scrum</td><td>Son los errores de marco más visibles en una lectura rápida</td></tr>
+<tr><td>Media</td><td>I1 a I6</td><td>Eliminan contradicciones que hacen dudar del resto del documento</td></tr>
+<tr><td>Baja</td><td>D1 a D8 y R3 a R6</td><td>Mejoran el orden y la claridad, que la rúbrica evalúa pero con menos peso</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Lo que nunca conviene dejar</span>
+<p>Las instrucciones de andamiaje y los corchetes. Un informe con «pega aquí las capturas» o con «[Nombre Integrante 2]» se percibe como no entregado, sin importar la calidad del resto.</p>
+</aside>
+</section>
+<section class="seccion" id="hoja-ruta-verificacion">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Lista de verificación antes de exportar</h2>
+<p>Recorrer esta lista completa toma unos quince minutos y evita los descuentos más evitables.</p>
+<p class="titulo-lista">Verificación final del documento</p><ul class="checklist">
+<li>No queda ninguna frase de instrucción ni guía de andamiaje en el documento.</li>
+<li>No queda ningún corchete ni placeholder de nombre.</li>
+<li>No queda ningún símbolo de dólar ni barra invertida de LaTeX.</li>
+<li>Los tres nombres completos aparecen idénticos en la organización del equipo, el backlog, la evidencia individual y la tabla de participación.</li>
+<li>La duración del Sprint está declarada con fechas y coincide con la asistencia reportada.</li>
+<li>El Sprint Goal aparece declarado antes de las historias de la sección 2.</li>
+<li>La Definition of Done aparece declarada en la sección 4 y se aplica al explicar el cierre de las historias.</li>
+<li>Ninguna historia mezcla puntos de historia con horas en la sección 2.</li>
+<li>La estimación de HU-03 dice lo mismo en la sección 2 y en la sección 6.4.</li>
+<li>La columna de valor de negocio describe beneficios, no repite la prioridad.</li>
+<li>La prioridad y el estado usan una sola escala en todo el documento.</li>
+<li>El alcance del Sprint 1 nombra las cinco historias con su identificador.</li>
+<li>Cada historia tiene un único responsable en la tabla del backlog.</li>
+<li>Los tres bloques individuales usan principios ágiles distintos.</li>
+<li>Los tres bloques individuales eligen historias distintas.</li>
+<li>La sección 7 justifica los niveles de cumplimiento y no asigna 100% a todos sin explicación.</li>
+<li>El análisis SEPTE cierra con una síntesis de oportunidades y riesgos.</li>
+<li>Cada captura tiene pie de figura numerado y una frase que explica qué demuestra.</li>
+<li>Las capturas son legibles y muestran el sistema con datos de prueba cargados.</li>
+<li>El documento completo se lee sin encontrar dos cifras que se contradigan.</li>
+</ul>
+</section>
+<section class="seccion" id="hoja-ruta-nota-final">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Sobre cómo se generó este plan</h2>
+<p>Este plan se elaboró contrastando la propuesta contra el enunciado de la evaluación y contra la base teórica del proyecto. Las citas del documento original están reproducidas literalmente para que se puedan localizar con una búsqueda de texto dentro del Word.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Referencia</th><th scope="col">Dónde encontrarla</th></tr></thead>
+<tbody>
+<tr><td>Enunciado y rúbrica</td><td>PROYECTO INTEGRADOR-T1.docx, secciones 1 a 7 y tabla de rúbrica</td></tr>
+<tr><td>Guía Scrum 2020</td><td>Base teórica, contenidos 03 Marco Scrum y 04 Eventos Scrum</td></tr>
+<tr><td>Historias de usuario</td><td>Base teórica, contenido 06 Historias de usuario</td></tr>
+<tr><td>Estimación</td><td>Base teórica, contenido 07 Estimación</td></tr>
+<tr><td>Artefactos y Definition of Done</td><td>Base teórica, contenido 05 Artefactos Scrum</td></tr>
+<tr><td>Retrospectiva y evidencia individual</td><td>Base teórica, contenidos 09 y 10</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Uso previsto</span>
+<p>Este documento es una guía de corrección, no el informe final. Los textos de la columna «Cómo debe quedar» están redactados para copiar, pero conviene leerlos antes de pegarlos: cada integrante debe reconocer lo que hizo como propio.</p>
+</aside>
+</section>
+</article>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Plan de mejora · T1 Proyecto Integrador · Noviembre 2026</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+<script>
+document.addEventListener('click', function (e) {
+  var boton = e.target.closest('[data-copiar]');
+  if (!boton) return;
+  var pre = boton.parentElement.querySelector('pre');
+  if (!pre) return;
+  var texto = pre.textContent;
+  var listo = function () {
+    var original = boton.textContent;
+    boton.textContent = 'Copiado';
+    setTimeout(function () { boton.textContent = original; }, 1600);
+  };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(texto).then(listo, function () { seleccionar(); });
+  } else {
+    seleccionar();
+  }
+  function seleccionar() {
+    var r = document.createRange();
+    r.selectNodeContents(pre);
+    var s = window.getSelection();
+    s.removeAllRanges();
+    s.addRange(r);
+    listo();
+  }
+});
+</script>
+</body>
+</html>
