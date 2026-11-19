@@ -1,0 +1,454 @@
+{
+  "id": "tablero-trello",
+  "titulo": "Tablero Trello · Sprint 1",
+  "tablero": "StockFlow · Sprint 1",
+  "actualizado": "2026-11-19",
+  "fuente": "T1 - PROYECTO INTEGRADOR - propuesta corregida.docx",
+  "nota": "Especificación para armar el tablero y tomar las capturas de la figura 1 y la figura 2 del informe. Los títulos, historias, criterios, puntos, horas, prioridades y responsables coinciden con la sección 2 y la sección 3 del informe corregido.",
+  "totales": {
+    "historias": 5,
+    "puntos": 24,
+    "horasDesarrollo": 34,
+    "horasEsfuerzoTotalSprint": 48,
+    "dailyScrum": 10
+  },
+  "listas": [
+    {
+      "id": "product-backlog",
+      "nombre": "Product Backlog"
+    },
+    {
+      "id": "sprint-1-to-do",
+      "nombre": "Sprint 1 - To Do"
+    },
+    {
+      "id": "in-progress",
+      "nombre": "In Progress"
+    },
+    {
+      "id": "testing-review",
+      "nombre": "Testing / Review"
+    },
+    {
+      "id": "done",
+      "nombre": "Done"
+    }
+  ],
+  "etiquetas": [
+    {
+      "id": "alta",
+      "nombre": "Alta",
+      "color": "rojo"
+    },
+    {
+      "id": "media",
+      "nombre": "Media",
+      "color": "amarillo"
+    },
+    {
+      "id": "backend",
+      "nombre": "Backend",
+      "color": "azul"
+    },
+    {
+      "id": "frontend",
+      "nombre": "Frontend",
+      "color": "verde"
+    },
+    {
+      "id": "qa",
+      "nombre": "QA",
+      "color": "morado"
+    }
+  ],
+  "tarjetas": [
+    {
+      "id": "hu-01",
+      "titulo": "HU-01: Inicio de sesión seguro",
+      "lista": "done",
+      "miembro": "José Alonso Gamarra Apaza",
+      "etiquetas": [
+        "alta",
+        "backend",
+        "qa"
+      ],
+      "vence": "2026-11-05",
+      "estado": "hecho",
+      "prioridad": "alta",
+      "estimacionPuntos": 3,
+      "tiempoEstimadoHoras": 5,
+      "valorNegocio": "Protege la integridad de los registros del almacén y permite auditar quién hizo cada operación.",
+      "historia": "Como integrante del personal de almacén, quiero iniciar sesión con mis credenciales y acceder únicamente a las funciones que corresponden a mi perfil, para proteger la información de la empresa y saber que mis operaciones quedan registradas a mi nombre.",
+      "checklists": [
+        {
+          "titulo": "Criterios de aceptación",
+          "items": [
+            {
+              "texto": "Dado que el usuario ingresa credenciales válidas, cuando presiona \"Ingresar\", entonces el sistema redirige al panel principal de inventario.",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que el usuario ingresa una contraseña incorrecta o un usuario inexistente, cuando intenta ingresar, entonces se muestra un mensaje de error claro sin revelar cuál dato falló.",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que los campos están vacíos, cuando intenta enviar el formulario, entonces el sistema bloquea el envío y solicita completar los datos obligatorios.",
+              "hecho": true
+            }
+          ]
+        },
+        {
+          "titulo": "Tareas técnicas",
+          "items": [
+            {
+              "texto": "Crear la tabla de usuarios con sus credenciales de acceso.",
+              "hecho": true
+            },
+            {
+              "texto": "Validar las credenciales en el servidor y mostrar un mensaje de error que no revele cuál dato falló.",
+              "hecho": true
+            },
+            {
+              "texto": "Definir los roles de acceso y restringir las funciones según el perfil.",
+              "hecho": true
+            },
+            {
+              "texto": "Registrar qué usuario realiza cada operación.",
+              "hecho": true
+            }
+          ]
+        }
+      ],
+      "comentarios": []
+    },
+    {
+      "id": "hu-02",
+      "titulo": "HU-02: Registro y gestión del catálogo de productos",
+      "lista": "done",
+      "miembro": "Juan Alonso Esteban Pajuelo Chipana",
+      "etiquetas": [
+        "alta",
+        "frontend"
+      ],
+      "vence": "2026-11-07",
+      "estado": "hecho",
+      "prioridad": "alta",
+      "estimacionPuntos": 5,
+      "tiempoEstimadoHoras": 8,
+      "valorNegocio": "Elimina la duplicidad de códigos de producto, que es la causa principal del desfase entre stock físico y registrado.",
+      "historia": "Como encargado de almacén, quiero registrar nuevos productos indicando código SKU, nombre, categoría, unidad de medida y stock mínimo, para mantener un catálogo maestro ordenado y estandarizado antes de registrar movimientos.",
+      "checklists": [
+        {
+          "titulo": "Criterios de aceptación",
+          "items": [
+            {
+              "texto": "Dado que se registra un producto con un código SKU ya existente, cuando se intenta guardar, entonces el sistema rechaza el registro e indica que el código está duplicado.",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que todos los campos obligatorios están completos y el stock mínimo es mayor o igual a cero, cuando se guarda el producto, entonces aparece inmediatamente en la tabla del catálogo.",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que el usuario ingresa valores negativos en el stock inicial o mínimo, cuando intenta guardar, entonces el sistema muestra una validación impidiendo números negativos.",
+              "hecho": true
+            }
+          ]
+        },
+        {
+          "titulo": "Tareas técnicas",
+          "items": [
+            {
+              "texto": "Crear el formulario de registro con SKU, nombre, categoría, unidad de medida y stock mínimo.",
+              "hecho": true
+            },
+            {
+              "texto": "Validar que el código SKU no esté duplicado antes de guardar.",
+              "hecho": true
+            },
+            {
+              "texto": "Impedir valores negativos en el stock inicial y en el stock mínimo.",
+              "hecho": true
+            },
+            {
+              "texto": "Mostrar los mensajes de error sin romper el diseño del formulario.",
+              "hecho": true
+            },
+            {
+              "texto": "Definir el umbral de stock mínimo por producto.",
+              "hecho": true
+            },
+            {
+              "texto": "Mostrar el producto registrado en la tabla del catálogo.",
+              "hecho": true
+            }
+          ]
+        }
+      ],
+      "comentarios": []
+    },
+    {
+      "id": "hu-03",
+      "titulo": "HU-03: Registro de entradas y salidas de mercadería (Kardex)",
+      "lista": "done",
+      "miembro": "José Alonso Gamarra Apaza",
+      "etiquetas": [
+        "alta",
+        "backend",
+        "qa"
+      ],
+      "vence": "2026-11-10",
+      "estado": "hecho",
+      "prioridad": "alta",
+      "estimacionPuntos": 8,
+      "tiempoEstimadoHoras": 10,
+      "valorNegocio": "Automatiza el Kardex y evita el despacho de mercadería inexistente.",
+      "historia": "Como encargado de almacén, quiero registrar movimientos de entrada (compras/devoluciones) y salida (despachos/consumo) asociados a un producto, para actualizar el stock disponible automáticamente y conservar un historial trazable.",
+      "checklists": [
+        {
+          "titulo": "Criterios de aceptación",
+          "items": [
+            {
+              "texto": "Dado que se registra una entrada de X unidades, cuando se confirma la operación, entonces el stock actual del producto se incrementa exactamente en X unidades y se guarda la fecha, hora y usuario responsable.",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que se registra una Salida mayor al stock disponible actual, cuando se intenta confirmar, entonces el sistema bloquea la operación con el mensaje \"Stock insuficiente\".",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que se registra una Salida válida, cuando se confirma, entonces se descuenta del stock actual y queda registrado en el historial de movimientos.",
+              "hecho": true
+            }
+          ]
+        },
+        {
+          "titulo": "Tareas técnicas",
+          "items": [
+            {
+              "texto": "Crear la tabla movimientos_inventario con tipo, cantidad, fecha, hora y usuario.",
+              "hecho": true
+            },
+            {
+              "texto": "Alinear los nombres de los campos del formulario con las columnas de movimientos_inventario.",
+              "hecho": true
+            },
+            {
+              "texto": "Actualizar el saldo de la tabla productos en cada entrada o salida.",
+              "hecho": true
+            },
+            {
+              "texto": "Implementar la validación de stock insuficiente en salidas.",
+              "hecho": true
+            },
+            {
+              "texto": "Verificar la validación de stock insuficiente en salidas.",
+              "hecho": true
+            }
+          ]
+        }
+      ],
+      "comentarios": [
+        {
+          "autor": "José Alonso Gamarra Apaza",
+          "texto": "Impedimento: desajuste entre producto_id y id_producto, detectado en el Daily Scrum y corregido el mismo día. Retraso aproximado de 2 horas."
+        },
+        {
+          "autor": "Seyner Joaquin Escudero Campos",
+          "texto": "Devuelta a In Progress: el aviso de stock insuficiente aparecía lejos del campo de cantidad. Mover el mensaje junto al campo y repetir la prueba."
+        }
+      ]
+    },
+    {
+      "id": "hu-04",
+      "titulo": "HU-04: Consulta y filtrado rápido de inventario",
+      "lista": "done",
+      "miembro": "Juan Alonso Esteban Pajuelo Chipana",
+      "etiquetas": [
+        "media",
+        "frontend",
+        "qa"
+      ],
+      "vence": "2026-11-11",
+      "estado": "hecho",
+      "prioridad": "media",
+      "estimacionPuntos": 3,
+      "tiempoEstimadoHoras": 5,
+      "valorNegocio": "Reduce de varios minutos a segundos la búsqueda de cualquier artículo del almacén.",
+      "historia": "Como operador o supervisor de almacén, quiero buscar productos por nombre, código SKU o categoría en tiempo real, para verificar la disponibilidad exacta de cualquier artículo sin revisar manualmente todo el listado.",
+      "checklists": [
+        {
+          "titulo": "Criterios de aceptación",
+          "items": [
+            {
+              "texto": "Dado que el usuario escribe al menos 2 caracteres en la barra de búsqueda, cuando filtra, entonces la tabla muestra únicamente los productos que coinciden por código o nombre.",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que no existen coincidencias para el término buscado, cuando se ejecuta el filtro, entonces se muestra un aviso indicando \"No se encontraron productos\".",
+              "hecho": true
+            }
+          ]
+        },
+        {
+          "titulo": "Tareas técnicas",
+          "items": [
+            {
+              "texto": "Implementar la barra de búsqueda y el filtrado en tiempo real.",
+              "hecho": true
+            },
+            {
+              "texto": "Filtrar por código y por nombre desde 2 caracteres.",
+              "hecho": true
+            },
+            {
+              "texto": "Aplicar el filtro sobre los datos ya cargados, sin consulta al servidor en cada tecla.",
+              "hecho": true
+            },
+            {
+              "texto": "Mostrar el estado vacío cuando no hay coincidencias.",
+              "hecho": true
+            },
+            {
+              "texto": "Mostrar el aviso \"No se encontraron productos\" solo cuando la búsqueda no tiene resultados.",
+              "hecho": true
+            }
+          ]
+        }
+      ],
+      "comentarios": [
+        {
+          "autor": "Seyner Joaquin Escudero Campos",
+          "texto": "Devuelta una vez: el aviso \"No se encontraron productos\" aparecía durante la carga inicial. Corregido."
+        }
+      ]
+    },
+    {
+      "id": "hu-05",
+      "titulo": "HU-05: Alertas visuales de stock mínimo",
+      "lista": "done",
+      "miembro": "Juan Alonso Esteban Pajuelo Chipana",
+      "etiquetas": [
+        "media",
+        "frontend",
+        "qa"
+      ],
+      "vence": "2026-11-12",
+      "estado": "hecho",
+      "prioridad": "media",
+      "estimacionPuntos": 5,
+      "tiempoEstimadoHoras": 6,
+      "valorNegocio": "Anticipa los quiebres de stock que detienen el despacho y obligan a compras de emergencia.",
+      "historia": "Como supervisor de operaciones, quiero identificar de inmediato los productos cuyo stock actual sea igual o inferior al stock mínimo configurado, para gestionar órdenes de reposición a tiempo y evitar el desabastecimiento.",
+      "checklists": [
+        {
+          "titulo": "Criterios de aceptación",
+          "items": [
+            {
+              "texto": "Dado que un producto tiene stock_actual <= stock_minimo, cuando se visualiza el listado de inventario, entonces la fila o estado se resalta con una etiqueta roja (\"Stock Crítico\").",
+              "hecho": true
+            },
+            {
+              "texto": "Dado que se registra una entrada que eleva el stock por encima del mínimo, cuando se actualiza la vista, entonces la alerta desaparece y pasa a estado normal (\"Disponible\").",
+              "hecho": true
+            }
+          ]
+        },
+        {
+          "titulo": "Tareas técnicas",
+          "items": [
+            {
+              "texto": "Comparar el stock actual con el stock mínimo configurado de cada producto.",
+              "hecho": true
+            },
+            {
+              "texto": "Resaltar con la etiqueta roja \"Stock Crítico\" los productos en nivel crítico.",
+              "hecho": true
+            },
+            {
+              "texto": "Mostrar el estado \"Disponible\" cuando una entrada supera el mínimo.",
+              "hecho": true
+            },
+            {
+              "texto": "Definir si la alerta se calcula en la consulta o se guarda en la tabla de productos, y registrar la decisión.",
+              "hecho": true
+            },
+            {
+              "texto": "Verificar ambos criterios con datos de prueba.",
+              "hecho": true
+            }
+          ]
+        }
+      ],
+      "comentarios": []
+    },
+    {
+      "id": "s2-01",
+      "titulo": "Exportación avanzada a PDF y Excel",
+      "lista": "product-backlog",
+      "miembro": null,
+      "etiquetas": [],
+      "vence": null,
+      "estado": "pendiente",
+      "prioridad": null,
+      "estimacionPuntos": null,
+      "tiempoEstimadoHoras": null,
+      "valorNegocio": null,
+      "historia": null,
+      "descripcion": "Historia del Sprint 2. Queda fuera del Sprint 1 según el alcance del informe.",
+      "checklists": [],
+      "comentarios": []
+    },
+    {
+      "id": "s2-02",
+      "titulo": "Gestión multi-almacén compleja",
+      "lista": "product-backlog",
+      "miembro": null,
+      "etiquetas": [],
+      "vence": null,
+      "estado": "pendiente",
+      "prioridad": null,
+      "estimacionPuntos": null,
+      "tiempoEstimadoHoras": null,
+      "valorNegocio": null,
+      "historia": null,
+      "descripcion": "Historia del Sprint 2. Queda fuera del Sprint 1 según el alcance del informe.",
+      "checklists": [],
+      "comentarios": []
+    },
+    {
+      "id": "s2-03",
+      "titulo": "Módulos de facturación",
+      "lista": "product-backlog",
+      "miembro": null,
+      "etiquetas": [],
+      "vence": null,
+      "estado": "pendiente",
+      "prioridad": null,
+      "estimacionPuntos": null,
+      "tiempoEstimadoHoras": null,
+      "valorNegocio": null,
+      "historia": null,
+      "descripcion": "Historia del Sprint 2. Queda fuera del Sprint 1 según el alcance del informe.",
+      "checklists": [],
+      "comentarios": []
+    },
+    {
+      "id": "s2-04",
+      "titulo": "Reporte de movimientos por período",
+      "lista": "product-backlog",
+      "miembro": null,
+      "etiquetas": [],
+      "vence": null,
+      "estado": "pendiente",
+      "prioridad": null,
+      "estimacionPuntos": null,
+      "tiempoEstimadoHoras": null,
+      "valorNegocio": null,
+      "historia": null,
+      "descripcion": "Historia del Sprint 2 de la especificación del tablero. No aparece en el informe corregido: decidir si se añade al informe o se retira del tablero.",
+      "checklists": [],
+      "comentarios": []
+    }
+  ]
+}
