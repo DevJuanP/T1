@@ -799,8 +799,118 @@
 </tbody>
 </table></div>
 </section>
+<section class="seccion" id="artefactos-ejemplos">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Ejemplos completos de los artefactos</h2>
+<p>La teoría se entiende mejor cuando se ve aplicada. Los ejemplos siguientes pertenecen a un mismo proyecto ficticio, una plataforma de reserva de citas para una clínica, de modo que se pueda seguir la relación entre un artefacto y el siguiente: el Product Goal orienta el Product Backlog, del Product Backlog sale el Sprint Goal, del Sprint Goal sale el Sprint Backlog y del Sprint Backlog sale el incremento.</p>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Cómo usar estos ejemplos</span>
+<p>Los datos son ilustrativos y no pertenecen al proyecto del equipo. Sirven como molde de estructura, nivel de detalle y vocabulario. Al redactar el informe, se reemplazan por el proyecto real conservando la misma forma.</p>
+</aside>
+<h3 class="subtitulo-bloque">Ejemplo de Product Goal</h3>
+<blockquote>
+<p>Que cualquier paciente pueda reservar, reprogramar y cancelar una cita en línea, sin llamar a la clínica y sin intervención del personal administrativo.</p>
+
+</blockquote>
+<p>El enunciado anterior describe un estado futuro verificable del producto: si un paciente puede hacer esas tres acciones solo, el objetivo se cumplió. No menciona tecnologías ni módulos, porque no es un plan de trabajo sino una meta de producto.</p>
+<h3 class="subtitulo-bloque">Ejemplo de Product Backlog</h3>
+<p>La tabla siguiente reproduce las seis columnas que pide el enunciado del examen. El orden de las filas es la priorización: no está alfabético ni por número de historia, sino por valor y por dependencia técnica.</p>
+<div class="tabla-envoltura"><table>
+<caption>Product Backlog del proyecto de ejemplo</caption>
+<thead><tr><th scope="col">Historia de Usuario</th><th scope="col">Valor de negocio</th><th scope="col">Prioridad</th><th scope="col">Tiempo estimado</th><th scope="col">Responsable</th><th scope="col">Estado</th></tr></thead>
+<tbody>
+<tr><td>HU-01 Registro de paciente con datos personales</td><td>Permite identificar a quien reserva y evita duplicados en la agenda</td><td>Alta</td><td>3 días</td><td>Integrante A</td><td>hecho</td></tr>
+<tr><td>HU-02 Consulta de horarios disponibles por especialista</td><td>Elimina las llamadas para preguntar disponibilidad</td><td>Alta</td><td>4 días</td><td>Integrante B</td><td>hecho</td></tr>
+<tr><td>HU-03 Reserva de cita con confirmación</td><td>Es el corazón del proceso: cierra la reserva sin intervención humana</td><td>Alta</td><td>5 días</td><td>Integrante A</td><td>en-progreso</td></tr>
+<tr><td>HU-04 Cancelación de cita por el paciente</td><td>Libera cupos y reduce las citas perdidas</td><td>Media</td><td>2 días</td><td>Integrante C</td><td>pendiente</td></tr>
+<tr><td>HU-05 Panel del administrador con las citas del día</td><td>Da visibilidad a recepción y reemplaza el cuaderno físico</td><td>Media</td><td>3 días</td><td>Integrante B</td><td>pendiente</td></tr>
+<tr><td>HU-06 Recordatorio de cita por correo</td><td>Reduce el ausentismo de los pacientes</td><td>Baja</td><td>3 días</td><td>Integrante C</td><td>pendiente</td></tr>
+<tr><td>HU-07 Reporte mensual de atenciones</td><td>Apoya la decisión de horarios y la proyección de demanda</td><td>Baja</td><td>4 días</td><td>Integrante A</td><td>pendiente</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Qué observar en esta tabla</span>
+<p>Los identificadores son estables y coinciden con las historias de la sección 2 del informe. La prioridad no contradice el orden: las tres primeras son altas porque habilitan el flujo completo. Los estados usan el vocabulario controlado pendiente, en-progreso y hecho. Y el tiempo estimado está en días, coherente con la unidad elegida.</p>
+</aside>
+<h3 class="subtitulo-bloque">Ejemplo de Sprint Goal</h3>
+<blockquote>
+<p>Que un paciente nuevo pueda registrarse, ver los horarios disponibles de un especialista y confirmar una cita en línea.</p>
+
+</blockquote>
+<p>Este Sprint Goal explica por qué se eligieron HU-01, HU-02 y HU-03 y por qué las demás esperan. Si a mitad del Sprint la consulta de horarios resultara más compleja de lo previsto, el equipo podría cambiar el alcance dentro de la misma meta, por ejemplo entregando solo la consulta para un especialista, sin romper el compromiso del Sprint.</p>
+<h3 class="subtitulo-bloque">Ejemplo de Sprint Backlog</h3>
+<p>El Sprint Backlog descompone las historias elegidas en tareas de un día o menos. Cada fila es una tarjeta del tablero, no una historia completa.</p>
+<div class="tabla-envoltura"><table>
+<caption>Sprint Backlog del Sprint 1</caption>
+<thead><tr><th scope="col">Tarea</th><th scope="col">Historia</th><th scope="col">Responsable</th><th scope="col">Estimación</th><th scope="col">Estado</th></tr></thead>
+<tbody>
+<tr><td>Diseñar el modelo de datos de pacientes, especialistas y citas</td><td>HU-01, HU-02, HU-03</td><td>Integrante A</td><td>1 día</td><td>hecho</td></tr>
+<tr><td>Crear el formulario de registro con validaciones</td><td>HU-01</td><td>Integrante A</td><td>1 día</td><td>hecho</td></tr>
+<tr><td>Implementar el endpoint de disponibilidad por especialista</td><td>HU-02</td><td>Integrante B</td><td>1 día</td><td>hecho</td></tr>
+<tr><td>Construir la vista de selección de fecha y hora</td><td>HU-02</td><td>Integrante B</td><td>1 día</td><td>en-progreso</td></tr>
+<tr><td>Implementar la confirmación de reserva y el código único</td><td>HU-03</td><td>Integrante A</td><td>1 día</td><td>pendiente</td></tr>
+<tr><td>Validar el choque de horarios antes de guardar</td><td>HU-03</td><td>Integrante C</td><td>1 día</td><td>pendiente</td></tr>
+<tr><td>Probar el flujo completo con datos reales de prueba</td><td>HU-01, HU-02, HU-03</td><td>Integrante C</td><td>1 día</td><td>pendiente</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Qué observar en esta tabla</span>
+<p>Cada tarea cabe en un día. Varias historias comparten el modelo de datos, lo que muestra una dependencia real y no un reparto artificial. La última tarea de pruebas aparece explícita: si no está en el Sprint Backlog, no se hace.</p>
+</aside>
+<h3 class="subtitulo-bloque">Ejemplo de Definition of Done</h3>
+<p>La Definition of Done es el compromiso del incremento y aplica a todas las historias por igual. Para el proyecto de ejemplo podría acordarse así.</p>
+<p class="titulo-lista">Acuerdo de Definition of Done del equipo</p><ul class="checklist">
+<li>El código está integrado en la rama principal y compila sin errores.</li>
+<li>La funcionalidad fue probada con datos reales de prueba, no solo con datos cargados a mano.</li>
+<li>Los criterios de aceptación de la historia fueron verificados uno por uno.</li>
+<li>No quedan errores conocidos de severidad alta o media.</li>
+<li>La validación del Product Owner quedó registrada en la tarjeta del tablero.</li>
+<li>El modelo de datos o el cambio de base de datos está documentado en el repositorio.</li>
+<li>La evidencia visual quedó guardada para el informe del Sprint.</li>
+</ul>
+<p>Con este acuerdo, una historia no puede pasar a hecho solo porque el programador terminó de escribir el código. Necesita pruebas, validación del Product Owner y evidencia. Ese es exactamente el sentido de la Definition of Done: quitar la ambigüedad sobre lo que significa terminado.</p>
+<h3 class="subtitulo-bloque">Ejemplo de incremento</h3>
+<p>El incremento es lo que realmente se puede mostrar funcionando al cierre del Sprint. En este caso, el incremento del Sprint 1 no es el sistema completo: es el flujo de registro y reserva operativo de punta a punta para un especialista.</p>
+<div class="tabla-envoltura"><table>
+<caption>Qué contiene el incremento del Sprint 1</caption>
+<thead><tr><th scope="col">Componente</th><th scope="col">Qué se puede ver</th><th scope="col">Evidencia que lo demuestra</th></tr></thead>
+<tbody>
+<tr><td>Formulario de registro</td><td>Un paciente crea su cuenta con validación de campos</td><td>Captura del formulario con datos reales y mensaje de error</td></tr>
+<tr><td>Consulta de disponibilidad</td><td>El paciente ve los horarios libres de un especialista</td><td>Captura de la vista de calendario con cupos ocupados y libres</td></tr>
+<tr><td>Confirmación de reserva</td><td>La reserva queda guardada con un código único</td><td>Captura de la pantalla de confirmación y consulta en la base de datos</td></tr>
+<tr><td>Base de datos</td><td>Tablas de pacientes, especialistas y citas relacionadas</td><td>Captura del diagrama o de las tablas en el gestor de base de datos</td></tr>
+<tr><td>Tablero Scrum</td><td>El estado real del Sprint al cierre</td><td>Captura del tablero con las columnas y las tarjetas movidas</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado exito">
+<span class="titulo-destacado">La prueba de un incremento válido</span>
+<p>Si un usuario que no conoce el proyecto puede registrarse, elegir un horario y recibir la confirmación sin ayuda de nadie, el incremento es usable. Si necesita que un integrante cargue datos por consola para que funcione, todavía no lo es.</p>
+</aside>
+<h3 class="subtitulo-bloque">Cómo encajan todos los elementos del ejemplo</h3>
+<ol class="pasos">
+<li>
+<h4>El Product Goal fija el destino</h4>
+<p>Que el paciente reserve, reprograme y cancele sin llamar. Es la meta de todo el producto.</p>
+</li>
+<li>
+<h4>El Product Backlog ordena el camino</h4>
+<p>Siete historias priorizadas. Las tres primeras construyen el flujo mínimo que hace posible la meta.</p>
+</li>
+<li>
+<h4>El Sprint Goal acota el paso</h4>
+<p>De esas siete, este Sprint solo busca que un paciente nuevo llegue a confirmar una cita.</p>
+</li>
+<li>
+<h4>El Sprint Backlog detalla el trabajo</h4>
+<p>Las tres historias se convierten en siete tareas de un día o menos, con responsable y estado.</p>
+</li>
+<li>
+<h4>El incremento demuestra el avance</h4>
+<p>Al cerrar el Sprint existe un flujo usable y evidenciado, no un conjunto de archivos a medio hacer.</p>
+</li>
+</ol>
+</section>
 <section class="seccion" id="artefactos-transparencia">
-<h2 style="font-size:1.4rem"><span class="num">07</span>Los artefactos y la transparencia</h2>
+<h2 style="font-size:1.4rem"><span class="num">08</span>Los artefactos y la transparencia</h2>
 <p>Los artefactos existen para maximizar la transparencia, y la transparencia es la base de la inspección. Si el tablero muestra un estado que no corresponde a la realidad, la inspección produce decisiones equivocadas y la adaptación empeora el problema.</p>
 <ul class="lista">
 <li>Un tablero desactualizado es peor que no tener tablero: crea una falsa sensación de control.</li>

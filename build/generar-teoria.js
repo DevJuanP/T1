@@ -157,7 +157,7 @@ ${items}
 }
 
 function bloqueChecklist(b) {
-  return `<ul class="checklist">
+  return `${b.titulo ? `<p class="titulo-lista">${esc(b.titulo)}</p>` : ""}<ul class="checklist">
 ${b.items.map((i) => `<li>${esc(i)}</li>`).join("\n")}
 </ul>`;
 }
@@ -200,6 +200,7 @@ ${e.nota ? `<p class="nota">${esc(e.nota)}</p>` : ""}
 
 const RENDER = {
   parrafo: (b) => `<p>${esc(b.texto)}</p>`,
+  subtitulo: (b) => `<h3 class="subtitulo-bloque">${esc(b.texto)}</h3>`,
   cita: bloqueCita,
   destacado: bloqueDestacado,
   tabla: bloqueTabla,

@@ -63,7 +63,7 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 - Vive en `data/teoria/*.json` y se publica en `site/teoria/*.html` mediante `node build/generar-teoria.js`.
 - Es material de estudio para la evaluación: **no contiene el contenido del proyecto del equipo**. No mezclar aquí datos de negocio (problema, historias reales, integrantes).
 - Cada archivo declara `orden` (posición en el índice) y `secciones[]` con bloques tipados.
-- Bloques soportados: `parrafo`, `cita`, `destacado` (`tono: info | alerta | exito`), `tabla`, `lista`, `definiciones`, `comparacion`, `pasos`, `checklist`, `formula`, `ejemplos`.
+- Bloques soportados: `subtitulo`, `parrafo`, `cita`, `destacado` (`tono: info | alerta | exito`), `tabla`, `lista`, `definiciones`, `comparacion`, `pasos`, `checklist`, `formula`, `ejemplos`. `tabla` y `checklist` aceptan un `titulo` opcional.
 - Si un valor de celda coincide con el `id` de otro archivo de teoría, el generador lo convierte en enlace automáticamente.
 - Al crear un tema nuevo basta con añadir su JSON con `orden` y volver a ejecutar el generador: el índice, la navegación y `completo.html` se reconstruyen solos.
 
