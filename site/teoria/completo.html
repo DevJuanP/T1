@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Todo el contenido · Base teórica T1</title>
+<meta name="description" content="Fundamentos para desarrollar la evaluación T1 de Proyecto Integrador">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Base teórica <span>· Proyecto Integrador T1</span></a>
+    <span class="meta">Scrum · Guía 2020</span>
+  </div>
+</header>
+
+<main id="contenido">
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Base teórica · Vista completa</p>
+    <h1>Todo el contenido en una página</h1>
+    <p class="bajada">Versión lineal de los 10 contenidos, pensada para lectura continua e impresión.</p>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenidos">
+    <p>Contenidos</p>
+    <ol>
+<li><a href="#mapa-examen">Mapa de la evaluación</a></li>
+<li><a href="#fundamentos-agiles">Fundamentos ágiles</a></li>
+<li><a href="#marco-scrum">Marco Scrum</a></li>
+<li><a href="#eventos">Eventos Scrum</a></li>
+<li><a href="#artefactos">Artefactos Scrum</a></li>
+<li><a href="#historias-usuario">Historias de usuario</a></li>
+<li><a href="#estimacion">Estimación</a></li>
+<li><a href="#documentacion-proyecto">Documentación del proyecto</a></li>
+<li><a href="#retrospectiva">Retrospectiva</a></li>
+<li><a href="#evidencia-individual">Evidencia individual y participación</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<article class="seccion" id="mapa-examen" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">01</span>Mapa de la evaluación
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Punto de partida: el logro de la evaluación, las siete secciones del informe con su puntaje y el enlace directo a la teoría que sustenta cada una.</p>
+<section class="seccion" id="mapa-examen-logro">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Logro de la evaluación</h2>
+<blockquote>
+<p>Esta evaluación demuestra su competencia en gestión ágil de proyectos, identificando roles, artefactos y eventos Scrum, redactando historias de usuario, estimando tareas, y aplicando herramientas colaborativas. Su desarrollo aplicado le permitirá planificar y entregar valor real en un entorno iterativo, mejorando su desempeño como profesional de soluciones informáticas.</p>
+<cite>Enunciado de la evaluación T1</cite>
+</blockquote>
+<p>El logro se descompone en cinco capacidades observables. Cada una se demuestra con un artefacto concreto dentro del informe, y cada artefacto se apoya en un concepto teórico que conviene dominar antes de redactar.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Capacidad evaluada</th><th scope="col">Cómo se demuestra</th><th scope="col">Teoría de base</th></tr></thead>
+<tbody>
+<tr><td>Identificar roles Scrum</td><td>Tabla de participación con el rol de cada integrante y sus responsabilidades</td><td>Marco Scrum, sección El equipo Scrum</td></tr>
+<tr><td>Identificar artefactos Scrum</td><td>Product Backlog del Sprint y descripción del incremento</td><td>Artefactos, secciones Product Backlog e Incremento</td></tr>
+<tr><td>Identificar eventos Scrum</td><td>Sprint Planning documentado, retrospectiva respondida, evidencia de Daily Scrum</td><td>Eventos Scrum, secciones Planning, Daily, Review y Retrospectiva</td></tr>
+<tr><td>Redactar historias de usuario</td><td>Cinco historias en formato Como/Quiero/Para con prioridad, estimación y criterios de aceptación</td><td>Historias de usuario</td></tr>
+<tr><td>Estimar tareas</td><td>Estimación de cada historia y explicación de la dificultad encontrada</td><td>Estimación</td></tr>
+<tr><td>Aplicar herramientas colaborativas</td><td>Capturas del tablero y relato del seguimiento de una tarea</td><td>Herramientas colaborativas</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="mapa-examen-estructura">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Estructura del informe y puntaje</h2>
+<p>El entregable es un único informe grupal de veinte puntos. La sección individual no es un archivo aparte: forma parte del mismo documento y allí se juega un cuarto del puntaje total.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">N.</th><th scope="col">Sección</th><th scope="col">Puntos</th><th scope="col">Producto esperado</th><th scope="col">Teoría</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Documentación del proyecto</td><td>3</td><td>Nombre, problema, justificación, objetivo general, objetivos específicos, alcance del Sprint 1 y análisis SEPTE</td><td><a href="documentacion-proyecto.html">Documentación del proyecto</a></td></tr>
+<tr><td>2</td><td>Planificación del Sprint</td><td>4</td><td>Cinco historias de usuario con prioridad, estimación y criterios de aceptación, más la justificación de la priorización</td><td><a href="historias-usuario.html">Historias de usuario</a></td></tr>
+<tr><td>3</td><td>Product Backlog del Sprint</td><td>2</td><td>Tabla con historia, valor de negocio, prioridad, tiempo estimado, responsable y estado</td><td><a href="artefactos.html">Artefactos Scrum</a></td></tr>
+<tr><td>4</td><td>Incremento del producto</td><td>2</td><td>Evidencias visuales y explicación de la funcionalidad, el valor y la parte del Sprint que representa</td><td><a href="artefactos.html">Artefactos Scrum</a></td></tr>
+<tr><td>5</td><td>Retrospectiva del Sprint</td><td>2</td><td>Cuatro preguntas respondidas y justificadas con situaciones reales</td><td><a href="retrospectiva.html">Retrospectiva</a></td></tr>
+<tr><td>6</td><td>Evidencia individual</td><td>5</td><td>Cinco apartados por integrante: enfoque ágil, rol, historia, estimación y seguimiento</td><td><a href="evidencia-individual.html">Evidencia individual y participación</a></td></tr>
+<tr><td>7</td><td>Participación del equipo</td><td>2</td><td>Tabla de seis columnas y párrafo sobre organización, responsabilidades, conflictos y comunicación</td><td><a href="evidencia-individual.html">Evidencia individual y participación</a></td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Dónde se pierden los puntos</span>
+<p>La rúbrica castiga con más fuerza la incoherencia que la falta de extensión: historias sin criterios de aceptación, un backlog que no coincide con las historias del punto 2, una retrospectiva sin situaciones reales o una evidencia individual genérica que podría pertenecer a cualquier integrante.</p>
+</aside>
+</section>
+<section class="seccion" id="mapa-examen-ruta">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Ruta de estudio sugerida</h2>
+<p>El orden siguiente reproduce el orden en que se toman las decisiones reales de un Sprint. Estudiar en ese orden evita tener que rehacer redacciones: primero el marco, después el problema, luego las historias, y solo entonces la estimación, el tablero y la retrospectiva.</p>
+<ol class="pasos">
+<li>
+<h4>Entender el marco</h4>
+<p>Fundamentos ágiles, Marco Scrum, Eventos y Artefactos. Sin esto, el vocabulario del informe queda suelto.</p>
+</li>
+<li>
+<h4>Definir el proyecto</h4>
+<p>Documentación del proyecto: problema, justificación, objetivos, alcance y SEPTE. De aquí salen los insumos de las historias.</p>
+</li>
+<li>
+<h4>Escribir las historias</h4>
+<p>Historias de usuario, criterios de aceptación y priorización. Es la sección de mayor puntaje del trabajo grupal.</p>
+</li>
+<li>
+<h4>Estimar</h4>
+<p>Estimación relativa, planning poker, velocidad y descomposición en tareas.</p>
+</li>
+<li>
+<h4>Construir y evidenciar</h4>
+<p>Artefactos (backlog e incremento) y herramientas colaborativas (tablero, seguimiento).</p>
+</li>
+<li>
+<h4>Cerrar el ciclo</h4>
+<p>Retrospectiva con acciones concretas y evidencia individual de cada integrante.</p>
+</li>
+</ol>
+</section>
+<section class="seccion" id="mapa-examen-checklist">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Lista de verificación antes de entregar</h2>
+<ul class="checklist">
+<li>El nombre del proyecto aparece una sola vez y coincide en todas las secciones.</li>
+<li>El problema está descrito con situación actual, afectados e impacto, no con una solución.</li>
+<li>El objetivo general es uno solo y los específicos lo despliegan en acciones medibles.</li>
+<li>El alcance del Sprint 1 dice explícitamente qué queda fuera.</li>
+<li>El SEPTE cubre las seis dimensiones y cada una menciona un factor concreto del entorno peruano o del sector.</li>
+<li>Hay exactamente cinco historias y todas usan el formato Como/Quiero/Para.</li>
+<li>Cada historia tiene prioridad, estimación y al menos dos criterios de aceptación verificables.</li>
+<li>La justificación de la priorización menciona valor, riesgo y dependencias.</li>
+<li>El Product Backlog tiene las seis columnas pedidas y los mismos identificadores que las historias.</li>
+<li>El incremento incluye capturas de sistema, formulario, base de datos, interfaz y tablero.</li>
+<li>Cada evidencia tiene pie de figura y una frase que explica qué demuestra.</li>
+<li>La retrospectiva responde las cuatro preguntas con hechos del Sprint, no con generalidades.</li>
+<li>La sección individual está personalizada: nombres, decisiones y tareas propias.</li>
+<li>La tabla de participación tiene una fila por integrante y todas las celdas completas.</li>
+<li>El párrafo final explica organización, distribución, resolución de conflictos y comunicación.</li>
+</ul>
+</section>
+</article>
+<article class="seccion" id="fundamentos-agiles" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">02</span>Fundamentos ágiles
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Todo informe Scrum se apoya en una idea previa: el software se construye mejor en ciclos cortos con retroalimentación real. Esta sección cubre el origen del movimiento ágil, sus cuatro valores, sus doce principios y la diferencia con los enfoques predictivos.</p>
+<section class="seccion" id="fundamentos-agiles-que-es-agilidad">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Qué es la agilidad y de dónde viene</h2>
+<p>La agilidad no es una metodología cerrada ni un conjunto de plantillas. Es una forma de trabajar que asume que los requisitos cambian y que el conocimiento del producto solo se completa cuando el usuario lo usa. En lugar de intentar predecir todo al inicio, se construyen versiones parciales del producto en ciclos cortos para aprender del uso real.</p>
+<p>El punto de partida formal es el Manifiesto por el Desarrollo Ágil de Software, redactado en febrero de 2001 en Snowbird, Utah, por diecisiete profesionales que representaban corrientes distintas: Extreme Programming, Scrum, DSDM, Adaptive Software Development, Crystal, Feature-Driven Development y Pragmatic Programming. No se pusieron de acuerdo en un método único, pero sí en un conjunto de valores compartidos.</p>
+<blockquote>
+<p>Estamos descubriendo formas mejores de desarrollar software tanto por nuestra propia experiencia como ayudando a terceros.</p>
+<cite>Manifiesto Ágil, 2001</cite>
+</blockquote>
+<aside class="destacado info">
+<span class="titulo-destacado">Marco, método, práctica</span>
+<p>Un marco de trabajo (framework) define las reglas mínimas y deja libertad en el cómo. Scrum es un marco. Una metodología prescribe pasos detallados. Una práctica es una técnica concreta, como planning poker o integración continua. El Manifiesto Ágil no es ninguna de las tres: es una declaración de valores.</p>
+</aside>
+</section>
+<section class="seccion" id="fundamentos-agiles-valores">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Los cuatro valores del Manifiesto Ágil</h2>
+<p>Cada valor se enuncia como una preferencia entre dos elementos, ambos valiosos. La redacción importa: no se descarta el elemento de la derecha, se le subordina cuando hay que elegir.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Se valora más</th><th scope="col">Sobre</th><th scope="col">Lectura práctica</th></tr></thead>
+<tbody>
+<tr><td>Individuos e interacciones</td><td>Procesos y herramientas</td><td>La herramienta ordena el trabajo, pero no sustituye la conversación entre las personas que lo hacen.</td></tr>
+<tr><td>Software funcionando</td><td>Documentación extensiva</td><td>Un entregable que se puede ejecutar y probar demuestra más que un documento que promete funcionalidad.</td></tr>
+<tr><td>Colaboración con el cliente</td><td>Negociación contractual</td><td>El cliente participa durante todo el proyecto, no solo al firmar y al recibir.</td></tr>
+<tr><td>Respuesta ante el cambio</td><td>Seguir un plan</td><td>El plan es una hipótesis; cuando la realidad lo contradice, se ajusta.</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Error frecuente en exámenes</span>
+<p>Escribir que el Manifiesto Ágil elimina la documentación o los planes. El texto original dice explícitamente: “aunque valoramos los elementos de la derecha, valoramos más los de la izquierda”. La documentación y el plan siguen existiendo, con otro nivel de detalle y otro momento.</p>
+</aside>
+<p>Para la sección individual del informe se piden dos principios del Manifiesto aplicados al equipo. Conviene elegir dos que se puedan sostener con hechos verificables del Sprint, por ejemplo la entrega temprana y continua de valor junto con la reflexión periódica del equipo, y describir una situación concreta de cada uno.</p>
+</section>
+<section class="seccion" id="fundamentos-agiles-principios">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Los doce principios</h2>
+<p>Los doce principios traducen los valores a comportamientos observables. Se listan en el orden del documento original.</p>
+<ol class="lista">
+<li>La mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor.</li>
+<li>Se acepta que los requisitos cambien, incluso en etapas tardías. Los procesos ágiles aprovechan el cambio para dar ventaja competitiva al cliente.</li>
+<li>Se entrega software funcional con frecuencia, entre dos semanas y dos meses, con preferencia al periodo más corto.</li>
+<li>Los responsables de negocio y los desarrolladores trabajan juntos de forma cotidiana durante todo el proyecto.</li>
+<li>Los proyectos se desarrollan en torno a individuos motivados: se les da el entorno y el apoyo que necesitan y se les confía la ejecución del trabajo.</li>
+<li>El método más eficiente y efectivo de comunicar información es la conversación cara a cara.</li>
+<li>El software funcionando es la medida principal de progreso.</li>
+<li>Los procesos ágiles promueven el desarrollo sostenible: se debe mantener un ritmo constante de forma indefinida.</li>
+<li>La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.</li>
+<li>La simplicidad, entendida como el arte de maximizar la cantidad de trabajo no realizado, es esencial.</li>
+<li>Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.</li>
+<li>A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo y ajusta su comportamiento en consecuencia.</li>
+</ol>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Principio</th><th scope="col">Cómo se ve en un Sprint real</th></tr></thead>
+<tbody>
+<tr><td>1. Entrega temprana y continua</td><td>Al cerrar el Sprint existe una funcionalidad desplegada y usable, no solo código avanzado.</td></tr>
+<tr><td>2. Aceptar el cambio</td><td>Una historia se renegocia con el Product Owner a mitad del Sprint porque cambió una regla del negocio.</td></tr>
+<tr><td>4. Negocio y desarrollo juntos</td><td>El Product Owner participa en el refinamiento y responde dudas el mismo día.</td></tr>
+<tr><td>7. Software funcionando como medida</td><td>El avance se mide por historias terminadas según la Definition of Done, no por porcentaje de código escrito.</td></tr>
+<tr><td>10. Simplicidad</td><td>Se descarta una funcionalidad que nadie pidió en lugar de construirla por si acaso.</td></tr>
+<tr><td>11. Equipos auto-organizados</td><td>El equipo decide cómo repartir las tareas del Sprint sin que el jefe asigne cada una.</td></tr>
+<tr><td>12. Reflexión periódica</td><td>La retrospectiva produce dos acciones concretas que se verifican en el Sprint siguiente.</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="fundamentos-agiles-predictivo-vs-agil">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Enfoque predictivo frente a enfoque ágil</h2>
+<p>La elección entre un enfoque predictivo y uno ágil depende de la estabilidad de los requisitos y del costo de equivocarse. Si el requisito es estable, conocido y verificable por contrato, planificar todo al inicio es eficiente. Si el requisito cambia con el uso o el mercado, conviene aprender por ciclos.</p>
+<div class="comparacion">
+<div>
+<h4>Predictivo o en cascada</h4>
+<ul>
+<li>Se levantan todos los requisitos al inicio.</li>
+<li>El alcance se congela y el cambio se trata como desviación.</li>
+<li>La entrega ocurre al final del proyecto.</li>
+<li>El avance se mide por documentos y fases concluidas.</li>
+<li>El cliente valida una sola vez, al cierre.</li>
+<li>El riesgo se concentra en la integración final.</li>
+</ul>
+</div>
+<div>
+<h4>Iterativo e incremental</h4>
+<ul>
+<li>Se detalla solo lo necesario para el siguiente ciclo.</li>
+<li>El alcance se ajusta con el aprendizaje de cada ciclo.</li>
+<li>Se entrega valor en cada iteración.</li>
+<li>El avance se mide por incrementos terminados y usables.</li>
+<li>El cliente valida al final de cada ciclo.</li>
+<li>El riesgo se reparte y se detecta temprano.</li>
+</ul>
+</div>
+</div>
+<dl class="definiciones">
+<div class="def">
+<dt>Iterativo</dt>
+<dd>Se repite el ciclo completo de trabajo, refinando el resultado en cada vuelta.</dd>
+</div>
+<div class="def">
+<dt>Incremental</dt>
+<dd>Cada vuelta agrega una porción terminada y usable al producto, no una maqueta.</dd>
+</div>
+<div class="def">
+<dt>Timebox</dt>
+<dd>Duración máxima fija para una actividad. Si el tiempo termina, la actividad termina: se recorta el alcance, no el plazo.</dd>
+</div>
+<div class="def">
+<dt>Retroalimentación</dt>
+<dd>Información que devuelve el uso real del producto y que corrige las decisiones siguientes.</dd>
+</div>
+</dl>
+</section>
+<section class="seccion" id="fundamentos-agiles-complejidad">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Por qué funciona: complejidad y empirismo</h2>
+<p>El desarrollo de software es un problema complejo en el sentido técnico del término: el resultado no se puede predecir con exactitud a partir de las partes, porque las interacciones entre ellas generan comportamiento nuevo. Cuando la relación causa-efecto solo se entiende después de actuar, el enfoque adecuado no es planificar más, sino experimentar y observar.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Tipo de problema</th><th scope="col">Característica</th><th scope="col">Enfoque adecuado</th></tr></thead>
+<tbody>
+<tr><td>Simple</td><td>La receta se conoce y se repite igual</td><td>Buenas prácticas y procedimientos</td></tr>
+<tr><td>Complicado</td><td>Requiere análisis experto, pero es predecible</td><td>Planificación detallada y especialistas</td></tr>
+<tr><td>Complejo</td><td>El resultado emerge y solo se entiende al ejecutar</td><td>Ciclos cortos, inspección y adaptación</td></tr>
+<tr><td>Caótico</td><td>No hay patrón estable</td><td>Actuar para contener y luego estabilizar</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">La conexión con Scrum</span>
+<p>Scrum responde a la complejidad con empirismo: tomar decisiones basadas en lo observado, no en lo supuesto. De ahí sus tres pilares (transparencia, inspección y adaptación) y sus ciclos cortos, que existen para que haya algo real que observar.</p>
+</aside>
+</section>
+<section class="seccion" id="fundamentos-agiles-errores">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Malentendidos que restan puntos</h2>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Afirmación incorrecta</th><th scope="col">Corrección</th></tr></thead>
+<tbody>
+<tr><td>Ágil significa entregar rápido y sin plan</td><td>Ágil significa entregar valor pronto y replanificar. El Sprint tiene un plan explícito: el Sprint Backlog.</td></tr>
+<tr><td>Ágil significa no documentar</td><td>Significa documentar lo que aporta valor. Los criterios de aceptación y la Definition of Done son documentación.</td></tr>
+<tr><td>Scrum es una metodología</td><td>Es un marco de trabajo liviano. No prescribe técnicas de ingeniería ni plantillas de documentos.</td></tr>
+<tr><td>Si hay cambios, el Sprint falló</td><td>El cambio dentro del Sprint es normal si no pone en riesgo el Sprint Goal. Solo el Product Owner puede cancelar el Sprint.</td></tr>
+<tr><td>El equipo ágil no tiene jefe, entonces no rinde cuentas</td><td>La autogestión implica responsabilidad sobre el resultado. El equipo se compromete con el Sprint Goal.</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+<article class="seccion" id="marco-scrum" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">03</span>Marco Scrum
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Scrum es un marco liviano que ayuda a las personas, los equipos y las organizaciones a generar valor mediante soluciones adaptativas para problemas complejos. Esta sección cubre su definición formal, los tres pilares del empirismo, los cinco valores y las tres responsabilidades del equipo.</p>
+<section class="seccion" id="marco-scrum-definicion">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Definición formal</h2>
+<blockquote>
+<p>Scrum es un marco liviano que ayuda a las personas, los equipos y las organizaciones a generar valor mediante soluciones adaptativas para problemas complejos.</p>
+<cite>Guía Scrum 2020</cite>
+</blockquote>
+<p>Tres palabras de esa definición sostienen todo lo demás. Liviano: define lo mínimo indispensable y deja el resto a criterio del equipo. Adaptativo: el proceso se corrige con lo que se aprende. Complejo: el problema no admite una solución totalmente previsible, por lo que se avanza por ciclos.</p>
+<p>Scrum no es un proceso, una técnica ni un método definitivo. Es un marco dentro del cual se pueden emplear distintos procesos y técnicas. Expone deliberadamente la eficacia relativa de la gestión del producto y del trabajo, de modo que las deficiencias se hagan visibles y puedan corregirse.</p>
+<p>La Guía Scrum 2020 es la versión vigente, publicada en noviembre de 2020 por Ken Schwaber y Jeff Sutherland. Tiene menos de trece páginas y deliberadamente evita prescribir prácticas de ingeniería.</p>
+</section>
+<section class="seccion" id="marco-scrum-pilares">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Los tres pilares del empirismo</h2>
+<p>Scrum se fundamenta en el empirismo, que afirma que el conocimiento proviene de la experiencia y de la toma de decisiones a partir de lo observado. Para que eso funcione hacen falta tres pilares, y los tres son obligatorios: si uno falla, los otros dejan de tener sentido.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Transparencia</dt>
+<dd>El proceso y el trabajo deben ser visibles para quienes ejecutan y para quienes reciben el resultado. La transparencia exige un estándar compartido: todos entienden igual qué significa terminado.</dd>
+</div>
+<div class="def">
+<dt>Inspección</dt>
+<dd>Los artefactos y el avance hacia las metas se inspeccionan con frecuencia, pero no tanto como para estorbar el trabajo. Los cinco eventos existen precisamente para inspeccionar.</dd>
+</div>
+<div class="def">
+<dt>Adaptación</dt>
+<dd>Si la inspección revela que algún aspecto se desvía de los límites aceptables o que el producto resultante no es aceptable, el proceso o los elementos que se producen deben ajustarse lo antes posible.</dd>
+</div>
+</dl>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Pilar</th><th scope="col">Se rompe cuando</th><th scope="col">Cómo se restablece</th></tr></thead>
+<tbody>
+<tr><td>Transparencia</td><td>El tablero no refleja el estado real o la Definition of Done es ambigua</td><td>Acordar un estándar único y actualizar el tablero el mismo día</td></tr>
+<tr><td>Inspección</td><td>El equipo reporta avance sin mostrar el incremento</td><td>Revisar el incremento en cada Sprint Review con usuarios presentes</td></tr>
+<tr><td>Adaptación</td><td>Se detecta un problema y se sigue igual</td><td>Registrar la acción en la retrospectiva y verificar su efecto en el Sprint siguiente</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Por qué importa para el informe</span>
+<p>Cuando la rúbrica pide evidencias, en el fondo pide transparencia demostrable. Una captura del tablero con las tarjetas en su columna real vale más que un párrafo afirmando que hubo seguimiento.</p>
+</aside>
+</section>
+<section class="seccion" id="marco-scrum-valores">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Los cinco valores Scrum</h2>
+<p>Los valores dan dirección al trabajo del equipo. No son un adorno motivacional: cuando el equipo carece de alguno, los eventos se vuelven trámites y los artefactos dejan de ser transparentes.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Valor</th><th scope="col">Significado</th><th scope="col">Se reconoce en el equipo cuando</th></tr></thead>
+<tbody>
+<tr><td>Compromiso</td><td>El equipo se compromete a alcanzar sus metas y a apoyarse mutuamente</td><td>Nadie deja una tarea a medias esperando que otro la rescate</td></tr>
+<tr><td>Foco</td><td>El trabajo principal del Sprint es prioritario y el resto espera</td><td>Se rechazan tareas externas a mitad del Sprint</td></tr>
+<tr><td>Franqueza</td><td>Se habla con claridad de todo el trabajo y sus impedimentos</td><td>Alguien dice a tiempo que una historia no se terminará</td></tr>
+<tr><td>Respeto</td><td>Los integrantes son capaces e independientes y se tratan como tales</td><td>Las decisiones técnicas se discuten sin descalificar</td></tr>
+<tr><td>Coraje</td><td>Se hacen las cosas difíciles cuando hace falta</td><td>El equipo admite un error de estimación en lugar de maquillar el avance</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Valores frente a principios</span>
+<p>No confundir los cinco valores Scrum con los doce principios del Manifiesto Ágil. Los valores son del marco Scrum y son cinco; los principios son del movimiento ágil y son doce. En la evidencia individual se piden dos principios del Manifiesto, no dos valores Scrum.</p>
+</aside>
+</section>
+<section class="seccion" id="marco-scrum-equipo">
+<h2 style="font-size:1.4rem"><span class="num">04</span>El equipo Scrum y sus tres responsabilidades</h2>
+<p>La Guía 2020 unificó la idea de equipo: ya no existe un equipo de desarrollo separado dentro de un equipo Scrum. Hay un solo equipo Scrum, autogestionado y multifuncional, con tres conjuntos de responsabilidades: Product Owner, Scrum Master y Developers.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Autogestionado</dt>
+<dd>El equipo decide internamente quién hace qué, cuándo y cómo. No hay un jefe que reparta tareas.</dd>
+</div>
+<div class="def">
+<dt>Multifuncional</dt>
+<dd>El equipo tiene todas las habilidades necesarias para crear valor en cada Sprint, sin depender de terceros para terminar.</dd>
+</div>
+<div class="def">
+<dt>Tamaño</dt>
+<dd>Normalmente diez personas o menos. Con menos de tres hay menos intercambio y menores ganancias de productividad; con más, crece la complejidad de coordinación y hace falta demasiada comunicación.</dd>
+</div>
+</dl>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Responsabilidad</th><th scope="col">Propósito</th><th scope="col">Decisiones que le corresponden</th></tr></thead>
+<tbody>
+<tr><td>Product Owner</td><td>Maximizar el valor del producto resultante del trabajo del equipo</td><td>Qué se construye y en qué orden: contenido y orden del Product Backlog. Es una sola persona, no un comité.</td></tr>
+<tr><td>Scrum Master</td><td>Que el equipo trabaje con eficacia según Scrum</td><td>Facilitar eventos, eliminar impedimentos, entrenar al equipo y a la organización. No dirige ni decide el producto.</td></tr>
+<tr><td>Developers</td><td>Crear cada día un incremento que aporte valor y cumpla la Definition of Done</td><td>Cómo se hace el trabajo: descomposición, estimación, orden interno de las tareas del Sprint.</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="marco-scrum-product-owner">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Product Owner en detalle</h2>
+<p>El Product Owner es responsable de maximizar el valor del producto. Su instrumento principal es el Product Backlog: su contenido, su disponibilidad y su orden. Como el orden del backlog determina qué se ataca primero, el Product Owner decide en la práctica la estrategia del producto.</p>
+<ul class="lista">
+<li>Desarrollar y comunicar explícitamente el Product Goal.</li>
+<li>Crear y comunicar claramente los elementos del Product Backlog.</li>
+<li>Ordenar los elementos del Product Backlog para alcanzar mejor las metas.</li>
+<li>Asegurar que el Product Backlog sea transparente, visible y comprendido.</li>
+<li>Toda la organización debe respetar sus decisiones: nadie puede pedir al equipo que trabaje desde otra lista paralela.</li>
+</ul>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Anti-patrón frecuente</span>
+<p>El Product Owner mensajero, que solo traslada pedidos de otros sin decidir el orden. Si no puede decir que no a un pedido de último momento, el backlog pierde credibilidad y el Sprint Goal se vuelve inalcanzable.</p>
+</aside>
+</section>
+<section class="seccion" id="marco-scrum-scrum-master">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Scrum Master en detalle</h2>
+<p>El Scrum Master es un líder que sirve al equipo y a la organización. Su éxito no se mide por lo que produce directamente, sino por la salud del proceso: que los eventos ocurran y sirvan, que los impedimentos desaparezcan y que la organización entienda Scrum.</p>
+<div class="comparacion">
+<div>
+<h4>Sirve al equipo</h4>
+<ul>
+<li>Entrena a los integrantes en autogestión y multifuncionalidad.</li>
+<li>Ayuda a enfocar en crear incrementos de alto valor.</li>
+<li>Facilita la eliminación de impedimentos.</li>
+<li>Asegura que todos los eventos se lleven a cabo y sean productivos.</li>
+<li>Entrena al equipo en la adopción del marco.</li>
+</ul>
+</div>
+<div>
+<h4>Sirve a la organización</h4>
+<ul>
+<li>Lidera, entrena y orienta en la adopción de Scrum.</li>
+<li>Planifica y aconseja implementaciones de Scrum.</li>
+<li>Ayuda a que los empleados y las partes interesadas comprendan el enfoque empírico.</li>
+<li>Provoca cambios que aumentan la productividad del equipo.</li>
+<li>Trabaja con otros Scrum Masters para mejorar la eficacia.</li>
+</ul>
+</div>
+</div>
+<p>Lo que el Scrum Master no hace: asignar tareas, decidir la prioridad del backlog, evaluar el desempeño individual del equipo ni actuar como jefe de proyecto. Cuando el Scrum Master empieza a decidir el cómo, el equipo deja de autogestionarse.</p>
+</section>
+<section class="seccion" id="marco-scrum-developers">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Developers en detalle</h2>
+<p>En Scrum, Developers es el nombre de la responsabilidad, no del cargo. Incluye a cualquier persona que trabaje en la creación del incremento: analistas, diseñadores, programadores, testers, y también el Product Owner o el Scrum Master si ejecutan elementos del Sprint Backlog.</p>
+<ul class="lista">
+<li>Crear un plan para el Sprint, el Sprint Backlog.</li>
+<li>Inculcar calidad según la Definition of Done.</li>
+<li>Adaptar su plan cada día hacia el Sprint Goal.</li>
+<li>Responsabilizarse mutuamente como profesionales.</li>
+<li>Descomponer las historias en tareas y estimarlas en conjunto.</li>
+</ul>
+<aside class="destacado info">
+<span class="titulo-destacado">Efecto en el informe</span>
+<p>Si en el equipo hay dos personas que programan y una que documenta, las tres son Developers durante el Sprint. El rol Scrum de la tabla de participación describe la responsabilidad principal asumida, y las actividades pueden incluir desarrollo, pruebas y documentación.</p>
+</aside>
+</section>
+<section class="seccion" id="marco-scrum-roles-vs-cargos">
+<h2 style="font-size:1.4rem"><span class="num">08</span>Cómo describir el rol en el informe</h2>
+<p>La sección individual pide indicar el rol asumido, sus responsabilidades, las actividades desarrolladas y el aporte al Sprint. La respuesta gana fuerza cuando esas cuatro piezas son verificables y distintas de las del resto del equipo.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Apartado</th><th scope="col">Qué escribir</th><th scope="col">Ejemplo de redacción breve</th></tr></thead>
+<tbody>
+<tr><td>Rol asumido</td><td>Una de las tres responsabilidades Scrum, sin inventar cargos híbridos</td><td>Product Owner</td></tr>
+<tr><td>Responsabilidades</td><td>Tres o cuatro funciones propias del rol</td><td>Priorizar el backlog, definir criterios de aceptación y validar el incremento</td></tr>
+<tr><td>Actividades desarrolladas</td><td>Acciones concretas con fechas o eventos asociados</td><td>Refinamiento de las cinco historias y validación del módulo de reservas en el Sprint Review</td></tr>
+<tr><td>Aporte al Sprint</td><td>Un efecto medible sobre el resultado</td><td>El orden del backlog permitió entregar el flujo de reserva completo antes del cierre</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+<article class="seccion" id="eventos" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">04</span>Eventos Scrum
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Los eventos crean regularidad y reducen la necesidad de reuniones que no están definidas en Scrum. Cada uno es una oportunidad formal de inspeccionar y adaptar. Esta sección cubre el Sprint, la Sprint Planning, el Daily Scrum, el Sprint Review y la Sprint Retrospective con sus timeboxes y participantes.</p>
+<section class="seccion" id="eventos-panorama">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Panorama general</h2>
+<p>Scrum tiene cinco eventos. El Sprint es un contenedor que abarca a los otros cuatro. Todos los eventos son oportunidades formales de inspeccionar y adaptar artefactos; si un evento no se opera como está prescrito, se pierde esa oportunidad y el riesgo se acumula.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Evento</th><th scope="col">Participantes</th><th scope="col">Timebox máximo</th><th scope="col">Inspecciona</th><th scope="col">Produce</th></tr></thead>
+<tbody>
+<tr><td>El Sprint</td><td>Equipo Scrum completo</td><td>Un mes o menos</td><td>El avance hacia el Product Goal</td><td>Un incremento usable</td></tr>
+<tr><td>Sprint Planning</td><td>Equipo Scrum completo</td><td>8 horas para un Sprint de un mes</td><td>Product Backlog, Product Goal, Definition of Done</td><td>Sprint Goal, elementos seleccionados y plan</td></tr>
+<tr><td>Daily Scrum</td><td>Developers</td><td>15 minutos, fijo</td><td>Avance hacia el Sprint Goal</td><td>Plan ajustado para las próximas 24 horas</td></tr>
+<tr><td>Sprint Review</td><td>Equipo Scrum y partes interesadas</td><td>4 horas para un Sprint de un mes</td><td>El incremento y el estado del producto</td><td>Product Backlog adaptado</td></tr>
+<tr><td>Sprint Retrospective</td><td>Equipo Scrum completo</td><td>3 horas para un Sprint de un mes</td><td>Cómo trabajó el equipo</td><td>Acciones de mejora concretas</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo leer los timeboxes</span>
+<p>Los tiempos son máximos para un Sprint de un mes, no metas. En Sprints de dos semanas se reducen proporcionalmente, salvo el Daily Scrum, que dura quince minutos sin importar la duración del Sprint. Si el tiempo se agota, se recorta el alcance del evento, no el plazo.</p>
+</aside>
+</section>
+<section class="seccion" id="eventos-sprint">
+<h2 style="font-size:1.4rem"><span class="num">02</span>El Sprint</h2>
+<p>Los Sprints son el corazón de Scrum, donde las ideas se convierten en valor. Son eventos de duración fija de un mes o menos, lo que genera consistencia. Un Sprint nuevo comienza inmediatamente después de la conclusión del anterior, sin pausa entre ambos.</p>
+<ul class="lista">
+<li>Dentro del Sprint ocurre todo el trabajo necesario para alcanzar el Product Goal, incluidos los otros cuatro eventos.</li>
+<li>Durante el Sprint no se hacen cambios que pongan en peligro el Sprint Goal.</li>
+<li>La calidad no disminuye.</li>
+<li>El Product Backlog se refina según sea necesario.</li>
+<li>El alcance puede aclararse y renegociarse con el Product Owner a medida que se aprende más.</li>
+</ul>
+<dl class="definiciones">
+<div class="def">
+<dt>Duración habitual</dt>
+<dd>Dos semanas es lo más común en la práctica; la Guía solo fija el máximo de un mes.</dd>
+</div>
+<div class="def">
+<dt>Sprints más cortos</dt>
+<dd>Generan más ciclos de aprendizaje y limitan el riesgo a menos tiempo, a cambio de mayor sobrecarga de eventos.</dd>
+</div>
+<div class="def">
+<dt>Sprints más largos</dt>
+<dd>Reducen la sobrecarga, pero el costo de equivocarse crece porque el error tarda más en descubrirse.</dd>
+</div>
+<div class="def">
+<dt>Cancelación</dt>
+<dd>Un Sprint puede cancelarse si el Sprint Goal queda obsoleto. Solo el Product Owner tiene esa autoridad.</dd>
+</div>
+</dl>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Sobre la cancelación</span>
+<p>La cancelación es excepcional porque consume recursos: si una parte del trabajo ya está terminada y es entregable, el Product Owner normalmente la acepta. Cuando se cancela un Sprint, los elementos completados se revisan y los incompletos vuelven al Product Backlog.</p>
+</aside>
+</section>
+<section class="seccion" id="eventos-sprint-planning">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Sprint Planning</h2>
+<p>La Sprint Planning inicia el Sprint definiendo el trabajo a realizar. El plan resultante lo crea el equipo completo de forma colaborativa, no el Product Owner en solitario ni el Scrum Master por encargo. El Product Owner se asegura de que los asistentes estén preparados para discutir los elementos más importantes del Product Backlog y su relación con el Product Goal.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Tema uno: ¿por qué es valioso este Sprint?</dt>
+<dd>El Product Owner propone cómo el producto puede aumentar su valor en el Sprint. Todo el equipo colabora para definir el Sprint Goal, que debe quedar finalizado antes de que termine la reunión.</dd>
+</div>
+<div class="def">
+<dt>Tema dos: ¿qué se puede hacer en este Sprint?</dt>
+<dd>El equipo selecciona elementos del Product Backlog. Puede invitar a otras personas para recibir asesoramiento. Solo el equipo puede evaluar qué es capaz de lograr.</dd>
+</div>
+<div class="def">
+<dt>Tema tres: ¿cómo se hará el trabajo elegido?</dt>
+<dd>Se descompone cada elemento seleccionado en tareas de un día o menos. El equipo decide cómo convertir los elementos en un incremento que cumpla la Definition of Done.</dd>
+</div>
+</dl>
+<p>El Sprint Goal es la pieza que muchas veces se omite y es la que da coherencia a todo. Es una meta única para el Sprint, redactada como un resultado de negocio, no como una lista de tareas. Gracias a ella el equipo puede negociar el alcance sin perder el rumbo: si una historia se complica, se cambia por otra que igual contribuya a la misma meta.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Salida de la Planning</th><th scope="col">Qué contiene</th><th scope="col">Dónde se registra</th></tr></thead>
+<tbody>
+<tr><td>Sprint Goal</td><td>Una frase con el resultado de negocio que justifica el Sprint</td><td>Encabezado visible del Sprint Backlog o del tablero</td></tr>
+<tr><td>Elementos seleccionados</td><td>Historias del Product Backlog elegidas para el Sprint</td><td>Columna de pendientes del Sprint en el tablero</td></tr>
+<tr><td>Plan de entrega</td><td>Tareas de un día o menos por historia</td><td>Tarjetas hijas o checklist dentro de cada historia</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Para el informe</span>
+<p>La sección 2 pide cinco historias y la justificación de su prioridad. Ahí conviene mostrar el Sprint Goal como criterio: las historias se eligieron porque en conjunto entregan ese resultado. Sin Sprint Goal, la priorización se percibe arbitraria.</p>
+</aside>
+</section>
+<section class="seccion" id="eventos-daily">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Daily Scrum</h2>
+<p>El propósito del Daily Scrum es inspeccionar el progreso hacia el Sprint Goal y adaptar el Sprint Backlog según sea necesario, ajustando el trabajo planificado. Es un evento de quince minutos para los Developers, que se realiza a la misma hora y en el mismo lugar cada día laborable del Sprint para reducir la complejidad.</p>
+<ul class="lista">
+<li>Si el Product Owner o el Scrum Master trabajan activamente en elementos del Sprint Backlog, participan como Developers.</li>
+<li>Los Developers eligen la estructura y las técnicas que prefieran, siempre que el evento se centre en el avance hacia el Sprint Goal.</li>
+<li>Debe producir un plan accionable para las siguientes veinticuatro horas.</li>
+<li>El Daily Scrum no es el único momento para ajustar el plan: el equipo se reúne a lo largo del día para conversaciones más detalladas.</li>
+</ul>
+<p>La Guía 2020 retiró las tres preguntas clásicas (qué hice ayer, qué haré hoy, qué impedimentos tengo) porque resultaban demasiado prescriptivas. Siguen siendo una estructura válida si el equipo lo decide, pero no son obligatorias. Lo obligatorio es el propósito: inspeccionar el avance hacia el Sprint Goal y ajustar el plan.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Estructura posible</th><th scope="col">Cómo funciona</th><th scope="col">Cuándo conviene</th></tr></thead>
+<tbody>
+<tr><td>Las tres preguntas</td><td>Cada integrante responde ayer, hoy e impedimentos</td><td>Equipos nuevos que necesitan orden</td></tr>
+<tr><td>Recorrido del tablero</td><td>Se revisan las tarjetas de derecha a izquierda</td><td>Equipos que trabajan con flujo continuo</td></tr>
+<tr><td>Solo impedimentos</td><td>Se habla únicamente de bloqueos y decisiones</td><td>Equipos maduros con tablero actualizado</td></tr>
+</tbody>
+</table></div>
+<p>El Daily mejora la comunicación, identifica impedimentos, promueve decisiones rápidas y elimina la necesidad de otras reuniones. Es un evento de sincronización, no de reporte de estado hacia un supervisor.</p>
+</section>
+<section class="seccion" id="eventos-sprint-review">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Sprint Review</h2>
+<p>El propósito del Sprint Review es inspeccionar el resultado del Sprint y determinar las adaptaciones futuras. El equipo presenta los resultados a las partes interesadas clave y se avanza hacia el progreso del Product Goal. Es una sesión de trabajo, no una presentación de diapositivas.</p>
+<ul class="lista">
+<li>El equipo Scrum y las partes interesadas revisan en conjunto qué se logró y qué cambió en el entorno.</li>
+<li>Se analiza qué hacer a continuación para maximizar el valor.</li>
+<li>Se revisan cambios en el mercado o en el uso potencial del producto.</li>
+<li>Se actualiza el Product Backlog para reflejar las nuevas oportunidades.</li>
+<li>La Guía 2020 no prescribe quién invita a las partes interesadas: lo decide el equipo Scrum.</li>
+</ul>
+<div class="comparacion">
+<div>
+<h4>Sprint Review</h4>
+<ul>
+<li>Se inspecciona el producto.</li>
+<li>Participan las partes interesadas.</li>
+<li>Se adapta el Product Backlog.</li>
+<li>Cierra con una lista de próximos pasos de negocio.</li>
+<li>Se demuestra el incremento real funcionando.</li>
+</ul>
+</div>
+<div>
+<h4>Sprint Retrospective</h4>
+<ul>
+<li>Se inspecciona el proceso del equipo.</li>
+<li>Participa solo el equipo Scrum.</li>
+<li>Se adapta la forma de trabajar.</li>
+<li>Cierra con acciones de mejora concretas.</li>
+<li>Se habla de colaboración, herramientas y obstáculos.</li>
+</ul>
+</div>
+</div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Confusión clásica</span>
+<p>Review no es lo mismo que Retrospective. La Review mira el producto y suma a las partes interesadas; la retrospectiva mira el proceso y es interna. Intercambiarlas en el informe es uno de los errores que más rápido revelan que el marco no se comprendió.</p>
+</aside>
+</section>
+<section class="seccion" id="eventos-retrospectiva">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Sprint Retrospective</h2>
+<p>El propósito de la retrospectiva es planificar formas de aumentar la calidad y la eficacia. El equipo Scrum inspecciona cómo fue el último Sprint en relación con las personas, las interacciones, los procesos, las herramientas y la Definition of Done. Es el último evento del Sprint y lo cierra.</p>
+<ul class="lista">
+<li>Se identifican los supuestos que llevaron por mal camino y se explora su origen.</li>
+<li>Se discute qué funcionó bien y qué problemas se encontraron.</li>
+<li>Se analiza si esos problemas se resolvieron o siguen abiertos.</li>
+<li>El equipo selecciona los cambios más útiles para mejorar su eficacia.</li>
+<li>Los cambios más impactantes se abordan lo antes posible, incluso pueden entrar al Sprint Backlog del siguiente Sprint.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Formato</th><th scope="col">Estructura</th><th scope="col">Ventaja</th></tr></thead>
+<tbody>
+<tr><td>Qué salió bien, qué salió mal</td><td>Dos columnas y luego acciones</td><td>Simple y rápido para equipos nuevos</td></tr>
+<tr><td>Start, Stop, Continue</td><td>Qué empezar, qué dejar, qué mantener</td><td>Convierte la conversación en compromisos</td></tr>
+<tr><td>Estrella de mar</td><td>Mantener, menos, más, dejar de hacer, empezar a hacer</td><td>Cubre cinco perspectivas sin alargar la reunión</td></tr>
+<tr><td>4L</td><td>Aprendí, me gustó, faltó, deseé</td><td>Recoge aprendizaje además de desempeño</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">El criterio de una buena retrospectiva</span>
+<p>Una retrospectiva es buena si termina con pocas acciones, con responsable y con fecha de verificación. Diez ideas sin dueño no cambian nada; dos acciones sostenidas sí. En el informe, cada respuesta del punto 5 debe apoyarse en una situación concreta ocurrida en el Sprint.</p>
+</aside>
+</section>
+<section class="seccion" id="eventos-reglas">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Reglas de los eventos que conviene memorizar</h2>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Regla</th><th scope="col">Detalle</th></tr></thead>
+<tbody>
+<tr><td>Todos los eventos son obligatorios</td><td>Omitir uno rompe la inspección y adaptación que ese evento garantiza</td></tr>
+<tr><td>Los eventos tienen timebox</td><td>Si el tiempo termina, el evento termina: se recorta alcance, no plazo</td></tr>
+<tr><td>El Sprint contiene a los demás</td><td>Planning, Daily, Review y Retrospective ocurren dentro del Sprint</td></tr>
+<tr><td>Solo el Product Owner cancela el Sprint</td><td>Y solo si el Sprint Goal queda obsoleto</td></tr>
+<tr><td>El Daily es de los Developers</td><td>Otros pueden asistir, pero no convertirlo en reunión de estado</td></tr>
+<tr><td>La Review incluye interesados externos</td><td>La retro no: es interna del equipo Scrum</td></tr>
+<tr><td>El Sprint empieza inmediatamente después del anterior</td><td>No hay pausa entre Sprints</td></tr>
+<tr><td>Se prefieren mismo día y misma hora</td><td>Reduce complejidad y facilita la asistencia</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+<article class="seccion" id="artefactos" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">05</span>Artefactos Scrum
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Los artefactos representan trabajo o valor y están diseñados para maximizar la transparencia. Cada uno tiene un compromiso asociado que le da sentido: Product Goal, Sprint Goal y Definition of Done. Esta sección cubre los tres artefactos y sirve de base para las secciones 3 y 4 del informe.</p>
+<section class="seccion" id="artefactos-panorama">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Los tres artefactos y sus compromisos</h2>
+<p>Scrum define tres artefactos. Cada uno representa información que el equipo y las partes interesadas necesitan para entender el trabajo y el valor. La Guía 2020 agregó a cada artefacto un compromiso: una meta o estándar que mantiene el artefacto enfocado y evita que se convierta en una lista sin dirección.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Artefacto</th><th scope="col">Qué representa</th><th scope="col">Compromiso asociado</th><th scope="col">Pregunta que responde</th></tr></thead>
+<tbody>
+<tr><td>Product Backlog</td><td>Lista ordenada de lo que se necesita para mejorar el producto</td><td>Product Goal</td><td>¿Hacia dónde va el producto?</td></tr>
+<tr><td>Sprint Backlog</td><td>El Sprint Goal, los elementos elegidos y el plan para entregarlos</td><td>Sprint Goal</td><td>¿Por qué es valioso este Sprint?</td></tr>
+<tr><td>Incremento</td><td>Un paso concreto y usable hacia el Product Goal</td><td>Definition of Done</td><td>¿Qué significa terminado?</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Artefacto no es documento</span>
+<p>Un artefacto es una fuente de información, no necesariamente un archivo. El Product Backlog puede vivir en un tablero de Trello, el Sprint Backlog en las tarjetas del Sprint y la Definition of Done en un acuerdo escrito. Lo importante es que sea visible y comprensible para quien lo necesita.</p>
+</aside>
+</section>
+<section class="seccion" id="artefactos-product-backlog">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Product Backlog</h2>
+<p>El Product Backlog es una lista emergente y ordenada de lo que se necesita para mejorar el producto. Es la única fuente de trabajo del equipo Scrum: si algo no está en el backlog, no se trabaja. Sus elementos pueden ser funcionalidades, correcciones, requisitos no funcionales o mejoras técnicas.</p>
+<ul class="lista">
+<li>Es la única fuente del trabajo que realiza el equipo.</li>
+<li>Su contenido, disponibilidad y orden son responsabilidad del Product Owner.</li>
+<li>Es un artefacto vivo: cambia a medida que el producto y el entorno cambian.</li>
+<li>Los elementos más importantes se refinan con más detalle; los lejanos pueden ser grandes y vagos.</li>
+<li>Los elementos que pueden completarse en un Sprint se consideran listos para ser seleccionados en una Sprint Planning.</li>
+</ul>
+<dl class="definiciones">
+<div class="def">
+<dt>Refinamiento</dt>
+<dd>Actividad continua de descomponer y aclarar elementos del backlog para que estén listos. No es un evento formal ni tiene timebox prescrito en la Guía 2020.</dd>
+</div>
+<div class="def">
+<dt>Listo (ready)</dt>
+<dd>Condición de un elemento que puede seleccionarse en una Planning: es claro, estimable y verificable.</dd>
+</div>
+<div class="def">
+<dt>Emergente</dt>
+<dd>El backlog no se congela al inicio: se ajusta con lo aprendido en cada Sprint.</dd>
+</div>
+</dl>
+<aside class="destacado alerta">
+<span class="titulo-destacado">El error del backlog congelado</span>
+<p>Entregar el mismo backlog en todos los Sprints sin cambios sugiere que no hubo aprendizaje. Un backlog sano muestra evidencia de refinamiento: elementos reordenados, criterios de aceptación más precisos y elementos nuevos que surgieron del uso del producto.</p>
+</aside>
+</section>
+<section class="seccion" id="artefactos-product-goal">
+<h2 style="font-size:1.4rem"><span class="num">03</span>El Product Goal</h2>
+<p>El Product Goal describe un estado futuro del producto que sirve como objetivo para que el equipo Scrum planifique. Es el compromiso del Product Backlog y la meta a largo plazo: los Sprints son pasos hacia él, no fines en sí mismos.</p>
+<ul class="lista">
+<li>El equipo debe cumplir o abandonar un objetivo antes de asumir el siguiente.</li>
+<li>Ayuda a mantener el foco y evita el trabajo disperso.</li>
+<li>Se define con el equipo y las partes interesadas, pero el Product Owner es responsable de comunicarlo.</li>
+<li>Debe ser concreto: un estado verificable del producto, no una intención genérica.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Formulación débil</th><th scope="col">Formulación útil</th></tr></thead>
+<tbody>
+<tr><td>Mejorar el sistema de reservas</td><td>Que cualquier cliente pueda reservar y pagar una cita en línea sin intervención del personal</td></tr>
+<tr><td>Digitalizar el proceso de ventas</td><td>Que el área comercial registre y consulte el 100% de sus ventas en el sistema antes de fin de año</td></tr>
+<tr><td>Hacer una app moderna</td><td>Que el usuario consulte su historial de atenciones desde el celular con sesión propia</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="artefactos-sprint-backlog">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Sprint Backlog</h2>
+<p>El Sprint Backlog se compone del Sprint Goal (el porqué), los elementos del Product Backlog seleccionados para el Sprint (el qué) y el plan para entregarlos (el cómo). Es un plan construido por y para los Developers, y se actualiza durante el Sprint a medida que se aprende más.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Componente</th><th scope="col">Pregunta</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Sprint Goal</td><td>¿Por qué es valioso este Sprint?</td><td>Dejar operativo el flujo completo de reserva en línea</td></tr>
+<tr><td>Elementos seleccionados</td><td>¿Qué se va a construir?</td><td>HU-01 registro de cliente, HU-02 disponibilidad, HU-03 confirmación de reserva</td></tr>
+<tr><td>Plan de entrega</td><td>¿Cómo se hará?</td><td>Diseñar modelo de datos, crear endpoints, construir formulario, probar con datos reales</td></tr>
+</tbody>
+</table></div>
+<ul class="lista">
+<li>Es un plan con suficiente detalle para que el equipo sepa qué hacer en los próximos días.</li>
+<li>Puede incluir mejoras de proceso identificadas en la retrospectiva.</li>
+<li>Es visible para todos, aunque solo los Developers lo modifican durante el Sprint.</li>
+<li>Cambia a diario: el Daily Scrum existe para ajustarlo.</li>
+</ul>
+<aside class="destacado info">
+<span class="titulo-destacado">Diferencia con el Product Backlog</span>
+<p>El Product Backlog es el universo de trabajo posible y vive mientras viva el producto. El Sprint Backlog es una porción con plazo y se agota al cerrar el Sprint. Si una historia no se termina, vuelve al Product Backlog.</p>
+</aside>
+</section>
+<section class="seccion" id="artefactos-sprint-goal">
+<h2 style="font-size:1.4rem"><span class="num">05</span>El Sprint Goal</h2>
+<p>El Sprint Goal es una meta única para el Sprint que el equipo se compromete a alcanzar. Se define durante la Sprint Planning y da cohesión al trabajo: en lugar de cinco tareas sueltas, hay un resultado que las justifica a todas.</p>
+<ul class="lista">
+<li>Es una meta, no una lista de historias.</li>
+<li>Se redacta como resultado de negocio verificable.</li>
+<li>Debe finalizarse antes de que termine la Planning.</li>
+<li>Proporciona flexibilidad: si una historia se complica, puede cambiarse por otra que contribuya a la misma meta.</li>
+<li>Si el Sprint Goal queda obsoleto, el Sprint puede cancelarse.</li>
+</ul>
+<div class="comparacion">
+<div>
+<h4>No es un Sprint Goal</h4>
+<ul>
+<li>Terminar las cinco historias del Sprint</li>
+<li>Avanzar con el desarrollo del módulo</li>
+<li>Cumplir con el cronograma del curso</li>
+<li>Hacer el backlog completo</li>
+</ul>
+</div>
+<div>
+<h4>Sí es un Sprint Goal</h4>
+<ul>
+<li>Que un cliente pueda registrarse y reservar una cita en línea</li>
+<li>Que el administrador pueda ver y confirmar las reservas del día</li>
+<li>Que el pago quede registrado con comprobante verificable</li>
+</ul>
+</div>
+</div>
+</section>
+<section class="seccion" id="artefactos-incremento">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Incremento y Definition of Done</h2>
+<p>Un incremento es un paso concreto y usable hacia el Product Goal. Cada incremento agrega valor al anterior y debe ser usable por sí mismo: no se admite un incremento que solo funciona cuando llegue el siguiente. Puede haber varios incrementos dentro de un mismo Sprint.</p>
+<p>El trabajo no puede considerarse parte del incremento hasta que cumpla la Definition of Done. Este es el compromiso del incremento y el estándar compartido de calidad: sin él, cada integrante entiende algo distinto por terminado y la transparencia se rompe.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Definition of Done</dt>
+<dd>Descripción formal del estado del incremento cuando cumple las medidas de calidad requeridas para el producto. Si un elemento no la cumple, no se presenta en la Review ni se cuenta como terminado.</dd>
+</div>
+<div class="def">
+<dt>Usable</dt>
+<dd>Que un usuario real puede emplearlo para el propósito previsto, aunque el producto completo todavía no exista.</dd>
+</div>
+<div class="def">
+<dt>Incremento acumulativo</dt>
+<dd>Todos los incrementos se suman. El producto en la Review contiene todo lo hecho hasta ese momento, no solo lo del último Sprint.</dd>
+</div>
+</dl>
+<aside class="destacado info">
+<span class="titulo-destacado">Ejemplo de Definition of Done para un proyecto de curso</span>
+<p>Una historia está terminada cuando: el código está integrado en la rama principal, la funcionalidad fue probada con datos reales de prueba, no tiene errores conocidos de severidad alta, los criterios de aceptación fueron verificados por el Product Owner y la evidencia quedó registrada en el tablero.</p>
+</aside>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Señal de alerta</th><th scope="col">Qué revela</th></tr></thead>
+<tbody>
+<tr><td>El equipo reporta 90% de avance durante tres días seguidos</td><td>No hay Definition of Done clara o las tareas son demasiado grandes</td></tr>
+<tr><td>Se presenta un incremento que solo funciona con datos cargados a mano</td><td>El incremento no es usable</td></tr>
+<tr><td>Cada integrante define terminado a su manera</td><td>La DoD no está acordada ni es visible</td></tr>
+<tr><td>Al cerrar el Sprint todo pasa a terminado de golpe</td><td>No hubo incrementos durante el Sprint, solo al final</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="artefactos-transparencia">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Los artefactos y la transparencia</h2>
+<p>Los artefactos existen para maximizar la transparencia, y la transparencia es la base de la inspección. Si el tablero muestra un estado que no corresponde a la realidad, la inspección produce decisiones equivocadas y la adaptación empeora el problema.</p>
+<ul class="lista">
+<li>Un tablero desactualizado es peor que no tener tablero: crea una falsa sensación de control.</li>
+<li>La Definition of Done debe ser la misma para todos los elementos del incremento.</li>
+<li>Las decisiones sobre el backlog deben ser visibles: por qué un elemento está arriba y otro abajo.</li>
+<li>Los impedimentos deben quedar registrados donde el equipo los vea.</li>
+<li>Las evidencias del informe son, en el fondo, ejercicios de transparencia.</li>
+</ul>
+</section>
+</article>
+<article class="seccion" id="historias-usuario" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">06</span>Historias de usuario
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Una historia de usuario es una descripción breve de una funcionalidad contada desde la perspectiva de quien la necesita. Es la base de la sección 2 del informe, la de mayor puntaje del trabajo grupal. Esta sección cubre el formato, los criterios de aceptación, el concepto de INVEST y los criterios de priorización.</p>
+<section class="seccion" id="historias-usuario-definicion">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Qué es una historia de usuario</h2>
+<p>Una historia de usuario es una descripción corta de una necesidad contada desde el punto de vista de la persona que la tiene. No es un documento de requisitos: es un recordatorio para conversar. La historia captura el quién, el qué y el para qué; el detalle se completa en la conversación y en los criterios de aceptación.</p>
+<blockquote>
+<p>Una historia de usuario es una promesa de conversación.</p>
+<cite>Ron Jeffries, origen del concepto</cite>
+</blockquote>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Aspecto</th><th scope="col">Historia de usuario</th><th scope="col">Caso de uso o requisito funcional</th></tr></thead>
+<tbody>
+<tr><td>Origen</td><td>Nace del usuario y su necesidad</td><td>Nace del análisis del sistema</td></tr>
+<tr><td>Extensión</td><td>Breve, una tarjeta</td><td>Extenso y detallado</td></tr>
+<tr><td>Lenguaje</td><td>Lenguaje del usuario</td><td>Lenguaje técnico</td></tr>
+<tr><td>Detalle</td><td>Se completa en la conversación</td><td>Se completa en el documento</td></tr>
+<tr><td>Priorización</td><td>Por valor de negocio</td><td>Por complejidad o alcance</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="historias-usuario-formato">
+<h2 style="font-size:1.4rem"><span class="num">02</span>El formato pedido en el examen</h2>
+<p>El enunciado exige el formato clásico de tres partes. Es obligatorio usarlo tal cual, porque es un criterio de evaluación explícito.</p>
+<div class="formula">
+<p>Como [rol o tipo de usuario]</p>
+<p>Quiero [funcionalidad o acción]</p>
+<p>Para [beneficio o valor que obtiene]</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Parte</th><th scope="col">Qué debe responder</th><th scope="col">Error típico</th></tr></thead>
+<tbody>
+<tr><td>Como</td><td>Un rol concreto y reconocible del dominio</td><td>“Como usuario” sin especificar; “como el sistema”</td></tr>
+<tr><td>Quiero</td><td>Una acción que el usuario ejecuta, no una que el sistema hace</td><td>“Quiero que el sistema valide”, que esconde una decisión técnica</td></tr>
+<tr><td>Para</td><td>El beneficio real que justifica la historia</td><td>Repetir la acción: “para reservar”, “para registrarme”</td></tr>
+</tbody>
+</table></div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Correcto</h4>
+<p>Como cliente registrado, quiero reservar una cita eligiendo fecha y hora disponibles del especialista, para asegurar mi atención sin llamar por teléfono.</p>
+<p class="nota">Rol concreto, acción del usuario, beneficio claro y distinto de la acción.</p>
+</div>
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Incorrecto</h4>
+<p>Como usuario, quiero una pantalla de reservas, para reservar.</p>
+<p class="nota">Rol genérico, describe una interfaz en lugar de una necesidad y el beneficio repite la acción.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="historias-usuario-criterios-aceptacion">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Criterios de aceptación</h2>
+<p>Los criterios de aceptación definen cuándo una historia está correctamente implementada. Son condiciones verificables: quien los lee puede decir sí o no sin ambigüedad. Sin ellos, la historia admite tantas interpretaciones como integrantes tenga el equipo.</p>
+<ul class="lista">
+<li>Se escriben antes de implementar, junto con el Product Owner.</li>
+<li>Deben ser comprobables: un tercero puede verificarlos sin preguntar.</li>
+<li>Cubren el camino feliz y al menos un caso de error.</li>
+<li>Suelen expresarse como escenario dado / cuando / entonces.</li>
+<li>No confundir criterio de aceptación con Definition of Done: la DoD aplica a todas las historias, los criterios son propios de cada una.</li>
+</ul>
+<div class="formula">
+<p>Dado [contexto o estado inicial]</p>
+<p>Cuando [acción del usuario o evento]</p>
+<p>Entonces [resultado observable y verificable]</p>
+</div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Criterio verificable</h4>
+<p>Dado un cliente con sesión iniciada, cuando selecciona una fecha con horarios disponibles y confirma, entonces el sistema registra la reserva y muestra un código de confirmación.</p>
+<p class="nota">Se puede probar: hay estado inicial, acción y resultado observable.</p>
+</div>
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Criterio no verificable</h4>
+<p>El sistema debe ser rápido y fácil de usar.</p>
+<p class="nota">No se puede aprobar ni rechazar con evidencia. Habría que fijar un umbral, por ejemplo que la confirmación se muestre en menos de tres segundos.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cuántos criterios incluir</span>
+<p>Para el informe, dos a cuatro criterios por historia es suficiente y demuestra dominio. Uno solo parece incompleto; diez convierten la historia en un documento de requisitos y contradicen su naturaleza.</p>
+</aside>
+</section>
+<section class="seccion" id="historias-usuario-invest">
+<h2 style="font-size:1.4rem"><span class="num">04</span>INVEST: control de calidad de la historia</h2>
+<p>INVEST es un acrónimo para recordar las seis características de una historia bien escrita. Sirve como lista de verificación antes de llevarla a una Sprint Planning.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Independiente</dt>
+<dd>Puede implementarse sin depender de otra historia del mismo Sprint, o con dependencias mínimas y explícitas.</dd>
+</div>
+<div class="def">
+<dt>Negociable</dt>
+<dd>No es un contrato cerrado: el alcance se conversa entre el Product Owner y el equipo.</dd>
+</div>
+<div class="def">
+<dt>Valiosa</dt>
+<dd>Aporta valor a alguien: al usuario, al negocio o al propio equipo.</dd>
+</div>
+<div class="def">
+<dt>Estimable</dt>
+<dd>El equipo puede dimensionarla; si no, falta información o es demasiado grande.</dd>
+</div>
+<div class="def">
+<dt>Small (pequeña)</dt>
+<dd>Cabe en un Sprint. Si no cabe, se divide.</dd>
+</div>
+<div class="def">
+<dt>Testable (comprobable)</dt>
+<dd>Existe una forma objetiva de verificar que está hecha.</dd>
+</div>
+</dl>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Letra</th><th scope="col">Pregunta de control</th><th scope="col">Si falla, qué hacer</th></tr></thead>
+<tbody>
+<tr><td>I</td><td>¿Puedo desarrollarla sin esperar otra historia?</td><td>Reordenar el backlog para resolver la dependencia primero</td></tr>
+<tr><td>N</td><td>¿El alcance está abierto a conversación?</td><td>Reescribir si está redactada como especificación cerrada</td></tr>
+<tr><td>V</td><td>¿Alguien obtiene un beneficio concreto?</td><td>Reformular el para qué o descartarla</td></tr>
+<tr><td>E</td><td>¿El equipo puede estimarla hoy?</td><td>Refinar y aclarar antes de la Planning</td></tr>
+<tr><td>S</td><td>¿Cabe en un Sprint?</td><td>Dividirla en historias más pequeñas</td></tr>
+<tr><td>T</td><td>¿Cómo sabremos que está terminada?</td><td>Agregar criterios de aceptación</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="historias-usuario-priorizacion">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Cómo priorizar historias</h2>
+<p>La sección 2 pide explicar por qué esas cinco historias fueron priorizadas para el Sprint 1. La respuesta no puede ser “porque son las más importantes”: hay que nombrar el criterio y aplicarlo.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Valor de negocio</dt>
+<dd>Cuánto beneficio aporta al usuario o a la empresa. Es el criterio principal del Product Owner.</dd>
+</div>
+<div class="def">
+<dt>Riesgo técnico</dt>
+<dd>Grado de incertidumbre sobre si se puede construir. Lo riesgoso conviene atacarlo temprano.</dd>
+</div>
+<div class="def">
+<dt>Dependencia</dt>
+<dd>Una historia necesita otra para funcionar. Marca el orden aunque el valor sea menor.</dd>
+</div>
+<div class="def">
+<dt>Costo</dt>
+<dd>Esfuerzo requerido. Una historia de alto valor y bajo costo sube posiciones.</dd>
+</div>
+<div class="def">
+<dt>Aprendizaje</dt>
+<dd>Cuánto reduce la incertidumbre del producto. Típico de prototipos y validaciones.</dd>
+</div>
+</dl>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Técnica</th><th scope="col">Cómo funciona</th><th scope="col">Cuándo usarla</th></tr></thead>
+<tbody>
+<tr><td>MoSCoW</td><td>Clasifica en Must, Should, Could, Won't</td><td>Alcance acotado con plazo fijo, como un Sprint de curso</td></tr>
+<tr><td>Valor frente a esfuerzo</td><td>Matriz de dos ejes; se prioriza alto valor y bajo esfuerzo</td><td>Cuando hay muchas historias candidatas</td></tr>
+<tr><td>WSJF</td><td>Costo del retraso dividido entre el tamaño del trabajo</td><td>Productos con costo real por no entregar</td></tr>
+<tr><td>Orden por dependencia</td><td>Primero lo que habilita al resto</td><td>Sistemas con módulos encadenados: registro antes de reserva</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo redactar la justificación de la priorización</span>
+<p>Una justificación sólida combina tres capas: primero el criterio general (por ejemplo, valor para el usuario y viabilidad en el plazo), luego el orden concreto historia por historia, y finalmente qué quedó fuera y por qué. La tercera capa es la que demuestra que hubo una decisión y no una lista.</p>
+</aside>
+<div class="formula">
+<p>Criterio: se priorizó por valor para el usuario y por dependencia técnica.</p>
+<p>Orden: HU-01 y HU-02 primero porque habilitan el flujo completo.</p>
+<p>Exclusión: la notificación por SMS quedó fuera del Sprint 1 por depender de un proveedor externo.</p>
+</div>
+</section>
+<section class="seccion" id="historias-usuario-division">
+<h2 style="font-size:1.4rem"><span class="num">06</span>División de historias grandes</h2>
+<p>Cuando una historia no cabe en un Sprint se divide, no se recorta la calidad. Dividir una épica en historias más pequeñas permite entregar valor parcial y reduce el riesgo de llegar al cierre sin nada terminado.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Técnica de división</th><th scope="col">Criterio</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Por flujo de trabajo</td><td>Cada paso operativo es una historia</td><td>Buscar disponibilidad, seleccionar horario, confirmar reserva</td></tr>
+<tr><td>Por regla de negocio</td><td>Cada variante es una historia</td><td>Reserva simple, reserva con reprogramación</td></tr>
+<tr><td>Por tipo de usuario</td><td>Cada rol tiene su historia</td><td>Reserva hecha por el cliente, reserva registrada por recepción</td></tr>
+<tr><td>Por dato</td><td>Cada conjunto de datos es una historia</td><td>Datos personales primero, historial después</td></tr>
+<tr><td>Por camino feliz y excepciones</td><td>Primero lo normal, después los errores</td><td>Reserva exitosa, luego manejo de horario ocupado</td></tr>
+</tbody>
+</table></div>
+<dl class="definiciones">
+<div class="def">
+<dt>Épica</dt>
+<dd>Historia demasiado grande para un Sprint. Se descompone en historias más pequeñas.</dd>
+</div>
+<div class="def">
+<dt>Tarea</dt>
+<dd>Unidad de trabajo técnico dentro de una historia. No aporta valor por sí sola y no se prioriza como historia.</dd>
+</div>
+</dl>
+</section>
+<section class="seccion" id="historias-usuario-plantilla">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Plantilla completa de una historia para el informe</h2>
+<p>Cada una de las cinco historias del informe debería contener los mismos campos, con los mismos nombres, para que el lector pueda compararlas de un vistazo.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Campo</th><th scope="col">Contenido</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>ID</td><td>Identificador estable</td><td>HU-01</td></tr>
+<tr><td>Título</td><td>Nombre corto de la historia</td><td>Reserva de cita en línea</td></tr>
+<tr><td>Historia</td><td>Formato Como / Quiero / Para</td><td>Como cliente registrado, quiero reservar una cita...</td></tr>
+<tr><td>Prioridad</td><td>Alta, media o baja</td><td>Alta</td></tr>
+<tr><td>Estimación</td><td>Puntos de historia o días</td><td>5 puntos</td></tr>
+<tr><td>Criterios de aceptación</td><td>Dos a cuatro condiciones verificables</td><td>Dado... cuando... entonces...</td></tr>
+<tr><td>Valor de negocio</td><td>Beneficio cuantificado o descrito</td><td>Reduce las llamadas de reserva en un 60%</td></tr>
+<tr><td>Responsable</td><td>Quién lidera la historia</td><td>Integrante del equipo</td></tr>
+<tr><td>Estado</td><td>Pendiente, en progreso o hecho</td><td>Hecho</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Coherencia entre secciones</span>
+<p>Los IDs de las historias deben ser los mismos en la sección 2, en el Product Backlog de la sección 3 y en la evidencia individual de la sección 6. Si cambian, el lector pierde el hilo y la rúbrica lo nota.</p>
+</aside>
+</section>
+</article>
+<article class="seccion" id="estimacion" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">07</span>Estimación
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Estimar es dimensionar el esfuerzo con la información disponible, no adivinar con precisión. Esta sección cubre la estimación relativa, las técnicas más usadas, la velocidad del equipo y las tareas como unidad de planificación diaria. Sustenta el apartado 6.4 de la evidencia individual.</p>
+<section class="seccion" id="estimacion-principios">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Qué significa estimar</h2>
+<p>Estimar es asignar una dimensión al esfuerzo necesario para completar un elemento de trabajo. En un entorno complejo la estimación nunca es exacta: el objetivo es reducir la incertidumbre lo suficiente para decidir qué cabe en el Sprint y qué no.</p>
+<ul class="lista">
+<li>Se estima el esfuerzo completo: análisis, diseño, código, pruebas y documentación necesaria.</li>
+<li>Se estima en equipo: la persona que hará el trabajo es quien debe dimensionarlo.</li>
+<li>Se estima con información imperfecta; esperar certeza total retrasa la decisión.</li>
+<li>Las estimaciones se recalibran con los datos reales de cada Sprint.</li>
+<li>Estimar no es comprometerse a una fecha: es dimensionar para planificar.</li>
+</ul>
+<aside class="destacado alerta">
+<span class="titulo-destacado">El error de estimar en solitario</span>
+<p>Cuando una sola persona estima todas las historias, el resto del equipo no se apropia del plan y las desviaciones se explican siempre igual: “la estimación estaba mal”. La estimación conjunta no busca el número perfecto, busca el compromiso con el número elegido.</p>
+</aside>
+</section>
+<section class="seccion" id="estimacion-relativa">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Estimación relativa frente a absoluta</h2>
+<p>Los humanos somos malos calculando duraciones en abstracto y buenos comparando tamaños. La estimación relativa aprovecha eso: en lugar de preguntar cuántas horas tomará algo, se pregunta cuánto más grande es respecto de otra cosa ya conocida.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Enfoque</th><th scope="col">Cómo se expresa</th><th scope="col">Ventaja</th><th scope="col">Riesgo</th></tr></thead>
+<tbody>
+<tr><td>Absoluta</td><td>Horas o días</td><td>Se entiende rápido y sirve para presupuestos</td><td>Genera falsa precisión y se degrada con la interrupción</td></tr>
+<tr><td>Relativa</td><td>Puntos de historia</td><td>Resiste mejor la variabilidad y es más rápida</td><td>Requiere una referencia inicial y no sirve para facturar directo</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Qué es un punto de historia</span>
+<p>Es una unidad de medida abstracta del tamaño relativo. No equivale a horas ni a días y no se convierte entre equipos: cinco puntos en un equipo pueden ser un día, en otro tres. Su valor está en la consistencia interna del propio equipo.</p>
+</aside>
+</section>
+<section class="seccion" id="estimacion-tecnicas">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Técnicas de estimación</h2>
+<dl class="definiciones">
+<div class="def">
+<dt>Planning poker</dt>
+<dd>Cada integrante elige una carta en secreto y todas se revelan a la vez. Las diferencias grandes obligan a discutir supuestos antes de reestimar. Evita el anclaje de la primera opinión.</dd>
+</div>
+<div class="def">
+<dt>Talla de camiseta</dt>
+<dd>Se clasifica en XS, S, M, L, XL. Rápida y útil para backlog poco refinado, pero ambigua para planificar un Sprint.</dd>
+</div>
+<div class="def">
+<dt>Puntos por analogía</dt>
+<dd>Se compara cada historia nueva con una historia de referencia ya estimada. Simple y consistente.</dd>
+</div>
+<div class="def">
+<dt>Estimación por tres valores</dt>
+<dd>Se estiman escenario optimista, más probable y pesimista, y se combina. Aporta en trabajos con alta incertidumbre.</dd>
+</div>
+<div class="def">
+<dt>Estimación por afinidad</dt>
+<dd>Se agrupan historias por tamaño en bloques sin discutir cada una. Sirve para ordenar un backlog grande rápidamente.</dd>
+</div>
+</dl>
+<p>La serie más usada en planning poker es 1, 2, 3, 5, 8, 13, 21, basada en la sucesión de Fibonacci. La razón es práctica: los números se separan cada vez más a medida que crecen, lo que refleja que la incertidumbre aumenta con el tamaño y evita discusiones estériles sobre si algo es siete u ocho.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Valor</th><th scope="col">Lectura habitual</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Trivial, sin incertidumbre</td></tr>
+<tr><td>2</td><td>Pequeña y bien comprendida</td></tr>
+<tr><td>3</td><td>Moderada, con algún detalle por resolver</td></tr>
+<tr><td>5</td><td>Historia estándar del equipo</td></tr>
+<tr><td>8</td><td>Grande; conviene revisar si se puede dividir</td></tr>
+<tr><td>13</td><td>Muy grande: probablemente deba dividirse antes de entrar al Sprint</td></tr>
+<tr><td>21 o más</td><td>Épica, requiere descomposición</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="estimacion-tareas">
+<h2 style="font-size:1.4rem"><span class="num">04</span>De la historia a las tareas</h2>
+<p>La Sprint Planning exige descomponer los elementos seleccionados en tareas de un día o menos. Las tareas son la unidad con la que el equipo se organiza día a día en el tablero; no se estiman en puntos ni se priorizan como historias, porque no aportan valor por sí solas.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Nivel</th><th scope="col">Qué representa</th><th scope="col">Quién lo ve</th><th scope="col">Unidad de medida</th></tr></thead>
+<tbody>
+<tr><td>Product Goal</td><td>Estado futuro del producto</td><td>Toda la organización</td><td>Meses</td></tr>
+<tr><td>Historia de usuario</td><td>Necesidad con valor para un usuario</td><td>Equipo y partes interesadas</td><td>Puntos de historia</td></tr>
+<tr><td>Tarea</td><td>Trabajo técnico necesario</td><td>Developers</td><td>Horas o fracción de día</td></tr>
+<tr><td>Subtarea</td><td>Detalle de una tarea compleja</td><td>Quien la ejecuta</td><td>Horas</td></tr>
+</tbody>
+</table></div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Historia: reserva de cita en línea</h4>
+<p>Tareas: diseñar el modelo de datos de reservas; crear el endpoint de disponibilidad; construir el formulario de selección de fecha; validar choque de horarios; probar con datos reales; documentar el flujo.</p>
+<p class="nota">Cada tarea cabe en un día o menos y en conjunto completan la historia.</p>
+</div>
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Tarea mal definida</h4>
+<p>“Hacer el módulo de reservas”.</p>
+<p class="nota">Es una historia disfrazada de tarea: no cabe en un día y no permite saber quién avanza.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Regla práctica</span>
+<p>Si una tarea no se puede terminar en un día, se divide. Las tareas largas esconden el avance y hacen que el Daily Scrum no tenga nada nuevo que mostrar.</p>
+</aside>
+</section>
+<section class="seccion" id="estimacion-velocidad">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Velocidad y capacidad</h2>
+<p>La velocidad es la cantidad de puntos de historia completados por el equipo en un Sprint, según la Definition of Done. Sirve para proyectar cuánto trabajo cabe en el siguiente, no para evaluar el desempeño de las personas.</p>
+<ul class="lista">
+<li>Se calcula con historias terminadas, no con historias avanzadas.</li>
+<li>Necesita al menos dos o tres Sprints para ser una referencia útil.</li>
+<li>Es propia de cada equipo y no se compara entre equipos.</li>
+<li>Cambia si cambia el equipo, la Definition of Done o la composición del trabajo.</li>
+<li>No debe usarse como meta de presión: lleva a inflar estimaciones o a relajar la calidad.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Concepto</th><th scope="col">Definición</th><th scope="col">Uso</th></tr></thead>
+<tbody>
+<tr><td>Velocidad</td><td>Puntos completados por Sprint</td><td>Proyectar el alcance del siguiente Sprint</td></tr>
+<tr><td>Capacidad</td><td>Disponibilidad real del equipo en el Sprint</td><td>Ajustar la velocidad cuando hay ausencias o feriados</td></tr>
+<tr><td>Burn down</td><td>Trabajo restante día a día</td><td>Ver si el ritmo alcanza para el Sprint Goal</td></tr>
+<tr><td>Burn up</td><td>Trabajo completado acumulado</td><td>Ver el avance real frente al alcance total</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Error frecuente en el informe</span>
+<p>Presentar la velocidad como compromiso (“debemos hacer veinte puntos”). La velocidad es una observación histórica; el compromiso es con el Sprint Goal, y la cantidad de trabajo se negocia en la Planning.</p>
+</aside>
+</section>
+<section class="seccion" id="estimacion-dificultades">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Dificultades típicas al estimar</h2>
+<p>El apartado 6.4 de la evidencia individual pide explicar una dificultad real de estimación y cómo mejorarla. Estas son las causas más frecuentes, con su corrección.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dificultad</th><th scope="col">Por qué ocurre</th><th scope="col">Cómo corregirla</th></tr></thead>
+<tbody>
+<tr><td>Historias poco claras</td><td>Faltan criterios de aceptación o reglas de negocio</td><td>Refinar con el Product Owner antes de la Planning</td></tr>
+<tr><td>Optimismo del equipo</td><td>Se estima el mejor escenario sin imprevistos</td><td>Usar datos de Sprints anteriores como referencia</td></tr>
+<tr><td>Dependencias externas ignoradas</td><td>Se estima solo el trabajo propio</td><td>Incluir tiempos de espera y acordar responsables de terceros</td></tr>
+<tr><td>Historias demasiado grandes</td><td>No caben en un Sprint y nadie se atreve a decir un número</td><td>Dividir antes de estimar</td></tr>
+<tr><td>Falta de experiencia en la tecnología</td><td>El equipo no conoce la herramienta</td><td>Hacer un spike o prueba técnica corta antes de estimar</td></tr>
+<tr><td>Presión por el número</td><td>El equipo ajusta la estimación a lo que se espera oír</td><td>Estimar en secreto con planning poker y proteger la honestidad</td></tr>
+<tr><td>Estimación en horas sin capacidad real</td><td>Se ignora que las personas también tienen otras tareas</td><td>Estimar en puntos y calcular capacidad aparte</td></tr>
+</tbody>
+</table></div>
+<div class="formula">
+<p>Dificultad: subestimamos HU-03 porque no conocíamos la librería de calendario.</p>
+<p>Evidencia: la historia tomó el doble de lo previsto y retrasó el cierre del Sprint.</p>
+<p>Mejora: en el Sprint 2 haremos una prueba técnica de dos horas antes de estimar historias con tecnología nueva.</p>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo se evalúa esta respuesta</span>
+<p>Se valora que la dificultad sea concreta y ocurrida, que la mejora sea una acción aplicable al siguiente Sprint y que exista relación causal entre ambas. Una respuesta genérica del tipo “debemos estimar mejor” no demuestra aprendizaje.</p>
+</aside>
+</section>
+</article>
+<article class="seccion" id="documentacion-proyecto" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">08</span>Documentación del proyecto
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Todo proyecto se sostiene sobre una definición clara; esta sección traduce en teoría cada pieza que pide la sección 1 del informe. Nombre, problema, justificación, objetivos, alcance del Sprint 1 y análisis SEPTE, cada elemento con criterios de calidad y errores frecuentes.</p>
+<section class="seccion" id="documentacion-proyecto-nombre">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Nombre del proyecto</h2>
+<p>El nombre identifica el producto, no el trabajo. Debe ser corto, memorable, coherente con el dominio y utilizable en todas las secciones del informe como una referencia única.</p>
+<ul class="lista">
+<li>Evitar nombres genéricos como “Sistema de gestión” o “Proyecto integrador”.</li>
+<li>Preferible un nombre de producto y un descriptor: nombre corto más qué hace.</li>
+<li>Debe poder leerse sin contexto adicional.</li>
+<li>No usar el nombre de la empresa como sustituto del producto.</li>
+<li>Cuidar que no exista una marca registrada con ese nombre, si el proyecto aspira a operar.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Débil</th><th scope="col">Mejor</th></tr></thead>
+<tbody>
+<tr><td>Sistema Web de Reservas</td><td>ReservaYa, plataforma de reserva de citas para clínicas</td></tr>
+<tr><td>App de Ventas</td><td>VendeFácil, control de ventas e inventario para bodegas</td></tr>
+<tr><td>Plataforma Integradora</td><td>AulaCerca, gestión académica para institutos pequeños</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="documentacion-proyecto-problema">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Descripción del problema</h2>
+<p>El problema es la situación actual que justifica el proyecto. No es la ausencia del sistema que se va a construir: es el efecto negativo que la situación produce en alguien. Un problema bien planteado tiene tres componentes: a quién afecta, cómo se manifiesta hoy y qué consecuencia genera.</p>
+<div class="formula">
+<p>Situación actual: cómo se hace hoy el proceso.</p>
+<p>Afectados: quiénes lo ejecutan y quiénes lo sufren.</p>
+<p>Impacto: qué se pierde, con qué frecuencia y con qué magnitud.</p>
+</div>
+<div class="ejemplos">
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Problema planteado como solución</h4>
+<p>“No existe una aplicación que permita gestionar las reservas de la clínica.”</p>
+<p class="nota">Describe la carencia de la solución, no el problema. Si otra solución lo resuelve, el proyecto deja de tener sentido.</p>
+</div>
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Problema planteado correctamente</h4>
+<p>“La clínica registra sus citas en un cuaderno físico. Cada día se pierden entre dos y cinco reservas por cruce de horarios, y el 30% de los pacientes no llega a su cita porque no recibe recordatorio. Esto obliga a mantener a una persona dedicada a coordinar por teléfono durante la mayor parte de la jornada.”</p>
+<p class="nota">Tiene afectados, manifestación actual y consecuencia medible.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Prueba de un buen problema</span>
+<p>Si puedes preguntar “¿y esto qué peor te hace?” tres veces y cada respuesta sigue añadiendo información, el problema está bien planteado. Si la primera respuesta ya es “nada, simplemente no tenemos sistema”, el planteamiento es débil.</p>
+</aside>
+</section>
+<section class="seccion" id="documentacion-proyecto-justificacion">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Justificación</h2>
+<p>La justificación responde por qué vale la pena resolver el problema y por qué ahora. Es el argumento de valor: no describe la solución, explica por qué la solución tiene sentido. Debe cubrir cuatro dimensiones y, si es posible, cuantificar al menos una.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dimensión</th><th scope="col">Pregunta que responde</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Económica</td><td>¿Cuánto cuesta la situación actual?</td><td>Dos horas diarias de coordinación telefónica equivalen a más de 800 soles mensuales</td></tr>
+<tr><td>Operativa</td><td>¿Qué mejora en el proceso diario?</td><td>Se elimina el cruce de horarios y el registro duplicado</td></tr>
+<tr><td>Social o para el usuario</td><td>¿Qué gana la persona afectada?</td><td>El paciente reserva en dos minutos desde el celular, a cualquier hora</td></tr>
+<tr><td>Estratégica</td><td>¿Qué habilita a futuro?</td><td>La información histórica permitirá proyectar demanda y horarios</td></tr>
+<tr><td>Técnica</td><td>¿Por qué es viable construirlo?</td><td>El equipo domina la tecnología y la empresa cuenta con conexión estable</td></tr>
+</tbody>
+</table></div>
+<ul class="lista">
+<li>Se redacta en presente o futuro, no en condicional vago (“podría mejorar”, “sería bueno”).</li>
+<li>Conviene vincular la justificación con los objetivos específicos: cada objetivo debe atender una consecuencia del problema.</li>
+<li>Evitar frases huecas como “hoy en día la tecnología avanza” o “es importante para la sociedad”.</li>
+<li>Si hay cifras, indicar de dónde provienen aunque sea una estimación razonada del equipo.</li>
+</ul>
+</section>
+<section class="seccion" id="documentacion-proyecto-objetivos">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Objetivo general y objetivos específicos</h2>
+<p>El objetivo general describe el cambio que el proyecto produce en la realidad. Debe ser uno solo, medible en alguna dimensión y libre de medios. El error más común es escribir una lista de funcionalidades y llamarla objetivo.</p>
+<div class="formula">
+<p>[Verbo de acción en infinitivo] + [qué se transforma] + [a quién beneficia] + [condición o magnitud]</p>
+<p>Ejemplo: Digitalizar el proceso de reserva de citas de la clínica para que los pacientes reserven sin intervención del personal.</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Criterio</th><th scope="col">Pregunta de validación</th></tr></thead>
+<tbody>
+<tr><td>Único</td><td>¿Hay más de un objetivo principal mezclado en la frase?</td></tr>
+<tr><td>Alcanzable</td><td>¿Es posible de lograr con los recursos del curso y del Sprint?</td></tr>
+<tr><td>Medible</td><td>¿Existe una forma de verificar que se cumplió?</td></tr>
+<tr><td>Centrado en el resultado</td><td>¿Describe un cambio en la realidad o solo un entregable técnico?</td></tr>
+<tr><td>Sin medios</td><td>¿Evita decir “usando tal tecnología”, que es un medio y no un objetivo?</td></tr>
+</tbody>
+</table></div>
+<p>Los objetivos específicos descomponen el objetivo general en resultados parciales verificables. Deben ser coherentes con las historias del Sprint y permitir saber qué se logró al cierre. La regla práctica es entre tres y cinco.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Objetivo específico débil</th><th scope="col">Objetivo específico útil</th></tr></thead>
+<tbody>
+<tr><td>Hacer la base de datos</td><td>Registrar la información de clientes, especialistas y citas en una base de datos que evite duplicados</td></tr>
+<tr><td>Usar la tecnología moderna</td><td>Permitir que el usuario consulte y reserve horarios disponibles desde un navegador web</td></tr>
+<tr><td>Mejorar la atención</td><td>Reducir el tiempo de registro de una reserva de cinco minutos a menos de uno</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Coherencia entre objetivos e historias</span>
+<p>Cada historia del Sprint debería contribuir a un objetivo específico. Si una historia no aporta a ninguno, o sobra la historia o falta un objetivo. Esa trazabilidad es la que se revisa al final del informe.</p>
+</aside>
+</section>
+<section class="seccion" id="documentacion-proyecto-alcance">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Alcance del Sprint 1</h2>
+<p>El alcance delimita qué se va a entregar y, tan importante como eso, qué no. En Scrum el alcance de un Sprint está representado por las historias seleccionadas, pero documentarlo en el informe requiere además explicitar las fronteras: módulos, usuarios incluidos, canales y funcionalidades excluidas.</p>
+<ul class="lista">
+<li>Qué módulos o funcionalidades están incluidos.</li>
+<li>Qué roles de usuario están cubiertos en este Sprint.</li>
+<li>Qué canales se atienden: web, móvil, escritorio.</li>
+<li>Qué datos son reales y qué datos son de prueba.</li>
+<li>Qué quedó explícitamente fuera, con la razón.</li>
+<li>Qué depende de terceros y no se puede garantizar.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dentro del Sprint 1</th><th scope="col">Fuera del Sprint 1</th><th scope="col">Razón de la exclusión</th></tr></thead>
+<tbody>
+<tr><td>Registro de cliente y autenticación</td><td>Recuperación de contraseña por correo</td><td>Depende del servicio de correo, se integra en el Sprint 2</td></tr>
+<tr><td>Reserva y cancelación de cita</td><td>Reprogramación con notificación automática</td><td>Requiere el motor de notificaciones</td></tr>
+<tr><td>Panel del administrador con las citas del día</td><td>Reportes estadísticos y exportación</td><td>Valor alto pero no bloquea el flujo principal</td></tr>
+<tr><td>Validación de disponibilidad</td><td>Pago en línea</td><td>Involucra pasarela externa y contrato con el banco</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Por qué explicitar lo excluido</span>
+<p>Declarar lo que queda fuera demuestra que hubo una decisión de alcance y protege al equipo: cuando alguien pregunte por una funcionalidad ausente, el informe ya explica por qué no está y cuándo llegará.</p>
+</aside>
+</section>
+<section class="seccion" id="documentacion-proyecto-septe">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Análisis SEPTE del entorno</h2>
+<p>SEPTE es un análisis del entorno que rodea al proyecto. Su propósito es identificar factores externos que pueden favorecerlo o amenazarlo, y que el equipo no controla. Se usa para anticipar riesgos y para justificar decisiones de producto. Las iniciales corresponden a Social, Económico, Político, Tecnológico y Ecológico; la E final permite incluir la dimensión legal, frecuente en proyectos de software.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dimensión</th><th scope="col">Qué se analiza</th><th scope="col">Preguntas guía</th><th scope="col">Ejemplo aplicado</th></tr></thead>
+<tbody>
+<tr><td>Social</td><td>Personas, hábitos, demografía, cultura de uso</td><td>¿Cómo resuelven hoy el proceso? ¿Usan smartphone? ¿Hay resistencia al cambio?</td><td>Los pacientes de la clínica son en su mayoría menores de 45 años y ya usan apps bancarias: la adopción de reservas en línea es viable</td></tr>
+<tr><td>Económico</td><td>Costos, ingresos, capacidad de inversión, contexto del sector</td><td>¿Quién paga? ¿Cuánto cuesta el proceso actual? ¿Hay presupuesto para mantenimiento?</td><td>El ahorro de dos horas diarias de coordinación financia el mantenimiento del sistema en menos de un año</td></tr>
+<tr><td>Político</td><td>Normas institucionales, prioridades del sector, regulación</td><td>¿Hay políticas que impulsen o frenen la digitalización?</td><td>La agenda de modernización del Estado y los incentivos a la digitalización de mypes favorecen la adopción</td></tr>
+<tr><td>Tecnológico</td><td>Infraestructura, herramientas disponibles, conectividad, madurez técnica</td><td>¿Hay internet estable? ¿Existen las herramientas? ¿El equipo las domina?</td><td>El 85% de los pacientes tiene plan de datos y la clínica cuenta con conexión de fibra óptica</td></tr>
+<tr><td>Ecológico</td><td>Consumo de recursos, residuos, sostenibilidad</td><td>¿El proyecto reduce papel o consumo energético?</td><td>La eliminación del cuaderno de citas reduce el consumo de papel y las impresiones diarias</td></tr>
+<tr><td>Legal</td><td>Protección de datos, propiedad intelectual, contratos, licencias</td><td>¿Se tratan datos personales? ¿Qué exige la norma?</td><td>El sistema almacena datos de salud, por lo que debe cumplir la Ley 29733 de Protección de Datos Personales</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo redactar cada dimensión con valor</span>
+<p>Cada dimensión debe terminar en una consecuencia para el proyecto, no quedarse en la descripción del contexto. La estructura útil es: factor observado, evidencia o dato, e impacto sobre el proyecto. Sin el tercer elemento, el análisis es decorativo.</p>
+</aside>
+<div class="formula">
+<p>Factor: la clínica no cuenta con área de sistemas.</p>
+<p>Evidencia: el personal administrativo resuelve incidencias técnicas por su cuenta.</p>
+<p>Impacto: el sistema debe ser operable sin soporte técnico permanente y con manuales breves.</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Error en el SEPTE</th><th scope="col">Cómo se corrige</th></tr></thead>
+<tbody>
+<tr><td>Describir el contexto general del país sin relación con el proyecto</td><td>Vincular cada factor con una decisión concreta del producto</td></tr>
+<tr><td>Confundir fortalezas del equipo con factores del entorno</td><td>El SEPTE es externo: la habilidad del equipo es un análisis interno</td></tr>
+<tr><td>Copiar el mismo análisis para cualquier proyecto</td><td>Citar el sector, la ciudad, el usuario y la norma específica</td></tr>
+<tr><td>Dejar la dimensión legal en blanco cuando hay datos personales</td><td>Identificar la norma aplicable y la medida de protección adoptada</td></tr>
+<tr><td>Cerrar sin conclusiones</td><td>Terminar con qué factores son oportunidades y cuáles son riesgos a mitigar</td></tr>
+</tbody>
+</table></div>
+<p>Conviene cerrar el SEPTE con una síntesis breve: qué dos o tres factores son los más determinantes para el éxito del proyecto y qué decisión tomó el equipo a partir de ellos. Esa síntesis es la que demuestra que el análisis se usó y no solo se rellenó.</p>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Nota sobre la sigla</span>
+<p>SEPTE se presenta en el enunciado con esa grafía. Al desarrollarlo, conviene nombrar cada dimensión con claridad y añadir la legal como sexta, explicando que corresponde a la protección de datos y las obligaciones normativas. Así el análisis cubre lo que la rúbrica espera sin depender de la interpretación de la sigla.</p>
+</aside>
+</section>
+<section class="seccion" id="documentacion-proyecto-riesgos">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Riesgos del proyecto y del Sprint</h2>
+<p>Aunque el enunciado no lo exige de forma explícita, un apartado breve de riesgos fortalece la documentación y se conecta con el SEPTE: los factores externos identificados suelen convertirse en riesgos.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Riesgo</th><th scope="col">Probabilidad</th><th scope="col">Impacto</th><th scope="col">Mitigación</th></tr></thead>
+<tbody>
+<tr><td>El equipo no domina la tecnología elegida</td><td>Media</td><td>Alto</td><td>Prueba técnica en la primera semana del Sprint</td></tr>
+<tr><td>Un integrante se retira del curso</td><td>Baja</td><td>Alto</td><td>Documentar el código y repartir conocimiento en pares</td></tr>
+<tr><td>El cliente no responde a tiempo</td><td>Media</td><td>Medio</td><td>Acordar un horario fijo de validación semanal</td></tr>
+<tr><td>El alcance crece durante el Sprint</td><td>Alta</td><td>Medio</td><td>Registrar los pedidos nuevos en el Product Backlog, no en el Sprint</td></tr>
+<tr><td>Problemas de conectividad en la presentación</td><td>Media</td><td>Bajo</td><td>Tener el sistema desplegado en la nube y capturas de respaldo</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+<article class="seccion" id="retrospectiva" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">09</span>Retrospectiva
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">La retrospectiva es la inspección que el equipo hace de su propio trabajo. La sección 5 del informe la evalúa con cuatro preguntas concretas. Esta sección cubre el propósito del evento, los formatos de facilitación y, sobre todo, cómo responder cada pregunta sin caer en generalidades.</p>
+<section class="seccion" id="retrospectiva-proposito">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Propósito del evento</h2>
+<p>La Sprint Retrospective existe para que el equipo inspeccione cómo trabajó y planifique mejoras concretas. Es el último evento del Sprint y lo cierra. Su resultado no es una lista de quejas: es un conjunto reducido de cambios que se aplicarán en el Sprint siguiente.</p>
+<ul class="lista">
+<li>Inspecciona personas, interacciones, procesos, herramientas y la Definition of Done.</li>
+<li>Identifica los supuestos que llevaron por mal camino.</li>
+<li>Revisa qué funcionó y qué problemas aparecieron.</li>
+<li>Verifica si los problemas del Sprint anterior se resolvieron.</li>
+<li>Selecciona los cambios más útiles y los agenda lo antes posible.</li>
+</ul>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Diferencia con la Sprint Review</span>
+<p>En la Review se muestra el producto a las partes interesadas y se ajusta el Product Backlog. En la retrospectiva se habla del proceso interno y participa solo el equipo Scrum. Si en el informe se describe la retro como una demostración del sistema, la confusión es visible.</p>
+</aside>
+</section>
+<section class="seccion" id="retrospectiva-cuatro-preguntas">
+<h2 style="font-size:1.4rem"><span class="num">02</span>Las cuatro preguntas del enunciado</h2>
+<p>El informe pide responder cuatro preguntas y justificarlas con situaciones reales ocurridas durante el proyecto. Cada una tiene una naturaleza distinta y, por lo tanto, una forma distinta de responderse.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Pregunta</th><th scope="col">Qué busca</th><th scope="col">Qué la hace creíble</th></tr></thead>
+<tbody>
+<tr><td>¿Qué actividades permitieron cumplir exitosamente el Sprint?</td><td>Reconocer las prácticas que funcionaron para repetirlas</td><td>Nombrar la actividad, la fecha o el evento y el efecto que tuvo</td></tr>
+<tr><td>¿Qué aspectos deben mejorar?</td><td>Autocrítica sobre el proceso</td><td>Señalar un aspecto concreto y su efecto observable</td></tr>
+<tr><td>¿Qué dificultades encontraron?</td><td>Identificar obstáculos reales</td><td>Describir el impedimento, cuándo apareció y qué bloqueó</td></tr>
+<tr><td>¿Qué acciones implementarán para evitarlas?</td><td>Convertir el análisis en compromiso</td><td>Acción, responsable y momento de verificación</td></tr>
+</tbody>
+</table></div>
+<div class="ejemplos">
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Respuesta débil</h4>
+<p>“Tuvimos buena comunicación y trabajamos en equipo, aunque debemos mejorar la organización para el próximo Sprint.”</p>
+<p class="nota">Sirve para cualquier equipo y cualquier proyecto. No hay actividad, ni fecha, ni efecto.</p>
+</div>
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Respuesta sólida</h4>
+<p>“La revisión de avance de los miércoles permitió detectar en la segunda semana que el endpoint de disponibilidad bloqueaba dos historias. Al reasignar a un segundo integrante, esas historias se cerraron dos días antes del Sprint Review.”</p>
+<p class="nota">Actividad concreta, momento, obstáculo, decisión y efecto verificable.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="retrospectiva-actividades">
+<h2 style="font-size:1.4rem"><span class="num">03</span>Pregunta 1: qué permitió cumplir el Sprint</h2>
+<p>Esta pregunta no pide felicitar al equipo, pide identificar qué prácticas produjeron el resultado. La respuesta útil separa la actividad del efecto: qué se hizo y qué cambió gracias a eso.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Actividad que suele funcionar</th><th scope="col">Por qué funciona</th></tr></thead>
+<tbody>
+<tr><td>Refinamiento previo de las historias</td><td>La Planning se usa para decidir, no para descubrir requisitos</td></tr>
+<tr><td>Daily Scrum breve y enfocado en impedimentos</td><td>Los bloqueos se resuelven el mismo día</td></tr>
+<tr><td>Criterios de aceptación acordados antes de programar</td><td>Se evita rehacer trabajo por interpretación distinta</td></tr>
+<tr><td>Tablero actualizado a diario</td><td>El estado real es visible para todos sin preguntar</td></tr>
+<tr><td>Validación con el Product Owner a mitad del Sprint</td><td>Las correcciones llegan antes del cierre</td></tr>
+<tr><td>Trabajo en parejas en las historias más riesgosas</td><td>El conocimiento no queda en una sola persona</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo cerrar la respuesta</span>
+<p>Terminar con la consecuencia sobre el resultado: qué historia se terminó antes, qué riesgo se evitó o qué retrabajo no ocurrió. Ese cierre convierte la anécdota en evidencia.</p>
+</aside>
+</section>
+<section class="seccion" id="retrospectiva-mejoras">
+<h2 style="font-size:1.4rem"><span class="num">04</span>Pregunta 2: qué debe mejorar</h2>
+<p>La autocrítica gana valor cuando es específica y cuando se reconoce su costo. Un aspecto a mejorar sin efecto asociado suena a fórmula de cortesía.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Aspecto a mejorar</th><th scope="col">Efecto observable</th><th scope="col">Mejora propuesta</th></tr></thead>
+<tbody>
+<tr><td>Estimaciones optimistas</td><td>Dos historias se cerraron fuera del Sprint</td><td>Usar la velocidad del Sprint anterior como referencia</td></tr>
+<tr><td>Tareas demasiado grandes en el tablero</td><td>El avance no se veía hasta el final</td><td>Dividir toda tarea a un día o menos</td></tr>
+<tr><td>Comunicación solo por chat</td><td>Malentendidos que costaron retrabajo</td><td>Reunión corta de sincronización a mitad de semana</td></tr>
+<tr><td>Falta de pruebas antes de integrar</td><td>Errores detectados en la demostración</td><td>Acordar la Definition of Done con pruebas obligatorias</td></tr>
+<tr><td>Un solo responsable de la base de datos</td><td>Cuello de botella cuando esa persona no estaba</td><td>Rotar tareas y documentar el modelo de datos</td></tr>
+</tbody>
+</table></div>
+<p>Conviene elegir dos o tres aspectos, no diez. Un informe que reconoce todo como mejorable no prioriza nada y sugiere que no hubo análisis real.</p>
+</section>
+<section class="seccion" id="retrospectiva-dificultades">
+<h2 style="font-size:1.4rem"><span class="num">05</span>Pregunta 3: dificultades encontradas</h2>
+<p>Las dificultades deben describirse como impedimentos con contexto: qué se esperaba, qué ocurrió y qué se afectó. Clasificarlas ayuda a saber si la solución es del equipo, del Product Owner o de la organización.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Tipo de dificultad</th><th scope="col">Ejemplo</th><th scope="col">Quién puede resolverla</th></tr></thead>
+<tbody>
+<tr><td>Técnica</td><td>La librería de calendario no soportaba zonas horarias</td><td>Developers</td></tr>
+<tr><td>De requisitos</td><td>Los criterios de aceptación cambiaron a mitad del Sprint</td><td>Product Owner con el equipo</td></tr>
+<tr><td>De coordinación</td><td>Dos integrantes modificaron el mismo archivo</td><td>Equipo, con acuerdos de ramas</td></tr>
+<tr><td>De disponibilidad</td><td>Un integrante tuvo evaluaciones en la semana crítica</td><td>Equipo, ajustando capacidad</td></tr>
+<tr><td>Externa</td><td>El proveedor de hosting tardó en habilitar el dominio</td><td>Scrum Master, gestionando el impedimento</td></tr>
+<tr><td>De conocimiento</td><td>Nadie había trabajado con autenticación antes</td><td>Equipo, con investigación o apoyo externo</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Lo que no conviene escribir</span>
+<p>Evitar dificultades que responsabilizan a personas por su nombre o que describen conflictos personales sin resolución. El informe se evalúa por la capacidad de análisis, no por la exposición de problemas internos.</p>
+</aside>
+</section>
+<section class="seccion" id="retrospectiva-acciones">
+<h2 style="font-size:1.4rem"><span class="num">06</span>Pregunta 4: acciones para el siguiente Sprint</h2>
+<p>Las acciones son el producto real de la retrospectiva. Una acción útil tiene tres atributos: es concreta, tiene responsable y tiene un momento de verificación. Sin los tres, es una intención.</p>
+<div class="formula">
+<p>Acción: probar la librería de calendario durante la primera semana.</p>
+<p>Responsable: el integrante que asumió las historias de reserva.</p>
+<p>Verificación: revisión en el Daily Scrum del día viernes y ajuste de la estimación.</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dificultad del Sprint 1</th><th scope="col">Acción para el Sprint 2</th><th scope="col">Cómo se verifica</th></tr></thead>
+<tbody>
+<tr><td>Subestimación de historias con tecnología nueva</td><td>Dedicar una sesión de dos horas a prueba técnica antes de estimar</td><td>Comparar la estimación con el tiempo real al cierre</td></tr>
+<tr><td>Retrabajo por criterios ambiguos</td><td>Revisar los criterios de aceptación con el Product Owner antes de programar</td><td>Ninguna historia vuelve de revisión por criterio incompleto</td></tr>
+<tr><td>Tareas grandes en el tablero</td><td>Ninguna tarjeta puede durar más de un día sin dividirse</td><td>Revisión del tablero en cada Daily Scrum</td></tr>
+<tr><td>Comunicación dispersa en el chat</td><td>Reunión de sincronización de quince minutos los martes y jueves</td><td>Asistencia y temas registrados en el tablero</td></tr>
+<tr><td>Conocimiento concentrado en una persona</td><td>Rotar el responsable de la base de datos en cada historia</td><td>Al menos dos integrantes capaces de modificar el modelo al cierre del Sprint</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Criterio de evaluación</span>
+<p>Se valora la coherencia entre la dificultad descrita en la pregunta 3 y la acción propuesta en la pregunta 4. Si la acción no responde a ninguna dificultad concreta, la retrospectiva parece armada por separado.</p>
+</aside>
+</section>
+<section class="seccion" id="retrospectiva-formatos">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Formatos de facilitación</h2>
+<p>La Guía no prescribe un formato. Elegir uno y nombrarlo en el informe demuestra que el evento se facilitó y no se improvisó.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Formato</th><th scope="col">Mecánica</th><th scope="col">Cuándo conviene</th></tr></thead>
+<tbody>
+<tr><td>Qué salió bien / qué salió mal</td><td>Dos columnas y luego se eligen acciones</td><td>Equipos nuevos o Sprints cortos</td></tr>
+<tr><td>Start / Stop / Continue</td><td>Qué empezar, qué dejar, qué mantener</td><td>Cuando se necesita claridad sobre comportamientos</td></tr>
+<tr><td>Estrella de mar</td><td>Mantener, menos, más, dejar de hacer, empezar a hacer</td><td>Equipos con varios tipos de problema mezclados</td></tr>
+<tr><td>4L</td><td>Aprendí, me gustó, faltó, deseé</td><td>Cuando se busca aprendizaje y no solo desempeño</td></tr>
+<tr><td>Velocidad del barco</td><td>Se dibuja un barco con viento y anclas</td><td>Equipos que responden mejor a lo visual</td></tr>
+<tr><td>Timeline</td><td>Se recorre el Sprint en orden cronológico</td><td>Sprints con muchos eventos o conflictos</td></tr>
+</tbody>
+</table></div>
+<ul class="lista">
+<li>Registrar las acciones en un lugar visible: el tablero, un documento compartido o una columna del Sprint Backlog.</li>
+<li>Revisar al inicio del Sprint siguiente si las acciones se cumplieron.</li>
+<li>Si una acción se repite tres Sprints sin cumplirse, no es una acción: es un problema sin dueño.</li>
+<li>El Scrum Master facilita, pero las decisiones son del equipo.</li>
+</ul>
+</section>
+</article>
+<article class="seccion" id="evidencia-individual" style="margin-bottom:4rem">
+<h2 style="font-size:2rem;border-bottom:2px solid var(--tinta)">
+<span class="num">10</span>Evidencia individual y participación
+</h2>
+<p style="color:var(--tinta-suave);max-width:72ch;margin-bottom:2rem">Siete de los veinte puntos dependen de que cada integrante y el equipo documenten su trabajo con evidencia verificable. Esta sección cubre los cinco apartados de la evidencia individual, la tabla de participación y las herramientas colaborativas que permiten demostrarla.</p>
+<section class="seccion" id="evidencia-individual-panorama">
+<h2 style="font-size:1.4rem"><span class="num">01</span>Qué evalúa la sección individual</h2>
+<p>La sección individual no constituye un entregable aparte: forma parte del informe grupal. Vale cinco puntos, un cuarto del total, lo que la convierte en la sección individual de mayor peso. Se evalúa la comprensión de los conceptos y la capacidad de explicarlos desde la propia experiencia.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Apartado</th><th scope="col">Qué pide</th><th scope="col">Cómo se demuestra dominio</th></tr></thead>
+<tbody>
+<tr><td>6.1</td><td>Aplicación del enfoque ágil y dos principios del Manifiesto</td><td>Citar el principio con precisión y describir cómo se aplicó en el equipo</td></tr>
+<tr><td>6.2</td><td>Rol, responsabilidades, actividades y aporte</td><td>Distinguir el rol Scrum de las tareas concretas realizadas</td></tr>
+<tr><td>6.3</td><td>Historia de usuario en la que participó</td><td>Explicar la funcionalidad, el beneficio y la participación propia</td></tr>
+<tr><td>6.4</td><td>Dificultad de estimación y cómo mejorarla</td><td>Describir la causa, el efecto y la acción correctiva</td></tr>
+<tr><td>6.5</td><td>Seguimiento con herramienta colaborativa</td><td>Mostrar la tarea y describir su recorrido en el tablero</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">El riesgo de la respuesta genérica</span>
+<p>Si el párrafo de un integrante podría intercambiarse con el de otro sin que se note, no evidencia nada. Los nombres, las historias concretas, las fechas y los impedimentos propios son lo que hace verificable la participación.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-individual-enfoque-agil">
+<h2 style="font-size:1.4rem"><span class="num">02</span>6.1 Aplicación del enfoque ágil</h2>
+<p>El apartado pide explicar cómo Scrum contribuyó al desarrollo del proyecto y mencionar dos principios del Manifiesto Ágil aplicados por el equipo. La respuesta tiene dos partes diferenciadas: una explicación del aporte del marco y una selección argumentada de principios.</p>
+<ul class="lista">
+<li>Explicar el aporte de Scrum con hechos del proyecto: qué habría sido distinto sin ciclos cortos de inspección.</li>
+<li>Elegir dos principios del Manifiesto, no dos valores Scrum ni dos pilares del empirismo.</li>
+<li>Citar el principio con precisión, sin parafrasearlo de memoria.</li>
+<li>Describir una situación concreta del Sprint donde ese principio se aplicó.</li>
+<li>Mostrar el efecto: qué se decidió distinto gracias al principio.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Principio</th><th scope="col">Cómo se aplica en un proyecto de curso</th></tr></thead>
+<tbody>
+<tr><td>Individuos e interacciones sobre procesos y herramientas</td><td>El equipo acordó el flujo de ramas en una conversación; la herramienta se adaptó al equipo y no al revés</td></tr>
+<tr><td>Software funcionando sobre documentación extensiva</td><td>Se presentó el flujo de reserva operativo en la Review en lugar de un documento con el diseño</td></tr>
+<tr><td>Colaboración con el cliente sobre negociación contractual</td><td>El Product Owner validó criterios de aceptación durante el Sprint, antes de programar</td></tr>
+<tr><td>Respuesta ante el cambio sobre seguir un plan</td><td>Se reemplazó una historia por otra del mismo Sprint Goal al descubrir una restricción técnica</td></tr>
+<tr><td>Entrega temprana y continua de valor</td><td>El incremento del módulo de registro se desplegó a mitad del Sprint y se probó con usuarios</td></tr>
+<tr><td>Software funcionando como medida principal de progreso</td><td>El avance se reportó por historias terminadas según la Definition of Done, no por horas</td></tr>
+<tr><td>Simplicidad</td><td>Se descartó el módulo de reportes porque ningún usuario lo había solicitado</td></tr>
+<tr><td>Reflexión periódica del equipo</td><td>La retro acordó dos acciones que modificaron el flujo de trabajo del Sprint siguiente</td></tr>
+<tr><td>Equipos auto-organizados</td><td>El equipo repartió las tareas de las cinco historias sin intervención externa</td></tr>
+<tr><td>Atención continua a la excelencia técnica</td><td>Se estableció la revisión entre pares antes de integrar a la rama principal</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Sugerencia de redacción</span>
+<p>Elegir un principio de negocio y uno de proceso, por ejemplo entrega temprana de valor y reflexión periódica. Así la respuesta muestra que la agilidad se aplicó en dos dimensiones distintas y no como una sola idea repetida.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-individual-rol">
+<h2 style="font-size:1.4rem"><span class="num">03</span>6.2 Rol desempeñado</h2>
+<p>El apartado pide el rol asumido, las responsabilidades, las actividades desarrolladas y el aporte al Sprint, más una explicación de cómo ese trabajo contribuyó al avance del proyecto. La distinción clave es entre rol y actividad: el rol se define en Scrum, las actividades las define el proyecto.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Campo</th><th scope="col">Qué evitar</th><th scope="col">Qué escribir</th></tr></thead>
+<tbody>
+<tr><td>Rol asumido</td><td>“Desarrollador y también Scrum Master y Product Owner”</td><td>Una responsabilidad principal, la que se ejerció de forma sostenida</td></tr>
+<tr><td>Responsabilidades</td><td>Listar tareas sueltas</td><td>Funciones propias del rol en el marco</td></tr>
+<tr><td>Actividades desarrolladas</td><td>“Apoyé en lo que hizo falta”</td><td>Acciones concretas, con evento o fecha asociada</td></tr>
+<tr><td>Aporte al Sprint</td><td>“Cumplí con mis tareas”</td><td>Un efecto verificable sobre el resultado del Sprint</td></tr>
+</tbody>
+</table></div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Rol: Scrum Master</h4>
+<p>Responsabilidades: facilitar los eventos, dar seguimiento a impedimentos y velar por el cumplimiento del marco. Actividades: convocar y facilitar los cinco Daily Scrum de las dos semanas, registrar tres impedimentos en el tablero y coordinar el acceso al entorno de despliegue. Aporte: el impedimento de despliegue se resolvió en cuarenta y ocho horas, lo que permitió probar el incremento antes del Sprint Review.</p>
+<p class="nota">Rol definido, actividades con cantidad y el aporte con efecto medible.</p>
+</div>
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Rol: Product Owner</h4>
+<p>Responsabilidades: ordenar el Product Backlog, definir criterios de aceptación y validar el incremento. Actividades: refinar las cinco historias, priorizar el flujo de reserva sobre los reportes y validar tres historias en la Review. Aporte: la priorización permitió entregar el flujo completo de reserva, que era el objetivo del Sprint.</p>
+<p class="nota">El aporte se conecta con la decisión de priorización, no con la cantidad de horas.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="evidencia-individual-historia-elegida">
+<h2 style="font-size:1.4rem"><span class="num">04</span>6.3 Historia de usuario en la que participó</h2>
+<p>Se pide elegir una historia en la que se participó y explicar qué funcionalidad se implementó, qué beneficio obtuvo el usuario y cómo fue la participación propia. Conviene elegirla del backlog del informe y mantener el mismo identificador.</p>
+<div class="formula">
+<p>Funcionalidad: qué hace el sistema, descrito desde el comportamiento observable.</p>
+<p>Beneficio: qué deja de hacer o qué gana el usuario, en su propio lenguaje.</p>
+<p>Participación: qué parte del trabajo asumió el integrante, con qué decisión relevante.</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Nivel de participación</th><th scope="col">Cómo se describe</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Responsable principal</td><td>Asumió el diseño y la mayor parte de la implementación</td><td>Diseñé el modelo de datos y programé el endpoint de disponibilidad</td></tr>
+<tr><td>Colaborador</td><td>Apoyó una parte concreta</td><td>Implementé la validación de choque de horarios y las pruebas del formulario</td></tr>
+<tr><td>Validador</td><td>Verificó criterios de aceptación</td><td>Verifiqué los cuatro criterios de aceptación con datos reales</td></tr>
+<tr><td>Facilitador</td><td>Aseguró las condiciones para que se completara</td><td>Gestioné el acceso al entorno de pruebas que bloqueaba la historia</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo mostrar el beneficio</span>
+<p>El beneficio debe expresarse en términos del usuario, no del sistema. “Se agregó un endpoint de disponibilidad” describe la implementación; “el paciente ya no necesita llamar para saber si hay cupo” describe el beneficio. Lo ideal es incluir ambos y dejar claro cuál es cuál.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-individual-estimacion-individual">
+<h2 style="font-size:1.4rem"><span class="num">05</span>6.4 Estimación del Sprint</h2>
+<p>El apartado pide una dificultad presentada durante la estimación y cómo podría mejorarse para el Sprint siguiente. Es la respuesta que más se nota cuando está copiada, porque todos los integrantes suelen describir la misma dificultad genérica.</p>
+<ul class="lista">
+<li>Describir la dificultad desde la experiencia propia, no desde el equipo en abstracto.</li>
+<li>Indicar el efecto concreto: qué historia se desvió y cuánto.</li>
+<li>Explicar la causa real, no el síntoma.</li>
+<li>Proponer una mejora aplicable en el Sprint siguiente, con un momento concreto.</li>
+<li>Reconocer si la estimación fue acertada en alguna otra historia, para mostrar criterio.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Lo que se escribe habitualmente</th><th scope="col">Lo que debería escribirse</th></tr></thead>
+<tbody>
+<tr><td>“Fue difícil estimar porque no sabíamos cuánto demoraría.”</td><td>“Estimé HU-03 en cinco puntos sin conocer la librería de calendario; tomó el doble y desplazó la validación dos días.”</td></tr>
+<tr><td>“Debemos estimar mejor la próxima vez.”</td><td>“En el Sprint 2 haré una prueba de dos horas con la librería antes de estimar las historias de notificaciones.”</td></tr>
+<tr><td>“El equipo subestimó porque era la primera vez.”</td><td>“Comparé con la referencia equivocada: usé una historia de formulario simple como patrón para una con integración externa.”</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Conexión con la teoría de estimación</span>
+<p>Para responder con fundamento, conviene apoyarse en los conceptos de estimación relativa, planning poker y velocidad. Mencionar que la estimación se hizo en equipo con planning poker y que la dispersión reveló un supuesto distinto demuestra manejo del tema, no solo experiencia.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-individual-seguimiento">
+<h2 style="font-size:1.4rem"><span class="num">06</span>6.5 Seguimiento del trabajo</h2>
+<p>El apartado pide explicar cómo se hizo el seguimiento de las tareas con una herramienta colaborativa y describir una tarea completa, desde su planificación hasta su finalización. La descripción del recorrido es lo que demuestra que la herramienta se usó y no solo se mencionó.</p>
+<div class="formula">
+<p>Planificación: la tarea nació de una historia del Sprint y se asignó en la Planning.</p>
+<p>Ejecución: se movió por las columnas del tablero según su avance real.</p>
+<p>Obstáculo: qué la detuvo y cómo se registró.</p>
+<p>Cierre: qué condición se cumplió para marcarla como terminada.</p>
+</div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Recorrido de una tarea</h4>
+<p>La tarea “Crear endpoint de disponibilidad” se creó en la Planning como parte de HU-02, se asignó a dos integrantes y entró a la columna Pendiente. Al segundo día pasó a En progreso; al tercero se detuvo porque faltaba el modelo de datos de horarios, impedimento que se registró en la tarjeta y se resolvió en el Daily Scrum. Se movió a Revisión con la prueba de dos casos documentada y el Product Owner la validó contra el criterio de aceptación, por lo que pasó a Terminado el quinto día.</p>
+<p class="nota">Nombra columnas, días, impedimento, resolución y criterio de cierre.</p>
+</div>
+</div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Sin captura, la afirmación es débil</span>
+<p>La sección 4 del informe ya pide capturas del tablero. Conviene que la captura de la sección individual muestre la tarea descrita, con su historial o sus comentarios visibles, para que la evidencia y el relato coincidan.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-individual-herramientas">
+<h2 style="font-size:1.4rem"><span class="num">07</span>Herramientas colaborativas</h2>
+<p>El enunciado menciona Trello, Jira y Notion como ejemplos. Cualquiera sirve, pero cada una tiene un enfoque distinto y conviene elegir la que se ajuste al tamaño del equipo y a lo que se quiere demostrar.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Herramienta</th><th scope="col">Enfoque</th><th scope="col">Ventaja para un proyecto de curso</th><th scope="col">Limitación</th></tr></thead>
+<tbody>
+<tr><td>Trello</td><td>Tablero kanban de tarjetas y listas</td><td>Rápido de configurar, visual, fácil de capturar para el informe</td><td>Poco análisis, sin métricas nativas</td></tr>
+<tr><td>Jira</td><td>Gestión ágil con Scrum y Kanban, reportes y métricas</td><td>Sprint, backlog y burn down integrados</td><td>Más complejo de configurar y de aprender</td></tr>
+<tr><td>Notion</td><td>Documentación y bases de datos con vistas de tablero</td><td>Une documentación, backlog y actas en un solo lugar</td><td>El tablero es menos ágil para el día a día</td></tr>
+<tr><td>Azure DevOps</td><td>Tableros, repositorios y pipelines</td><td>Integra seguimiento y código en el mismo entorno</td><td>Puede ser excesivo para un equipo pequeño</td></tr>
+<tr><td>GitHub Projects</td><td>Tablero vinculado a issues y pull requests</td><td>El seguimiento queda ligado a los commits</td><td>Requiere disciplina con issues</td></tr>
+</tbody>
+</table></div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Columna del tablero</th><th scope="col">Qué significa</th><th scope="col">Regla de uso</th></tr></thead>
+<tbody>
+<tr><td>Product Backlog</td><td>Todo lo que podría hacerse</td><td>Ordenado por prioridad, visible para el equipo</td></tr>
+<tr><td>Sprint Backlog / Pendiente</td><td>Lo elegido para este Sprint</td><td>No entra nada nuevo a mitad de Sprint sin acuerdo con el Product Owner</td></tr>
+<tr><td>En progreso</td><td>Se está trabajando ahora</td><td>Límite de tarjetas simultáneas para evitar dispersión</td></tr>
+<tr><td>En revisión</td><td>Terminado, pendiente de validación</td><td>Debe indicar quién revisa y contra qué criterio</td></tr>
+<tr><td>Terminado</td><td>Cumple la Definition of Done</td><td>Nada pasa aquí sin verificación</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Buenas prácticas de tablero</span>
+<p>Una tarjeta por tarea, no por persona. Título en verbo y objeto. Responsable visible. Fecha límite cuando aplique. Comentario con el impedimento el mismo día en que aparece. Y una regla de oro: el tablero se actualiza antes del Daily Scrum, no después.</p>
+</aside>
+</section>
+<section class="seccion" id="evidencia-individual-participacion">
+<h2 style="font-size:1.4rem"><span class="num">08</span>Sección 7: informe de participación del equipo</h2>
+<p>La sección 7 vale dos puntos y pide una tabla con seis columnas más un párrafo final. La tabla debe tener una fila por integrante y todas las celdas completas; el párrafo debe explicar organización, distribución, resolución de conflictos y comunicación.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Columna</th><th scope="col">Qué debe contener</th><th scope="col">Criterio de calidad</th></tr></thead>
+<tbody>
+<tr><td>Integrante</td><td>Nombre completo</td><td>Todos los miembros del equipo, sin excepción</td></tr>
+<tr><td>Rol Scrum</td><td>Product Owner, Scrum Master o Developer</td><td>Coherente con la sección individual de esa persona</td></tr>
+<tr><td>Actividades desarrolladas</td><td>Tareas y responsabilidades concretas</td><td>Verbos de acción y alcance delimitado</td></tr>
+<tr><td>Evidencias</td><td>Referencia a capturas, commits o documentos</td><td>Debe existir la evidencia citada</td></tr>
+<tr><td>Participación en Daily Scrum</td><td>Asistencia y aporte</td><td>Cuantificada o descrita con hechos</td></tr>
+<tr><td>Nivel de cumplimiento</td><td>Alto, medio o bajo, con criterio</td><td>Justificado, no asignado al azar</td></tr>
+</tbody>
+</table></div>
+<div class="formula">
+<p>Organización: cómo se dividió el trabajo y con qué criterio.</p>
+<p>Distribución: por rol, por módulo o por historia, y por qué.</p>
+<p>Conflictos: qué discrepancia surgió y cómo se resolvió.</p>
+<p>Comunicación: canales, frecuencia y acuerdos de respuesta.</p>
+</div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Cómo tratar los conflictos</span>
+<p>El párrafo pide explicar cómo se resolvieron los conflictos, no negar que existieron. Un equipo que afirma no haber tenido ningún desacuerdo en un Sprint completo suena poco creíble. Conviene describir una discrepancia real y el mecanismo usado: votación, criterio técnico documentado o decisión del Product Owner según el impacto en valor.</p>
+</aside>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Mecanismo de comunicación</th><th scope="col">Cuándo usarlo</th><th scope="col">Qué deja como evidencia</th></tr></thead>
+<tbody>
+<tr><td>Daily Scrum</td><td>Sincronización diaria</td><td>Registro breve en el tablero o acta</td></tr>
+<tr><td>Chat del equipo</td><td>Decisiones rápidas y avisos</td><td>Historial de mensajes</td></tr>
+<tr><td>Reunión de refinamiento</td><td>Aclarar historias antes de la Planning</td><td>Notas de criterios acordados</td></tr>
+<tr><td>Repositorio compartido</td><td>Código y documentación</td><td>Commits con mensajes descriptivos</td></tr>
+<tr><td>Tablero de tareas</td><td>Estado del trabajo</td><td>Capturas en el informe</td></tr>
+</tbody>
+</table></div>
+</section>
+</article>
+  </div>
+</div>
+</div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+</body>
+</html>

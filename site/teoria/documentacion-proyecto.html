@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentación del proyecto · Base teórica T1</title>
+<meta name="description" content="Todo proyecto se sostiene sobre una definición clara; esta sección traduce en teoría cada pieza que pide la sección 1 del informe. Nombre, problema, justificación, objetivos, alcance del Sprint 1 y análisis SEPTE, cada elemento con criterios de calidad y errores frecuentes.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Base teórica <span>· Proyecto Integrador T1</span></a>
+    <span class="meta">Scrum · Guía 2020</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Parte 08 · Base teórica</p>
+    <h1>Documentación del proyecto</h1>
+    <p class="bajada">Nombre, problema, justificación, objetivos, alcance y SEPTE</p>
+    <p class="resumen">Todo proyecto se sostiene sobre una definición clara; esta sección traduce en teoría cada pieza que pide la sección 1 del informe. Nombre, problema, justificación, objetivos, alcance del Sprint 1 y análisis SEPTE, cada elemento con criterios de calidad y errores frecuentes.</p>
+    <ul class="claves"><li>El problema se describe como situación, no como falta de solución</li>
+<li>Objetivo general: uno solo; específicos: medibles</li>
+<li>El alcance del Sprint 1 debe explicitar qué queda fuera</li>
+<li>SEPTE: seis dimensiones del entorno</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#nombre">Nombre del proyecto</a></li>
+<li><a href="#problema">Descripción del problema</a></li>
+<li><a href="#justificacion">Justificación</a></li>
+<li><a href="#objetivos">Objetivo general y objetivos específicos</a></li>
+<li><a href="#alcance">Alcance del Sprint 1</a></li>
+<li><a href="#septe">Análisis SEPTE del entorno</a></li>
+<li><a href="#riesgos">Riesgos del proyecto y del Sprint</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="nombre">
+<h2><span class="num">01</span>Nombre del proyecto</h2>
+<p>El nombre identifica el producto, no el trabajo. Debe ser corto, memorable, coherente con el dominio y utilizable en todas las secciones del informe como una referencia única.</p>
+<ul class="lista">
+<li>Evitar nombres genéricos como “Sistema de gestión” o “Proyecto integrador”.</li>
+<li>Preferible un nombre de producto y un descriptor: nombre corto más qué hace.</li>
+<li>Debe poder leerse sin contexto adicional.</li>
+<li>No usar el nombre de la empresa como sustituto del producto.</li>
+<li>Cuidar que no exista una marca registrada con ese nombre, si el proyecto aspira a operar.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Débil</th><th scope="col">Mejor</th></tr></thead>
+<tbody>
+<tr><td>Sistema Web de Reservas</td><td>ReservaYa, plataforma de reserva de citas para clínicas</td></tr>
+<tr><td>App de Ventas</td><td>VendeFácil, control de ventas e inventario para bodegas</td></tr>
+<tr><td>Plataforma Integradora</td><td>AulaCerca, gestión académica para institutos pequeños</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="problema">
+<h2><span class="num">02</span>Descripción del problema</h2>
+<p>El problema es la situación actual que justifica el proyecto. No es la ausencia del sistema que se va a construir: es el efecto negativo que la situación produce en alguien. Un problema bien planteado tiene tres componentes: a quién afecta, cómo se manifiesta hoy y qué consecuencia genera.</p>
+<div class="formula">
+<p>Situación actual: cómo se hace hoy el proceso.</p>
+<p>Afectados: quiénes lo ejecutan y quiénes lo sufren.</p>
+<p>Impacto: qué se pierde, con qué frecuencia y con qué magnitud.</p>
+</div>
+<div class="ejemplos">
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Problema planteado como solución</h4>
+<p>“No existe una aplicación que permita gestionar las reservas de la clínica.”</p>
+<p class="nota">Describe la carencia de la solución, no el problema. Si otra solución lo resuelve, el proyecto deja de tener sentido.</p>
+</div>
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Problema planteado correctamente</h4>
+<p>“La clínica registra sus citas en un cuaderno físico. Cada día se pierden entre dos y cinco reservas por cruce de horarios, y el 30% de los pacientes no llega a su cita porque no recibe recordatorio. Esto obliga a mantener a una persona dedicada a coordinar por teléfono durante la mayor parte de la jornada.”</p>
+<p class="nota">Tiene afectados, manifestación actual y consecuencia medible.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Prueba de un buen problema</span>
+<p>Si puedes preguntar “¿y esto qué peor te hace?” tres veces y cada respuesta sigue añadiendo información, el problema está bien planteado. Si la primera respuesta ya es “nada, simplemente no tenemos sistema”, el planteamiento es débil.</p>
+</aside>
+</section>
+<section class="seccion" id="justificacion">
+<h2><span class="num">03</span>Justificación</h2>
+<p>La justificación responde por qué vale la pena resolver el problema y por qué ahora. Es el argumento de valor: no describe la solución, explica por qué la solución tiene sentido. Debe cubrir cuatro dimensiones y, si es posible, cuantificar al menos una.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dimensión</th><th scope="col">Pregunta que responde</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Económica</td><td>¿Cuánto cuesta la situación actual?</td><td>Dos horas diarias de coordinación telefónica equivalen a más de 800 soles mensuales</td></tr>
+<tr><td>Operativa</td><td>¿Qué mejora en el proceso diario?</td><td>Se elimina el cruce de horarios y el registro duplicado</td></tr>
+<tr><td>Social o para el usuario</td><td>¿Qué gana la persona afectada?</td><td>El paciente reserva en dos minutos desde el celular, a cualquier hora</td></tr>
+<tr><td>Estratégica</td><td>¿Qué habilita a futuro?</td><td>La información histórica permitirá proyectar demanda y horarios</td></tr>
+<tr><td>Técnica</td><td>¿Por qué es viable construirlo?</td><td>El equipo domina la tecnología y la empresa cuenta con conexión estable</td></tr>
+</tbody>
+</table></div>
+<ul class="lista">
+<li>Se redacta en presente o futuro, no en condicional vago (“podría mejorar”, “sería bueno”).</li>
+<li>Conviene vincular la justificación con los objetivos específicos: cada objetivo debe atender una consecuencia del problema.</li>
+<li>Evitar frases huecas como “hoy en día la tecnología avanza” o “es importante para la sociedad”.</li>
+<li>Si hay cifras, indicar de dónde provienen aunque sea una estimación razonada del equipo.</li>
+</ul>
+</section>
+<section class="seccion" id="objetivos">
+<h2><span class="num">04</span>Objetivo general y objetivos específicos</h2>
+<p>El objetivo general describe el cambio que el proyecto produce en la realidad. Debe ser uno solo, medible en alguna dimensión y libre de medios. El error más común es escribir una lista de funcionalidades y llamarla objetivo.</p>
+<div class="formula">
+<p>[Verbo de acción en infinitivo] + [qué se transforma] + [a quién beneficia] + [condición o magnitud]</p>
+<p>Ejemplo: Digitalizar el proceso de reserva de citas de la clínica para que los pacientes reserven sin intervención del personal.</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Criterio</th><th scope="col">Pregunta de validación</th></tr></thead>
+<tbody>
+<tr><td>Único</td><td>¿Hay más de un objetivo principal mezclado en la frase?</td></tr>
+<tr><td>Alcanzable</td><td>¿Es posible de lograr con los recursos del curso y del Sprint?</td></tr>
+<tr><td>Medible</td><td>¿Existe una forma de verificar que se cumplió?</td></tr>
+<tr><td>Centrado en el resultado</td><td>¿Describe un cambio en la realidad o solo un entregable técnico?</td></tr>
+<tr><td>Sin medios</td><td>¿Evita decir “usando tal tecnología”, que es un medio y no un objetivo?</td></tr>
+</tbody>
+</table></div>
+<p>Los objetivos específicos descomponen el objetivo general en resultados parciales verificables. Deben ser coherentes con las historias del Sprint y permitir saber qué se logró al cierre. La regla práctica es entre tres y cinco.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Objetivo específico débil</th><th scope="col">Objetivo específico útil</th></tr></thead>
+<tbody>
+<tr><td>Hacer la base de datos</td><td>Registrar la información de clientes, especialistas y citas en una base de datos que evite duplicados</td></tr>
+<tr><td>Usar la tecnología moderna</td><td>Permitir que el usuario consulte y reserve horarios disponibles desde un navegador web</td></tr>
+<tr><td>Mejorar la atención</td><td>Reducir el tiempo de registro de una reserva de cinco minutos a menos de uno</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Coherencia entre objetivos e historias</span>
+<p>Cada historia del Sprint debería contribuir a un objetivo específico. Si una historia no aporta a ninguno, o sobra la historia o falta un objetivo. Esa trazabilidad es la que se revisa al final del informe.</p>
+</aside>
+</section>
+<section class="seccion" id="alcance">
+<h2><span class="num">05</span>Alcance del Sprint 1</h2>
+<p>El alcance delimita qué se va a entregar y, tan importante como eso, qué no. En Scrum el alcance de un Sprint está representado por las historias seleccionadas, pero documentarlo en el informe requiere además explicitar las fronteras: módulos, usuarios incluidos, canales y funcionalidades excluidas.</p>
+<ul class="lista">
+<li>Qué módulos o funcionalidades están incluidos.</li>
+<li>Qué roles de usuario están cubiertos en este Sprint.</li>
+<li>Qué canales se atienden: web, móvil, escritorio.</li>
+<li>Qué datos son reales y qué datos son de prueba.</li>
+<li>Qué quedó explícitamente fuera, con la razón.</li>
+<li>Qué depende de terceros y no se puede garantizar.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dentro del Sprint 1</th><th scope="col">Fuera del Sprint 1</th><th scope="col">Razón de la exclusión</th></tr></thead>
+<tbody>
+<tr><td>Registro de cliente y autenticación</td><td>Recuperación de contraseña por correo</td><td>Depende del servicio de correo, se integra en el Sprint 2</td></tr>
+<tr><td>Reserva y cancelación de cita</td><td>Reprogramación con notificación automática</td><td>Requiere el motor de notificaciones</td></tr>
+<tr><td>Panel del administrador con las citas del día</td><td>Reportes estadísticos y exportación</td><td>Valor alto pero no bloquea el flujo principal</td></tr>
+<tr><td>Validación de disponibilidad</td><td>Pago en línea</td><td>Involucra pasarela externa y contrato con el banco</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Por qué explicitar lo excluido</span>
+<p>Declarar lo que queda fuera demuestra que hubo una decisión de alcance y protege al equipo: cuando alguien pregunte por una funcionalidad ausente, el informe ya explica por qué no está y cuándo llegará.</p>
+</aside>
+</section>
+<section class="seccion" id="septe">
+<h2><span class="num">06</span>Análisis SEPTE del entorno</h2>
+<p>SEPTE es un análisis del entorno que rodea al proyecto. Su propósito es identificar factores externos que pueden favorecerlo o amenazarlo, y que el equipo no controla. Se usa para anticipar riesgos y para justificar decisiones de producto. Las iniciales corresponden a Social, Económico, Político, Tecnológico y Ecológico; la E final permite incluir la dimensión legal, frecuente en proyectos de software.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dimensión</th><th scope="col">Qué se analiza</th><th scope="col">Preguntas guía</th><th scope="col">Ejemplo aplicado</th></tr></thead>
+<tbody>
+<tr><td>Social</td><td>Personas, hábitos, demografía, cultura de uso</td><td>¿Cómo resuelven hoy el proceso? ¿Usan smartphone? ¿Hay resistencia al cambio?</td><td>Los pacientes de la clínica son en su mayoría menores de 45 años y ya usan apps bancarias: la adopción de reservas en línea es viable</td></tr>
+<tr><td>Económico</td><td>Costos, ingresos, capacidad de inversión, contexto del sector</td><td>¿Quién paga? ¿Cuánto cuesta el proceso actual? ¿Hay presupuesto para mantenimiento?</td><td>El ahorro de dos horas diarias de coordinación financia el mantenimiento del sistema en menos de un año</td></tr>
+<tr><td>Político</td><td>Normas institucionales, prioridades del sector, regulación</td><td>¿Hay políticas que impulsen o frenen la digitalización?</td><td>La agenda de modernización del Estado y los incentivos a la digitalización de mypes favorecen la adopción</td></tr>
+<tr><td>Tecnológico</td><td>Infraestructura, herramientas disponibles, conectividad, madurez técnica</td><td>¿Hay internet estable? ¿Existen las herramientas? ¿El equipo las domina?</td><td>El 85% de los pacientes tiene plan de datos y la clínica cuenta con conexión de fibra óptica</td></tr>
+<tr><td>Ecológico</td><td>Consumo de recursos, residuos, sostenibilidad</td><td>¿El proyecto reduce papel o consumo energético?</td><td>La eliminación del cuaderno de citas reduce el consumo de papel y las impresiones diarias</td></tr>
+<tr><td>Legal</td><td>Protección de datos, propiedad intelectual, contratos, licencias</td><td>¿Se tratan datos personales? ¿Qué exige la norma?</td><td>El sistema almacena datos de salud, por lo que debe cumplir la Ley 29733 de Protección de Datos Personales</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo redactar cada dimensión con valor</span>
+<p>Cada dimensión debe terminar en una consecuencia para el proyecto, no quedarse en la descripción del contexto. La estructura útil es: factor observado, evidencia o dato, e impacto sobre el proyecto. Sin el tercer elemento, el análisis es decorativo.</p>
+</aside>
+<div class="formula">
+<p>Factor: la clínica no cuenta con área de sistemas.</p>
+<p>Evidencia: el personal administrativo resuelve incidencias técnicas por su cuenta.</p>
+<p>Impacto: el sistema debe ser operable sin soporte técnico permanente y con manuales breves.</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Error en el SEPTE</th><th scope="col">Cómo se corrige</th></tr></thead>
+<tbody>
+<tr><td>Describir el contexto general del país sin relación con el proyecto</td><td>Vincular cada factor con una decisión concreta del producto</td></tr>
+<tr><td>Confundir fortalezas del equipo con factores del entorno</td><td>El SEPTE es externo: la habilidad del equipo es un análisis interno</td></tr>
+<tr><td>Copiar el mismo análisis para cualquier proyecto</td><td>Citar el sector, la ciudad, el usuario y la norma específica</td></tr>
+<tr><td>Dejar la dimensión legal en blanco cuando hay datos personales</td><td>Identificar la norma aplicable y la medida de protección adoptada</td></tr>
+<tr><td>Cerrar sin conclusiones</td><td>Terminar con qué factores son oportunidades y cuáles son riesgos a mitigar</td></tr>
+</tbody>
+</table></div>
+<p>Conviene cerrar el SEPTE con una síntesis breve: qué dos o tres factores son los más determinantes para el éxito del proyecto y qué decisión tomó el equipo a partir de ellos. Esa síntesis es la que demuestra que el análisis se usó y no solo se rellenó.</p>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Nota sobre la sigla</span>
+<p>SEPTE se presenta en el enunciado con esa grafía. Al desarrollarlo, conviene nombrar cada dimensión con claridad y añadir la legal como sexta, explicando que corresponde a la protección de datos y las obligaciones normativas. Así el análisis cubre lo que la rúbrica espera sin depender de la interpretación de la sigla.</p>
+</aside>
+</section>
+<section class="seccion" id="riesgos">
+<h2><span class="num">07</span>Riesgos del proyecto y del Sprint</h2>
+<p>Aunque el enunciado no lo exige de forma explícita, un apartado breve de riesgos fortalece la documentación y se conecta con el SEPTE: los factores externos identificados suelen convertirse en riesgos.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Riesgo</th><th scope="col">Probabilidad</th><th scope="col">Impacto</th><th scope="col">Mitigación</th></tr></thead>
+<tbody>
+<tr><td>El equipo no domina la tecnología elegida</td><td>Media</td><td>Alto</td><td>Prueba técnica en la primera semana del Sprint</td></tr>
+<tr><td>Un integrante se retira del curso</td><td>Baja</td><td>Alto</td><td>Documentar el código y repartir conocimiento en pares</td></tr>
+<tr><td>El cliente no responde a tiempo</td><td>Media</td><td>Medio</td><td>Acordar un horario fijo de validación semanal</td></tr>
+<tr><td>El alcance crece durante el Sprint</td><td>Alta</td><td>Medio</td><td>Registrar los pedidos nuevos en el Product Backlog, no en el Sprint</td></tr>
+<tr><td>Problemas de conectividad en la presentación</td><td>Media</td><td>Bajo</td><td>Tener el sistema desplegado en la nube y capturas de respaldo</td></tr>
+</tbody>
+</table></div>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="estimacion.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Estimación</span></a>
+<a href="retrospectiva.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Retrospectiva</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+</body>
+</html>

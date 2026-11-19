@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fundamentos ágiles · Base teórica T1</title>
+<meta name="description" content="Todo informe Scrum se apoya en una idea previa: el software se construye mejor en ciclos cortos con retroalimentación real. Esta sección cubre el origen del movimiento ágil, sus cuatro valores, sus doce principios y la diferencia con los enfoques predictivos.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Base teórica <span>· Proyecto Integrador T1</span></a>
+    <span class="meta">Scrum · Guía 2020</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Parte 02 · Base teórica</p>
+    <h1>Fundamentos ágiles</h1>
+    <p class="bajada">Del Manifiesto Ágil al enfoque iterativo e incremental</p>
+    <p class="resumen">Todo informe Scrum se apoya en una idea previa: el software se construye mejor en ciclos cortos con retroalimentación real. Esta sección cubre el origen del movimiento ágil, sus cuatro valores, sus doce principios y la diferencia con los enfoques predictivos.</p>
+    <ul class="claves"><li>Manifiesto Ágil: febrero de 2001, diecisiete firmantes</li>
+<li>Cuatro valores, con preferencia y no exclusión</li>
+<li>Doce principios que aterrizan los valores</li>
+<li>Predictivo frente a iterativo: cuándo conviene cada uno</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#que-es-agilidad">Qué es la agilidad y de dónde viene</a></li>
+<li><a href="#valores">Los cuatro valores del Manifiesto Ágil</a></li>
+<li><a href="#principios">Los doce principios</a></li>
+<li><a href="#predictivo-vs-agil">Enfoque predictivo frente a enfoque ágil</a></li>
+<li><a href="#complejidad">Por qué funciona: complejidad y empirismo</a></li>
+<li><a href="#errores">Malentendidos que restan puntos</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="que-es-agilidad">
+<h2><span class="num">01</span>Qué es la agilidad y de dónde viene</h2>
+<p>La agilidad no es una metodología cerrada ni un conjunto de plantillas. Es una forma de trabajar que asume que los requisitos cambian y que el conocimiento del producto solo se completa cuando el usuario lo usa. En lugar de intentar predecir todo al inicio, se construyen versiones parciales del producto en ciclos cortos para aprender del uso real.</p>
+<p>El punto de partida formal es el Manifiesto por el Desarrollo Ágil de Software, redactado en febrero de 2001 en Snowbird, Utah, por diecisiete profesionales que representaban corrientes distintas: Extreme Programming, Scrum, DSDM, Adaptive Software Development, Crystal, Feature-Driven Development y Pragmatic Programming. No se pusieron de acuerdo en un método único, pero sí en un conjunto de valores compartidos.</p>
+<blockquote>
+<p>Estamos descubriendo formas mejores de desarrollar software tanto por nuestra propia experiencia como ayudando a terceros.</p>
+<cite>Manifiesto Ágil, 2001</cite>
+</blockquote>
+<aside class="destacado info">
+<span class="titulo-destacado">Marco, método, práctica</span>
+<p>Un marco de trabajo (framework) define las reglas mínimas y deja libertad en el cómo. Scrum es un marco. Una metodología prescribe pasos detallados. Una práctica es una técnica concreta, como planning poker o integración continua. El Manifiesto Ágil no es ninguna de las tres: es una declaración de valores.</p>
+</aside>
+</section>
+<section class="seccion" id="valores">
+<h2><span class="num">02</span>Los cuatro valores del Manifiesto Ágil</h2>
+<p>Cada valor se enuncia como una preferencia entre dos elementos, ambos valiosos. La redacción importa: no se descarta el elemento de la derecha, se le subordina cuando hay que elegir.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Se valora más</th><th scope="col">Sobre</th><th scope="col">Lectura práctica</th></tr></thead>
+<tbody>
+<tr><td>Individuos e interacciones</td><td>Procesos y herramientas</td><td>La herramienta ordena el trabajo, pero no sustituye la conversación entre las personas que lo hacen.</td></tr>
+<tr><td>Software funcionando</td><td>Documentación extensiva</td><td>Un entregable que se puede ejecutar y probar demuestra más que un documento que promete funcionalidad.</td></tr>
+<tr><td>Colaboración con el cliente</td><td>Negociación contractual</td><td>El cliente participa durante todo el proyecto, no solo al firmar y al recibir.</td></tr>
+<tr><td>Respuesta ante el cambio</td><td>Seguir un plan</td><td>El plan es una hipótesis; cuando la realidad lo contradice, se ajusta.</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Error frecuente en exámenes</span>
+<p>Escribir que el Manifiesto Ágil elimina la documentación o los planes. El texto original dice explícitamente: “aunque valoramos los elementos de la derecha, valoramos más los de la izquierda”. La documentación y el plan siguen existiendo, con otro nivel de detalle y otro momento.</p>
+</aside>
+<p>Para la sección individual del informe se piden dos principios del Manifiesto aplicados al equipo. Conviene elegir dos que se puedan sostener con hechos verificables del Sprint, por ejemplo la entrega temprana y continua de valor junto con la reflexión periódica del equipo, y describir una situación concreta de cada uno.</p>
+</section>
+<section class="seccion" id="principios">
+<h2><span class="num">03</span>Los doce principios</h2>
+<p>Los doce principios traducen los valores a comportamientos observables. Se listan en el orden del documento original.</p>
+<ol class="lista">
+<li>La mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor.</li>
+<li>Se acepta que los requisitos cambien, incluso en etapas tardías. Los procesos ágiles aprovechan el cambio para dar ventaja competitiva al cliente.</li>
+<li>Se entrega software funcional con frecuencia, entre dos semanas y dos meses, con preferencia al periodo más corto.</li>
+<li>Los responsables de negocio y los desarrolladores trabajan juntos de forma cotidiana durante todo el proyecto.</li>
+<li>Los proyectos se desarrollan en torno a individuos motivados: se les da el entorno y el apoyo que necesitan y se les confía la ejecución del trabajo.</li>
+<li>El método más eficiente y efectivo de comunicar información es la conversación cara a cara.</li>
+<li>El software funcionando es la medida principal de progreso.</li>
+<li>Los procesos ágiles promueven el desarrollo sostenible: se debe mantener un ritmo constante de forma indefinida.</li>
+<li>La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.</li>
+<li>La simplicidad, entendida como el arte de maximizar la cantidad de trabajo no realizado, es esencial.</li>
+<li>Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.</li>
+<li>A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo y ajusta su comportamiento en consecuencia.</li>
+</ol>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Principio</th><th scope="col">Cómo se ve en un Sprint real</th></tr></thead>
+<tbody>
+<tr><td>1. Entrega temprana y continua</td><td>Al cerrar el Sprint existe una funcionalidad desplegada y usable, no solo código avanzado.</td></tr>
+<tr><td>2. Aceptar el cambio</td><td>Una historia se renegocia con el Product Owner a mitad del Sprint porque cambió una regla del negocio.</td></tr>
+<tr><td>4. Negocio y desarrollo juntos</td><td>El Product Owner participa en el refinamiento y responde dudas el mismo día.</td></tr>
+<tr><td>7. Software funcionando como medida</td><td>El avance se mide por historias terminadas según la Definition of Done, no por porcentaje de código escrito.</td></tr>
+<tr><td>10. Simplicidad</td><td>Se descarta una funcionalidad que nadie pidió en lugar de construirla por si acaso.</td></tr>
+<tr><td>11. Equipos auto-organizados</td><td>El equipo decide cómo repartir las tareas del Sprint sin que el jefe asigne cada una.</td></tr>
+<tr><td>12. Reflexión periódica</td><td>La retrospectiva produce dos acciones concretas que se verifican en el Sprint siguiente.</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="predictivo-vs-agil">
+<h2><span class="num">04</span>Enfoque predictivo frente a enfoque ágil</h2>
+<p>La elección entre un enfoque predictivo y uno ágil depende de la estabilidad de los requisitos y del costo de equivocarse. Si el requisito es estable, conocido y verificable por contrato, planificar todo al inicio es eficiente. Si el requisito cambia con el uso o el mercado, conviene aprender por ciclos.</p>
+<div class="comparacion">
+<div>
+<h4>Predictivo o en cascada</h4>
+<ul>
+<li>Se levantan todos los requisitos al inicio.</li>
+<li>El alcance se congela y el cambio se trata como desviación.</li>
+<li>La entrega ocurre al final del proyecto.</li>
+<li>El avance se mide por documentos y fases concluidas.</li>
+<li>El cliente valida una sola vez, al cierre.</li>
+<li>El riesgo se concentra en la integración final.</li>
+</ul>
+</div>
+<div>
+<h4>Iterativo e incremental</h4>
+<ul>
+<li>Se detalla solo lo necesario para el siguiente ciclo.</li>
+<li>El alcance se ajusta con el aprendizaje de cada ciclo.</li>
+<li>Se entrega valor en cada iteración.</li>
+<li>El avance se mide por incrementos terminados y usables.</li>
+<li>El cliente valida al final de cada ciclo.</li>
+<li>El riesgo se reparte y se detecta temprano.</li>
+</ul>
+</div>
+</div>
+<dl class="definiciones">
+<div class="def">
+<dt>Iterativo</dt>
+<dd>Se repite el ciclo completo de trabajo, refinando el resultado en cada vuelta.</dd>
+</div>
+<div class="def">
+<dt>Incremental</dt>
+<dd>Cada vuelta agrega una porción terminada y usable al producto, no una maqueta.</dd>
+</div>
+<div class="def">
+<dt>Timebox</dt>
+<dd>Duración máxima fija para una actividad. Si el tiempo termina, la actividad termina: se recorta el alcance, no el plazo.</dd>
+</div>
+<div class="def">
+<dt>Retroalimentación</dt>
+<dd>Información que devuelve el uso real del producto y que corrige las decisiones siguientes.</dd>
+</div>
+</dl>
+</section>
+<section class="seccion" id="complejidad">
+<h2><span class="num">05</span>Por qué funciona: complejidad y empirismo</h2>
+<p>El desarrollo de software es un problema complejo en el sentido técnico del término: el resultado no se puede predecir con exactitud a partir de las partes, porque las interacciones entre ellas generan comportamiento nuevo. Cuando la relación causa-efecto solo se entiende después de actuar, el enfoque adecuado no es planificar más, sino experimentar y observar.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Tipo de problema</th><th scope="col">Característica</th><th scope="col">Enfoque adecuado</th></tr></thead>
+<tbody>
+<tr><td>Simple</td><td>La receta se conoce y se repite igual</td><td>Buenas prácticas y procedimientos</td></tr>
+<tr><td>Complicado</td><td>Requiere análisis experto, pero es predecible</td><td>Planificación detallada y especialistas</td></tr>
+<tr><td>Complejo</td><td>El resultado emerge y solo se entiende al ejecutar</td><td>Ciclos cortos, inspección y adaptación</td></tr>
+<tr><td>Caótico</td><td>No hay patrón estable</td><td>Actuar para contener y luego estabilizar</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">La conexión con Scrum</span>
+<p>Scrum responde a la complejidad con empirismo: tomar decisiones basadas en lo observado, no en lo supuesto. De ahí sus tres pilares (transparencia, inspección y adaptación) y sus ciclos cortos, que existen para que haya algo real que observar.</p>
+</aside>
+</section>
+<section class="seccion" id="errores">
+<h2><span class="num">06</span>Malentendidos que restan puntos</h2>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Afirmación incorrecta</th><th scope="col">Corrección</th></tr></thead>
+<tbody>
+<tr><td>Ágil significa entregar rápido y sin plan</td><td>Ágil significa entregar valor pronto y replanificar. El Sprint tiene un plan explícito: el Sprint Backlog.</td></tr>
+<tr><td>Ágil significa no documentar</td><td>Significa documentar lo que aporta valor. Los criterios de aceptación y la Definition of Done son documentación.</td></tr>
+<tr><td>Scrum es una metodología</td><td>Es un marco de trabajo liviano. No prescribe técnicas de ingeniería ni plantillas de documentos.</td></tr>
+<tr><td>Si hay cambios, el Sprint falló</td><td>El cambio dentro del Sprint es normal si no pone en riesgo el Sprint Goal. Solo el Product Owner puede cancelar el Sprint.</td></tr>
+<tr><td>El equipo ágil no tiene jefe, entonces no rinde cuentas</td><td>La autogestión implica responsabilidad sobre el resultado. El equipo se compromete con el Sprint Goal.</td></tr>
+</tbody>
+</table></div>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="mapa-examen.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Mapa de la evaluación</span></a>
+<a href="marco-scrum.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Marco Scrum</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+</body>
+</html>

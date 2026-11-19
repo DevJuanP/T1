@@ -1,0 +1,123 @@
+{
+  "id": "mapa-examen",
+  "orden": 1,
+  "titulo": "Mapa de la evaluación",
+  "subtitulo": "Qué se pide, cuánto vale y dónde está la teoría",
+  "actualizado": "2026-11-18",
+  "fuentes": [
+    "PROYECTO INTEGRADOR-T1.docx (enunciado y rúbrica)",
+    "Scrum Guide 2020 (Ken Schwaber y Jeff Sutherland)"
+  ],
+  "resumen": "Punto de partida: el logro de la evaluación, las siete secciones del informe con su puntaje y el enlace directo a la teoría que sustenta cada una.",
+  "claves": [
+    "Competencia evaluada: gestión ágil, roles, artefactos y eventos Scrum",
+    "Redacción de historias de usuario y estimación de tareas",
+    "Uso de herramientas colaborativas y evidencias verificables",
+    "Siete secciones, veinte puntos"
+  ],
+  "secciones": [
+    {
+      "id": "logro",
+      "titulo": "Logro de la evaluación",
+      "cuerpo": [
+        {
+          "tipo": "cita",
+          "texto": "Esta evaluación demuestra su competencia en gestión ágil de proyectos, identificando roles, artefactos y eventos Scrum, redactando historias de usuario, estimando tareas, y aplicando herramientas colaborativas. Su desarrollo aplicado le permitirá planificar y entregar valor real en un entorno iterativo, mejorando su desempeño como profesional de soluciones informáticas.",
+          "autor": "Enunciado de la evaluación T1"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El logro se descompone en cinco capacidades observables. Cada una se demuestra con un artefacto concreto dentro del informe, y cada artefacto se apoya en un concepto teórico que conviene dominar antes de redactar."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Capacidad evaluada", "Cómo se demuestra", "Teoría de base"],
+          "filas": [
+            ["Identificar roles Scrum", "Tabla de participación con el rol de cada integrante y sus responsabilidades", "Marco Scrum, sección El equipo Scrum"],
+            ["Identificar artefactos Scrum", "Product Backlog del Sprint y descripción del incremento", "Artefactos, secciones Product Backlog e Incremento"],
+            ["Identificar eventos Scrum", "Sprint Planning documentado, retrospectiva respondida, evidencia de Daily Scrum", "Eventos Scrum, secciones Planning, Daily, Review y Retrospectiva"],
+            ["Redactar historias de usuario", "Cinco historias en formato Como/Quiero/Para con prioridad, estimación y criterios de aceptación", "Historias de usuario"],
+            ["Estimar tareas", "Estimación de cada historia y explicación de la dificultad encontrada", "Estimación"],
+            ["Aplicar herramientas colaborativas", "Capturas del tablero y relato del seguimiento de una tarea", "Herramientas colaborativas"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "estructura",
+      "titulo": "Estructura del informe y puntaje",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El entregable es un único informe grupal de veinte puntos. La sección individual no es un archivo aparte: forma parte del mismo documento y allí se juega un cuarto del puntaje total."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["N.", "Sección", "Puntos", "Producto esperado", "Teoría"],
+          "filas": [
+            ["1", "Documentación del proyecto", "3", "Nombre, problema, justificación, objetivo general, objetivos específicos, alcance del Sprint 1 y análisis SEPTE", "documentacion-proyecto"],
+            ["2", "Planificación del Sprint", "4", "Cinco historias de usuario con prioridad, estimación y criterios de aceptación, más la justificación de la priorización", "historias-usuario"],
+            ["3", "Product Backlog del Sprint", "2", "Tabla con historia, valor de negocio, prioridad, tiempo estimado, responsable y estado", "artefactos"],
+            ["4", "Incremento del producto", "2", "Evidencias visuales y explicación de la funcionalidad, el valor y la parte del Sprint que representa", "artefactos"],
+            ["5", "Retrospectiva del Sprint", "2", "Cuatro preguntas respondidas y justificadas con situaciones reales", "retrospectiva"],
+            ["6", "Evidencia individual", "5", "Cinco apartados por integrante: enfoque ágil, rol, historia, estimación y seguimiento", "evidencia-individual"],
+            ["7", "Participación del equipo", "2", "Tabla de seis columnas y párrafo sobre organización, responsabilidades, conflictos y comunicación", "evidencia-individual"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Dónde se pierden los puntos",
+          "texto": "La rúbrica castiga con más fuerza la incoherencia que la falta de extensión: historias sin criterios de aceptación, un backlog que no coincide con las historias del punto 2, una retrospectiva sin situaciones reales o una evidencia individual genérica que podría pertenecer a cualquier integrante."
+        }
+      ]
+    },
+    {
+      "id": "ruta",
+      "titulo": "Ruta de estudio sugerida",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El orden siguiente reproduce el orden en que se toman las decisiones reales de un Sprint. Estudiar en ese orden evita tener que rehacer redacciones: primero el marco, después el problema, luego las historias, y solo entonces la estimación, el tablero y la retrospectiva."
+        },
+        {
+          "tipo": "pasos",
+          "items": [
+            { "titulo": "Entender el marco", "detalle": "Fundamentos ágiles, Marco Scrum, Eventos y Artefactos. Sin esto, el vocabulario del informe queda suelto." },
+            { "titulo": "Definir el proyecto", "detalle": "Documentación del proyecto: problema, justificación, objetivos, alcance y SEPTE. De aquí salen los insumos de las historias." },
+            { "titulo": "Escribir las historias", "detalle": "Historias de usuario, criterios de aceptación y priorización. Es la sección de mayor puntaje del trabajo grupal." },
+            { "titulo": "Estimar", "detalle": "Estimación relativa, planning poker, velocidad y descomposición en tareas." },
+            { "titulo": "Construir y evidenciar", "detalle": "Artefactos (backlog e incremento) y herramientas colaborativas (tablero, seguimiento)." },
+            { "titulo": "Cerrar el ciclo", "detalle": "Retrospectiva con acciones concretas y evidencia individual de cada integrante." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checklist",
+      "titulo": "Lista de verificación antes de entregar",
+      "cuerpo": [
+        {
+          "tipo": "checklist",
+          "items": [
+            "El nombre del proyecto aparece una sola vez y coincide en todas las secciones.",
+            "El problema está descrito con situación actual, afectados e impacto, no con una solución.",
+            "El objetivo general es uno solo y los específicos lo despliegan en acciones medibles.",
+            "El alcance del Sprint 1 dice explícitamente qué queda fuera.",
+            "El SEPTE cubre las seis dimensiones y cada una menciona un factor concreto del entorno peruano o del sector.",
+            "Hay exactamente cinco historias y todas usan el formato Como/Quiero/Para.",
+            "Cada historia tiene prioridad, estimación y al menos dos criterios de aceptación verificables.",
+            "La justificación de la priorización menciona valor, riesgo y dependencias.",
+            "El Product Backlog tiene las seis columnas pedidas y los mismos identificadores que las historias.",
+            "El incremento incluye capturas de sistema, formulario, base de datos, interfaz y tablero.",
+            "Cada evidencia tiene pie de figura y una frase que explica qué demuestra.",
+            "La retrospectiva responde las cuatro preguntas con hechos del Sprint, no con generalidades.",
+            "La sección individual está personalizada: nombres, decisiones y tareas propias.",
+            "La tabla de participación tiene una fila por integrante y todas las celdas completas.",
+            "El párrafo final explica organización, distribución, resolución de conflictos y comunicación."
+          ]
+        }
+      ]
+    }
+  ]
+}

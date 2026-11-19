@@ -1,0 +1,310 @@
+{
+  "id": "evidencia-individual",
+  "orden": 10,
+  "titulo": "Evidencia individual y participación",
+  "subtitulo": "Apartados 6 y 7 del informe: cinco puntos y dos puntos",
+  "actualizado": "2026-11-18",
+  "resumen": "Siete de los veinte puntos dependen de que cada integrante y el equipo documenten su trabajo con evidencia verificable. Esta sección cubre los cinco apartados de la evidencia individual, la tabla de participación y las herramientas colaborativas que permiten demostrarla.",
+  "claves": [
+    "Cinco apartados individuales con puntaje de cinco puntos",
+    "La clave es la personalización: hechos propios, no generalidades",
+    "Tabla de participación con seis columnas completas",
+    "Herramientas: Trello, Jira y Notion para el seguimiento"
+  ],
+  "secciones": [
+    {
+      "id": "panorama",
+      "titulo": "Qué evalúa la sección individual",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La sección individual no constituye un entregable aparte: forma parte del informe grupal. Vale cinco puntos, un cuarto del total, lo que la convierte en la sección individual de mayor peso. Se evalúa la comprensión de los conceptos y la capacidad de explicarlos desde la propia experiencia."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Apartado", "Qué pide", "Cómo se demuestra dominio"],
+          "filas": [
+            ["6.1", "Aplicación del enfoque ágil y dos principios del Manifiesto", "Citar el principio con precisión y describir cómo se aplicó en el equipo"],
+            ["6.2", "Rol, responsabilidades, actividades y aporte", "Distinguir el rol Scrum de las tareas concretas realizadas"],
+            ["6.3", "Historia de usuario en la que participó", "Explicar la funcionalidad, el beneficio y la participación propia"],
+            ["6.4", "Dificultad de estimación y cómo mejorarla", "Describir la causa, el efecto y la acción correctiva"],
+            ["6.5", "Seguimiento con herramienta colaborativa", "Mostrar la tarea y describir su recorrido en el tablero"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "El riesgo de la respuesta genérica",
+          "texto": "Si el párrafo de un integrante podría intercambiarse con el de otro sin que se note, no evidencia nada. Los nombres, las historias concretas, las fechas y los impedimentos propios son lo que hace verificable la participación."
+        }
+      ]
+    },
+    {
+      "id": "enfoque-agil",
+      "titulo": "6.1 Aplicación del enfoque ágil",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El apartado pide explicar cómo Scrum contribuyó al desarrollo del proyecto y mencionar dos principios del Manifiesto Ágil aplicados por el equipo. La respuesta tiene dos partes diferenciadas: una explicación del aporte del marco y una selección argumentada de principios."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Explicar el aporte de Scrum con hechos del proyecto: qué habría sido distinto sin ciclos cortos de inspección.",
+            "Elegir dos principios del Manifiesto, no dos valores Scrum ni dos pilares del empirismo.",
+            "Citar el principio con precisión, sin parafrasearlo de memoria.",
+            "Describir una situación concreta del Sprint donde ese principio se aplicó.",
+            "Mostrar el efecto: qué se decidió distinto gracias al principio."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Principio", "Cómo se aplica en un proyecto de curso"],
+          "filas": [
+            ["Individuos e interacciones sobre procesos y herramientas", "El equipo acordó el flujo de ramas en una conversación; la herramienta se adaptó al equipo y no al revés"],
+            ["Software funcionando sobre documentación extensiva", "Se presentó el flujo de reserva operativo en la Review en lugar de un documento con el diseño"],
+            ["Colaboración con el cliente sobre negociación contractual", "El Product Owner validó criterios de aceptación durante el Sprint, antes de programar"],
+            ["Respuesta ante el cambio sobre seguir un plan", "Se reemplazó una historia por otra del mismo Sprint Goal al descubrir una restricción técnica"],
+            ["Entrega temprana y continua de valor", "El incremento del módulo de registro se desplegó a mitad del Sprint y se probó con usuarios"],
+            ["Software funcionando como medida principal de progreso", "El avance se reportó por historias terminadas según la Definition of Done, no por horas"],
+            ["Simplicidad", "Se descartó el módulo de reportes porque ningún usuario lo había solicitado"],
+            ["Reflexión periódica del equipo", "La retro acordó dos acciones que modificaron el flujo de trabajo del Sprint siguiente"],
+            ["Equipos auto-organizados", "El equipo repartió las tareas de las cinco historias sin intervención externa"],
+            ["Atención continua a la excelencia técnica", "Se estableció la revisión entre pares antes de integrar a la rama principal"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Sugerencia de redacción",
+          "texto": "Elegir un principio de negocio y uno de proceso, por ejemplo entrega temprana de valor y reflexión periódica. Así la respuesta muestra que la agilidad se aplicó en dos dimensiones distintas y no como una sola idea repetida."
+        }
+      ]
+    },
+    {
+      "id": "rol",
+      "titulo": "6.2 Rol desempeñado",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El apartado pide el rol asumido, las responsabilidades, las actividades desarrolladas y el aporte al Sprint, más una explicación de cómo ese trabajo contribuyó al avance del proyecto. La distinción clave es entre rol y actividad: el rol se define en Scrum, las actividades las define el proyecto."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Campo", "Qué evitar", "Qué escribir"],
+          "filas": [
+            ["Rol asumido", "“Desarrollador y también Scrum Master y Product Owner”", "Una responsabilidad principal, la que se ejerció de forma sostenida"],
+            ["Responsabilidades", "Listar tareas sueltas", "Funciones propias del rol en el marco"],
+            ["Actividades desarrolladas", "“Apoyé en lo que hizo falta”", "Acciones concretas, con evento o fecha asociada"],
+            ["Aporte al Sprint", "“Cumplí con mis tareas”", "Un efecto verificable sobre el resultado del Sprint"]
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Rol: Scrum Master",
+              "texto": "Responsabilidades: facilitar los eventos, dar seguimiento a impedimentos y velar por el cumplimiento del marco. Actividades: convocar y facilitar los cinco Daily Scrum de las dos semanas, registrar tres impedimentos en el tablero y coordinar el acceso al entorno de despliegue. Aporte: el impedimento de despliegue se resolvió en cuarenta y ocho horas, lo que permitió probar el incremento antes del Sprint Review.",
+              "nota": "Rol definido, actividades con cantidad y el aporte con efecto medible."
+            },
+            {
+              "titulo": "Rol: Product Owner",
+              "texto": "Responsabilidades: ordenar el Product Backlog, definir criterios de aceptación y validar el incremento. Actividades: refinar las cinco historias, priorizar el flujo de reserva sobre los reportes y validar tres historias en la Review. Aporte: la priorización permitió entregar el flujo completo de reserva, que era el objetivo del Sprint.",
+              "nota": "El aporte se conecta con la decisión de priorización, no con la cantidad de horas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "historia-elegida",
+      "titulo": "6.3 Historia de usuario en la que participó",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Se pide elegir una historia en la que se participó y explicar qué funcionalidad se implementó, qué beneficio obtuvo el usuario y cómo fue la participación propia. Conviene elegirla del backlog del informe y mantener el mismo identificador."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Funcionalidad: qué hace el sistema, descrito desde el comportamiento observable.",
+            "Beneficio: qué deja de hacer o qué gana el usuario, en su propio lenguaje.",
+            "Participación: qué parte del trabajo asumió el integrante, con qué decisión relevante."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Nivel de participación", "Cómo se describe", "Ejemplo"],
+          "filas": [
+            ["Responsable principal", "Asumió el diseño y la mayor parte de la implementación", "Diseñé el modelo de datos y programé el endpoint de disponibilidad"],
+            ["Colaborador", "Apoyó una parte concreta", "Implementé la validación de choque de horarios y las pruebas del formulario"],
+            ["Validador", "Verificó criterios de aceptación", "Verifiqué los cuatro criterios de aceptación con datos reales"],
+            ["Facilitador", "Aseguró las condiciones para que se completara", "Gestioné el acceso al entorno de pruebas que bloqueaba la historia"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo mostrar el beneficio",
+          "texto": "El beneficio debe expresarse en términos del usuario, no del sistema. “Se agregó un endpoint de disponibilidad” describe la implementación; “el paciente ya no necesita llamar para saber si hay cupo” describe el beneficio. Lo ideal es incluir ambos y dejar claro cuál es cuál."
+        }
+      ]
+    },
+    {
+      "id": "estimacion-individual",
+      "titulo": "6.4 Estimación del Sprint",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El apartado pide una dificultad presentada durante la estimación y cómo podría mejorarse para el Sprint siguiente. Es la respuesta que más se nota cuando está copiada, porque todos los integrantes suelen describir la misma dificultad genérica."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Describir la dificultad desde la experiencia propia, no desde el equipo en abstracto.",
+            "Indicar el efecto concreto: qué historia se desvió y cuánto.",
+            "Explicar la causa real, no el síntoma.",
+            "Proponer una mejora aplicable en el Sprint siguiente, con un momento concreto.",
+            "Reconocer si la estimación fue acertada en alguna otra historia, para mostrar criterio."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Lo que se escribe habitualmente", "Lo que debería escribirse"],
+          "filas": [
+            ["“Fue difícil estimar porque no sabíamos cuánto demoraría.”", "“Estimé HU-03 en cinco puntos sin conocer la librería de calendario; tomó el doble y desplazó la validación dos días.”"],
+            ["“Debemos estimar mejor la próxima vez.”", "“En el Sprint 2 haré una prueba de dos horas con la librería antes de estimar las historias de notificaciones.”"],
+            ["“El equipo subestimó porque era la primera vez.”", "“Comparé con la referencia equivocada: usé una historia de formulario simple como patrón para una con integración externa.”"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Conexión con la teoría de estimación",
+          "texto": "Para responder con fundamento, conviene apoyarse en los conceptos de estimación relativa, planning poker y velocidad. Mencionar que la estimación se hizo en equipo con planning poker y que la dispersión reveló un supuesto distinto demuestra manejo del tema, no solo experiencia."
+        }
+      ]
+    },
+    {
+      "id": "seguimiento",
+      "titulo": "6.5 Seguimiento del trabajo",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El apartado pide explicar cómo se hizo el seguimiento de las tareas con una herramienta colaborativa y describir una tarea completa, desde su planificación hasta su finalización. La descripción del recorrido es lo que demuestra que la herramienta se usó y no solo se mencionó."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Planificación: la tarea nació de una historia del Sprint y se asignó en la Planning.",
+            "Ejecución: se movió por las columnas del tablero según su avance real.",
+            "Obstáculo: qué la detuvo y cómo se registró.",
+            "Cierre: qué condición se cumplió para marcarla como terminada."
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Recorrido de una tarea",
+              "texto": "La tarea “Crear endpoint de disponibilidad” se creó en la Planning como parte de HU-02, se asignó a dos integrantes y entró a la columna Pendiente. Al segundo día pasó a En progreso; al tercero se detuvo porque faltaba el modelo de datos de horarios, impedimento que se registró en la tarjeta y se resolvió en el Daily Scrum. Se movió a Revisión con la prueba de dos casos documentada y el Product Owner la validó contra el criterio de aceptación, por lo que pasó a Terminado el quinto día.",
+              "nota": "Nombra columnas, días, impedimento, resolución y criterio de cierre."
+            }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Sin captura, la afirmación es débil",
+          "texto": "La sección 4 del informe ya pide capturas del tablero. Conviene que la captura de la sección individual muestre la tarea descrita, con su historial o sus comentarios visibles, para que la evidencia y el relato coincidan."
+        }
+      ]
+    },
+    {
+      "id": "herramientas",
+      "titulo": "Herramientas colaborativas",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El enunciado menciona Trello, Jira y Notion como ejemplos. Cualquiera sirve, pero cada una tiene un enfoque distinto y conviene elegir la que se ajuste al tamaño del equipo y a lo que se quiere demostrar."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Herramienta", "Enfoque", "Ventaja para un proyecto de curso", "Limitación"],
+          "filas": [
+            ["Trello", "Tablero kanban de tarjetas y listas", "Rápido de configurar, visual, fácil de capturar para el informe", "Poco análisis, sin métricas nativas"],
+            ["Jira", "Gestión ágil con Scrum y Kanban, reportes y métricas", "Sprint, backlog y burn down integrados", "Más complejo de configurar y de aprender"],
+            ["Notion", "Documentación y bases de datos con vistas de tablero", "Une documentación, backlog y actas en un solo lugar", "El tablero es menos ágil para el día a día"],
+            ["Azure DevOps", "Tableros, repositorios y pipelines", "Integra seguimiento y código en el mismo entorno", "Puede ser excesivo para un equipo pequeño"],
+            ["GitHub Projects", "Tablero vinculado a issues y pull requests", "El seguimiento queda ligado a los commits", "Requiere disciplina con issues"]
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Columna del tablero", "Qué significa", "Regla de uso"],
+          "filas": [
+            ["Product Backlog", "Todo lo que podría hacerse", "Ordenado por prioridad, visible para el equipo"],
+            ["Sprint Backlog / Pendiente", "Lo elegido para este Sprint", "No entra nada nuevo a mitad de Sprint sin acuerdo con el Product Owner"],
+            ["En progreso", "Se está trabajando ahora", "Límite de tarjetas simultáneas para evitar dispersión"],
+            ["En revisión", "Terminado, pendiente de validación", "Debe indicar quién revisa y contra qué criterio"],
+            ["Terminado", "Cumple la Definition of Done", "Nada pasa aquí sin verificación"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Buenas prácticas de tablero",
+          "texto": "Una tarjeta por tarea, no por persona. Título en verbo y objeto. Responsable visible. Fecha límite cuando aplique. Comentario con el impedimento el mismo día en que aparece. Y una regla de oro: el tablero se actualiza antes del Daily Scrum, no después."
+        }
+      ]
+    },
+    {
+      "id": "participacion",
+      "titulo": "Sección 7: informe de participación del equipo",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La sección 7 vale dos puntos y pide una tabla con seis columnas más un párrafo final. La tabla debe tener una fila por integrante y todas las celdas completas; el párrafo debe explicar organización, distribución, resolución de conflictos y comunicación."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Columna", "Qué debe contener", "Criterio de calidad"],
+          "filas": [
+            ["Integrante", "Nombre completo", "Todos los miembros del equipo, sin excepción"],
+            ["Rol Scrum", "Product Owner, Scrum Master o Developer", "Coherente con la sección individual de esa persona"],
+            ["Actividades desarrolladas", "Tareas y responsabilidades concretas", "Verbos de acción y alcance delimitado"],
+            ["Evidencias", "Referencia a capturas, commits o documentos", "Debe existir la evidencia citada"],
+            ["Participación en Daily Scrum", "Asistencia y aporte", "Cuantificada o descrita con hechos"],
+            ["Nivel de cumplimiento", "Alto, medio o bajo, con criterio", "Justificado, no asignado al azar"]
+          ]
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Organización: cómo se dividió el trabajo y con qué criterio.",
+            "Distribución: por rol, por módulo o por historia, y por qué.",
+            "Conflictos: qué discrepancia surgió y cómo se resolvió.",
+            "Comunicación: canales, frecuencia y acuerdos de respuesta."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Cómo tratar los conflictos",
+          "texto": "El párrafo pide explicar cómo se resolvieron los conflictos, no negar que existieron. Un equipo que afirma no haber tenido ningún desacuerdo en un Sprint completo suena poco creíble. Conviene describir una discrepancia real y el mecanismo usado: votación, criterio técnico documentado o decisión del Product Owner según el impacto en valor."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Mecanismo de comunicación", "Cuándo usarlo", "Qué deja como evidencia"],
+          "filas": [
+            ["Daily Scrum", "Sincronización diaria", "Registro breve en el tablero o acta"],
+            ["Chat del equipo", "Decisiones rápidas y avisos", "Historial de mensajes"],
+            ["Reunión de refinamiento", "Aclarar historias antes de la Planning", "Notas de criterios acordados"],
+            ["Repositorio compartido", "Código y documentación", "Commits con mensajes descriptivos"],
+            ["Tablero de tareas", "Estado del trabajo", "Capturas en el informe"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "id": "retrospectiva",
+  "orden": 9,
+  "titulo": "Retrospectiva",
+  "subtitulo": "Cómo responder las cuatro preguntas con hechos reales",
+  "actualizado": "2026-11-18",
+  "resumen": "La retrospectiva es la inspección que el equipo hace de su propio trabajo. La sección 5 del informe la evalúa con cuatro preguntas concretas. Esta sección cubre el propósito del evento, los formatos de facilitación y, sobre todo, cómo responder cada pregunta sin caer en generalidades.",
+  "claves": [
+    "La retro mira el proceso, no el producto",
+    "Cuatro preguntas: logros, mejoras, dificultades y acciones",
+    "Cada respuesta necesita un hecho del Sprint",
+    "Las acciones requieren responsable y verificación"
+  ],
+  "secciones": [
+    {
+      "id": "proposito",
+      "titulo": "Propósito del evento",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La Sprint Retrospective existe para que el equipo inspeccione cómo trabajó y planifique mejoras concretas. Es el último evento del Sprint y lo cierra. Su resultado no es una lista de quejas: es un conjunto reducido de cambios que se aplicarán en el Sprint siguiente."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Inspecciona personas, interacciones, procesos, herramientas y la Definition of Done.",
+            "Identifica los supuestos que llevaron por mal camino.",
+            "Revisa qué funcionó y qué problemas aparecieron.",
+            "Verifica si los problemas del Sprint anterior se resolvieron.",
+            "Selecciona los cambios más útiles y los agenda lo antes posible."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Diferencia con la Sprint Review",
+          "texto": "En la Review se muestra el producto a las partes interesadas y se ajusta el Product Backlog. En la retrospectiva se habla del proceso interno y participa solo el equipo Scrum. Si en el informe se describe la retro como una demostración del sistema, la confusión es visible."
+        }
+      ]
+    },
+    {
+      "id": "cuatro-preguntas",
+      "titulo": "Las cuatro preguntas del enunciado",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El informe pide responder cuatro preguntas y justificarlas con situaciones reales ocurridas durante el proyecto. Cada una tiene una naturaleza distinta y, por lo tanto, una forma distinta de responderse."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Pregunta", "Qué busca", "Qué la hace creíble"],
+          "filas": [
+            ["¿Qué actividades permitieron cumplir exitosamente el Sprint?", "Reconocer las prácticas que funcionaron para repetirlas", "Nombrar la actividad, la fecha o el evento y el efecto que tuvo"],
+            ["¿Qué aspectos deben mejorar?", "Autocrítica sobre el proceso", "Señalar un aspecto concreto y su efecto observable"],
+            ["¿Qué dificultades encontraron?", "Identificar obstáculos reales", "Describir el impedimento, cuándo apareció y qué bloqueó"],
+            ["¿Qué acciones implementarán para evitarlas?", "Convertir el análisis en compromiso", "Acción, responsable y momento de verificación"]
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Respuesta débil",
+              "texto": "“Tuvimos buena comunicación y trabajamos en equipo, aunque debemos mejorar la organización para el próximo Sprint.”",
+              "nota": "Sirve para cualquier equipo y cualquier proyecto. No hay actividad, ni fecha, ni efecto."
+            },
+            {
+              "titulo": "Respuesta sólida",
+              "texto": "“La revisión de avance de los miércoles permitió detectar en la segunda semana que el endpoint de disponibilidad bloqueaba dos historias. Al reasignar a un segundo integrante, esas historias se cerraron dos días antes del Sprint Review.”",
+              "nota": "Actividad concreta, momento, obstáculo, decisión y efecto verificable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "actividades",
+      "titulo": "Pregunta 1: qué permitió cumplir el Sprint",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Esta pregunta no pide felicitar al equipo, pide identificar qué prácticas produjeron el resultado. La respuesta útil separa la actividad del efecto: qué se hizo y qué cambió gracias a eso."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Actividad que suele funcionar", "Por qué funciona"],
+          "filas": [
+            ["Refinamiento previo de las historias", "La Planning se usa para decidir, no para descubrir requisitos"],
+            ["Daily Scrum breve y enfocado en impedimentos", "Los bloqueos se resuelven el mismo día"],
+            ["Criterios de aceptación acordados antes de programar", "Se evita rehacer trabajo por interpretación distinta"],
+            ["Tablero actualizado a diario", "El estado real es visible para todos sin preguntar"],
+            ["Validación con el Product Owner a mitad del Sprint", "Las correcciones llegan antes del cierre"],
+            ["Trabajo en parejas en las historias más riesgosas", "El conocimiento no queda en una sola persona"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo cerrar la respuesta",
+          "texto": "Terminar con la consecuencia sobre el resultado: qué historia se terminó antes, qué riesgo se evitó o qué retrabajo no ocurrió. Ese cierre convierte la anécdota en evidencia."
+        }
+      ]
+    },
+    {
+      "id": "mejoras",
+      "titulo": "Pregunta 2: qué debe mejorar",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La autocrítica gana valor cuando es específica y cuando se reconoce su costo. Un aspecto a mejorar sin efecto asociado suena a fórmula de cortesía."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Aspecto a mejorar", "Efecto observable", "Mejora propuesta"],
+          "filas": [
+            ["Estimaciones optimistas", "Dos historias se cerraron fuera del Sprint", "Usar la velocidad del Sprint anterior como referencia"],
+            ["Tareas demasiado grandes en el tablero", "El avance no se veía hasta el final", "Dividir toda tarea a un día o menos"],
+            ["Comunicación solo por chat", "Malentendidos que costaron retrabajo", "Reunión corta de sincronización a mitad de semana"],
+            ["Falta de pruebas antes de integrar", "Errores detectados en la demostración", "Acordar la Definition of Done con pruebas obligatorias"],
+            ["Un solo responsable de la base de datos", "Cuello de botella cuando esa persona no estaba", "Rotar tareas y documentar el modelo de datos"]
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Conviene elegir dos o tres aspectos, no diez. Un informe que reconoce todo como mejorable no prioriza nada y sugiere que no hubo análisis real."
+        }
+      ]
+    },
+    {
+      "id": "dificultades",
+      "titulo": "Pregunta 3: dificultades encontradas",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las dificultades deben describirse como impedimentos con contexto: qué se esperaba, qué ocurrió y qué se afectó. Clasificarlas ayuda a saber si la solución es del equipo, del Product Owner o de la organización."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Tipo de dificultad", "Ejemplo", "Quién puede resolverla"],
+          "filas": [
+            ["Técnica", "La librería de calendario no soportaba zonas horarias", "Developers"],
+            ["De requisitos", "Los criterios de aceptación cambiaron a mitad del Sprint", "Product Owner con el equipo"],
+            ["De coordinación", "Dos integrantes modificaron el mismo archivo", "Equipo, con acuerdos de ramas"],
+            ["De disponibilidad", "Un integrante tuvo evaluaciones en la semana crítica", "Equipo, ajustando capacidad"],
+            ["Externa", "El proveedor de hosting tardó en habilitar el dominio", "Scrum Master, gestionando el impedimento"],
+            ["De conocimiento", "Nadie había trabajado con autenticación antes", "Equipo, con investigación o apoyo externo"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Lo que no conviene escribir",
+          "texto": "Evitar dificultades que responsabilizan a personas por su nombre o que describen conflictos personales sin resolución. El informe se evalúa por la capacidad de análisis, no por la exposición de problemas internos."
+        }
+      ]
+    },
+    {
+      "id": "acciones",
+      "titulo": "Pregunta 4: acciones para el siguiente Sprint",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las acciones son el producto real de la retrospectiva. Una acción útil tiene tres atributos: es concreta, tiene responsable y tiene un momento de verificación. Sin los tres, es una intención."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Acción: probar la librería de calendario durante la primera semana.",
+            "Responsable: el integrante que asumió las historias de reserva.",
+            "Verificación: revisión en el Daily Scrum del día viernes y ajuste de la estimación."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Dificultad del Sprint 1", "Acción para el Sprint 2", "Cómo se verifica"],
+          "filas": [
+            ["Subestimación de historias con tecnología nueva", "Dedicar una sesión de dos horas a prueba técnica antes de estimar", "Comparar la estimación con el tiempo real al cierre"],
+            ["Retrabajo por criterios ambiguos", "Revisar los criterios de aceptación con el Product Owner antes de programar", "Ninguna historia vuelve de revisión por criterio incompleto"],
+            ["Tareas grandes en el tablero", "Ninguna tarjeta puede durar más de un día sin dividirse", "Revisión del tablero en cada Daily Scrum"],
+            ["Comunicación dispersa en el chat", "Reunión de sincronización de quince minutos los martes y jueves", "Asistencia y temas registrados en el tablero"],
+            ["Conocimiento concentrado en una persona", "Rotar el responsable de la base de datos en cada historia", "Al menos dos integrantes capaces de modificar el modelo al cierre del Sprint"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Criterio de evaluación",
+          "texto": "Se valora la coherencia entre la dificultad descrita en la pregunta 3 y la acción propuesta en la pregunta 4. Si la acción no responde a ninguna dificultad concreta, la retrospectiva parece armada por separado."
+        }
+      ]
+    },
+    {
+      "id": "formatos",
+      "titulo": "Formatos de facilitación",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La Guía no prescribe un formato. Elegir uno y nombrarlo en el informe demuestra que el evento se facilitó y no se improvisó."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Formato", "Mecánica", "Cuándo conviene"],
+          "filas": [
+            ["Qué salió bien / qué salió mal", "Dos columnas y luego se eligen acciones", "Equipos nuevos o Sprints cortos"],
+            ["Start / Stop / Continue", "Qué empezar, qué dejar, qué mantener", "Cuando se necesita claridad sobre comportamientos"],
+            ["Estrella de mar", "Mantener, menos, más, dejar de hacer, empezar a hacer", "Equipos con varios tipos de problema mezclados"],
+            ["4L", "Aprendí, me gustó, faltó, deseé", "Cuando se busca aprendizaje y no solo desempeño"],
+            ["Velocidad del barco", "Se dibuja un barco con viento y anclas", "Equipos que responden mejor a lo visual"],
+            ["Timeline", "Se recorre el Sprint en orden cronológico", "Sprints con muchos eventos o conflictos"]
+          ]
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Registrar las acciones en un lugar visible: el tablero, un documento compartido o una columna del Sprint Backlog.",
+            "Revisar al inicio del Sprint siguiente si las acciones se cumplieron.",
+            "Si una acción se repite tres Sprints sin cumplirse, no es una acción: es un problema sin dueño.",
+            "El Scrum Master facilita, pero las decisiones son del equipo."
+          ]
+        }
+      ]
+    }
+  ]
+}

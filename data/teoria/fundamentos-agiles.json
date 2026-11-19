@@ -1,0 +1,199 @@
+{
+  "id": "fundamentos-agiles",
+  "orden": 2,
+  "titulo": "Fundamentos ágiles",
+  "subtitulo": "Del Manifiesto Ágil al enfoque iterativo e incremental",
+  "actualizado": "2026-11-18",
+  "resumen": "Todo informe Scrum se apoya en una idea previa: el software se construye mejor en ciclos cortos con retroalimentación real. Esta sección cubre el origen del movimiento ágil, sus cuatro valores, sus doce principios y la diferencia con los enfoques predictivos.",
+  "claves": [
+    "Manifiesto Ágil: febrero de 2001, diecisiete firmantes",
+    "Cuatro valores, con preferencia y no exclusión",
+    "Doce principios que aterrizan los valores",
+    "Predictivo frente a iterativo: cuándo conviene cada uno"
+  ],
+  "secciones": [
+    {
+      "id": "que-es-agilidad",
+      "titulo": "Qué es la agilidad y de dónde viene",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La agilidad no es una metodología cerrada ni un conjunto de plantillas. Es una forma de trabajar que asume que los requisitos cambian y que el conocimiento del producto solo se completa cuando el usuario lo usa. En lugar de intentar predecir todo al inicio, se construyen versiones parciales del producto en ciclos cortos para aprender del uso real."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El punto de partida formal es el Manifiesto por el Desarrollo Ágil de Software, redactado en febrero de 2001 en Snowbird, Utah, por diecisiete profesionales que representaban corrientes distintas: Extreme Programming, Scrum, DSDM, Adaptive Software Development, Crystal, Feature-Driven Development y Pragmatic Programming. No se pusieron de acuerdo en un método único, pero sí en un conjunto de valores compartidos."
+        },
+        {
+          "tipo": "cita",
+          "texto": "Estamos descubriendo formas mejores de desarrollar software tanto por nuestra propia experiencia como ayudando a terceros.",
+          "autor": "Manifiesto Ágil, 2001"
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Marco, método, práctica",
+          "texto": "Un marco de trabajo (framework) define las reglas mínimas y deja libertad en el cómo. Scrum es un marco. Una metodología prescribe pasos detallados. Una práctica es una técnica concreta, como planning poker o integración continua. El Manifiesto Ágil no es ninguna de las tres: es una declaración de valores."
+        }
+      ]
+    },
+    {
+      "id": "valores",
+      "titulo": "Los cuatro valores del Manifiesto Ágil",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cada valor se enuncia como una preferencia entre dos elementos, ambos valiosos. La redacción importa: no se descarta el elemento de la derecha, se le subordina cuando hay que elegir."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Se valora más", "Sobre", "Lectura práctica"],
+          "filas": [
+            ["Individuos e interacciones", "Procesos y herramientas", "La herramienta ordena el trabajo, pero no sustituye la conversación entre las personas que lo hacen."],
+            ["Software funcionando", "Documentación extensiva", "Un entregable que se puede ejecutar y probar demuestra más que un documento que promete funcionalidad."],
+            ["Colaboración con el cliente", "Negociación contractual", "El cliente participa durante todo el proyecto, no solo al firmar y al recibir."],
+            ["Respuesta ante el cambio", "Seguir un plan", "El plan es una hipótesis; cuando la realidad lo contradice, se ajusta."]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Error frecuente en exámenes",
+          "texto": "Escribir que el Manifiesto Ágil elimina la documentación o los planes. El texto original dice explícitamente: “aunque valoramos los elementos de la derecha, valoramos más los de la izquierda”. La documentación y el plan siguen existiendo, con otro nivel de detalle y otro momento."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Para la sección individual del informe se piden dos principios del Manifiesto aplicados al equipo. Conviene elegir dos que se puedan sostener con hechos verificables del Sprint, por ejemplo la entrega temprana y continua de valor junto con la reflexión periódica del equipo, y describir una situación concreta de cada uno."
+        }
+      ]
+    },
+    {
+      "id": "principios",
+      "titulo": "Los doce principios",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los doce principios traducen los valores a comportamientos observables. Se listan en el orden del documento original."
+        },
+        {
+          "tipo": "lista",
+          "ordenada": true,
+          "items": [
+            "La mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor.",
+            "Se acepta que los requisitos cambien, incluso en etapas tardías. Los procesos ágiles aprovechan el cambio para dar ventaja competitiva al cliente.",
+            "Se entrega software funcional con frecuencia, entre dos semanas y dos meses, con preferencia al periodo más corto.",
+            "Los responsables de negocio y los desarrolladores trabajan juntos de forma cotidiana durante todo el proyecto.",
+            "Los proyectos se desarrollan en torno a individuos motivados: se les da el entorno y el apoyo que necesitan y se les confía la ejecución del trabajo.",
+            "El método más eficiente y efectivo de comunicar información es la conversación cara a cara.",
+            "El software funcionando es la medida principal de progreso.",
+            "Los procesos ágiles promueven el desarrollo sostenible: se debe mantener un ritmo constante de forma indefinida.",
+            "La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.",
+            "La simplicidad, entendida como el arte de maximizar la cantidad de trabajo no realizado, es esencial.",
+            "Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.",
+            "A intervalos regulares el equipo reflexiona sobre cómo ser más efectivo y ajusta su comportamiento en consecuencia."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Principio", "Cómo se ve en un Sprint real"],
+          "filas": [
+            ["1. Entrega temprana y continua", "Al cerrar el Sprint existe una funcionalidad desplegada y usable, no solo código avanzado."],
+            ["2. Aceptar el cambio", "Una historia se renegocia con el Product Owner a mitad del Sprint porque cambió una regla del negocio."],
+            ["4. Negocio y desarrollo juntos", "El Product Owner participa en el refinamiento y responde dudas el mismo día."],
+            ["7. Software funcionando como medida", "El avance se mide por historias terminadas según la Definition of Done, no por porcentaje de código escrito."],
+            ["10. Simplicidad", "Se descarta una funcionalidad que nadie pidió en lugar de construirla por si acaso."],
+            ["11. Equipos auto-organizados", "El equipo decide cómo repartir las tareas del Sprint sin que el jefe asigne cada una."],
+            ["12. Reflexión periódica", "La retrospectiva produce dos acciones concretas que se verifican en el Sprint siguiente."]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "predictivo-vs-agil",
+      "titulo": "Enfoque predictivo frente a enfoque ágil",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La elección entre un enfoque predictivo y uno ágil depende de la estabilidad de los requisitos y del costo de equivocarse. Si el requisito es estable, conocido y verificable por contrato, planificar todo al inicio es eficiente. Si el requisito cambia con el uso o el mercado, conviene aprender por ciclos."
+        },
+        {
+          "tipo": "comparacion",
+          "izquierda": {
+            "titulo": "Predictivo o en cascada",
+            "items": [
+              "Se levantan todos los requisitos al inicio.",
+              "El alcance se congela y el cambio se trata como desviación.",
+              "La entrega ocurre al final del proyecto.",
+              "El avance se mide por documentos y fases concluidas.",
+              "El cliente valida una sola vez, al cierre.",
+              "El riesgo se concentra en la integración final."
+            ]
+          },
+          "derecha": {
+            "titulo": "Iterativo e incremental",
+            "items": [
+              "Se detalla solo lo necesario para el siguiente ciclo.",
+              "El alcance se ajusta con el aprendizaje de cada ciclo.",
+              "Se entrega valor en cada iteración.",
+              "El avance se mide por incrementos terminados y usables.",
+              "El cliente valida al final de cada ciclo.",
+              "El riesgo se reparte y se detecta temprano."
+            ]
+          }
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            { "termino": "Iterativo", "definicion": "Se repite el ciclo completo de trabajo, refinando el resultado en cada vuelta." },
+            { "termino": "Incremental", "definicion": "Cada vuelta agrega una porción terminada y usable al producto, no una maqueta." },
+            { "termino": "Timebox", "definicion": "Duración máxima fija para una actividad. Si el tiempo termina, la actividad termina: se recorta el alcance, no el plazo." },
+            { "termino": "Retroalimentación", "definicion": "Información que devuelve el uso real del producto y que corrige las decisiones siguientes." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "complejidad",
+      "titulo": "Por qué funciona: complejidad y empirismo",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El desarrollo de software es un problema complejo en el sentido técnico del término: el resultado no se puede predecir con exactitud a partir de las partes, porque las interacciones entre ellas generan comportamiento nuevo. Cuando la relación causa-efecto solo se entiende después de actuar, el enfoque adecuado no es planificar más, sino experimentar y observar."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Tipo de problema", "Característica", "Enfoque adecuado"],
+          "filas": [
+            ["Simple", "La receta se conoce y se repite igual", "Buenas prácticas y procedimientos"],
+            ["Complicado", "Requiere análisis experto, pero es predecible", "Planificación detallada y especialistas"],
+            ["Complejo", "El resultado emerge y solo se entiende al ejecutar", "Ciclos cortos, inspección y adaptación"],
+            ["Caótico", "No hay patrón estable", "Actuar para contener y luego estabilizar"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "La conexión con Scrum",
+          "texto": "Scrum responde a la complejidad con empirismo: tomar decisiones basadas en lo observado, no en lo supuesto. De ahí sus tres pilares (transparencia, inspección y adaptación) y sus ciclos cortos, que existen para que haya algo real que observar."
+        }
+      ]
+    },
+    {
+      "id": "errores",
+      "titulo": "Malentendidos que restan puntos",
+      "cuerpo": [
+        {
+          "tipo": "tabla",
+          "columnas": ["Afirmación incorrecta", "Corrección"],
+          "filas": [
+            ["Ágil significa entregar rápido y sin plan", "Ágil significa entregar valor pronto y replanificar. El Sprint tiene un plan explícito: el Sprint Backlog."],
+            ["Ágil significa no documentar", "Significa documentar lo que aporta valor. Los criterios de aceptación y la Definition of Done son documentación."],
+            ["Scrum es una metodología", "Es un marco de trabajo liviano. No prescribe técnicas de ingeniería ni plantillas de documentos."],
+            ["Si hay cambios, el Sprint falló", "El cambio dentro del Sprint es normal si no pone en riesgo el Sprint Goal. Solo el Product Owner puede cancelar el Sprint."],
+            ["El equipo ágil no tiene jefe, entonces no rinde cuentas", "La autogestión implica responsabilidad sobre el resultado. El equipo se compromete con el Sprint Goal."]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "id": "historias-usuario",
+  "orden": 6,
+  "titulo": "Historias de usuario",
+  "subtitulo": "Redacción, criterios de aceptación y priorización",
+  "actualizado": "2026-11-18",
+  "resumen": "Una historia de usuario es una descripción breve de una funcionalidad contada desde la perspectiva de quien la necesita. Es la base de la sección 2 del informe, la de mayor puntaje del trabajo grupal. Esta sección cubre el formato, los criterios de aceptación, el concepto de INVEST y los criterios de priorización.",
+  "claves": [
+    "Formato: Como / Quiero / Para",
+    "Criterios de aceptación verificables, no deseos",
+    "INVEST como control de calidad de la historia",
+    "Priorizar por valor, riesgo y dependencias"
+  ],
+  "secciones": [
+    {
+      "id": "definicion",
+      "titulo": "Qué es una historia de usuario",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Una historia de usuario es una descripción corta de una necesidad contada desde el punto de vista de la persona que la tiene. No es un documento de requisitos: es un recordatorio para conversar. La historia captura el quién, el qué y el para qué; el detalle se completa en la conversación y en los criterios de aceptación."
+        },
+        {
+          "tipo": "cita",
+          "texto": "Una historia de usuario es una promesa de conversación.",
+          "autor": "Ron Jeffries, origen del concepto"
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Aspecto", "Historia de usuario", "Caso de uso o requisito funcional"],
+          "filas": [
+            ["Origen", "Nace del usuario y su necesidad", "Nace del análisis del sistema"],
+            ["Extensión", "Breve, una tarjeta", "Extenso y detallado"],
+            ["Lenguaje", "Lenguaje del usuario", "Lenguaje técnico"],
+            ["Detalle", "Se completa en la conversación", "Se completa en el documento"],
+            ["Priorización", "Por valor de negocio", "Por complejidad o alcance"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "formato",
+      "titulo": "El formato pedido en el examen",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El enunciado exige el formato clásico de tres partes. Es obligatorio usarlo tal cual, porque es un criterio de evaluación explícito."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Como [rol o tipo de usuario]",
+            "Quiero [funcionalidad o acción]",
+            "Para [beneficio o valor que obtiene]"
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Parte", "Qué debe responder", "Error típico"],
+          "filas": [
+            ["Como", "Un rol concreto y reconocible del dominio", "“Como usuario” sin especificar; “como el sistema”"],
+            ["Quiero", "Una acción que el usuario ejecuta, no una que el sistema hace", "“Quiero que el sistema valide”, que esconde una decisión técnica"],
+            ["Para", "El beneficio real que justifica la historia", "Repetir la acción: “para reservar”, “para registrarme”"]
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Correcto",
+              "texto": "Como cliente registrado, quiero reservar una cita eligiendo fecha y hora disponibles del especialista, para asegurar mi atención sin llamar por teléfono.",
+              "nota": "Rol concreto, acción del usuario, beneficio claro y distinto de la acción."
+            },
+            {
+              "titulo": "Incorrecto",
+              "texto": "Como usuario, quiero una pantalla de reservas, para reservar.",
+              "nota": "Rol genérico, describe una interfaz en lugar de una necesidad y el beneficio repite la acción."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "criterios-aceptacion",
+      "titulo": "Criterios de aceptación",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los criterios de aceptación definen cuándo una historia está correctamente implementada. Son condiciones verificables: quien los lee puede decir sí o no sin ambigüedad. Sin ellos, la historia admite tantas interpretaciones como integrantes tenga el equipo."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Se escriben antes de implementar, junto con el Product Owner.",
+            "Deben ser comprobables: un tercero puede verificarlos sin preguntar.",
+            "Cubren el camino feliz y al menos un caso de error.",
+            "Suelen expresarse como escenario dado / cuando / entonces.",
+            "No confundir criterio de aceptación con Definition of Done: la DoD aplica a todas las historias, los criterios son propios de cada una."
+          ]
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Dado [contexto o estado inicial]",
+            "Cuando [acción del usuario o evento]",
+            "Entonces [resultado observable y verificable]"
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Criterio verificable",
+              "texto": "Dado un cliente con sesión iniciada, cuando selecciona una fecha con horarios disponibles y confirma, entonces el sistema registra la reserva y muestra un código de confirmación.",
+              "nota": "Se puede probar: hay estado inicial, acción y resultado observable."
+            },
+            {
+              "titulo": "Criterio no verificable",
+              "texto": "El sistema debe ser rápido y fácil de usar.",
+              "nota": "No se puede aprobar ni rechazar con evidencia. Habría que fijar un umbral, por ejemplo que la confirmación se muestre en menos de tres segundos."
+            }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cuántos criterios incluir",
+          "texto": "Para el informe, dos a cuatro criterios por historia es suficiente y demuestra dominio. Uno solo parece incompleto; diez convierten la historia en un documento de requisitos y contradicen su naturaleza."
+        }
+      ]
+    },
+    {
+      "id": "invest",
+      "titulo": "INVEST: control de calidad de la historia",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "INVEST es un acrónimo para recordar las seis características de una historia bien escrita. Sirve como lista de verificación antes de llevarla a una Sprint Planning."
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            { "termino": "Independiente", "definicion": "Puede implementarse sin depender de otra historia del mismo Sprint, o con dependencias mínimas y explícitas." },
+            { "termino": "Negociable", "definicion": "No es un contrato cerrado: el alcance se conversa entre el Product Owner y el equipo." },
+            { "termino": "Valiosa", "definicion": "Aporta valor a alguien: al usuario, al negocio o al propio equipo." },
+            { "termino": "Estimable", "definicion": "El equipo puede dimensionarla; si no, falta información o es demasiado grande." },
+            { "termino": "Small (pequeña)", "definicion": "Cabe en un Sprint. Si no cabe, se divide." },
+            { "termino": "Testable (comprobable)", "definicion": "Existe una forma objetiva de verificar que está hecha." }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Letra", "Pregunta de control", "Si falla, qué hacer"],
+          "filas": [
+            ["I", "¿Puedo desarrollarla sin esperar otra historia?", "Reordenar el backlog para resolver la dependencia primero"],
+            ["N", "¿El alcance está abierto a conversación?", "Reescribir si está redactada como especificación cerrada"],
+            ["V", "¿Alguien obtiene un beneficio concreto?", "Reformular el para qué o descartarla"],
+            ["E", "¿El equipo puede estimarla hoy?", "Refinar y aclarar antes de la Planning"],
+            ["S", "¿Cabe en un Sprint?", "Dividirla en historias más pequeñas"],
+            ["T", "¿Cómo sabremos que está terminada?", "Agregar criterios de aceptación"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "priorizacion",
+      "titulo": "Cómo priorizar historias",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La sección 2 pide explicar por qué esas cinco historias fueron priorizadas para el Sprint 1. La respuesta no puede ser “porque son las más importantes”: hay que nombrar el criterio y aplicarlo."
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            { "termino": "Valor de negocio", "definicion": "Cuánto beneficio aporta al usuario o a la empresa. Es el criterio principal del Product Owner." },
+            { "termino": "Riesgo técnico", "definicion": "Grado de incertidumbre sobre si se puede construir. Lo riesgoso conviene atacarlo temprano." },
+            { "termino": "Dependencia", "definicion": "Una historia necesita otra para funcionar. Marca el orden aunque el valor sea menor." },
+            { "termino": "Costo", "definicion": "Esfuerzo requerido. Una historia de alto valor y bajo costo sube posiciones." },
+            { "termino": "Aprendizaje", "definicion": "Cuánto reduce la incertidumbre del producto. Típico de prototipos y validaciones." }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Técnica", "Cómo funciona", "Cuándo usarla"],
+          "filas": [
+            ["MoSCoW", "Clasifica en Must, Should, Could, Won't", "Alcance acotado con plazo fijo, como un Sprint de curso"],
+            ["Valor frente a esfuerzo", "Matriz de dos ejes; se prioriza alto valor y bajo esfuerzo", "Cuando hay muchas historias candidatas"],
+            ["WSJF", "Costo del retraso dividido entre el tamaño del trabajo", "Productos con costo real por no entregar"],
+            ["Orden por dependencia", "Primero lo que habilita al resto", "Sistemas con módulos encadenados: registro antes de reserva"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo redactar la justificación de la priorización",
+          "texto": "Una justificación sólida combina tres capas: primero el criterio general (por ejemplo, valor para el usuario y viabilidad en el plazo), luego el orden concreto historia por historia, y finalmente qué quedó fuera y por qué. La tercera capa es la que demuestra que hubo una decisión y no una lista."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Criterio: se priorizó por valor para el usuario y por dependencia técnica.",
+            "Orden: HU-01 y HU-02 primero porque habilitan el flujo completo.",
+            "Exclusión: la notificación por SMS quedó fuera del Sprint 1 por depender de un proveedor externo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "division",
+      "titulo": "División de historias grandes",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cuando una historia no cabe en un Sprint se divide, no se recorta la calidad. Dividir una épica en historias más pequeñas permite entregar valor parcial y reduce el riesgo de llegar al cierre sin nada terminado."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Técnica de división", "Criterio", "Ejemplo"],
+          "filas": [
+            ["Por flujo de trabajo", "Cada paso operativo es una historia", "Buscar disponibilidad, seleccionar horario, confirmar reserva"],
+            ["Por regla de negocio", "Cada variante es una historia", "Reserva simple, reserva con reprogramación"],
+            ["Por tipo de usuario", "Cada rol tiene su historia", "Reserva hecha por el cliente, reserva registrada por recepción"],
+            ["Por dato", "Cada conjunto de datos es una historia", "Datos personales primero, historial después"],
+            ["Por camino feliz y excepciones", "Primero lo normal, después los errores", "Reserva exitosa, luego manejo de horario ocupado"]
+          ]
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            { "termino": "Épica", "definicion": "Historia demasiado grande para un Sprint. Se descompone en historias más pequeñas." },
+            { "termino": "Tarea", "definicion": "Unidad de trabajo técnico dentro de una historia. No aporta valor por sí sola y no se prioriza como historia." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plantilla",
+      "titulo": "Plantilla completa de una historia para el informe",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cada una de las cinco historias del informe debería contener los mismos campos, con los mismos nombres, para que el lector pueda compararlas de un vistazo."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Campo", "Contenido", "Ejemplo"],
+          "filas": [
+            ["ID", "Identificador estable", "HU-01"],
+            ["Título", "Nombre corto de la historia", "Reserva de cita en línea"],
+            ["Historia", "Formato Como / Quiero / Para", "Como cliente registrado, quiero reservar una cita..."],
+            ["Prioridad", "Alta, media o baja", "Alta"],
+            ["Estimación", "Puntos de historia o días", "5 puntos"],
+            ["Criterios de aceptación", "Dos a cuatro condiciones verificables", "Dado... cuando... entonces..."],
+            ["Valor de negocio", "Beneficio cuantificado o descrito", "Reduce las llamadas de reserva en un 60%"],
+            ["Responsable", "Quién lidera la historia", "Integrante del equipo"],
+            ["Estado", "Pendiente, en progreso o hecho", "Hecho"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Coherencia entre secciones",
+          "texto": "Los IDs de las historias deben ser los mismos en la sección 2, en el Product Backlog de la sección 3 y en la evidencia individual de la sección 6. Si cambian, el lector pierde el hilo y la rúbrica lo nota."
+        }
+      ]
+    }
+  ]
+}

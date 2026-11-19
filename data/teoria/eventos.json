@@ -1,0 +1,265 @@
+{
+  "id": "eventos",
+  "orden": 4,
+  "titulo": "Eventos Scrum",
+  "subtitulo": "El Sprint y sus cuatro eventos internos",
+  "actualizado": "2026-11-18",
+  "resumen": "Los eventos crean regularidad y reducen la necesidad de reuniones que no están definidas en Scrum. Cada uno es una oportunidad formal de inspeccionar y adaptar. Esta sección cubre el Sprint, la Sprint Planning, el Daily Scrum, el Sprint Review y la Sprint Retrospective con sus timeboxes y participantes.",
+  "claves": [
+    "Cinco eventos: Sprint, Planning, Daily, Review, Retrospective",
+    "Timeboxes de la Guía 2020",
+    "Quién participa en cada evento",
+    "Qué se inspecciona y qué se adapta en cada uno"
+  ],
+  "secciones": [
+    {
+      "id": "panorama",
+      "titulo": "Panorama general",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Scrum tiene cinco eventos. El Sprint es un contenedor que abarca a los otros cuatro. Todos los eventos son oportunidades formales de inspeccionar y adaptar artefactos; si un evento no se opera como está prescrito, se pierde esa oportunidad y el riesgo se acumula."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Evento", "Participantes", "Timebox máximo", "Inspecciona", "Produce"],
+          "filas": [
+            ["El Sprint", "Equipo Scrum completo", "Un mes o menos", "El avance hacia el Product Goal", "Un incremento usable"],
+            ["Sprint Planning", "Equipo Scrum completo", "8 horas para un Sprint de un mes", "Product Backlog, Product Goal, Definition of Done", "Sprint Goal, elementos seleccionados y plan"],
+            ["Daily Scrum", "Developers", "15 minutos, fijo", "Avance hacia el Sprint Goal", "Plan ajustado para las próximas 24 horas"],
+            ["Sprint Review", "Equipo Scrum y partes interesadas", "4 horas para un Sprint de un mes", "El incremento y el estado del producto", "Product Backlog adaptado"],
+            ["Sprint Retrospective", "Equipo Scrum completo", "3 horas para un Sprint de un mes", "Cómo trabajó el equipo", "Acciones de mejora concretas"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo leer los timeboxes",
+          "texto": "Los tiempos son máximos para un Sprint de un mes, no metas. En Sprints de dos semanas se reducen proporcionalmente, salvo el Daily Scrum, que dura quince minutos sin importar la duración del Sprint. Si el tiempo se agota, se recorta el alcance del evento, no el plazo."
+        }
+      ]
+    },
+    {
+      "id": "sprint",
+      "titulo": "El Sprint",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los Sprints son el corazón de Scrum, donde las ideas se convierten en valor. Son eventos de duración fija de un mes o menos, lo que genera consistencia. Un Sprint nuevo comienza inmediatamente después de la conclusión del anterior, sin pausa entre ambos."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Dentro del Sprint ocurre todo el trabajo necesario para alcanzar el Product Goal, incluidos los otros cuatro eventos.",
+            "Durante el Sprint no se hacen cambios que pongan en peligro el Sprint Goal.",
+            "La calidad no disminuye.",
+            "El Product Backlog se refina según sea necesario.",
+            "El alcance puede aclararse y renegociarse con el Product Owner a medida que se aprende más."
+          ]
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            { "termino": "Duración habitual", "definicion": "Dos semanas es lo más común en la práctica; la Guía solo fija el máximo de un mes." },
+            { "termino": "Sprints más cortos", "definicion": "Generan más ciclos de aprendizaje y limitan el riesgo a menos tiempo, a cambio de mayor sobrecarga de eventos." },
+            { "termino": "Sprints más largos", "definicion": "Reducen la sobrecarga, pero el costo de equivocarse crece porque el error tarda más en descubrirse." },
+            { "termino": "Cancelación", "definicion": "Un Sprint puede cancelarse si el Sprint Goal queda obsoleto. Solo el Product Owner tiene esa autoridad." }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Sobre la cancelación",
+          "texto": "La cancelación es excepcional porque consume recursos: si una parte del trabajo ya está terminada y es entregable, el Product Owner normalmente la acepta. Cuando se cancela un Sprint, los elementos completados se revisan y los incompletos vuelven al Product Backlog."
+        }
+      ]
+    },
+    {
+      "id": "sprint-planning",
+      "titulo": "Sprint Planning",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La Sprint Planning inicia el Sprint definiendo el trabajo a realizar. El plan resultante lo crea el equipo completo de forma colaborativa, no el Product Owner en solitario ni el Scrum Master por encargo. El Product Owner se asegura de que los asistentes estén preparados para discutir los elementos más importantes del Product Backlog y su relación con el Product Goal."
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            {
+              "termino": "Tema uno: ¿por qué es valioso este Sprint?",
+              "definicion": "El Product Owner propone cómo el producto puede aumentar su valor en el Sprint. Todo el equipo colabora para definir el Sprint Goal, que debe quedar finalizado antes de que termine la reunión."
+            },
+            {
+              "termino": "Tema dos: ¿qué se puede hacer en este Sprint?",
+              "definicion": "El equipo selecciona elementos del Product Backlog. Puede invitar a otras personas para recibir asesoramiento. Solo el equipo puede evaluar qué es capaz de lograr."
+            },
+            {
+              "termino": "Tema tres: ¿cómo se hará el trabajo elegido?",
+              "definicion": "Se descompone cada elemento seleccionado en tareas de un día o menos. El equipo decide cómo convertir los elementos en un incremento que cumpla la Definition of Done."
+            }
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El Sprint Goal es la pieza que muchas veces se omite y es la que da coherencia a todo. Es una meta única para el Sprint, redactada como un resultado de negocio, no como una lista de tareas. Gracias a ella el equipo puede negociar el alcance sin perder el rumbo: si una historia se complica, se cambia por otra que igual contribuya a la misma meta."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Salida de la Planning", "Qué contiene", "Dónde se registra"],
+          "filas": [
+            ["Sprint Goal", "Una frase con el resultado de negocio que justifica el Sprint", "Encabezado visible del Sprint Backlog o del tablero"],
+            ["Elementos seleccionados", "Historias del Product Backlog elegidas para el Sprint", "Columna de pendientes del Sprint en el tablero"],
+            ["Plan de entrega", "Tareas de un día o menos por historia", "Tarjetas hijas o checklist dentro de cada historia"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Para el informe",
+          "texto": "La sección 2 pide cinco historias y la justificación de su prioridad. Ahí conviene mostrar el Sprint Goal como criterio: las historias se eligieron porque en conjunto entregan ese resultado. Sin Sprint Goal, la priorización se percibe arbitraria."
+        }
+      ]
+    },
+    {
+      "id": "daily",
+      "titulo": "Daily Scrum",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El propósito del Daily Scrum es inspeccionar el progreso hacia el Sprint Goal y adaptar el Sprint Backlog según sea necesario, ajustando el trabajo planificado. Es un evento de quince minutos para los Developers, que se realiza a la misma hora y en el mismo lugar cada día laborable del Sprint para reducir la complejidad."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Si el Product Owner o el Scrum Master trabajan activamente en elementos del Sprint Backlog, participan como Developers.",
+            "Los Developers eligen la estructura y las técnicas que prefieran, siempre que el evento se centre en el avance hacia el Sprint Goal.",
+            "Debe producir un plan accionable para las siguientes veinticuatro horas.",
+            "El Daily Scrum no es el único momento para ajustar el plan: el equipo se reúne a lo largo del día para conversaciones más detalladas."
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La Guía 2020 retiró las tres preguntas clásicas (qué hice ayer, qué haré hoy, qué impedimentos tengo) porque resultaban demasiado prescriptivas. Siguen siendo una estructura válida si el equipo lo decide, pero no son obligatorias. Lo obligatorio es el propósito: inspeccionar el avance hacia el Sprint Goal y ajustar el plan."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Estructura posible", "Cómo funciona", "Cuándo conviene"],
+          "filas": [
+            ["Las tres preguntas", "Cada integrante responde ayer, hoy e impedimentos", "Equipos nuevos que necesitan orden"],
+            ["Recorrido del tablero", "Se revisan las tarjetas de derecha a izquierda", "Equipos que trabajan con flujo continuo"],
+            ["Solo impedimentos", "Se habla únicamente de bloqueos y decisiones", "Equipos maduros con tablero actualizado"]
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El Daily mejora la comunicación, identifica impedimentos, promueve decisiones rápidas y elimina la necesidad de otras reuniones. Es un evento de sincronización, no de reporte de estado hacia un supervisor."
+        }
+      ]
+    },
+    {
+      "id": "sprint-review",
+      "titulo": "Sprint Review",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El propósito del Sprint Review es inspeccionar el resultado del Sprint y determinar las adaptaciones futuras. El equipo presenta los resultados a las partes interesadas clave y se avanza hacia el progreso del Product Goal. Es una sesión de trabajo, no una presentación de diapositivas."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "El equipo Scrum y las partes interesadas revisan en conjunto qué se logró y qué cambió en el entorno.",
+            "Se analiza qué hacer a continuación para maximizar el valor.",
+            "Se revisan cambios en el mercado o en el uso potencial del producto.",
+            "Se actualiza el Product Backlog para reflejar las nuevas oportunidades.",
+            "La Guía 2020 no prescribe quién invita a las partes interesadas: lo decide el equipo Scrum."
+          ]
+        },
+        {
+          "tipo": "comparacion",
+          "izquierda": {
+            "titulo": "Sprint Review",
+            "items": [
+              "Se inspecciona el producto.",
+              "Participan las partes interesadas.",
+              "Se adapta el Product Backlog.",
+              "Cierra con una lista de próximos pasos de negocio.",
+              "Se demuestra el incremento real funcionando."
+            ]
+          },
+          "derecha": {
+            "titulo": "Sprint Retrospective",
+            "items": [
+              "Se inspecciona el proceso del equipo.",
+              "Participa solo el equipo Scrum.",
+              "Se adapta la forma de trabajar.",
+              "Cierra con acciones de mejora concretas.",
+              "Se habla de colaboración, herramientas y obstáculos."
+            ]
+          }
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Confusión clásica",
+          "texto": "Review no es lo mismo que Retrospective. La Review mira el producto y suma a las partes interesadas; la retrospectiva mira el proceso y es interna. Intercambiarlas en el informe es uno de los errores que más rápido revelan que el marco no se comprendió."
+        }
+      ]
+    },
+    {
+      "id": "retrospectiva",
+      "titulo": "Sprint Retrospective",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El propósito de la retrospectiva es planificar formas de aumentar la calidad y la eficacia. El equipo Scrum inspecciona cómo fue el último Sprint en relación con las personas, las interacciones, los procesos, las herramientas y la Definition of Done. Es el último evento del Sprint y lo cierra."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Se identifican los supuestos que llevaron por mal camino y se explora su origen.",
+            "Se discute qué funcionó bien y qué problemas se encontraron.",
+            "Se analiza si esos problemas se resolvieron o siguen abiertos.",
+            "El equipo selecciona los cambios más útiles para mejorar su eficacia.",
+            "Los cambios más impactantes se abordan lo antes posible, incluso pueden entrar al Sprint Backlog del siguiente Sprint."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Formato", "Estructura", "Ventaja"],
+          "filas": [
+            ["Qué salió bien, qué salió mal", "Dos columnas y luego acciones", "Simple y rápido para equipos nuevos"],
+            ["Start, Stop, Continue", "Qué empezar, qué dejar, qué mantener", "Convierte la conversación en compromisos"],
+            ["Estrella de mar", "Mantener, menos, más, dejar de hacer, empezar a hacer", "Cubre cinco perspectivas sin alargar la reunión"],
+            ["4L", "Aprendí, me gustó, faltó, deseé", "Recoge aprendizaje además de desempeño"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "El criterio de una buena retrospectiva",
+          "texto": "Una retrospectiva es buena si termina con pocas acciones, con responsable y con fecha de verificación. Diez ideas sin dueño no cambian nada; dos acciones sostenidas sí. En el informe, cada respuesta del punto 5 debe apoyarse en una situación concreta ocurrida en el Sprint."
+        }
+      ]
+    },
+    {
+      "id": "reglas",
+      "titulo": "Reglas de los eventos que conviene memorizar",
+      "cuerpo": [
+        {
+          "tipo": "tabla",
+          "columnas": ["Regla", "Detalle"],
+          "filas": [
+            ["Todos los eventos son obligatorios", "Omitir uno rompe la inspección y adaptación que ese evento garantiza"],
+            ["Los eventos tienen timebox", "Si el tiempo termina, el evento termina: se recorta alcance, no plazo"],
+            ["El Sprint contiene a los demás", "Planning, Daily, Review y Retrospective ocurren dentro del Sprint"],
+            ["Solo el Product Owner cancela el Sprint", "Y solo si el Sprint Goal queda obsoleto"],
+            ["El Daily es de los Developers", "Otros pueden asistir, pero no convertirlo en reunión de estado"],
+            ["La Review incluye interesados externos", "La retro no: es interna del equipo Scrum"],
+            ["El Sprint empieza inmediatamente después del anterior", "No hay pausa entre Sprints"],
+            ["Se prefieren mismo día y misma hora", "Reduce complejidad y facilita la asistencia"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "id": "documentacion-proyecto",
+  "orden": 8,
+  "titulo": "Documentación del proyecto",
+  "subtitulo": "Nombre, problema, justificación, objetivos, alcance y SEPTE",
+  "actualizado": "2026-11-18",
+  "resumen": "Todo proyecto se sostiene sobre una definición clara; esta sección traduce en teoría cada pieza que pide la sección 1 del informe. Nombre, problema, justificación, objetivos, alcance del Sprint 1 y análisis SEPTE, cada elemento con criterios de calidad y errores frecuentes.",
+  "claves": [
+    "El problema se describe como situación, no como falta de solución",
+    "Objetivo general: uno solo; específicos: medibles",
+    "El alcance del Sprint 1 debe explicitar qué queda fuera",
+    "SEPTE: seis dimensiones del entorno"
+  ],
+  "secciones": [
+    {
+      "id": "nombre",
+      "titulo": "Nombre del proyecto",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El nombre identifica el producto, no el trabajo. Debe ser corto, memorable, coherente con el dominio y utilizable en todas las secciones del informe como una referencia única."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Evitar nombres genéricos como “Sistema de gestión” o “Proyecto integrador”.",
+            "Preferible un nombre de producto y un descriptor: nombre corto más qué hace.",
+            "Debe poder leerse sin contexto adicional.",
+            "No usar el nombre de la empresa como sustituto del producto.",
+            "Cuidar que no exista una marca registrada con ese nombre, si el proyecto aspira a operar."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Débil", "Mejor"],
+          "filas": [
+            ["Sistema Web de Reservas", "ReservaYa, plataforma de reserva de citas para clínicas"],
+            ["App de Ventas", "VendeFácil, control de ventas e inventario para bodegas"],
+            ["Plataforma Integradora", "AulaCerca, gestión académica para institutos pequeños"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "problema",
+      "titulo": "Descripción del problema",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El problema es la situación actual que justifica el proyecto. No es la ausencia del sistema que se va a construir: es el efecto negativo que la situación produce en alguien. Un problema bien planteado tiene tres componentes: a quién afecta, cómo se manifiesta hoy y qué consecuencia genera."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Situación actual: cómo se hace hoy el proceso.",
+            "Afectados: quiénes lo ejecutan y quiénes lo sufren.",
+            "Impacto: qué se pierde, con qué frecuencia y con qué magnitud."
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Problema planteado como solución",
+              "texto": "“No existe una aplicación que permita gestionar las reservas de la clínica.”",
+              "nota": "Describe la carencia de la solución, no el problema. Si otra solución lo resuelve, el proyecto deja de tener sentido."
+            },
+            {
+              "titulo": "Problema planteado correctamente",
+              "texto": "“La clínica registra sus citas en un cuaderno físico. Cada día se pierden entre dos y cinco reservas por cruce de horarios, y el 30% de los pacientes no llega a su cita porque no recibe recordatorio. Esto obliga a mantener a una persona dedicada a coordinar por teléfono durante la mayor parte de la jornada.”",
+              "nota": "Tiene afectados, manifestación actual y consecuencia medible."
+            }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Prueba de un buen problema",
+          "texto": "Si puedes preguntar “¿y esto qué peor te hace?” tres veces y cada respuesta sigue añadiendo información, el problema está bien planteado. Si la primera respuesta ya es “nada, simplemente no tenemos sistema”, el planteamiento es débil."
+        }
+      ]
+    },
+    {
+      "id": "justificacion",
+      "titulo": "Justificación",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La justificación responde por qué vale la pena resolver el problema y por qué ahora. Es el argumento de valor: no describe la solución, explica por qué la solución tiene sentido. Debe cubrir cuatro dimensiones y, si es posible, cuantificar al menos una."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Dimensión", "Pregunta que responde", "Ejemplo"],
+          "filas": [
+            ["Económica", "¿Cuánto cuesta la situación actual?", "Dos horas diarias de coordinación telefónica equivalen a más de 800 soles mensuales"],
+            ["Operativa", "¿Qué mejora en el proceso diario?", "Se elimina el cruce de horarios y el registro duplicado"],
+            ["Social o para el usuario", "¿Qué gana la persona afectada?", "El paciente reserva en dos minutos desde el celular, a cualquier hora"],
+            ["Estratégica", "¿Qué habilita a futuro?", "La información histórica permitirá proyectar demanda y horarios"],
+            ["Técnica", "¿Por qué es viable construirlo?", "El equipo domina la tecnología y la empresa cuenta con conexión estable"]
+          ]
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Se redacta en presente o futuro, no en condicional vago (“podría mejorar”, “sería bueno”).",
+            "Conviene vincular la justificación con los objetivos específicos: cada objetivo debe atender una consecuencia del problema.",
+            "Evitar frases huecas como “hoy en día la tecnología avanza” o “es importante para la sociedad”.",
+            "Si hay cifras, indicar de dónde provienen aunque sea una estimación razonada del equipo."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "objetivos",
+      "titulo": "Objetivo general y objetivos específicos",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El objetivo general describe el cambio que el proyecto produce en la realidad. Debe ser uno solo, medible en alguna dimensión y libre de medios. El error más común es escribir una lista de funcionalidades y llamarla objetivo."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "[Verbo de acción en infinitivo] + [qué se transforma] + [a quién beneficia] + [condición o magnitud]",
+            "Ejemplo: Digitalizar el proceso de reserva de citas de la clínica para que los pacientes reserven sin intervención del personal."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Criterio", "Pregunta de validación"],
+          "filas": [
+            ["Único", "¿Hay más de un objetivo principal mezclado en la frase?"],
+            ["Alcanzable", "¿Es posible de lograr con los recursos del curso y del Sprint?"],
+            ["Medible", "¿Existe una forma de verificar que se cumplió?"],
+            ["Centrado en el resultado", "¿Describe un cambio en la realidad o solo un entregable técnico?"],
+            ["Sin medios", "¿Evita decir “usando tal tecnología”, que es un medio y no un objetivo?"]
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los objetivos específicos descomponen el objetivo general en resultados parciales verificables. Deben ser coherentes con las historias del Sprint y permitir saber qué se logró al cierre. La regla práctica es entre tres y cinco."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Objetivo específico débil", "Objetivo específico útil"],
+          "filas": [
+            ["Hacer la base de datos", "Registrar la información de clientes, especialistas y citas en una base de datos que evite duplicados"],
+            ["Usar la tecnología moderna", "Permitir que el usuario consulte y reserve horarios disponibles desde un navegador web"],
+            ["Mejorar la atención", "Reducir el tiempo de registro de una reserva de cinco minutos a menos de uno"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Coherencia entre objetivos e historias",
+          "texto": "Cada historia del Sprint debería contribuir a un objetivo específico. Si una historia no aporta a ninguno, o sobra la historia o falta un objetivo. Esa trazabilidad es la que se revisa al final del informe."
+        }
+      ]
+    },
+    {
+      "id": "alcance",
+      "titulo": "Alcance del Sprint 1",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El alcance delimita qué se va a entregar y, tan importante como eso, qué no. En Scrum el alcance de un Sprint está representado por las historias seleccionadas, pero documentarlo en el informe requiere además explicitar las fronteras: módulos, usuarios incluidos, canales y funcionalidades excluidas."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Qué módulos o funcionalidades están incluidos.",
+            "Qué roles de usuario están cubiertos en este Sprint.",
+            "Qué canales se atienden: web, móvil, escritorio.",
+            "Qué datos son reales y qué datos son de prueba.",
+            "Qué quedó explícitamente fuera, con la razón.",
+            "Qué depende de terceros y no se puede garantizar."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Dentro del Sprint 1", "Fuera del Sprint 1", "Razón de la exclusión"],
+          "filas": [
+            ["Registro de cliente y autenticación", "Recuperación de contraseña por correo", "Depende del servicio de correo, se integra en el Sprint 2"],
+            ["Reserva y cancelación de cita", "Reprogramación con notificación automática", "Requiere el motor de notificaciones"],
+            ["Panel del administrador con las citas del día", "Reportes estadísticos y exportación", "Valor alto pero no bloquea el flujo principal"],
+            ["Validación de disponibilidad", "Pago en línea", "Involucra pasarela externa y contrato con el banco"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Por qué explicitar lo excluido",
+          "texto": "Declarar lo que queda fuera demuestra que hubo una decisión de alcance y protege al equipo: cuando alguien pregunte por una funcionalidad ausente, el informe ya explica por qué no está y cuándo llegará."
+        }
+      ]
+    },
+    {
+      "id": "septe",
+      "titulo": "Análisis SEPTE del entorno",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "SEPTE es un análisis del entorno que rodea al proyecto. Su propósito es identificar factores externos que pueden favorecerlo o amenazarlo, y que el equipo no controla. Se usa para anticipar riesgos y para justificar decisiones de producto. Las iniciales corresponden a Social, Económico, Político, Tecnológico y Ecológico; la E final permite incluir la dimensión legal, frecuente en proyectos de software."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Dimensión", "Qué se analiza", "Preguntas guía", "Ejemplo aplicado"],
+          "filas": [
+            ["Social", "Personas, hábitos, demografía, cultura de uso", "¿Cómo resuelven hoy el proceso? ¿Usan smartphone? ¿Hay resistencia al cambio?", "Los pacientes de la clínica son en su mayoría menores de 45 años y ya usan apps bancarias: la adopción de reservas en línea es viable"],
+            ["Económico", "Costos, ingresos, capacidad de inversión, contexto del sector", "¿Quién paga? ¿Cuánto cuesta el proceso actual? ¿Hay presupuesto para mantenimiento?", "El ahorro de dos horas diarias de coordinación financia el mantenimiento del sistema en menos de un año"],
+            ["Político", "Normas institucionales, prioridades del sector, regulación", "¿Hay políticas que impulsen o frenen la digitalización?", "La agenda de modernización del Estado y los incentivos a la digitalización de mypes favorecen la adopción"],
+            ["Tecnológico", "Infraestructura, herramientas disponibles, conectividad, madurez técnica", "¿Hay internet estable? ¿Existen las herramientas? ¿El equipo las domina?", "El 85% de los pacientes tiene plan de datos y la clínica cuenta con conexión de fibra óptica"],
+            ["Ecológico", "Consumo de recursos, residuos, sostenibilidad", "¿El proyecto reduce papel o consumo energético?", "La eliminación del cuaderno de citas reduce el consumo de papel y las impresiones diarias"],
+            ["Legal", "Protección de datos, propiedad intelectual, contratos, licencias", "¿Se tratan datos personales? ¿Qué exige la norma?", "El sistema almacena datos de salud, por lo que debe cumplir la Ley 29733 de Protección de Datos Personales"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo redactar cada dimensión con valor",
+          "texto": "Cada dimensión debe terminar en una consecuencia para el proyecto, no quedarse en la descripción del contexto. La estructura útil es: factor observado, evidencia o dato, e impacto sobre el proyecto. Sin el tercer elemento, el análisis es decorativo."
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Factor: la clínica no cuenta con área de sistemas.",
+            "Evidencia: el personal administrativo resuelve incidencias técnicas por su cuenta.",
+            "Impacto: el sistema debe ser operable sin soporte técnico permanente y con manuales breves."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Error en el SEPTE", "Cómo se corrige"],
+          "filas": [
+            ["Describir el contexto general del país sin relación con el proyecto", "Vincular cada factor con una decisión concreta del producto"],
+            ["Confundir fortalezas del equipo con factores del entorno", "El SEPTE es externo: la habilidad del equipo es un análisis interno"],
+            ["Copiar el mismo análisis para cualquier proyecto", "Citar el sector, la ciudad, el usuario y la norma específica"],
+            ["Dejar la dimensión legal en blanco cuando hay datos personales", "Identificar la norma aplicable y la medida de protección adoptada"],
+            ["Cerrar sin conclusiones", "Terminar con qué factores son oportunidades y cuáles son riesgos a mitigar"]
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Conviene cerrar el SEPTE con una síntesis breve: qué dos o tres factores son los más determinantes para el éxito del proyecto y qué decisión tomó el equipo a partir de ellos. Esa síntesis es la que demuestra que el análisis se usó y no solo se rellenó."
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Nota sobre la sigla",
+          "texto": "SEPTE se presenta en el enunciado con esa grafía. Al desarrollarlo, conviene nombrar cada dimensión con claridad y añadir la legal como sexta, explicando que corresponde a la protección de datos y las obligaciones normativas. Así el análisis cubre lo que la rúbrica espera sin depender de la interpretación de la sigla."
+        }
+      ]
+    },
+    {
+      "id": "riesgos",
+      "titulo": "Riesgos del proyecto y del Sprint",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Aunque el enunciado no lo exige de forma explícita, un apartado breve de riesgos fortalece la documentación y se conecta con el SEPTE: los factores externos identificados suelen convertirse en riesgos."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Riesgo", "Probabilidad", "Impacto", "Mitigación"],
+          "filas": [
+            ["El equipo no domina la tecnología elegida", "Media", "Alto", "Prueba técnica en la primera semana del Sprint"],
+            ["Un integrante se retira del curso", "Baja", "Alto", "Documentar el código y repartir conocimiento en pares"],
+            ["El cliente no responde a tiempo", "Media", "Medio", "Acordar un horario fijo de validación semanal"],
+            ["El alcance crece durante el Sprint", "Alta", "Medio", "Registrar los pedidos nuevos en el Product Backlog, no en el Sprint"],
+            ["Problemas de conectividad en la presentación", "Media", "Bajo", "Tener el sistema desplegado en la nube y capturas de respaldo"]
+          ]
+        }
+      ]
+    }
+  ]
+}

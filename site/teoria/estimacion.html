@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estimación · Base teórica T1</title>
+<meta name="description" content="Estimar es dimensionar el esfuerzo con la información disponible, no adivinar con precisión. Esta sección cubre la estimación relativa, las técnicas más usadas, la velocidad del equipo y las tareas como unidad de planificación diaria. Sustenta el apartado 6.4 de la evidencia individual.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Base teórica <span>· Proyecto Integrador T1</span></a>
+    <span class="meta">Scrum · Guía 2020</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Parte 07 · Base teórica</p>
+    <h1>Estimación</h1>
+    <p class="bajada">Puntos de historia, planning poker, velocidad y descomposición</p>
+    <p class="resumen">Estimar es dimensionar el esfuerzo con la información disponible, no adivinar con precisión. Esta sección cubre la estimación relativa, las técnicas más usadas, la velocidad del equipo y las tareas como unidad de planificación diaria. Sustenta el apartado 6.4 de la evidencia individual.</p>
+    <ul class="claves"><li>Se estima esfuerzo relativo, no tiempo exacto</li>
+<li>Puntos de historia frente a horas</li>
+<li>Planning poker y la serie de Fibonacci</li>
+<li>Velocidad como promedio, no como promesa</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#principios">Qué significa estimar</a></li>
+<li><a href="#relativa">Estimación relativa frente a absoluta</a></li>
+<li><a href="#tecnicas">Técnicas de estimación</a></li>
+<li><a href="#tareas">De la historia a las tareas</a></li>
+<li><a href="#velocidad">Velocidad y capacidad</a></li>
+<li><a href="#dificultades">Dificultades típicas al estimar</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="principios">
+<h2><span class="num">01</span>Qué significa estimar</h2>
+<p>Estimar es asignar una dimensión al esfuerzo necesario para completar un elemento de trabajo. En un entorno complejo la estimación nunca es exacta: el objetivo es reducir la incertidumbre lo suficiente para decidir qué cabe en el Sprint y qué no.</p>
+<ul class="lista">
+<li>Se estima el esfuerzo completo: análisis, diseño, código, pruebas y documentación necesaria.</li>
+<li>Se estima en equipo: la persona que hará el trabajo es quien debe dimensionarlo.</li>
+<li>Se estima con información imperfecta; esperar certeza total retrasa la decisión.</li>
+<li>Las estimaciones se recalibran con los datos reales de cada Sprint.</li>
+<li>Estimar no es comprometerse a una fecha: es dimensionar para planificar.</li>
+</ul>
+<aside class="destacado alerta">
+<span class="titulo-destacado">El error de estimar en solitario</span>
+<p>Cuando una sola persona estima todas las historias, el resto del equipo no se apropia del plan y las desviaciones se explican siempre igual: “la estimación estaba mal”. La estimación conjunta no busca el número perfecto, busca el compromiso con el número elegido.</p>
+</aside>
+</section>
+<section class="seccion" id="relativa">
+<h2><span class="num">02</span>Estimación relativa frente a absoluta</h2>
+<p>Los humanos somos malos calculando duraciones en abstracto y buenos comparando tamaños. La estimación relativa aprovecha eso: en lugar de preguntar cuántas horas tomará algo, se pregunta cuánto más grande es respecto de otra cosa ya conocida.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Enfoque</th><th scope="col">Cómo se expresa</th><th scope="col">Ventaja</th><th scope="col">Riesgo</th></tr></thead>
+<tbody>
+<tr><td>Absoluta</td><td>Horas o días</td><td>Se entiende rápido y sirve para presupuestos</td><td>Genera falsa precisión y se degrada con la interrupción</td></tr>
+<tr><td>Relativa</td><td>Puntos de historia</td><td>Resiste mejor la variabilidad y es más rápida</td><td>Requiere una referencia inicial y no sirve para facturar directo</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Qué es un punto de historia</span>
+<p>Es una unidad de medida abstracta del tamaño relativo. No equivale a horas ni a días y no se convierte entre equipos: cinco puntos en un equipo pueden ser un día, en otro tres. Su valor está en la consistencia interna del propio equipo.</p>
+</aside>
+</section>
+<section class="seccion" id="tecnicas">
+<h2><span class="num">03</span>Técnicas de estimación</h2>
+<dl class="definiciones">
+<div class="def">
+<dt>Planning poker</dt>
+<dd>Cada integrante elige una carta en secreto y todas se revelan a la vez. Las diferencias grandes obligan a discutir supuestos antes de reestimar. Evita el anclaje de la primera opinión.</dd>
+</div>
+<div class="def">
+<dt>Talla de camiseta</dt>
+<dd>Se clasifica en XS, S, M, L, XL. Rápida y útil para backlog poco refinado, pero ambigua para planificar un Sprint.</dd>
+</div>
+<div class="def">
+<dt>Puntos por analogía</dt>
+<dd>Se compara cada historia nueva con una historia de referencia ya estimada. Simple y consistente.</dd>
+</div>
+<div class="def">
+<dt>Estimación por tres valores</dt>
+<dd>Se estiman escenario optimista, más probable y pesimista, y se combina. Aporta en trabajos con alta incertidumbre.</dd>
+</div>
+<div class="def">
+<dt>Estimación por afinidad</dt>
+<dd>Se agrupan historias por tamaño en bloques sin discutir cada una. Sirve para ordenar un backlog grande rápidamente.</dd>
+</div>
+</dl>
+<p>La serie más usada en planning poker es 1, 2, 3, 5, 8, 13, 21, basada en la sucesión de Fibonacci. La razón es práctica: los números se separan cada vez más a medida que crecen, lo que refleja que la incertidumbre aumenta con el tamaño y evita discusiones estériles sobre si algo es siete u ocho.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Valor</th><th scope="col">Lectura habitual</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>Trivial, sin incertidumbre</td></tr>
+<tr><td>2</td><td>Pequeña y bien comprendida</td></tr>
+<tr><td>3</td><td>Moderada, con algún detalle por resolver</td></tr>
+<tr><td>5</td><td>Historia estándar del equipo</td></tr>
+<tr><td>8</td><td>Grande; conviene revisar si se puede dividir</td></tr>
+<tr><td>13</td><td>Muy grande: probablemente deba dividirse antes de entrar al Sprint</td></tr>
+<tr><td>21 o más</td><td>Épica, requiere descomposición</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="tareas">
+<h2><span class="num">04</span>De la historia a las tareas</h2>
+<p>La Sprint Planning exige descomponer los elementos seleccionados en tareas de un día o menos. Las tareas son la unidad con la que el equipo se organiza día a día en el tablero; no se estiman en puntos ni se priorizan como historias, porque no aportan valor por sí solas.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Nivel</th><th scope="col">Qué representa</th><th scope="col">Quién lo ve</th><th scope="col">Unidad de medida</th></tr></thead>
+<tbody>
+<tr><td>Product Goal</td><td>Estado futuro del producto</td><td>Toda la organización</td><td>Meses</td></tr>
+<tr><td>Historia de usuario</td><td>Necesidad con valor para un usuario</td><td>Equipo y partes interesadas</td><td>Puntos de historia</td></tr>
+<tr><td>Tarea</td><td>Trabajo técnico necesario</td><td>Developers</td><td>Horas o fracción de día</td></tr>
+<tr><td>Subtarea</td><td>Detalle de una tarea compleja</td><td>Quien la ejecuta</td><td>Horas</td></tr>
+</tbody>
+</table></div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Historia: reserva de cita en línea</h4>
+<p>Tareas: diseñar el modelo de datos de reservas; crear el endpoint de disponibilidad; construir el formulario de selección de fecha; validar choque de horarios; probar con datos reales; documentar el flujo.</p>
+<p class="nota">Cada tarea cabe en un día o menos y en conjunto completan la historia.</p>
+</div>
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Tarea mal definida</h4>
+<p>“Hacer el módulo de reservas”.</p>
+<p class="nota">Es una historia disfrazada de tarea: no cabe en un día y no permite saber quién avanza.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Regla práctica</span>
+<p>Si una tarea no se puede terminar en un día, se divide. Las tareas largas esconden el avance y hacen que el Daily Scrum no tenga nada nuevo que mostrar.</p>
+</aside>
+</section>
+<section class="seccion" id="velocidad">
+<h2><span class="num">05</span>Velocidad y capacidad</h2>
+<p>La velocidad es la cantidad de puntos de historia completados por el equipo en un Sprint, según la Definition of Done. Sirve para proyectar cuánto trabajo cabe en el siguiente, no para evaluar el desempeño de las personas.</p>
+<ul class="lista">
+<li>Se calcula con historias terminadas, no con historias avanzadas.</li>
+<li>Necesita al menos dos o tres Sprints para ser una referencia útil.</li>
+<li>Es propia de cada equipo y no se compara entre equipos.</li>
+<li>Cambia si cambia el equipo, la Definition of Done o la composición del trabajo.</li>
+<li>No debe usarse como meta de presión: lleva a inflar estimaciones o a relajar la calidad.</li>
+</ul>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Concepto</th><th scope="col">Definición</th><th scope="col">Uso</th></tr></thead>
+<tbody>
+<tr><td>Velocidad</td><td>Puntos completados por Sprint</td><td>Proyectar el alcance del siguiente Sprint</td></tr>
+<tr><td>Capacidad</td><td>Disponibilidad real del equipo en el Sprint</td><td>Ajustar la velocidad cuando hay ausencias o feriados</td></tr>
+<tr><td>Burn down</td><td>Trabajo restante día a día</td><td>Ver si el ritmo alcanza para el Sprint Goal</td></tr>
+<tr><td>Burn up</td><td>Trabajo completado acumulado</td><td>Ver el avance real frente al alcance total</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Error frecuente en el informe</span>
+<p>Presentar la velocidad como compromiso (“debemos hacer veinte puntos”). La velocidad es una observación histórica; el compromiso es con el Sprint Goal, y la cantidad de trabajo se negocia en la Planning.</p>
+</aside>
+</section>
+<section class="seccion" id="dificultades">
+<h2><span class="num">06</span>Dificultades típicas al estimar</h2>
+<p>El apartado 6.4 de la evidencia individual pide explicar una dificultad real de estimación y cómo mejorarla. Estas son las causas más frecuentes, con su corrección.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Dificultad</th><th scope="col">Por qué ocurre</th><th scope="col">Cómo corregirla</th></tr></thead>
+<tbody>
+<tr><td>Historias poco claras</td><td>Faltan criterios de aceptación o reglas de negocio</td><td>Refinar con el Product Owner antes de la Planning</td></tr>
+<tr><td>Optimismo del equipo</td><td>Se estima el mejor escenario sin imprevistos</td><td>Usar datos de Sprints anteriores como referencia</td></tr>
+<tr><td>Dependencias externas ignoradas</td><td>Se estima solo el trabajo propio</td><td>Incluir tiempos de espera y acordar responsables de terceros</td></tr>
+<tr><td>Historias demasiado grandes</td><td>No caben en un Sprint y nadie se atreve a decir un número</td><td>Dividir antes de estimar</td></tr>
+<tr><td>Falta de experiencia en la tecnología</td><td>El equipo no conoce la herramienta</td><td>Hacer un spike o prueba técnica corta antes de estimar</td></tr>
+<tr><td>Presión por el número</td><td>El equipo ajusta la estimación a lo que se espera oír</td><td>Estimar en secreto con planning poker y proteger la honestidad</td></tr>
+<tr><td>Estimación en horas sin capacidad real</td><td>Se ignora que las personas también tienen otras tareas</td><td>Estimar en puntos y calcular capacidad aparte</td></tr>
+</tbody>
+</table></div>
+<div class="formula">
+<p>Dificultad: subestimamos HU-03 porque no conocíamos la librería de calendario.</p>
+<p>Evidencia: la historia tomó el doble de lo previsto y retrasó el cierre del Sprint.</p>
+<p>Mejora: en el Sprint 2 haremos una prueba técnica de dos horas antes de estimar historias con tecnología nueva.</p>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo se evalúa esta respuesta</span>
+<p>Se valora que la dificultad sea concreta y ocurrida, que la mejora sea una acción aplicable al siguiente Sprint y que exista relación causal entre ambas. Una respuesta genérica del tipo “debemos estimar mejor” no demuestra aprendizaje.</p>
+</aside>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="historias-usuario.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Historias de usuario</span></a>
+<a href="documentacion-proyecto.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Documentación del proyecto</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+</body>
+</html>

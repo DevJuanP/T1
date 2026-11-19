@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Historias de usuario · Base teórica T1</title>
+<meta name="description" content="Una historia de usuario es una descripción breve de una funcionalidad contada desde la perspectiva de quien la necesita. Es la base de la sección 2 del informe, la de mayor puntaje del trabajo grupal. Esta sección cubre el formato, los criterios de aceptación, el concepto de INVEST y los criterios de priorización.">
+<link rel="stylesheet" href="../assets/estilos.css">
+</head>
+<body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
+
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="index.html">Base teórica <span>· Proyecto Integrador T1</span></a>
+    <span class="meta">Scrum · Guía 2020</span>
+  </div>
+</header>
+
+<main id="contenido">
+<article>
+<div class="portada">
+  <div class="contenedor">
+    <p class="etiqueta">Parte 06 · Base teórica</p>
+    <h1>Historias de usuario</h1>
+    <p class="bajada">Redacción, criterios de aceptación y priorización</p>
+    <p class="resumen">Una historia de usuario es una descripción breve de una funcionalidad contada desde la perspectiva de quien la necesita. Es la base de la sección 2 del informe, la de mayor puntaje del trabajo grupal. Esta sección cubre el formato, los criterios de aceptación, el concepto de INVEST y los criterios de priorización.</p>
+    <ul class="claves"><li>Formato: Como / Quiero / Para</li>
+<li>Criterios de aceptación verificables, no deseos</li>
+<li>INVEST como control de calidad de la historia</li>
+<li>Priorizar por valor, riesgo y dependencias</li></ul>
+  </div>
+</div>
+
+<div class="contenedor">
+<div class="cuerpo">
+  <nav class="indice-lateral" aria-label="Contenido de esta página">
+    <p>En esta página</p>
+    <ol>
+<li><a href="#definicion">Qué es una historia de usuario</a></li>
+<li><a href="#formato">El formato pedido en el examen</a></li>
+<li><a href="#criterios-aceptacion">Criterios de aceptación</a></li>
+<li><a href="#invest">INVEST: control de calidad de la historia</a></li>
+<li><a href="#priorizacion">Cómo priorizar historias</a></li>
+<li><a href="#division">División de historias grandes</a></li>
+<li><a href="#plantilla">Plantilla completa de una historia para el informe</a></li>
+    </ol>
+    <a class="volver" href="index.html">← Índice general</a>
+  </nav>
+  <div>
+<section class="seccion" id="definicion">
+<h2><span class="num">01</span>Qué es una historia de usuario</h2>
+<p>Una historia de usuario es una descripción corta de una necesidad contada desde el punto de vista de la persona que la tiene. No es un documento de requisitos: es un recordatorio para conversar. La historia captura el quién, el qué y el para qué; el detalle se completa en la conversación y en los criterios de aceptación.</p>
+<blockquote>
+<p>Una historia de usuario es una promesa de conversación.</p>
+<cite>Ron Jeffries, origen del concepto</cite>
+</blockquote>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Aspecto</th><th scope="col">Historia de usuario</th><th scope="col">Caso de uso o requisito funcional</th></tr></thead>
+<tbody>
+<tr><td>Origen</td><td>Nace del usuario y su necesidad</td><td>Nace del análisis del sistema</td></tr>
+<tr><td>Extensión</td><td>Breve, una tarjeta</td><td>Extenso y detallado</td></tr>
+<tr><td>Lenguaje</td><td>Lenguaje del usuario</td><td>Lenguaje técnico</td></tr>
+<tr><td>Detalle</td><td>Se completa en la conversación</td><td>Se completa en el documento</td></tr>
+<tr><td>Priorización</td><td>Por valor de negocio</td><td>Por complejidad o alcance</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="formato">
+<h2><span class="num">02</span>El formato pedido en el examen</h2>
+<p>El enunciado exige el formato clásico de tres partes. Es obligatorio usarlo tal cual, porque es un criterio de evaluación explícito.</p>
+<div class="formula">
+<p>Como [rol o tipo de usuario]</p>
+<p>Quiero [funcionalidad o acción]</p>
+<p>Para [beneficio o valor que obtiene]</p>
+</div>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Parte</th><th scope="col">Qué debe responder</th><th scope="col">Error típico</th></tr></thead>
+<tbody>
+<tr><td>Como</td><td>Un rol concreto y reconocible del dominio</td><td>“Como usuario” sin especificar; “como el sistema”</td></tr>
+<tr><td>Quiero</td><td>Una acción que el usuario ejecuta, no una que el sistema hace</td><td>“Quiero que el sistema valide”, que esconde una decisión técnica</td></tr>
+<tr><td>Para</td><td>El beneficio real que justifica la historia</td><td>Repetir la acción: “para reservar”, “para registrarme”</td></tr>
+</tbody>
+</table></div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Correcto</h4>
+<p>Como cliente registrado, quiero reservar una cita eligiendo fecha y hora disponibles del especialista, para asegurar mi atención sin llamar por teléfono.</p>
+<p class="nota">Rol concreto, acción del usuario, beneficio claro y distinto de la acción.</p>
+</div>
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Incorrecto</h4>
+<p>Como usuario, quiero una pantalla de reservas, para reservar.</p>
+<p class="nota">Rol genérico, describe una interfaz en lugar de una necesidad y el beneficio repite la acción.</p>
+</div>
+</div>
+</section>
+<section class="seccion" id="criterios-aceptacion">
+<h2><span class="num">03</span>Criterios de aceptación</h2>
+<p>Los criterios de aceptación definen cuándo una historia está correctamente implementada. Son condiciones verificables: quien los lee puede decir sí o no sin ambigüedad. Sin ellos, la historia admite tantas interpretaciones como integrantes tenga el equipo.</p>
+<ul class="lista">
+<li>Se escriben antes de implementar, junto con el Product Owner.</li>
+<li>Deben ser comprobables: un tercero puede verificarlos sin preguntar.</li>
+<li>Cubren el camino feliz y al menos un caso de error.</li>
+<li>Suelen expresarse como escenario dado / cuando / entonces.</li>
+<li>No confundir criterio de aceptación con Definition of Done: la DoD aplica a todas las historias, los criterios son propios de cada una.</li>
+</ul>
+<div class="formula">
+<p>Dado [contexto o estado inicial]</p>
+<p>Cuando [acción del usuario o evento]</p>
+<p>Entonces [resultado observable y verificable]</p>
+</div>
+<div class="ejemplos">
+<div class="ejemplo destacado exito" style="margin:0">
+<h4>Criterio verificable</h4>
+<p>Dado un cliente con sesión iniciada, cuando selecciona una fecha con horarios disponibles y confirma, entonces el sistema registra la reserva y muestra un código de confirmación.</p>
+<p class="nota">Se puede probar: hay estado inicial, acción y resultado observable.</p>
+</div>
+<div class="ejemplo destacado alerta" style="margin:0">
+<h4>Criterio no verificable</h4>
+<p>El sistema debe ser rápido y fácil de usar.</p>
+<p class="nota">No se puede aprobar ni rechazar con evidencia. Habría que fijar un umbral, por ejemplo que la confirmación se muestre en menos de tres segundos.</p>
+</div>
+</div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cuántos criterios incluir</span>
+<p>Para el informe, dos a cuatro criterios por historia es suficiente y demuestra dominio. Uno solo parece incompleto; diez convierten la historia en un documento de requisitos y contradicen su naturaleza.</p>
+</aside>
+</section>
+<section class="seccion" id="invest">
+<h2><span class="num">04</span>INVEST: control de calidad de la historia</h2>
+<p>INVEST es un acrónimo para recordar las seis características de una historia bien escrita. Sirve como lista de verificación antes de llevarla a una Sprint Planning.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Independiente</dt>
+<dd>Puede implementarse sin depender de otra historia del mismo Sprint, o con dependencias mínimas y explícitas.</dd>
+</div>
+<div class="def">
+<dt>Negociable</dt>
+<dd>No es un contrato cerrado: el alcance se conversa entre el Product Owner y el equipo.</dd>
+</div>
+<div class="def">
+<dt>Valiosa</dt>
+<dd>Aporta valor a alguien: al usuario, al negocio o al propio equipo.</dd>
+</div>
+<div class="def">
+<dt>Estimable</dt>
+<dd>El equipo puede dimensionarla; si no, falta información o es demasiado grande.</dd>
+</div>
+<div class="def">
+<dt>Small (pequeña)</dt>
+<dd>Cabe en un Sprint. Si no cabe, se divide.</dd>
+</div>
+<div class="def">
+<dt>Testable (comprobable)</dt>
+<dd>Existe una forma objetiva de verificar que está hecha.</dd>
+</div>
+</dl>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Letra</th><th scope="col">Pregunta de control</th><th scope="col">Si falla, qué hacer</th></tr></thead>
+<tbody>
+<tr><td>I</td><td>¿Puedo desarrollarla sin esperar otra historia?</td><td>Reordenar el backlog para resolver la dependencia primero</td></tr>
+<tr><td>N</td><td>¿El alcance está abierto a conversación?</td><td>Reescribir si está redactada como especificación cerrada</td></tr>
+<tr><td>V</td><td>¿Alguien obtiene un beneficio concreto?</td><td>Reformular el para qué o descartarla</td></tr>
+<tr><td>E</td><td>¿El equipo puede estimarla hoy?</td><td>Refinar y aclarar antes de la Planning</td></tr>
+<tr><td>S</td><td>¿Cabe en un Sprint?</td><td>Dividirla en historias más pequeñas</td></tr>
+<tr><td>T</td><td>¿Cómo sabremos que está terminada?</td><td>Agregar criterios de aceptación</td></tr>
+</tbody>
+</table></div>
+</section>
+<section class="seccion" id="priorizacion">
+<h2><span class="num">05</span>Cómo priorizar historias</h2>
+<p>La sección 2 pide explicar por qué esas cinco historias fueron priorizadas para el Sprint 1. La respuesta no puede ser “porque son las más importantes”: hay que nombrar el criterio y aplicarlo.</p>
+<dl class="definiciones">
+<div class="def">
+<dt>Valor de negocio</dt>
+<dd>Cuánto beneficio aporta al usuario o a la empresa. Es el criterio principal del Product Owner.</dd>
+</div>
+<div class="def">
+<dt>Riesgo técnico</dt>
+<dd>Grado de incertidumbre sobre si se puede construir. Lo riesgoso conviene atacarlo temprano.</dd>
+</div>
+<div class="def">
+<dt>Dependencia</dt>
+<dd>Una historia necesita otra para funcionar. Marca el orden aunque el valor sea menor.</dd>
+</div>
+<div class="def">
+<dt>Costo</dt>
+<dd>Esfuerzo requerido. Una historia de alto valor y bajo costo sube posiciones.</dd>
+</div>
+<div class="def">
+<dt>Aprendizaje</dt>
+<dd>Cuánto reduce la incertidumbre del producto. Típico de prototipos y validaciones.</dd>
+</div>
+</dl>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Técnica</th><th scope="col">Cómo funciona</th><th scope="col">Cuándo usarla</th></tr></thead>
+<tbody>
+<tr><td>MoSCoW</td><td>Clasifica en Must, Should, Could, Won't</td><td>Alcance acotado con plazo fijo, como un Sprint de curso</td></tr>
+<tr><td>Valor frente a esfuerzo</td><td>Matriz de dos ejes; se prioriza alto valor y bajo esfuerzo</td><td>Cuando hay muchas historias candidatas</td></tr>
+<tr><td>WSJF</td><td>Costo del retraso dividido entre el tamaño del trabajo</td><td>Productos con costo real por no entregar</td></tr>
+<tr><td>Orden por dependencia</td><td>Primero lo que habilita al resto</td><td>Sistemas con módulos encadenados: registro antes de reserva</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado info">
+<span class="titulo-destacado">Cómo redactar la justificación de la priorización</span>
+<p>Una justificación sólida combina tres capas: primero el criterio general (por ejemplo, valor para el usuario y viabilidad en el plazo), luego el orden concreto historia por historia, y finalmente qué quedó fuera y por qué. La tercera capa es la que demuestra que hubo una decisión y no una lista.</p>
+</aside>
+<div class="formula">
+<p>Criterio: se priorizó por valor para el usuario y por dependencia técnica.</p>
+<p>Orden: HU-01 y HU-02 primero porque habilitan el flujo completo.</p>
+<p>Exclusión: la notificación por SMS quedó fuera del Sprint 1 por depender de un proveedor externo.</p>
+</div>
+</section>
+<section class="seccion" id="division">
+<h2><span class="num">06</span>División de historias grandes</h2>
+<p>Cuando una historia no cabe en un Sprint se divide, no se recorta la calidad. Dividir una épica en historias más pequeñas permite entregar valor parcial y reduce el riesgo de llegar al cierre sin nada terminado.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Técnica de división</th><th scope="col">Criterio</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>Por flujo de trabajo</td><td>Cada paso operativo es una historia</td><td>Buscar disponibilidad, seleccionar horario, confirmar reserva</td></tr>
+<tr><td>Por regla de negocio</td><td>Cada variante es una historia</td><td>Reserva simple, reserva con reprogramación</td></tr>
+<tr><td>Por tipo de usuario</td><td>Cada rol tiene su historia</td><td>Reserva hecha por el cliente, reserva registrada por recepción</td></tr>
+<tr><td>Por dato</td><td>Cada conjunto de datos es una historia</td><td>Datos personales primero, historial después</td></tr>
+<tr><td>Por camino feliz y excepciones</td><td>Primero lo normal, después los errores</td><td>Reserva exitosa, luego manejo de horario ocupado</td></tr>
+</tbody>
+</table></div>
+<dl class="definiciones">
+<div class="def">
+<dt>Épica</dt>
+<dd>Historia demasiado grande para un Sprint. Se descompone en historias más pequeñas.</dd>
+</div>
+<div class="def">
+<dt>Tarea</dt>
+<dd>Unidad de trabajo técnico dentro de una historia. No aporta valor por sí sola y no se prioriza como historia.</dd>
+</div>
+</dl>
+</section>
+<section class="seccion" id="plantilla">
+<h2><span class="num">07</span>Plantilla completa de una historia para el informe</h2>
+<p>Cada una de las cinco historias del informe debería contener los mismos campos, con los mismos nombres, para que el lector pueda compararlas de un vistazo.</p>
+<div class="tabla-envoltura"><table>
+
+<thead><tr><th scope="col">Campo</th><th scope="col">Contenido</th><th scope="col">Ejemplo</th></tr></thead>
+<tbody>
+<tr><td>ID</td><td>Identificador estable</td><td>HU-01</td></tr>
+<tr><td>Título</td><td>Nombre corto de la historia</td><td>Reserva de cita en línea</td></tr>
+<tr><td>Historia</td><td>Formato Como / Quiero / Para</td><td>Como cliente registrado, quiero reservar una cita...</td></tr>
+<tr><td>Prioridad</td><td>Alta, media o baja</td><td>Alta</td></tr>
+<tr><td>Estimación</td><td>Puntos de historia o días</td><td>5 puntos</td></tr>
+<tr><td>Criterios de aceptación</td><td>Dos a cuatro condiciones verificables</td><td>Dado... cuando... entonces...</td></tr>
+<tr><td>Valor de negocio</td><td>Beneficio cuantificado o descrito</td><td>Reduce las llamadas de reserva en un 60%</td></tr>
+<tr><td>Responsable</td><td>Quién lidera la historia</td><td>Integrante del equipo</td></tr>
+<tr><td>Estado</td><td>Pendiente, en progreso o hecho</td><td>Hecho</td></tr>
+</tbody>
+</table></div>
+<aside class="destacado alerta">
+<span class="titulo-destacado">Coherencia entre secciones</span>
+<p>Los IDs de las historias deben ser los mismos en la sección 2, en el Product Backlog de la sección 3 y en la evidencia individual de la sección 6. Si cambian, el lector pierde el hilo y la rúbrica lo nota.</p>
+</aside>
+</section>
+<nav class="paginacion" aria-label="Navegación entre secciones">
+<a href="artefactos.html" class="anterior"><span class="dir">Anterior</span><span class="nombre">Artefactos Scrum</span></a>
+<a href="estimacion.html" class="siguiente"><span class="dir">Siguiente</span><span class="nombre">Estimación</span></a>
+</nav>
+  </div>
+</div>
+</div>
+</article>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <span>Proyecto Integrador · SPTI02423 · Cibertec · Sección T6HO</span>
+    <a href="index.html">Volver al índice</a>
+  </div>
+</footer>
+</body>
+</html>

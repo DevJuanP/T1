@@ -31,24 +31,41 @@ Toda la información del proyecto pasa por tres etapas, siempre en este orden:
 │   ├── backlog.json      # Product Backlog del Sprint
 │   ├── incremento.json   # funcionalidades, evidencias y capturas
 │   ├── retrospectiva.json
+│   ├── teoria/           # base teórica (no es contenido del proyecto)
+│   │   ├── _indice.json  # datos de la portada y fuentes del índice
+│   │   └── *.json        # un archivo por tema, ordenado por el campo `orden`
 │   └── individual/       # una evidencia individual por integrante
 │       └── <integrante>.json
 ├── site/                 # HTML: vistas de la información
+│   ├── index.html        # redirección a la base teórica
 │   ├── assets/
-│   │   ├── estilos.css
+│   │   ├── estilos.css   # hoja compartida por el informe y la base teórica
 │   │   └── evidencias/   # capturas, mockups, tablero, BD
-│   ├── index.html        # índice general del informe
+│   ├── teoria/           # HTML generado de data/teoria
+│   │   ├── index.html    # índice general de la base teórica
+│   │   ├── completo.html # versión lineal de todo el contenido
+│   │   └── *.html        # una vista por archivo JSON
 │   ├── proyecto.html
 │   ├── sprint-planning.html
 │   ├── backlog.html
 │   ├── incremento.html
 │   ├── retrospectiva.html
 │   └── equipo.html
-├── build/                # generación del Word
+├── build/                # generación
+│   ├── generar-teoria.js # lee data/teoria/*.json y produce site/teoria/*.html
 │   └── exportar-word.js  # lee data/*.json y produce el .docx
 └── entrega/              # solo versiones afinadas y aprobadas
     └── PROYECTO INTEGRADOR-T1.docx
 ```
+
+## Base teórica
+
+- Vive en `data/teoria/*.json` y se publica en `site/teoria/*.html` mediante `node build/generar-teoria.js`.
+- Es material de estudio para la evaluación: **no contiene el contenido del proyecto del equipo**. No mezclar aquí datos de negocio (problema, historias reales, integrantes).
+- Cada archivo declara `orden` (posición en el índice) y `secciones[]` con bloques tipados.
+- Bloques soportados: `parrafo`, `cita`, `destacado` (`tono: info | alerta | exito`), `tabla`, `lista`, `definiciones`, `comparacion`, `pasos`, `checklist`, `formula`, `ejemplos`.
+- Si un valor de celda coincide con el `id` de otro archivo de teoría, el generador lo convierte en enlace automáticamente.
+- Al crear un tema nuevo basta con añadir su JSON con `orden` y volver a ejecutar el generador: el índice, la navegación y `completo.html` se reconstruyen solos.
 
 ## Formato de los JSON
 

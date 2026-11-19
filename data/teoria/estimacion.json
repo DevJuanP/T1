@@ -1,0 +1,228 @@
+{
+  "id": "estimacion",
+  "orden": 7,
+  "titulo": "Estimación",
+  "subtitulo": "Puntos de historia, planning poker, velocidad y descomposición",
+  "actualizado": "2026-11-18",
+  "resumen": "Estimar es dimensionar el esfuerzo con la información disponible, no adivinar con precisión. Esta sección cubre la estimación relativa, las técnicas más usadas, la velocidad del equipo y las tareas como unidad de planificación diaria. Sustenta el apartado 6.4 de la evidencia individual.",
+  "claves": [
+    "Se estima esfuerzo relativo, no tiempo exacto",
+    "Puntos de historia frente a horas",
+    "Planning poker y la serie de Fibonacci",
+    "Velocidad como promedio, no como promesa"
+  ],
+  "secciones": [
+    {
+      "id": "principios",
+      "titulo": "Qué significa estimar",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Estimar es asignar una dimensión al esfuerzo necesario para completar un elemento de trabajo. En un entorno complejo la estimación nunca es exacta: el objetivo es reducir la incertidumbre lo suficiente para decidir qué cabe en el Sprint y qué no."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Se estima el esfuerzo completo: análisis, diseño, código, pruebas y documentación necesaria.",
+            "Se estima en equipo: la persona que hará el trabajo es quien debe dimensionarlo.",
+            "Se estima con información imperfecta; esperar certeza total retrasa la decisión.",
+            "Las estimaciones se recalibran con los datos reales de cada Sprint.",
+            "Estimar no es comprometerse a una fecha: es dimensionar para planificar."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "El error de estimar en solitario",
+          "texto": "Cuando una sola persona estima todas las historias, el resto del equipo no se apropia del plan y las desviaciones se explican siempre igual: “la estimación estaba mal”. La estimación conjunta no busca el número perfecto, busca el compromiso con el número elegido."
+        }
+      ]
+    },
+    {
+      "id": "relativa",
+      "titulo": "Estimación relativa frente a absoluta",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los humanos somos malos calculando duraciones en abstracto y buenos comparando tamaños. La estimación relativa aprovecha eso: en lugar de preguntar cuántas horas tomará algo, se pregunta cuánto más grande es respecto de otra cosa ya conocida."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Enfoque", "Cómo se expresa", "Ventaja", "Riesgo"],
+          "filas": [
+            ["Absoluta", "Horas o días", "Se entiende rápido y sirve para presupuestos", "Genera falsa precisión y se degrada con la interrupción"],
+            ["Relativa", "Puntos de historia", "Resiste mejor la variabilidad y es más rápida", "Requiere una referencia inicial y no sirve para facturar directo"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Qué es un punto de historia",
+          "texto": "Es una unidad de medida abstracta del tamaño relativo. No equivale a horas ni a días y no se convierte entre equipos: cinco puntos en un equipo pueden ser un día, en otro tres. Su valor está en la consistencia interna del propio equipo."
+        }
+      ]
+    },
+    {
+      "id": "tecnicas",
+      "titulo": "Técnicas de estimación",
+      "cuerpo": [
+        {
+          "tipo": "definiciones",
+          "items": [
+            {
+              "termino": "Planning poker",
+              "definicion": "Cada integrante elige una carta en secreto y todas se revelan a la vez. Las diferencias grandes obligan a discutir supuestos antes de reestimar. Evita el anclaje de la primera opinión."
+            },
+            {
+              "termino": "Talla de camiseta",
+              "definicion": "Se clasifica en XS, S, M, L, XL. Rápida y útil para backlog poco refinado, pero ambigua para planificar un Sprint."
+            },
+            {
+              "termino": "Puntos por analogía",
+              "definicion": "Se compara cada historia nueva con una historia de referencia ya estimada. Simple y consistente."
+            },
+            {
+              "termino": "Estimación por tres valores",
+              "definicion": "Se estiman escenario optimista, más probable y pesimista, y se combina. Aporta en trabajos con alta incertidumbre."
+            },
+            {
+              "termino": "Estimación por afinidad",
+              "definicion": "Se agrupan historias por tamaño en bloques sin discutir cada una. Sirve para ordenar un backlog grande rápidamente."
+            }
+          ]
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La serie más usada en planning poker es 1, 2, 3, 5, 8, 13, 21, basada en la sucesión de Fibonacci. La razón es práctica: los números se separan cada vez más a medida que crecen, lo que refleja que la incertidumbre aumenta con el tamaño y evita discusiones estériles sobre si algo es siete u ocho."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Valor", "Lectura habitual"],
+          "filas": [
+            ["1", "Trivial, sin incertidumbre"],
+            ["2", "Pequeña y bien comprendida"],
+            ["3", "Moderada, con algún detalle por resolver"],
+            ["5", "Historia estándar del equipo"],
+            ["8", "Grande; conviene revisar si se puede dividir"],
+            ["13", "Muy grande: probablemente deba dividirse antes de entrar al Sprint"],
+            ["21 o más", "Épica, requiere descomposición"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tareas",
+      "titulo": "De la historia a las tareas",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La Sprint Planning exige descomponer los elementos seleccionados en tareas de un día o menos. Las tareas son la unidad con la que el equipo se organiza día a día en el tablero; no se estiman en puntos ni se priorizan como historias, porque no aportan valor por sí solas."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Nivel", "Qué representa", "Quién lo ve", "Unidad de medida"],
+          "filas": [
+            ["Product Goal", "Estado futuro del producto", "Toda la organización", "Meses"],
+            ["Historia de usuario", "Necesidad con valor para un usuario", "Equipo y partes interesadas", "Puntos de historia"],
+            ["Tarea", "Trabajo técnico necesario", "Developers", "Horas o fracción de día"],
+            ["Subtarea", "Detalle de una tarea compleja", "Quien la ejecuta", "Horas"]
+          ]
+        },
+        {
+          "tipo": "ejemplos",
+          "items": [
+            {
+              "titulo": "Historia: reserva de cita en línea",
+              "texto": "Tareas: diseñar el modelo de datos de reservas; crear el endpoint de disponibilidad; construir el formulario de selección de fecha; validar choque de horarios; probar con datos reales; documentar el flujo.",
+              "nota": "Cada tarea cabe en un día o menos y en conjunto completan la historia."
+            },
+            {
+              "titulo": "Tarea mal definida",
+              "texto": "“Hacer el módulo de reservas”.",
+              "nota": "Es una historia disfrazada de tarea: no cabe en un día y no permite saber quién avanza."
+            }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Regla práctica",
+          "texto": "Si una tarea no se puede terminar en un día, se divide. Las tareas largas esconden el avance y hacen que el Daily Scrum no tenga nada nuevo que mostrar."
+        }
+      ]
+    },
+    {
+      "id": "velocidad",
+      "titulo": "Velocidad y capacidad",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La velocidad es la cantidad de puntos de historia completados por el equipo en un Sprint, según la Definition of Done. Sirve para proyectar cuánto trabajo cabe en el siguiente, no para evaluar el desempeño de las personas."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Se calcula con historias terminadas, no con historias avanzadas.",
+            "Necesita al menos dos o tres Sprints para ser una referencia útil.",
+            "Es propia de cada equipo y no se compara entre equipos.",
+            "Cambia si cambia el equipo, la Definition of Done o la composición del trabajo.",
+            "No debe usarse como meta de presión: lleva a inflar estimaciones o a relajar la calidad."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Concepto", "Definición", "Uso"],
+          "filas": [
+            ["Velocidad", "Puntos completados por Sprint", "Proyectar el alcance del siguiente Sprint"],
+            ["Capacidad", "Disponibilidad real del equipo en el Sprint", "Ajustar la velocidad cuando hay ausencias o feriados"],
+            ["Burn down", "Trabajo restante día a día", "Ver si el ritmo alcanza para el Sprint Goal"],
+            ["Burn up", "Trabajo completado acumulado", "Ver el avance real frente al alcance total"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Error frecuente en el informe",
+          "texto": "Presentar la velocidad como compromiso (“debemos hacer veinte puntos”). La velocidad es una observación histórica; el compromiso es con el Sprint Goal, y la cantidad de trabajo se negocia en la Planning."
+        }
+      ]
+    },
+    {
+      "id": "dificultades",
+      "titulo": "Dificultades típicas al estimar",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El apartado 6.4 de la evidencia individual pide explicar una dificultad real de estimación y cómo mejorarla. Estas son las causas más frecuentes, con su corrección."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Dificultad", "Por qué ocurre", "Cómo corregirla"],
+          "filas": [
+            ["Historias poco claras", "Faltan criterios de aceptación o reglas de negocio", "Refinar con el Product Owner antes de la Planning"],
+            ["Optimismo del equipo", "Se estima el mejor escenario sin imprevistos", "Usar datos de Sprints anteriores como referencia"],
+            ["Dependencias externas ignoradas", "Se estima solo el trabajo propio", "Incluir tiempos de espera y acordar responsables de terceros"],
+            ["Historias demasiado grandes", "No caben en un Sprint y nadie se atreve a decir un número", "Dividir antes de estimar"],
+            ["Falta de experiencia en la tecnología", "El equipo no conoce la herramienta", "Hacer un spike o prueba técnica corta antes de estimar"],
+            ["Presión por el número", "El equipo ajusta la estimación a lo que se espera oír", "Estimar en secreto con planning poker y proteger la honestidad"],
+            ["Estimación en horas sin capacidad real", "Se ignora que las personas también tienen otras tareas", "Estimar en puntos y calcular capacidad aparte"]
+          ]
+        },
+        {
+          "tipo": "formula",
+          "lineas": [
+            "Dificultad: subestimamos HU-03 porque no conocíamos la librería de calendario.",
+            "Evidencia: la historia tomó el doble de lo previsto y retrasó el cierre del Sprint.",
+            "Mejora: en el Sprint 2 haremos una prueba técnica de dos horas antes de estimar historias con tecnología nueva."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Cómo se evalúa esta respuesta",
+          "texto": "Se valora que la dificultad sea concreta y ocurrida, que la mejora sea una acción aplicable al siguiente Sprint y que exista relación causal entre ambas. Una respuesta genérica del tipo “debemos estimar mejor” no demuestra aprendizaje."
+        }
+      ]
+    }
+  ]
+}

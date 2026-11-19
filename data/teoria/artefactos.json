@@ -1,0 +1,244 @@
+{
+  "id": "artefactos",
+  "orden": 5,
+  "titulo": "Artefactos Scrum",
+  "subtitulo": "Product Backlog, Sprint Backlog e Incremento con sus compromisos",
+  "actualizado": "2026-11-18",
+  "resumen": "Los artefactos representan trabajo o valor y están diseñados para maximizar la transparencia. Cada uno tiene un compromiso asociado que le da sentido: Product Goal, Sprint Goal y Definition of Done. Esta sección cubre los tres artefactos y sirve de base para las secciones 3 y 4 del informe.",
+  "claves": [
+    "Tres artefactos y tres compromisos",
+    "Product Backlog es la única fuente de trabajo",
+    "Definition of Done es el estándar de calidad compartido",
+    "El incremento debe ser usable, no solo terminado"
+  ],
+  "secciones": [
+    {
+      "id": "panorama",
+      "titulo": "Los tres artefactos y sus compromisos",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Scrum define tres artefactos. Cada uno representa información que el equipo y las partes interesadas necesitan para entender el trabajo y el valor. La Guía 2020 agregó a cada artefacto un compromiso: una meta o estándar que mantiene el artefacto enfocado y evita que se convierta en una lista sin dirección."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Artefacto", "Qué representa", "Compromiso asociado", "Pregunta que responde"],
+          "filas": [
+            ["Product Backlog", "Lista ordenada de lo que se necesita para mejorar el producto", "Product Goal", "¿Hacia dónde va el producto?"],
+            ["Sprint Backlog", "El Sprint Goal, los elementos elegidos y el plan para entregarlos", "Sprint Goal", "¿Por qué es valioso este Sprint?"],
+            ["Incremento", "Un paso concreto y usable hacia el Product Goal", "Definition of Done", "¿Qué significa terminado?"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Artefacto no es documento",
+          "texto": "Un artefacto es una fuente de información, no necesariamente un archivo. El Product Backlog puede vivir en un tablero de Trello, el Sprint Backlog en las tarjetas del Sprint y la Definition of Done en un acuerdo escrito. Lo importante es que sea visible y comprensible para quien lo necesita."
+        }
+      ]
+    },
+    {
+      "id": "product-backlog",
+      "titulo": "Product Backlog",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El Product Backlog es una lista emergente y ordenada de lo que se necesita para mejorar el producto. Es la única fuente de trabajo del equipo Scrum: si algo no está en el backlog, no se trabaja. Sus elementos pueden ser funcionalidades, correcciones, requisitos no funcionales o mejoras técnicas."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Es la única fuente del trabajo que realiza el equipo.",
+            "Su contenido, disponibilidad y orden son responsabilidad del Product Owner.",
+            "Es un artefacto vivo: cambia a medida que el producto y el entorno cambian.",
+            "Los elementos más importantes se refinan con más detalle; los lejanos pueden ser grandes y vagos.",
+            "Los elementos que pueden completarse en un Sprint se consideran listos para ser seleccionados en una Sprint Planning."
+          ]
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            { "termino": "Refinamiento", "definicion": "Actividad continua de descomponer y aclarar elementos del backlog para que estén listos. No es un evento formal ni tiene timebox prescrito en la Guía 2020." },
+            { "termino": "Listo (ready)", "definicion": "Condición de un elemento que puede seleccionarse en una Planning: es claro, estimable y verificable." },
+            { "termino": "Emergente", "definicion": "El backlog no se congela al inicio: se ajusta con lo aprendido en cada Sprint." }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "El error del backlog congelado",
+          "texto": "Entregar el mismo backlog en todos los Sprints sin cambios sugiere que no hubo aprendizaje. Un backlog sano muestra evidencia de refinamiento: elementos reordenados, criterios de aceptación más precisos y elementos nuevos que surgieron del uso del producto."
+        }
+      ]
+    },
+    {
+      "id": "product-goal",
+      "titulo": "El Product Goal",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El Product Goal describe un estado futuro del producto que sirve como objetivo para que el equipo Scrum planifique. Es el compromiso del Product Backlog y la meta a largo plazo: los Sprints son pasos hacia él, no fines en sí mismos."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "El equipo debe cumplir o abandonar un objetivo antes de asumir el siguiente.",
+            "Ayuda a mantener el foco y evita el trabajo disperso.",
+            "Se define con el equipo y las partes interesadas, pero el Product Owner es responsable de comunicarlo.",
+            "Debe ser concreto: un estado verificable del producto, no una intención genérica."
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Formulación débil", "Formulación útil"],
+          "filas": [
+            ["Mejorar el sistema de reservas", "Que cualquier cliente pueda reservar y pagar una cita en línea sin intervención del personal"],
+            ["Digitalizar el proceso de ventas", "Que el área comercial registre y consulte el 100% de sus ventas en el sistema antes de fin de año"],
+            ["Hacer una app moderna", "Que el usuario consulte su historial de atenciones desde el celular con sesión propia"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sprint-backlog",
+      "titulo": "Sprint Backlog",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El Sprint Backlog se compone del Sprint Goal (el porqué), los elementos del Product Backlog seleccionados para el Sprint (el qué) y el plan para entregarlos (el cómo). Es un plan construido por y para los Developers, y se actualiza durante el Sprint a medida que se aprende más."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Componente", "Pregunta", "Ejemplo"],
+          "filas": [
+            ["Sprint Goal", "¿Por qué es valioso este Sprint?", "Dejar operativo el flujo completo de reserva en línea"],
+            ["Elementos seleccionados", "¿Qué se va a construir?", "HU-01 registro de cliente, HU-02 disponibilidad, HU-03 confirmación de reserva"],
+            ["Plan de entrega", "¿Cómo se hará?", "Diseñar modelo de datos, crear endpoints, construir formulario, probar con datos reales"]
+          ]
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Es un plan con suficiente detalle para que el equipo sepa qué hacer en los próximos días.",
+            "Puede incluir mejoras de proceso identificadas en la retrospectiva.",
+            "Es visible para todos, aunque solo los Developers lo modifican durante el Sprint.",
+            "Cambia a diario: el Daily Scrum existe para ajustarlo."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Diferencia con el Product Backlog",
+          "texto": "El Product Backlog es el universo de trabajo posible y vive mientras viva el producto. El Sprint Backlog es una porción con plazo y se agota al cerrar el Sprint. Si una historia no se termina, vuelve al Product Backlog."
+        }
+      ]
+    },
+    {
+      "id": "sprint-goal",
+      "titulo": "El Sprint Goal",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El Sprint Goal es una meta única para el Sprint que el equipo se compromete a alcanzar. Se define durante la Sprint Planning y da cohesión al trabajo: en lugar de cinco tareas sueltas, hay un resultado que las justifica a todas."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Es una meta, no una lista de historias.",
+            "Se redacta como resultado de negocio verificable.",
+            "Debe finalizarse antes de que termine la Planning.",
+            "Proporciona flexibilidad: si una historia se complica, puede cambiarse por otra que contribuya a la misma meta.",
+            "Si el Sprint Goal queda obsoleto, el Sprint puede cancelarse."
+          ]
+        },
+        {
+          "tipo": "comparacion",
+          "izquierda": {
+            "titulo": "No es un Sprint Goal",
+            "items": [
+              "Terminar las cinco historias del Sprint",
+              "Avanzar con el desarrollo del módulo",
+              "Cumplir con el cronograma del curso",
+              "Hacer el backlog completo"
+            ]
+          },
+          "derecha": {
+            "titulo": "Sí es un Sprint Goal",
+            "items": [
+              "Que un cliente pueda registrarse y reservar una cita en línea",
+              "Que el administrador pueda ver y confirmar las reservas del día",
+              "Que el pago quede registrado con comprobante verificable"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "incremento",
+      "titulo": "Incremento y Definition of Done",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Un incremento es un paso concreto y usable hacia el Product Goal. Cada incremento agrega valor al anterior y debe ser usable por sí mismo: no se admite un incremento que solo funciona cuando llegue el siguiente. Puede haber varios incrementos dentro de un mismo Sprint."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El trabajo no puede considerarse parte del incremento hasta que cumpla la Definition of Done. Este es el compromiso del incremento y el estándar compartido de calidad: sin él, cada integrante entiende algo distinto por terminado y la transparencia se rompe."
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            {
+              "termino": "Definition of Done",
+              "definicion": "Descripción formal del estado del incremento cuando cumple las medidas de calidad requeridas para el producto. Si un elemento no la cumple, no se presenta en la Review ni se cuenta como terminado."
+            },
+            {
+              "termino": "Usable",
+              "definicion": "Que un usuario real puede emplearlo para el propósito previsto, aunque el producto completo todavía no exista."
+            },
+            {
+              "termino": "Incremento acumulativo",
+              "definicion": "Todos los incrementos se suman. El producto en la Review contiene todo lo hecho hasta ese momento, no solo lo del último Sprint."
+            }
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Ejemplo de Definition of Done para un proyecto de curso",
+          "texto": "Una historia está terminada cuando: el código está integrado en la rama principal, la funcionalidad fue probada con datos reales de prueba, no tiene errores conocidos de severidad alta, los criterios de aceptación fueron verificados por el Product Owner y la evidencia quedó registrada en el tablero."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Señal de alerta", "Qué revela"],
+          "filas": [
+            ["El equipo reporta 90% de avance durante tres días seguidos", "No hay Definition of Done clara o las tareas son demasiado grandes"],
+            ["Se presenta un incremento que solo funciona con datos cargados a mano", "El incremento no es usable"],
+            ["Cada integrante define terminado a su manera", "La DoD no está acordada ni es visible"],
+            ["Al cerrar el Sprint todo pasa a terminado de golpe", "No hubo incrementos durante el Sprint, solo al final"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transparencia",
+      "titulo": "Los artefactos y la transparencia",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los artefactos existen para maximizar la transparencia, y la transparencia es la base de la inspección. Si el tablero muestra un estado que no corresponde a la realidad, la inspección produce decisiones equivocadas y la adaptación empeora el problema."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Un tablero desactualizado es peor que no tener tablero: crea una falsa sensación de control.",
+            "La Definition of Done debe ser la misma para todos los elementos del incremento.",
+            "Las decisiones sobre el backlog deben ser visibles: por qué un elemento está arriba y otro abajo.",
+            "Los impedimentos deben quedar registrados donde el equipo los vea.",
+            "Las evidencias del informe son, en el fondo, ejercicios de transparencia."
+          ]
+        }
+      ]
+    }
+  ]
+}

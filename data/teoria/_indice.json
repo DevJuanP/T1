@@ -1,0 +1,31 @@
+{
+  "id": "indice-teoria",
+  "titulo": "Base teórica",
+  "subtitulo": "Fundamentos para desarrollar la evaluación T1 de Proyecto Integrador",
+  "actualizado": "2026-11-18",
+  "curso": "SPTI02423 - Proyecto Integrador",
+  "evaluacion": "T1 - Sprint 1 bajo marco Scrum",
+  "seccion": "T6HO - Ciclo 6",
+  "fuentes": [
+    {
+      "titulo": "Guía Scrum 2020",
+      "detalle": "Ken Schwaber y Jeff Sutherland, noviembre de 2020",
+      "url": "https://scrumguides.org/scrum-guide.html"
+    },
+    {
+      "titulo": "Manifiesto por el Desarrollo Ágil de Software",
+      "detalle": "Diecisiete firmantes, febrero de 2001",
+      "url": "https://agilemanifesto.org/iso/es/manifesto.html"
+    },
+    {
+      "titulo": "Principios del Manifiesto Ágil",
+      "detalle": "Traducción oficial al español",
+      "url": "https://agilemanifesto.org/iso/es/principles.html"
+    },
+    {
+      "titulo": "Enunciado de la evaluación T1",
+      "detalle": "PROYECTO INTEGRADOR-T1.docx, siete secciones y veinte puntos"
+    }
+  ],
+  "nota": "Esta base es únicamente teórica. No contiene el contenido del proyecto del equipo: sirve para fundamentar cada sección del informe con conceptos correctos y vocabulario preciso."
+}

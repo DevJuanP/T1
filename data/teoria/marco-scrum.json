@@ -1,0 +1,253 @@
+{
+  "id": "marco-scrum",
+  "orden": 3,
+  "titulo": "Marco Scrum",
+  "subtitulo": "Definición, teoría, valores y el equipo Scrum",
+  "actualizado": "2026-11-18",
+  "resumen": "Scrum es un marco liviano que ayuda a las personas, los equipos y las organizaciones a generar valor mediante soluciones adaptativas para problemas complejos. Esta sección cubre su definición formal, los tres pilares del empirismo, los cinco valores y las tres responsabilidades del equipo.",
+  "claves": [
+    "Definición según la Guía Scrum 2020",
+    "Empirismo: transparencia, inspección y adaptación",
+    "Cinco valores: compromiso, foco, franqueza, respeto y coraje",
+    "Un solo equipo con tres responsabilidades"
+  ],
+  "secciones": [
+    {
+      "id": "definicion",
+      "titulo": "Definición formal",
+      "cuerpo": [
+        {
+          "tipo": "cita",
+          "texto": "Scrum es un marco liviano que ayuda a las personas, los equipos y las organizaciones a generar valor mediante soluciones adaptativas para problemas complejos.",
+          "autor": "Guía Scrum 2020"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Tres palabras de esa definición sostienen todo lo demás. Liviano: define lo mínimo indispensable y deja el resto a criterio del equipo. Adaptativo: el proceso se corrige con lo que se aprende. Complejo: el problema no admite una solución totalmente previsible, por lo que se avanza por ciclos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Scrum no es un proceso, una técnica ni un método definitivo. Es un marco dentro del cual se pueden emplear distintos procesos y técnicas. Expone deliberadamente la eficacia relativa de la gestión del producto y del trabajo, de modo que las deficiencias se hagan visibles y puedan corregirse."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "La Guía Scrum 2020 es la versión vigente, publicada en noviembre de 2020 por Ken Schwaber y Jeff Sutherland. Tiene menos de trece páginas y deliberadamente evita prescribir prácticas de ingeniería."
+        }
+      ]
+    },
+    {
+      "id": "pilares",
+      "titulo": "Los tres pilares del empirismo",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Scrum se fundamenta en el empirismo, que afirma que el conocimiento proviene de la experiencia y de la toma de decisiones a partir de lo observado. Para que eso funcione hacen falta tres pilares, y los tres son obligatorios: si uno falla, los otros dejan de tener sentido."
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            {
+              "termino": "Transparencia",
+              "definicion": "El proceso y el trabajo deben ser visibles para quienes ejecutan y para quienes reciben el resultado. La transparencia exige un estándar compartido: todos entienden igual qué significa terminado."
+            },
+            {
+              "termino": "Inspección",
+              "definicion": "Los artefactos y el avance hacia las metas se inspeccionan con frecuencia, pero no tanto como para estorbar el trabajo. Los cinco eventos existen precisamente para inspeccionar."
+            },
+            {
+              "termino": "Adaptación",
+              "definicion": "Si la inspección revela que algún aspecto se desvía de los límites aceptables o que el producto resultante no es aceptable, el proceso o los elementos que se producen deben ajustarse lo antes posible."
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Pilar", "Se rompe cuando", "Cómo se restablece"],
+          "filas": [
+            ["Transparencia", "El tablero no refleja el estado real o la Definition of Done es ambigua", "Acordar un estándar único y actualizar el tablero el mismo día"],
+            ["Inspección", "El equipo reporta avance sin mostrar el incremento", "Revisar el incremento en cada Sprint Review con usuarios presentes"],
+            ["Adaptación", "Se detecta un problema y se sigue igual", "Registrar la acción en la retrospectiva y verificar su efecto en el Sprint siguiente"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Por qué importa para el informe",
+          "texto": "Cuando la rúbrica pide evidencias, en el fondo pide transparencia demostrable. Una captura del tablero con las tarjetas en su columna real vale más que un párrafo afirmando que hubo seguimiento."
+        }
+      ]
+    },
+    {
+      "id": "valores",
+      "titulo": "Los cinco valores Scrum",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "Los valores dan dirección al trabajo del equipo. No son un adorno motivacional: cuando el equipo carece de alguno, los eventos se vuelven trámites y los artefactos dejan de ser transparentes."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Valor", "Significado", "Se reconoce en el equipo cuando"],
+          "filas": [
+            ["Compromiso", "El equipo se compromete a alcanzar sus metas y a apoyarse mutuamente", "Nadie deja una tarea a medias esperando que otro la rescate"],
+            ["Foco", "El trabajo principal del Sprint es prioritario y el resto espera", "Se rechazan tareas externas a mitad del Sprint"],
+            ["Franqueza", "Se habla con claridad de todo el trabajo y sus impedimentos", "Alguien dice a tiempo que una historia no se terminará"],
+            ["Respeto", "Los integrantes son capaces e independientes y se tratan como tales", "Las decisiones técnicas se discuten sin descalificar"],
+            ["Coraje", "Se hacen las cosas difíciles cuando hace falta", "El equipo admite un error de estimación en lugar de maquillar el avance"]
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Valores frente a principios",
+          "texto": "No confundir los cinco valores Scrum con los doce principios del Manifiesto Ágil. Los valores son del marco Scrum y son cinco; los principios son del movimiento ágil y son doce. En la evidencia individual se piden dos principios del Manifiesto, no dos valores Scrum."
+        }
+      ]
+    },
+    {
+      "id": "equipo",
+      "titulo": "El equipo Scrum y sus tres responsabilidades",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La Guía 2020 unificó la idea de equipo: ya no existe un equipo de desarrollo separado dentro de un equipo Scrum. Hay un solo equipo Scrum, autogestionado y multifuncional, con tres conjuntos de responsabilidades: Product Owner, Scrum Master y Developers."
+        },
+        {
+          "tipo": "definiciones",
+          "items": [
+            {
+              "termino": "Autogestionado",
+              "definicion": "El equipo decide internamente quién hace qué, cuándo y cómo. No hay un jefe que reparta tareas."
+            },
+            {
+              "termino": "Multifuncional",
+              "definicion": "El equipo tiene todas las habilidades necesarias para crear valor en cada Sprint, sin depender de terceros para terminar."
+            },
+            {
+              "termino": "Tamaño",
+              "definicion": "Normalmente diez personas o menos. Con menos de tres hay menos intercambio y menores ganancias de productividad; con más, crece la complejidad de coordinación y hace falta demasiada comunicación."
+            }
+          ]
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Responsabilidad", "Propósito", "Decisiones que le corresponden"],
+          "filas": [
+            ["Product Owner", "Maximizar el valor del producto resultante del trabajo del equipo", "Qué se construye y en qué orden: contenido y orden del Product Backlog. Es una sola persona, no un comité."],
+            ["Scrum Master", "Que el equipo trabaje con eficacia según Scrum", "Facilitar eventos, eliminar impedimentos, entrenar al equipo y a la organización. No dirige ni decide el producto."],
+            ["Developers", "Crear cada día un incremento que aporte valor y cumpla la Definition of Done", "Cómo se hace el trabajo: descomposición, estimación, orden interno de las tareas del Sprint."]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "product-owner",
+      "titulo": "Product Owner en detalle",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El Product Owner es responsable de maximizar el valor del producto. Su instrumento principal es el Product Backlog: su contenido, su disponibilidad y su orden. Como el orden del backlog determina qué se ataca primero, el Product Owner decide en la práctica la estrategia del producto."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Desarrollar y comunicar explícitamente el Product Goal.",
+            "Crear y comunicar claramente los elementos del Product Backlog.",
+            "Ordenar los elementos del Product Backlog para alcanzar mejor las metas.",
+            "Asegurar que el Product Backlog sea transparente, visible y comprendido.",
+            "Toda la organización debe respetar sus decisiones: nadie puede pedir al equipo que trabaje desde otra lista paralela."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "alerta",
+          "titulo": "Anti-patrón frecuente",
+          "texto": "El Product Owner mensajero, que solo traslada pedidos de otros sin decidir el orden. Si no puede decir que no a un pedido de último momento, el backlog pierde credibilidad y el Sprint Goal se vuelve inalcanzable."
+        }
+      ]
+    },
+    {
+      "id": "scrum-master",
+      "titulo": "Scrum Master en detalle",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "El Scrum Master es un líder que sirve al equipo y a la organización. Su éxito no se mide por lo que produce directamente, sino por la salud del proceso: que los eventos ocurran y sirvan, que los impedimentos desaparezcan y que la organización entienda Scrum."
+        },
+        {
+          "tipo": "comparacion",
+          "izquierda": {
+            "titulo": "Sirve al equipo",
+            "items": [
+              "Entrena a los integrantes en autogestión y multifuncionalidad.",
+              "Ayuda a enfocar en crear incrementos de alto valor.",
+              "Facilita la eliminación de impedimentos.",
+              "Asegura que todos los eventos se lleven a cabo y sean productivos.",
+              "Entrena al equipo en la adopción del marco."
+            ]
+          },
+          "derecha": {
+            "titulo": "Sirve a la organización",
+            "items": [
+              "Lidera, entrena y orienta en la adopción de Scrum.",
+              "Planifica y aconseja implementaciones de Scrum.",
+              "Ayuda a que los empleados y las partes interesadas comprendan el enfoque empírico.",
+              "Provoca cambios que aumentan la productividad del equipo.",
+              "Trabaja con otros Scrum Masters para mejorar la eficacia."
+            ]
+          }
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Lo que el Scrum Master no hace: asignar tareas, decidir la prioridad del backlog, evaluar el desempeño individual del equipo ni actuar como jefe de proyecto. Cuando el Scrum Master empieza a decidir el cómo, el equipo deja de autogestionarse."
+        }
+      ]
+    },
+    {
+      "id": "developers",
+      "titulo": "Developers en detalle",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "En Scrum, Developers es el nombre de la responsabilidad, no del cargo. Incluye a cualquier persona que trabaje en la creación del incremento: analistas, diseñadores, programadores, testers, y también el Product Owner o el Scrum Master si ejecutan elementos del Sprint Backlog."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Crear un plan para el Sprint, el Sprint Backlog.",
+            "Inculcar calidad según la Definition of Done.",
+            "Adaptar su plan cada día hacia el Sprint Goal.",
+            "Responsabilizarse mutuamente como profesionales.",
+            "Descomponer las historias en tareas y estimarlas en conjunto."
+          ]
+        },
+        {
+          "tipo": "destacado",
+          "tono": "info",
+          "titulo": "Efecto en el informe",
+          "texto": "Si en el equipo hay dos personas que programan y una que documenta, las tres son Developers durante el Sprint. El rol Scrum de la tabla de participación describe la responsabilidad principal asumida, y las actividades pueden incluir desarrollo, pruebas y documentación."
+        }
+      ]
+    },
+    {
+      "id": "roles-vs-cargos",
+      "titulo": "Cómo describir el rol en el informe",
+      "cuerpo": [
+        {
+          "tipo": "parrafo",
+          "texto": "La sección individual pide indicar el rol asumido, sus responsabilidades, las actividades desarrolladas y el aporte al Sprint. La respuesta gana fuerza cuando esas cuatro piezas son verificables y distintas de las del resto del equipo."
+        },
+        {
+          "tipo": "tabla",
+          "columnas": ["Apartado", "Qué escribir", "Ejemplo de redacción breve"],
+          "filas": [
+            ["Rol asumido", "Una de las tres responsabilidades Scrum, sin inventar cargos híbridos", "Product Owner"],
+            ["Responsabilidades", "Tres o cuatro funciones propias del rol", "Priorizar el backlog, definir criterios de aceptación y validar el incremento"],
+            ["Actividades desarrolladas", "Acciones concretas con fechas o eventos asociados", "Refinamiento de las cinco historias y validación del módulo de reservas en el Sprint Review"],
+            ["Aporte al Sprint", "Un efecto medible sobre el resultado", "El orden del backlog permitió entregar el flujo de reserva completo antes del cierre"]
+          ]
+        }
+      ]
+    }
+  ]
+}
