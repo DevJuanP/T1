@@ -965,3 +965,82 @@ td:first-child { color: var(--tinta); }
   .tabla-envoltura, .destacado, blockquote, .formula { break-inside: avoid; }
   a { color: #000; text-decoration: none; }
 }
+
+/* =========================================================
+   Tablero Trello (generado desde data/tablero-trello.json)
+   ========================================================= */
+.tb-contenido { padding-top: 1.6rem; padding-bottom: 2.4rem; }
+.tb-contenido section { margin: 0 0 2.4rem; }
+.tb-contenido h2 { margin-bottom: .9rem; }
+.tb-doble { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.tb-doble h3 { font-family: var(--sans); font-size: 1rem; margin: 0 0 .5rem; }
+.tb-listas, .tb-leyenda { margin: 0; padding-left: 1.2rem; font-size: .95rem; }
+.tb-leyenda { list-style: none; padding-left: 0; }
+.tb-leyenda li { margin: .35rem 0; }
+.tb-nota { color: var(--tinta-suave); font-size: .95rem; margin: 0 0 1rem; }
+.tb-sin { color: var(--tinta-suave); font-size: .85rem; }
+
+.tb-etiqueta {
+  display: inline-block; font-family: var(--sans); font-size: .75rem; font-weight: 600;
+  padding: .12rem .5rem; border-radius: 2px; color: #fff; line-height: 1.4;
+}
+.tb-alta { background: #a3322a; }
+.tb-media { background: #7a5a0c; }
+.tb-backend { background: #1f4e79; }
+.tb-frontend { background: #2f6b4f; }
+.tb-qa { background: #5b3f7a; }
+
+.tb-tablero { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .9rem; align-items: start; }
+.tb-columna {
+  background: var(--papel); border: 1px solid var(--linea); border-radius: var(--radio);
+  padding: .8rem; box-shadow: var(--sombra); min-width: 0;
+}
+.tb-columna h3 { font-family: var(--sans); font-size: .95rem; margin: 0 0 .7rem; color: var(--tinta); }
+.tb-conteo { font-weight: 400; color: var(--tinta-suave); }
+.tb-vacia { color: var(--tinta-suave); font-size: .9rem; margin: 0; }
+
+.tb-tarjeta {
+  border: 1px solid var(--linea-fuerte); border-radius: var(--radio);
+  padding: .75rem; margin: 0 0 .7rem; background: var(--papel);
+}
+.tb-tarjeta h4 { font-family: var(--sans); font-size: .95rem; margin: .5rem 0; line-height: 1.3; }
+.tb-tarjeta h5 {
+  font-family: var(--sans); font-size: .8rem; margin: .8rem 0 .3rem;
+  text-transform: uppercase; letter-spacing: .04em; color: var(--tinta-suave);
+}
+.tb-tarjeta > p { font-size: .9rem; margin: .4rem 0; }
+.tb-etiquetas { display: flex; flex-wrap: wrap; gap: .3rem; }
+.tb-meta {
+  display: grid; grid-template-columns: auto 1fr; gap: .15rem .6rem;
+  margin: .5rem 0; font-size: .85rem;
+}
+.tb-meta dt { color: var(--tinta-suave); }
+.tb-meta dd { margin: 0; }
+
+.tb-checklist, .tb-comentarios { list-style: none; padding: 0; margin: 0; font-size: .88rem; }
+.tb-checklist li { display: flex; gap: .45rem; align-items: baseline; margin: .25rem 0; }
+.tb-marca {
+  flex: none; font-family: var(--sans); font-size: .7rem; font-weight: 700;
+  padding: .05rem .4rem; border-radius: 2px;
+}
+.tb-marca.hecho { background: var(--verde-claro); color: var(--verde); }
+.tb-marca.pendiente { background: var(--ambar-claro); color: var(--ambar); }
+.tb-comentarios li {
+  border-left: 3px solid var(--azul); background: var(--azul-claro);
+  padding: .3rem .55rem; margin: .35rem 0; font-size: .88rem;
+}
+
+.tb-totales { margin-bottom: 1.2rem; }
+.tb-total th, .tb-total td { font-weight: 700; }
+
+@media (max-width: 1100px) {
+  .tb-tablero { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .tb-tablero { grid-template-columns: 1fr; }
+  .tb-doble { grid-template-columns: 1fr; gap: 1rem; }
+}
+@media print {
+  .tb-tarjeta, .tb-columna { break-inside: avoid; }
+  .tb-tablero { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
